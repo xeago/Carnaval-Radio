@@ -1778,4 +1778,7 @@
   <data name="Combine" xml:space="preserve">
     <value>Combine</value>
   </data>
+  <data name="EditOwnPosts" xml:space="preserve">
+    <value>Edit Own Posts - 2</value>
+  </data>
 </root>
