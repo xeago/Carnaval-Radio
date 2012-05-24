@@ -3,7 +3,8 @@
   <role>
     <name>Administrators</name>
     <users>
-      <user>Admin</user>
+      <user>Nick</user>
+      <user>admin</user>
     </users>
   </role>
   <role>

@@ -15,10 +15,10 @@
             <%= Resources.labels.CopyTagMessage %>
         </div>
         
-        <div id="spamExtension" style="width:350px; padding:5px; margin-bottom:5px;">
+        <div id="spamExtension" style="width:800px; padding:5px; margin-bottom:5px;">
             <table style="padding:0;margin:0">
                 <tr>
-                    <td>Google Account</td>
+                    <td width="200">Google Account</td>
                     <td><asp:TextBox ID="txtGMail" runat="server" MaxLength="50"></asp:TextBox></td>
                     <td>@Gmail.com</td>
                 </tr>

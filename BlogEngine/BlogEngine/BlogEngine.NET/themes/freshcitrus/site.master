@@ -1,0 +1,82 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="site.master.cs" Inherits="site" %>
+<%@ Import Namespace="BlogEngine.Core" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server" profile="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="shortcut icon" href="~/pics/blogengine.ico" type="image/x-icon"/>
+</head>
+<body>
+<div id="container">
+    <div id="web-20">
+        <span class="inv">web 2.0</span>
+    </div>
+
+  <div id="nav-content">
+<!--    <a href="javascript:void(filterByAPML())" class="apmlfilter"><%=Resources.labels.filterByApml %></a>-->
+    <ul id="navigation">
+      <li class="page_item current_page_item"><a href="<%=Utils.AbsoluteWebRoot %>" rel="home"><%=Resources.labels.home%></a></li>
+      <li class="page_item"><a href="<%=Utils.AbsoluteWebRoot %>archive.aspx"><%=Resources.labels.archive%></a></li>
+      <li class="page_item"><a href="<%=Utils.AbsoluteWebRoot %>contact.aspx"><%=Resources.labels.contact%></a></li>
+      <li class="page_item"><a runat="server" id="aLogin" /></li>
+    </ul>
+  </div>
+  <div id="search">
+
+<div id="searchform">
+
+
+<input onblur="if (this.value == '') {this.value = 'Search here...';}" onfocus="if (this.value == 'Search here...') {this.value = '';}" value="Search here..." id="searchfield" class="keyword" type="text" onkeypress="if(event.keyCode==13) return BlogEngine.search('<%=Utils.RelativeWebRoot%>')" />
+<input id="searchsubmit" type="button" onkeypress="BlogEngine.search('<%=Utils.RelativeWebRoot%>');" onclick="BlogEngine.search('<%=Utils.RelativeWebRoot%>');" />
+<%
+if (BlogSettings.Instance.EnableCommentSearch)
+{
+    string check = Context.Request.QueryString["comment"] != null ? "checked=\"checked\"" : string.Empty;
+    Response.Write(string.Format("<br /><input style=\"display:none;\" type=\"checkbox\" id=\"searchcomments\" {0} />", check));
+}
+    %>
+</div>
+
+</div>
+  <div id="header">
+    <h1><a href="<%=Utils.AbsoluteWebRoot %>"><%=GetColoredHeading(BlogSettings.Instance.Name)%></a></h1>
+    <h2><%=BlogSettings.Instance.Description%></h2>
+  </div>
+  
+
+
+<div id="sub-nav">
+<a class="rss" href="<%=Utils.FeedUrl %>">
+<span class="inv">RSS</span>
+</a>
+</div>
+
+  <form runat="Server" class="body">
+    
+    <div id="main-wrapper">
+    <div id="left">
+      <blog:SearchOnSearch runat="server" MaxResults="3" Headline="You searched for" Text="Here are some results for the search term on this website" />
+      <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+    </div> 
+    
+    
+    <div id="right">
+      <blog:WidgetZone runat="server" ID="rightzone" />
+    </div>
+    </div>
+  </form>
+  
+  <div id="footer">
+<big>
+<big>
+&copy;
+<b><%=BlogSettings.Instance.Name%></b>
+</big>
+</big>
+<br/>
+Powered by <a href="http://www.dotnetblogengine.net">BlogEngine.NET</a> <%=BlogSettings.Instance.Version()%><br />
+Original Design by DT <a href="http://www.dreamtemplate.com">Website Templates</a>, Adapted by <a href="http://www.onesoft.dk/">onesoft</a>
+</div>
+</body>
+</html>

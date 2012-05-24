@@ -21,7 +21,7 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>nicknijenhuis</Values>
+      <Values>carnavalradio</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -31,7 +31,7 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>Android23</Values>
+      <Values>radio1</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
