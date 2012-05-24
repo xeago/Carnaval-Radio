@@ -1772,4 +1772,10 @@
   <data name="Your" xml:space="preserve">
     <value>Your</value>
   </data>
+  <data name="ErrorConnectingPicasa" xml:space="preserve">
+    <value>Error connecting to Picasa: </value>
+  </data>
+  <data name="Combine" xml:space="preserve">
+    <value>Combine</value>
+  </data>
 </root>

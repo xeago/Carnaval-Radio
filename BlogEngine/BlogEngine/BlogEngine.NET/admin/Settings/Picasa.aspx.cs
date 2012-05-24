@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using BlogEngine.Core.Web.Extensions;
 using Google.GData.Photos;
-using Resources;
+
 namespace admin.Settings
 {
     using System;
@@ -42,7 +42,7 @@ namespace admin.Settings
                 }
                 catch (Exception pEx)
                 {
-                    litContent.Text = "Error connecting to Picasa: " + pEx.Message;
+                    litContent.Text = labels.ErrorConnectingPicasa + pEx.Message;
                 }
             }
 
@@ -153,7 +153,7 @@ namespace admin.Settings
 
         protected void BindForm()
         {
-            btnSave.Text = Resources.labels.saveSettings;
+            btnSave.Text = labels.saveSettings;
 
             ddWidth.Items.Add("72");
             ddWidth.Items.Add("94");
