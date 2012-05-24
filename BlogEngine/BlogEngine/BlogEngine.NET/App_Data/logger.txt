@@ -1,0 +1,4 @@
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 24-5-2012 12:41:13
+Contents Below
+PackageManager.InstallPackage: The file 'C:\PROJECTS\Git\Carnaval-Radio\BlogEngine\BlogEngine\BlogEngine.NET\themes\freshcitrus\images\bg.jpg' already exists.

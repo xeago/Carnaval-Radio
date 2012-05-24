@@ -15,7 +15,7 @@
     <div class="page">
         <div class="header">
             <div class="title">
-                <img alt="BlogEngine.net" src="../pics/be-logo.jpg" />
+                <img alt="BlogEngine.net" src="../pics/be-logo.png" />
             </div>
             <div class="loginDisplay">
                 <a href="<%= Utils.RelativeWebRoot %>default.aspx"><%=Resources.labels.returnToBlog %></a>

@@ -607,4 +607,43 @@
   <data name="Your" xml:space="preserve">
     <value>Jouw</value>
   </data>
+  <data name="forgotPassword" xml:space="preserve">
+    <value>Wachtwoord vergeten?</value>
+  </data>
+  <data name="passwordAndConfirmPasswordIsMatch" xml:space="preserve">
+    <value>Het nieuwe en het te bevestigen wachtwoord komen niet overeen</value>
+  </data>
+  <data name="passwordAndConfirmPasswordMismatch" xml:space="preserve">
+    <value>Het wachtwoord en het te bevestigen wachtwoord komen niet overeen</value>
+  </data>
+  <data name="passwordArgumentInvalid" xml:space="preserve">
+    <value>Password argument is invalid.</value>
+  </data>
+  <data name="passwordChangeSuccess" xml:space="preserve">
+    <value>Je wachtwoord is succesvol gewijzigd</value>
+  </data>
+  <data name="passwordIsRequried" xml:space="preserve">
+    <value>Wachtwoord is verplicht</value>
+  </data>
+  <data name="passwordMinimumCharacters" xml:space="preserve">
+    <value>Het wachtwoord moet minimaal {0} karakters bevatten</value>
+  </data>
+  <data name="passwordRetrieval" xml:space="preserve">
+    <value>Wachtwoord opvragen</value>
+  </data>
+  <data name="passwordRetrievalInstructionMessage" xml:space="preserve">
+    <value>Typ hieronder je e-mail adres en je wachtwoord wordt binnen enkele minuten naar je verzonden.</value>
+  </data>
+  <data name="rememberMe" xml:space="preserve">
+    <value>Aangemeld blijven</value>
+  </data>
+  <data name="returnToBlog" xml:space="preserve">
+    <value>Terug naar website</value>
+  </data>
+  <data name="send" xml:space="preserve">
+    <value>Verzenden</value>
+  </data>
+  <data name="userNameIsRequired" xml:space="preserve">
+    <value>Gebruikersnaam is verplicht</value>
+  </data>
 </root>
