@@ -38,7 +38,7 @@
       <ip>127.0.0.1</ip>
       <content>comment 1</content>
     </comment>
-    <comment id="20574909-b777-4246-9b15-d70a3a795fcc" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="False">
+    <comment id="20574909-b777-4246-9b15-d70a3a795fcc" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="True">
       <date>2010-01-15 17:01:59</date>
       <author>Visitor 2</author>
       <email>post@example.com</email>

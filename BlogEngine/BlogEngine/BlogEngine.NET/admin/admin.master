@@ -49,8 +49,8 @@
 	        </div>
 
             <div id="footer">
-                <a href="http://dotnetblogengine.net">BlogEngine.NET <%=BlogSettings.Instance.Version() %></a> | 
-                <a id="donate" href="<%= Utils.RelativeWebRoot %>admin/Donate.aspx" target="_new"><%=Resources.labels.makeDonation %></a>          
+                <a href="<%= Utils.RelativeWebRoot %>admin/default.cshtml">Carnaval Radio Admin Panel ( <%=BlogSettings.Instance.Version() %> )</a> | 
+                <a id="Website" href="<%= Utils.RelativeWebRoot %>" target="_blank">Bezoek website</a>
             </div>
 
         </form>    

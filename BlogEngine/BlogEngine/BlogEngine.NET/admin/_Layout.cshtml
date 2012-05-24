@@ -62,8 +62,8 @@
                 @RenderBody()
 
                 <div id="footer">
-                    <a href="http://dotnetblogengine.net">BlogEngine.NET @BlogEngine.Core.BlogSettings.Instance.Version()</a> | 
-                    <a id="donate" runat="server" href="@Href(Utils.RelativeWebRoot + "admin/Donate.aspx")" target="_new">@Resources.labels.makeDonation</a>          
+                    <a href="@Href(Utils.RelativeWebRoot + "admin/default.cshtml")">Carnaval Radio Admin Panel ( @BlogEngine.Core.BlogSettings.Instance.Version() )</a> | 
+                    <a id="Website" runat="server" href="@Href(Utils.RelativeWebRoot)" target="_blank">Bezoek website</a>          
                 </div>
 
             </form>
