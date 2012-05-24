@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Picasa2">
+  <AdminPage>~/User controls/Picasa/Admin.aspx</AdminPage>
+  <Author>&lt;a href="http://rtur.net"&gt;Rtur.net&lt;/a&gt;</Author>
+  <Description>Picasa2 Web Albums and SlideShow</Description>
+  <Enabled>true</Enabled>
+  <Priority>0</Priority>
+  <Settings>
+    <Delimiter>44</Delimiter>
+    <Help />
+    <Hidden>false</Hidden>
+    <Index>0</Index>
+    <IsScalar>true</IsScalar>
+    <KeyField>Account</KeyField>
+    <Name>Picasa2</Name>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Account</Label>
+      <MaxLength>100</MaxLength>
+      <Name>Account</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>nicknijenhuis</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Password</Label>
+      <MaxLength>100</MaxLength>
+      <Name>Password</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>Android23</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>ShowWidth</Label>
+      <MaxLength>100</MaxLength>
+      <Name>ShowWidth</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>400</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>PicWidth</Label>
+      <MaxLength>100</MaxLength>
+      <Name>PicWidth</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>72</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>AutoPlay</Label>
+      <MaxLength>100</MaxLength>
+      <Name>AutoPlay</Name>
+      <ParamType>Boolean</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>True</Values>
+    </Parameters>
+    <ShowAdd>true</ShowAdd>
+    <ShowDelete>true</ShowDelete>
+    <ShowEdit>true</ShowEdit>
+  </Settings>
+  <ShowSettings>true</ShowSettings>
+  <Version>2.0</Version>
+</ManagedExtension>

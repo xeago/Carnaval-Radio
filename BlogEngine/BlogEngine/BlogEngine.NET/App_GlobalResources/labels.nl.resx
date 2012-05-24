@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="add" xml:space="preserve">
     <value>Toevoegen</value>
@@ -579,5 +579,32 @@
   </data>
   <data name="notifiedPublished" xml:space="preserve">
     <value>Krijg een E-mail als een nieuwe post gepubliceerd wordt</value>
+  </data>
+  <data name="access" xml:space="preserve">
+    <value>Toegang</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="CopyTagMessage" xml:space="preserve">
+    <value>Kopieer de gegenereerde tags naar een &lt;strong&gt;Pagina&lt;/strong&gt; of &lt;strong&gt;Nieuwsbericht&lt;/strong&gt; om een fotoalbum of slideshow weer te geven.</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="PhotoAlbums" xml:space="preserve">
+    <value>Foto albums</value>
+  </data>
+  <data name="photos" xml:space="preserve">
+    <value>Foto's</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>afspelen</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>breedte</value>
+  </data>
+  <data name="Your" xml:space="preserve">
+    <value>Jouw</value>
   </data>
 </root>
