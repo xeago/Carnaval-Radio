@@ -1081,11 +1081,35 @@
   <data name="activeThemes" xml:space="preserve">
     <value>Actieve thema's</value>
   </data>
+  <data name="addNewBlog" xml:space="preserve">
+    <value>Nieuwe blog toevoegen</value>
+  </data>
+  <data name="addNewCategory" xml:space="preserve">
+    <value>Nieuwe categorie toevoegen</value>
+  </data>
+  <data name="addNewPage" xml:space="preserve">
+    <value>Nieuwe pagina toevoegen</value>
+  </data>
+  <data name="addNewRole" xml:space="preserve">
+    <value>Nieuwe rol toevoegen</value>
+  </data>
+  <data name="addNewUser" xml:space="preserve">
+    <value>Nieuwe gebruiker toevoegen</value>
+  </data>
   <data name="appearance" xml:space="preserve">
     <value>Uiterlijk</value>
   </data>
   <data name="currentTheme" xml:space="preserve">
     <value>Huidig thema</value>
+  </data>
+  <data name="draftPages" xml:space="preserve">
+    <value>Concept pagina's</value>
+  </data>
+  <data name="draftPosts" xml:space="preserve">
+    <value>Concept berichten</value>
+  </data>
+  <data name="drafts" xml:space="preserve">
+    <value>Concepten</value>
   </data>
   <data name="emptyTrash" xml:space="preserve">
     <value>Prullenbak legen</value>
@@ -1104,6 +1128,9 @@
   </data>
   <data name="preview" xml:space="preserve">
     <value>Voorbeeld</value>
+  </data>
+  <data name="recentPendingComments" xml:space="preserve">
+    <value>Openstaande reacties</value>
   </data>
   <data name="restoreSelected" xml:space="preserve">
     <value>Geselecteerde herstellen</value>
@@ -1125,5 +1152,23 @@
   </data>
   <data name="trash" xml:space="preserve">
     <value>Prullenbak</value>
+  </data>
+  <data name="unapproved" xml:space="preserve">
+    <value>Niet-goedgekeurde</value>
+  </data>
+  <data name="viewAll" xml:space="preserve">
+    <value>Alles bekijken</value>
+  </data>
+  <data name="welcome" xml:space="preserve">
+    <value>Welkom</value>
+  </data>
+  <data name="writeNewPost" xml:space="preserve">
+    <value>Schrijf een nieuw bericht</value>
+  </data>
+  <data name="youDontHaveAnyDraftPages" xml:space="preserve">
+    <value>Er zijn geen concept pagina's</value>
+  </data>
+  <data name="youDontHaveAnyDraftPosts" xml:space="preserve">
+    <value>Er zijn geen concept berichten</value>
   </data>
 </root>
