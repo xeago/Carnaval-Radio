@@ -8,7 +8,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="cphAdmin" runat="Server">
 	<div class="content-box-outer">
 		<div class="content-box-full">
-            <h1><%=Resources.labels.addEditPost %></h1>
+            <h1><asp:Literal runat="server" ID="PageTitle" /></h1>
             <script type="text/javascript">
                 function GetSlug() {
                     var title = document.getElementById('<%=txtTitle.ClientID %>').value;
@@ -300,6 +300,12 @@
                                     </div>
                                     <div class="clear"></div>
                                 </div>
+                            </li>
+                            <li>
+                                <asp:CheckBox runat="Server" ID="cbPostFB" Text="<%$ Resources:labels, postOnFacebook %>" Checked="true" />
+                            </li>
+                            <li>
+                                <asp:CheckBox runat="Server" ID="cbPostTwitter" Text="<%$ Resources:labels, postOnTwitter %>" Checked="true" />
                             </li>
                         </ul>
                     </td>

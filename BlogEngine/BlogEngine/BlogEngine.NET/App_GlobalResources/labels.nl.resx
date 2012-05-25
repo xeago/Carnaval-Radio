@@ -1193,20 +1193,20 @@
     <value>Account aanmaken</value>
   </data>
   <data name="Referrers_BindTable_Total" xml:space="preserve">
+    <value>Totaal</value>
     <comment>
 			Footer row text of first cell
 		</comment>
-    <value>Totaal</value>
   </data>
   <data name="Configuration_OnInit_Please_specify_a_number" xml:space="preserve">
+    <value>Geef u a.u.b. een nummer op</value>
     <comment>
 			valDescChar Error Message
 		</comment>
-    <value>Geef u a.u.b. een nummer op</value>
   </data>
   <data name="Configuration_BtnTestSmtpClick_Test_successfull" xml:space="preserve">
-    <comment>Smtp status text</comment>
     <value>Test succesvol</value>
+    <comment>Smtp status text</comment>
   </data>
   <data name="Combine" xml:space="preserve">
     <value>Combinatie</value>
@@ -1560,7 +1560,7 @@
     <value>Vals argument is leef</value>
   </data>
   <data name="addEditPost" xml:space="preserve">
-    <value>Toevoegen/Wijzigen bericht</value>
+    <value>Wijzigen bericht</value>
   </data>
   <data name="published" xml:space="preserve">
     <value>Gepubliceerd</value>
@@ -1696,5 +1696,11 @@
   </data>
   <data name="orderBy" xml:space="preserve">
     <value>Sorteer op</value>
+  </data>
+  <data name="postOnFacebook" xml:space="preserve">
+    <value>Plaats op facebook</value>
+  </data>
+  <data name="postOnTwitter" xml:space="preserve">
+    <value>Plaats op twitter</value>
   </data>
 </root>

@@ -1778,4 +1778,10 @@
   <data name="Combine" xml:space="preserve">
     <value>Combine</value>
   </data>
+  <data name="postOnFacebook" xml:space="preserve">
+    <value>Post on facebook</value>
+  </data>
+  <data name="postOnTwitter" xml:space="preserve">
+    <value>Post on twitter</value>
+  </data>
 </root>
