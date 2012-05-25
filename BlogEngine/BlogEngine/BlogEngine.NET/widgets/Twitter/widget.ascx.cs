@@ -16,7 +16,7 @@ namespace Widgets.Twitter
     using System.Web.Hosting;
     using System.Web.UI.WebControls;
     using System.Xml;
-
+    using System.Linq;
     using App_Code.Controls;
 
     using BlogEngine.Core;
@@ -146,6 +146,7 @@ namespace Widgets.Twitter
             var results = new List<IAsyncResult>();
             results.Add(BeginGetFeed(settings.AccountFeedUrl));
             results.Add(BeginGetFeed(settings.HashtagUrl));
+            results = results.Where(a => a != null).ToList();
             results.ForEach(a => a.AsyncWaitHandle.WaitOne());
             //requests done start merge with endgetresponse
             EndGetResponse(results);
@@ -168,9 +169,20 @@ namespace Widgets.Twitter
         {
             var text = (Label)e.Item.FindControl("lblItem");
             var date = (Label)e.Item.FindControl("lblDate");
+            var img = (Image)e.Item.FindControl("TwtImg");
             var twit = (Twit)e.Item.DataItem;
             text.Text = twit.Title;
             date.Text = twit.PubDate.ToString("MMMM d. HH:mm");
+
+            //fugly :<
+            try
+            {
+                img.ImageUrl = string.IsNullOrWhiteSpace(twit.ImgUrl.ToString()) ? "" : twit.ImgUrl.ToString();
+            }
+            catch
+            {
+                img.ImageUrl = @"http://a0.twimg.com/profile_images/1617188758/hyves_logo_Carnaval-radio.nl_normal.png";
+            }
         }
 
         /// <summary>
@@ -256,10 +268,6 @@ namespace Widgets.Twitter
             {
                 for (var i = 0; i < items.Count; i++)
                 {
-                    if (count == maxItems)
-                    {
-                        break;
-                    }
 
                     var node = items[i];
                     var twit = new Twit();
@@ -282,6 +290,19 @@ namespace Widgets.Twitter
                     {
                         twit.Url = new Uri(linkNode.InnerText, UriKind.Absolute);
                     }
+
+
+                    //fugly
+                    try
+                    {
+                        string fullnode = node.InnerXml;
+                        var bla = fullnode.Split(new string[] { "<google:image_link" }, StringSplitOptions.RemoveEmptyEntries)[1].Split(new string[] { " xmlns:google=\"http://base.google.com/ns/1.0\">","</google:image_link>" }, StringSplitOptions.RemoveEmptyEntries)[0];
+                        if (!string.IsNullOrWhiteSpace(bla))
+                        {
+                            twit.ImgUrl = new Uri(bla, UriKind.Absolute);
+                        }
+                    }
+                    catch { }
                     
                     twits.Add(twit);
 
@@ -290,6 +311,7 @@ namespace Widgets.Twitter
             }
 
             twits.Sort();
+            twits = twits.Take(15).ToList();
             this.repItems.DataSource = twits;
             this.repItems.DataBind();
         }
@@ -302,6 +324,7 @@ namespace Widgets.Twitter
         /// </param>
         private static void EndGetResponse(List<IAsyncResult> results)
         {
+            XmlDocument xml = null;
             foreach (var result in results)
             {
                 try
@@ -318,8 +341,21 @@ namespace Widgets.Twitter
                             doc.Load(responseStream);
                         }
 
-                        Blog.CurrentInstance.Cache[TwitterFeedsCacheKey] = doc.OuterXml;
-                        SaveLastFeed(doc);
+                        if (xml == null)
+                        {
+                            xml = doc;
+                        }
+                        else
+                        {
+                            var x = doc.SelectNodes("//item");
+                            var z=xml.SelectSingleNode("//channel");
+                            for (int i = 0; i < x.Count; i++)
+                            {
+                                XmlNode importNode = z.OwnerDocument.ImportNode(x[i], true);
+                                z.AppendChild(importNode);
+                            }
+                        }
+                        
                     }
                 }
                 catch (Exception ex)
@@ -329,6 +365,8 @@ namespace Widgets.Twitter
                     Utils.Log(msg);
                 }
             }
+            Blog.CurrentInstance.Cache[TwitterFeedsCacheKey] = xml.OuterXml;
+            SaveLastFeed(xml);
         }
 
         /// <summary>
@@ -385,11 +423,11 @@ namespace Widgets.Twitter
             if (settings.ContainsKey("account") && !string.IsNullOrEmpty(settings["account"]))
             {
                 Uri accountUrl;
-                Uri.TryCreate(string.Format("http://www.twitter.com/{0}", settings["accounturl"]), UriKind.Absolute, out accountUrl);
+                Uri.TryCreate(string.Format("http://www.twitter.com/{0}", settings["account"]), UriKind.Absolute, out accountUrl);
                 twitterSettings.AccountUrl = accountUrl;
 
                 Uri accountFeedUrl;
-                Uri.TryCreate(string.Format("http://api.twitter.com/1/statuses/user_timeline.rss?screen_name={0}", settings["accountfeedurl"]), UriKind.Absolute, out accountFeedUrl);
+                Uri.TryCreate(string.Format("http://api.twitter.com/1/statuses/user_timeline.rss?screen_name={0}", settings["account"]), UriKind.Absolute, out accountFeedUrl);
                 twitterSettings.AccountFeedUrl = accountFeedUrl;
             }
 
@@ -484,6 +522,11 @@ namespace Widgets.Twitter
             /// The url.
             /// </summary>
             public Uri Url;
+
+            /// <summary>
+            /// The url to the image.
+            /// </summary>
+            public Uri ImgUrl;
 
             #endregion
 
