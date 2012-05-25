@@ -1784,4 +1784,7 @@
   <data name="postOnTwitter" xml:space="preserve">
     <value>Post on twitter</value>
   </data>
+  <data name="stream" xml:space="preserve">
+    <value>Streams</value>
+  </data>
 </root>

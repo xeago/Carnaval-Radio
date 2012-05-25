@@ -43,8 +43,6 @@
             
         <div style="margin-left:0">
             <asp:Button ID="btnSave" class="btn primary" runat="server" onclick="BtnSaveClick" />
-            <%=Resources.labels.or %>
-            <a href="~/admin/Extension Manager/default.aspx" runat="server"><%=Resources.labels.cancel %></a>
         </div>
     </div>
 </div>
