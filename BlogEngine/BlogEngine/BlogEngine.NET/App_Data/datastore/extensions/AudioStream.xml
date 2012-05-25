@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="AudioStream">
+  <AdminPage />
+  <Author>Nick &amp; Lars</Author>
+  <Description>Extension used to give AudioStreams</Description>
+  <Enabled>true</Enabled>
+  <Priority>0</Priority>
+  <Settings>
+    <Delimiter>44</Delimiter>
+    <Help />
+    <Hidden>false</Hidden>
+    <Index>1</Index>
+    <IsScalar>false</IsScalar>
+    <KeyField>Server</KeyField>
+    <Name>AudioStream</Name>
+    <Parameters>
+      <KeyField>true</KeyField>
+      <Label>Server.</Label>
+      <MaxLength>254</MaxLength>
+      <Name>Server</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>Http://VoorbeeldServer.nl</Values>
+      <Values>Http://127.0.0.0.1/Music</Values>
+      <Values>http://4321.12432.134</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Qualiteit. Hoog/Laag.</Label>
+      <MaxLength>10</MaxLength>
+      <Name>Quality</Name>
+      <ParamType>String</ParamType>
+      <Required>true</Required>
+      <SelectedValue />
+      <Values>quality</Values>
+      <Values>Hoog</Values>
+      <Values>Laag</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Prioriteit, Geeft aan welke stream de standaard stream is. Het Laagste getal zal gebruikt worden.</Label>
+      <MaxLength>2</MaxLength>
+      <Name>Priority</Name>
+      <ParamType>Integer</ParamType>
+      <Required>true</Required>
+      <SelectedValue />
+      <Values>10</Values>
+      <Values>1</Values>
+      <Values>2</Values>
+    </Parameters>
+    <ShowAdd>true</ShowAdd>
+    <ShowDelete>true</ShowDelete>
+    <ShowEdit>true</ShowEdit>
+  </Settings>
+  <ShowSettings>true</ShowSettings>
+  <Version>1.0</Version>
+</ManagedExtension>
