@@ -11,7 +11,7 @@ using BlogEngine.Core.Web.Extensions;
 /// <summary>
 /// Summary description for WebService
 /// </summary>
-[WebService(Namespace = "/BlogEngine/AudioStreams")]
+[WebService(Namespace = "AudioStreams")]
 [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
 // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
 // [System.Web.Script.Services.ScriptService]
@@ -30,7 +30,12 @@ public class WebService : System.Web.Services.WebService
     [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
     public AudioStreamObject GetAudioStreams()
     {
+        AudioStream audiostream = new AudioStream();
         ExtensionSettings settings = new ExtensionSettings("AudioStream");
+        settings.AddParameter("Server", "Server.", 254, false, true, ParameterType.String);
+        settings.AddParameter("Quality", "Qualiteit. Hoog/Laag.", 10, true, false, ParameterType.String);
+        settings.AddParameter("Priority", "Prioriteit, Geeft aan welke stream de standaard stream is. Het Laagste getal zal gebruikt worden.", 2, true, false, ParameterType.Integer);
+        ExtensionManager.ImportSettings(settings);
         DataTable table = settings.GetDataTable();
 
         List<AudioStreamObject> audioStreams = new List<AudioStreamObject>();

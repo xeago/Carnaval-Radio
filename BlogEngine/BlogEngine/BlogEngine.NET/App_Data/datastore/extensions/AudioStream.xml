@@ -23,6 +23,7 @@
       <SelectedValue />
       <Values>Http://VoorbeeldServer.nl</Values>
       <Values>Http://127.0.0.0.1/Music</Values>
+      <Values>http://4321.12432.134</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -34,6 +35,7 @@
       <SelectedValue />
       <Values>quality</Values>
       <Values>Hoog</Values>
+      <Values>Laag</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -45,6 +47,7 @@
       <SelectedValue />
       <Values>10</Values>
       <Values>1</Values>
+      <Values>2</Values>
     </Parameters>
     <ShowAdd>true</ShowAdd>
     <ShowDelete>true</ShowDelete>
