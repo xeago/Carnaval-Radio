@@ -18,15 +18,17 @@
 
         $.ajax({ type: "POST",
             contentType: "application/json; charset=utf-8",
-            url: "http://localhost:52457/BlogEngine.NET/api/WebService.asmx/GetAudioStreams",
+            url: "http://localhost:52457/BlogEngine.NET/api/WebService.asmx/GetAudioStreamJson",
             data: "{}",
             dataType: "json",
-            succes: function (msg) 
+            success: function (msg) 
             {
                 // Hide the fake progress indicator graphic.
-                alert(msg);    
+                alert(msg.d.Server +" is the server, Quality: " + msg.d.Quality );    
             }
         });
+
+        alert("Done");
 
             
 

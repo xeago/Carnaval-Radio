@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Script.Services;
@@ -28,15 +29,10 @@ public class WebService : System.Web.Services.WebService
 
     [WebMethod]
     [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-    public AudioStreamObject GetAudioStreams()
+    public byte[] GetAudioStreamJson()
     {
-        AudioStream audiostream = new AudioStream();
-        ExtensionSettings settings = new ExtensionSettings("AudioStream");
-        settings.AddParameter("Server", "Server.", 254, false, true, ParameterType.String);
-        settings.AddParameter("Quality", "Qualiteit. Hoog/Laag.", 10, true, false, ParameterType.String);
-        settings.AddParameter("Priority", "Prioriteit, Geeft aan welke stream de standaard stream is. Het Laagste getal zal gebruikt worden.", 2, true, false, ParameterType.Integer);
-        ExtensionManager.ImportSettings(settings);
-        DataTable table = settings.GetDataTable();
+        Dictionary<string, ManagedExtension> extensions = ExtensionManager.Extensions;
+        DataTable table = extensions["AudioStream"].Settings[0].GetDataTable();
 
         List<AudioStreamObject> audioStreams = new List<AudioStreamObject>();
         foreach (DataRow row in table.Rows)
@@ -44,19 +40,35 @@ public class WebService : System.Web.Services.WebService
             AudioStreamObject s = new AudioStreamObject();
             s.Server = (string)row["Server"];
             s.Quality = (string)row["Quality"];
-            s.Priority = ((int) row["Priority"]).ToString();           
+            s.Priority = ((string)row["Priority"]);
             audioStreams.Add(s);
         }
 
-        AudioStreamObject output = audioStreams.Count == 0 ? audioStreams[audioStreams.Count-1] : new AudioStreamObject("http://TestServer.nl","Low","10");
+        AudioStreamObject outputStream = audioStreams.Count == 0 ? audioStreams[audioStreams.Count - 1] : new AudioStreamObject("http://TestServer.nl", "Low", "10");
 
         foreach (AudioStreamObject audioStreamObject in audioStreams)
         {
-            if (Convert.ToInt32(output.Priority) < Convert.ToInt32(audioStreamObject.Priority))
+            if (Convert.ToInt32(outputStream.Priority) > Convert.ToInt32(audioStreamObject.Priority))
             {
-                output = audioStreamObject;
+                outputStream = audioStreamObject;
             }
         }
+
+        string path = "../App_data/AudioStreams/";
+        string filePath = path + "json.json";
+        if (!File.Exists(filePath))
+        {
+            AudioStream.writeOut("100.100.100", "100.100.100", path);
+        }
+        byte[] output = new byte[0];
+        using (FileStream f = File.Open(filePath, FileMode.Open))
+        {
+            byte[] outputObject = new byte[f.Length];
+            f.Read(outputObject, 0, (int)f.Length);
+            output = outputObject;
+        }
+
+
         return output;
     }
 
@@ -64,16 +76,16 @@ public class WebService : System.Web.Services.WebService
 
 public class AudioStreamObject
 {
-    public AudioStreamObject ()
+    public AudioStreamObject()
     {
-        
+
     }
     public AudioStreamObject(string server, string quality, string priority)
     {
         Server = server;
         Quality = quality;
         Priority = priority;
-        }
+    }
     public string Server;
     public string Quality;
     public string Priority;
