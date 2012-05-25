@@ -1697,10 +1697,43 @@
   <data name="orderBy" xml:space="preserve">
     <value>Sorteer op</value>
   </data>
+  <data name="addNewSponsor" xml:space="preserve">
+    <value>Nieuwe sponsor toevoegen</value>
+  </data>
   <data name="postOnFacebook" xml:space="preserve">
     <value>Plaats op facebook</value>
   </data>
   <data name="postOnTwitter" xml:space="preserve">
     <value>Plaats op twitter</value>
+  </data>
+  <data name="sponsoren" xml:space="preserve">
+    <value>Sponsoren</value>
+  </data>
+  <data name="ClubVan50" xml:space="preserve">
+    <value>Club van 50</value>
+  </data>
+  <data name="endDate" xml:space="preserve">
+    <value>Verloop datum</value>
+  </data>
+  <data name="HoofdSponsor" xml:space="preserve">
+    <value>Hoofdsponsor</value>
+  </data>
+  <data name="Solid" xml:space="preserve">
+    <value>Vast</value>
+  </data>
+  <data name="Sponsor" xml:space="preserve">
+    <value>Sponsor</value>
+  </data>
+  <data name="sponsorlogo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
+  <data name="SubSponsor" xml:space="preserve">
+    <value>Subsponsor</value>
+  </data>
+  <data name="Switch" xml:space="preserve">
+    <value>Wisselend</value>
+  </data>
+  <data name="VriendenVanCR" xml:space="preserve">
+    <value>Vrienden van Carnaval Radio</value>
   </data>
 </root>

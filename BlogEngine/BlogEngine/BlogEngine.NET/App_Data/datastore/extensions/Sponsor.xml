@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Sponsor">
+  <AdminPage />
+  <Author>Nick</Author>
+  <Description>Extension used to set sponsors</Description>
+  <Enabled>true</Enabled>
+  <Priority>0</Priority>
+  <Settings>
+    <Delimiter>44</Delimiter>
+    <Help />
+    <Hidden>false</Hidden>
+    <Index>0</Index>
+    <IsScalar>false</IsScalar>
+    <KeyField>Name</KeyField>
+    <Name>Sponsor</Name>
+    <Parameters>
+      <KeyField>true</KeyField>
+      <Label>Naam</Label>
+      <MaxLength>150</MaxLength>
+      <Name>Name</Name>
+      <ParamType>String</ParamType>
+      <Required>true</Required>
+      <SelectedValue />
+      <Values>test</Values>
+      <Values>test2</Values>
+      <Values>test3</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Website</Label>
+      <MaxLength>255</MaxLength>
+      <Name>URL</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values>wtf</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Hoofdsponsor</Label>
+      <MaxLength>999999</MaxLength>
+      <Name>SponsorPage_Hoofdsponsor</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Sponsor</Label>
+      <MaxLength>999999</MaxLength>
+      <Name>SponsorPage_Sponsor</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>wtf</Values>
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Subsponsor</Label>
+      <MaxLength>999999</MaxLength>
+      <Name>SponsorPage_Subsponsor</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Club van 50</Label>
+      <MaxLength>999999</MaxLength>
+      <Name>SponsorPage_ClubVan50</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values>wtf</Values>
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Vrienden van Carnaval Radio</Label>
+      <MaxLength>999999</MaxLength>
+      <Name>SponsorPage_VriendenVanCR</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Wisselend</Label>
+      <MaxLength>999999</MaxLength>
+      <Name>Player_Switch</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Vast</Label>
+      <MaxLength>999999</MaxLength>
+      <Name>Player_Solid</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Wisselend</Label>
+      <MaxLength>999999</MaxLength>
+      <Name>Widget_Switch</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Wisselend</Label>
+      <MaxLength>999999</MaxLength>
+      <Name>Mobile</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Wisselend</Label>
+      <MaxLength>999999</MaxLength>
+      <Name>Mobile_Frequency</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Logo</Label>
+      <MaxLength>255</MaxLength>
+      <Name>Logo</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Omschrijving</Label>
+      <MaxLength>2147483647</MaxLength>
+      <Name>Description</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Publicatie datum</Label>
+      <MaxLength>999999</MaxLength>
+      <Name>CreationDate</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Verloop datum</Label>
+      <MaxLength>999999</MaxLength>
+      <Name>EndDate</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Actief</Label>
+      <MaxLength>999999</MaxLength>
+      <Name>Active</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <ShowAdd>true</ShowAdd>
+    <ShowDelete>true</ShowDelete>
+    <ShowEdit>true</ShowEdit>
+  </Settings>
+  <ShowSettings>true</ShowSettings>
+  <Version>1.0</Version>
+</ManagedExtension>
