@@ -31,36 +31,17 @@ public class WebService : System.Web.Services.WebService
     [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
     public byte[] GetAudioStreamJson()
     {
-        Dictionary<string, ManagedExtension> extensions = ExtensionManager.Extensions;
-        DataTable table = extensions["AudioStream"].Settings[0].GetDataTable();
+        
+        
+Dictionary<string, ManagedExtension> extensions = ExtensionManager.Extensions;
+        string highServer = extensions["AudioStream"].Settings[0].GetSingleValue("HighStream");
+        string lowhServer = extensions["AudioStream"].Settings[0].GetSingleValue("LowStream");
 
-        List<AudioStreamObject> audioStreams = new List<AudioStreamObject>();
-        foreach (DataRow row in table.Rows)
-        {
-            AudioStreamObject s = new AudioStreamObject();
-            s.Server = (string)row["Server"];
-            s.Quality = (string)row["Quality"];
-            s.Priority = ((string)row["Priority"]);
-            audioStreams.Add(s);
-        }
-
-        AudioStreamObject outputStream = audioStreams.Count == 0 ? audioStreams[audioStreams.Count - 1] : new AudioStreamObject("http://TestServer.nl", "Low", "10");
-
-        foreach (AudioStreamObject audioStreamObject in audioStreams)
-        {
-            if (Convert.ToInt32(outputStream.Priority) > Convert.ToInt32(audioStreamObject.Priority))
-            {
-                outputStream = audioStreamObject;
-            }
-        }
-
-        string path = "../App_data/AudioStreams/";
+        string path = Server.MapPath("..\\AudioStreams\\");
         string filePath = path + "json.json";
-        if (!File.Exists(filePath))
-        {
-            AudioStream.writeOut("100.100.100", "100.100.100", path);
-        }
+            AudioStream.writeOut(highServer,lowhServer, path);
         byte[] output = new byte[0];
+        //TODO FIlestream stuff
         using (FileStream f = File.Open(filePath, FileMode.Open))
         {
             byte[] outputObject = new byte[f.Length];
@@ -74,20 +55,4 @@ public class WebService : System.Web.Services.WebService
 
 }
 
-public class AudioStreamObject
-{
-    public AudioStreamObject()
-    {
 
-    }
-    public AudioStreamObject(string server, string quality, string priority)
-    {
-        Server = server;
-        Quality = quality;
-        Priority = priority;
-    }
-    public string Server;
-    public string Quality;
-    public string Priority;
-
-}

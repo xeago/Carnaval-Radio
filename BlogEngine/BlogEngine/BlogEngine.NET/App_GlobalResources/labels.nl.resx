@@ -1126,4 +1126,16 @@
   <data name="trash" xml:space="preserve">
     <value>Prullenbak</value>
   </data>
+  <data name="AudioStream" xml:space="preserve">
+    <value>Radio Stream</value>
+  </data>
+  <data name="AudioStreamSettingsDescription" xml:space="preserve">
+    <value>Radio Stream Instellingen</value>
+  </data>
+  <data name="HighAudioStreamServer" xml:space="preserve">
+    <value>Hoge Kwaliteit Server</value>
+  </data>
+  <data name="LowAudioStreamServer" xml:space="preserve">
+    <value>Lage Kwaliteit Server</value>
+  </data>
 </root>

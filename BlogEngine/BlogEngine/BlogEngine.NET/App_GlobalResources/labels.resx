@@ -1778,4 +1778,16 @@
   <data name="Combine" xml:space="preserve">
     <value>Combine</value>
   </data>
+  <data name="AudioStream" xml:space="preserve">
+    <value>Audio Stream</value>
+  </data>
+  <data name="AudioStreamSettingsDescription" xml:space="preserve">
+    <value>Audiostream Settings</value>
+  </data>
+  <data name="HighAudioStreamServer" xml:space="preserve">
+    <value>High quality Server</value>
+  </data>
+  <data name="LowAudioStreamServer" xml:space="preserve">
+    <value>Low quality Server</value>
+  </data>
 </root>
