@@ -1,2 +1,2 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="NControls.NDateBox" CodeFile="NDateBox.ascx.cs" %>
-<asp:TextBox runat="server" ID="TextBoxDate" CssClass="Lefty CommonTextSMM DatePicker" MaxLength="10" AutoCompleteType="None" /><img runat="server" id="imgDispose" src="~/images/Delete.png" class="DatePickerDispose" width="16" height="16" alt="Datum verwijderen" title="Datum verwijderen" />
+<asp:TextBox runat="server" ID="TextBoxDate" CssClass="Lefty CommonTextSMM DatePicker" MaxLength="10" AutoCompleteType="None" /><img runat="server" id="imgDispose" src="~/Admin/images/Delete.png" class="DatePickerDispose" width="16" height="16" alt="Datum verwijderen" title="Datum verwijderen" />

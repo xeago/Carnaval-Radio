@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web.Script.Serialization;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using GSDlib;
 
 namespace NControls
@@ -103,7 +104,7 @@ namespace NControls
             {
                 disabled = !enabled,
                 showOn = (enabled ? (displayCalendar ? "button" : "focus") : null),
-                buttonImage = (enabled ? (displayCalendar ?  "~/Admin/images/datepicker/calendar.png" : null) : null),
+                buttonImage = (enabled ? (displayCalendar ?  "../../Admin/images/datepicker/calendar.png" : null) : null),
                 buttonImageOnly = (enabled ? displayCalendar : false),
                 showWeek = displayWeekColumn,
                 changeMonth = true,
@@ -112,10 +113,15 @@ namespace NControls
                 constrainInput = true
             });
 
-            //string css = "<link href=\"" + Page.ClientScript.GetWebResourceUrl(this.GetType(),
-            //    "Datebox.css") + "\" type=\"text/css\" rel=\"stylesheet\" />";
+          
+            HtmlLink styleLink = new HtmlLink();
+            styleLink.Attributes.Add("rel", "stylesheet");
+            styleLink.Attributes.Add("type", "text/css");
 
-            //Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "cssFile", css, false);
+            // Get the stylesheet from DB or build up string
+            styleLink.Href = "~/User%20controls/NControls/Datebox.css";
+
+            this.Page.Header.Controls.Add(styleLink);
 
             this.Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "jsEnable" + this.UniqueID, string.Format(
                 "$(document).ready(function() {{ $('#{0}').datepicker({1}); }} );",
