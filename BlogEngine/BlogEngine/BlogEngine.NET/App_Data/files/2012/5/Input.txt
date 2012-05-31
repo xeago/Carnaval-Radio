@@ -1,0 +1,18 @@
+Jeroen van Eijk
+Hogeschool Zuyd Heerlen, Van Vlodrop ICT, Albertheijn, Student
+06-18861303
+Marco van Eijk
+Atalante, Student
+06-12345678
+Jasmijn de Jong
+
+06-01234567
+Nick Nijenhuis
+Hogeschool Zuyd Heerlen, Student
+06-22395340
+Gaston Smeets
+Hogeschool Zuyd Heerlen, Vodafone, Docent
+045-0123456
+Jef Leunissen
+Hogeschool Zuyd Heerlen, Docent
+045-1234567

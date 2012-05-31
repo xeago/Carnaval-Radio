@@ -1838,4 +1838,31 @@
   <data name="ID" xml:space="preserve">
     <value>ID</value>
   </data>
+  <data name="editSponsor" xml:space="preserve">
+    <value>Edit sponsor</value>
+  </data>
+  <data name="enterName" xml:space="preserve">
+    <value>Enter a name</value>
+  </data>
+  <data name="enterUrl" xml:space="preserve">
+    <value>Enter a website</value>
+  </data>
+  <data name="Frequency" xml:space="preserve">
+    <value>Frequency</value>
+  </data>
+  <data name="MobileApp" xml:space="preserve">
+    <value>Mobile App</value>
+  </data>
+  <data name="Player" xml:space="preserve">
+    <value>Player</value>
+  </data>
+  <data name="saveSponsor" xml:space="preserve">
+    <value>Save sponsor</value>
+  </data>
+  <data name="sponsorType" xml:space="preserve">
+    <value>Sponsor type</value>
+  </data>
+  <data name="VisibilityOptions" xml:space="preserve">
+    <value>Visibility options</value>
+  </data>
 </root>

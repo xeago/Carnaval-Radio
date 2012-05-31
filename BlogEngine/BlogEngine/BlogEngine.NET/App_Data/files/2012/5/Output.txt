@@ -1,0 +1,38 @@
+Albertheijn Hogeschool Zuyd Heerlen Van Vlodrop ICT;0
+Atalante;1
+de Jong Jasmijn;2
+Docent;4
+Docent;5
+Eijk Jeroen van;0
+Eijk Marco van;1
+Gaston Smeets;4
+Heerlen Hogeschool Zuyd;3
+Heerlen Hogeschool Zuyd;5
+Heerlen Van Vlodrop ICT Albertheijn Hogeschool Zuyd;0
+Heerlen Vodafone Hogeschool Zuyd;4
+Hogeschool Zuyd Heerlen;3
+Hogeschool Zuyd Heerlen;5
+Hogeschool Zuyd Heerlen Van Vlodrop ICT Albertheijn;0
+Hogeschool Zuyd Heerlen Vodafone;4
+ICT Albertheijn Hogeschool Zuyd Heerlen Van Vlodrop;0
+Jasmijn de Jong;2
+Jef Leunissen;5
+Jeroen van Eijk;0
+Jong Jasmijn de;2
+Leunissen Jef;5
+Marco van Eijk;1
+Nick Nijenhuis;3
+Nijenhuis Nick;3
+Smeets Gaston;4
+Student;0
+Student;1
+Student;3
+van Eijk Jeroen;0
+van Eijk Marco;1
+Van Vlodrop ICT Albertheijn Hogeschool Zuyd Heerlen;0
+Vlodrop ICT Albertheijn Hogeschool Zuyd Heerlen Van;0
+Vodafone Hogeschool Zuyd Heerlen;4
+Zuyd Heerlen Hogeschool;3
+Zuyd Heerlen Hogeschool;5
+Zuyd Heerlen Van Vlodrop ICT Albertheijn Hogeschool;0
+Zuyd Heerlen Vodafone Hogeschool;4

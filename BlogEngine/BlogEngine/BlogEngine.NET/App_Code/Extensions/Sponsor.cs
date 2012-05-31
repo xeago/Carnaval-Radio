@@ -9,6 +9,16 @@ using BlogEngine.Core.Web.Controls;
 using BlogEngine.Core.Web.Extensions;
 using Resources;
 
+public enum SponsorType
+{
+    Hoofdsponsor =1,
+    Sponsor,
+    Subsponsor,
+    ClubVan50,
+    VriendenVanCr
+
+}
+
 /// <summary>
 /// Summary description for AudioStream
 /// </summary>
@@ -24,27 +34,23 @@ public class Sponsor
         settings.AddParameter("Name", labels.name, 150, true, false, ParameterType.String);
         settings.AddParameter("URL", labels.website, 255);
 
+        //SponsorType Can have values from the SponsorType Enum. The number wil be saved
+        settings.AddParameter("SponsorPage_SponsorType", labels.sponsorType);
+
         #region Type Bools
-
-        //Sponsor Page Bools
-        settings.AddParameter("SponsorPage_Hoofdsponsor", labels.HoofdSponsor);
-        settings.AddParameter("SponsorPage_Sponsor", labels.Sponsor);
-        settings.AddParameter("SponsorPage_Subsponsor", labels.SubSponsor);
-        settings.AddParameter("SponsorPage_ClubVan50", labels.ClubVan50);
-        settings.AddParameter("SponsorPage_VriendenVanCR", labels.VriendenVanCR);
-
         //Player Bools
         settings.AddParameter("Player_Switch", labels.Switch);
         settings.AddParameter("Player_Solid", labels.Solid);
 
         //Widget
-        settings.AddParameter("Widget_Switch", labels.Switch);
+        settings.AddParameter("Widget_Switch", labels.widget);
 
         //Mobiele app
-        settings.AddParameter("Mobile", labels.Switch);
+        settings.AddParameter("Mobile_Switch", labels.Switch);
+        settings.AddParameter("Mobile_Solid", labels.Solid);
         #endregion
 
-        settings.AddParameter("Mobile_Frequency", labels.Switch);
+        settings.AddParameter("Mobile_Frequency", labels.Frequency);
 
         settings.AddParameter("Logo", labels.sponsorlogo, 255);
 

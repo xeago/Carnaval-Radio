@@ -440,10 +440,10 @@
     <value>Reactie toevoegen</value>
   </data>
   <data name="savePage" xml:space="preserve">
-    <value>Bewaar pagina</value>
+    <value>Pagina opslaan</value>
   </data>
   <data name="savePost" xml:space="preserve">
-    <value>Bewaar bericht</value>
+    <value>Bericht opslaan</value>
   </data>
   <data name="saveSettings" xml:space="preserve">
     <value>Bewaar instellingen</value>
@@ -1750,5 +1750,26 @@
   </data>
   <data name="LowAudioStreamServer" xml:space="preserve">
     <value>Lage Kwaliteit Server</value>
+  </data>
+  <data name="editSponsor" xml:space="preserve">
+    <value>Sponsor bewerken</value>
+  </data>
+  <data name="enterName" xml:space="preserve">
+    <value>Vul een naam in</value>
+  </data>
+  <data name="enterUrl" xml:space="preserve">
+    <value>Vul een website in</value>
+  </data>
+  <data name="Frequency" xml:space="preserve">
+    <value>Frequentie</value>
+  </data>
+  <data name="MobileApp" xml:space="preserve">
+    <value>Mobiele applicatie</value>
+  </data>
+  <data name="saveSponsor" xml:space="preserve">
+    <value>Sponsor opslaan</value>
+  </data>
+  <data name="VisibilityOptions" xml:space="preserve">
+    <value>Zichtbaarheid instellingen</value>
   </data>
 </root>
