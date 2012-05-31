@@ -22,7 +22,6 @@
       <Required>true</Required>
       <SelectedValue />
       <Values>test</Values>
-      <Values>test2</Values>
       <Values>test3</Values>
     </Parameters>
     <Parameters>
@@ -34,8 +33,7 @@
       <Required>false</Required>
       <SelectedValue />
       <Values />
-      <Values />
-      <Values>wtf</Values>
+      <Values>test</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -45,7 +43,6 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
       <Values />
       <Values />
     </Parameters>
@@ -59,7 +56,6 @@
       <SelectedValue />
       <Values>wtf</Values>
       <Values />
-      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -69,7 +65,6 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
       <Values />
       <Values />
     </Parameters>
@@ -82,7 +77,6 @@
       <Required>false</Required>
       <SelectedValue />
       <Values />
-      <Values>wtf</Values>
       <Values />
     </Parameters>
     <Parameters>
@@ -93,7 +87,6 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
       <Values />
       <Values />
     </Parameters>
@@ -107,7 +100,6 @@
       <SelectedValue />
       <Values />
       <Values />
-      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -117,7 +109,6 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
       <Values />
       <Values />
     </Parameters>
@@ -131,7 +122,6 @@
       <SelectedValue />
       <Values />
       <Values />
-      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -141,7 +131,6 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
       <Values />
       <Values />
     </Parameters>
@@ -155,7 +144,6 @@
       <SelectedValue />
       <Values />
       <Values />
-      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -165,7 +153,6 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
       <Values />
       <Values />
     </Parameters>
@@ -179,7 +166,6 @@
       <SelectedValue />
       <Values />
       <Values />
-      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -189,7 +175,6 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
       <Values />
       <Values />
     </Parameters>
@@ -203,7 +188,6 @@
       <SelectedValue />
       <Values />
       <Values />
-      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -213,7 +197,6 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
       <Values />
       <Values />
     </Parameters>

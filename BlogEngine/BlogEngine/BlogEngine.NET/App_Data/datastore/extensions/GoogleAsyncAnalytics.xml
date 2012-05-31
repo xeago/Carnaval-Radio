@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="GoogleAsyncAnalytics">
+  <AdminPage />
+  <Author>&lt;a target="_blank" href="http://www.brutaldev.com"&gt;Werner van Deventer&lt;/a&gt;</Author>
+  <Description>Adds Google Analytics code to BlogEngine.NET.</Description>
+  <Enabled>true</Enabled>
+  <Priority>0</Priority>
+  <Settings>
+    <Delimiter>44</Delimiter>
+    <Help>&lt;br /&gt;Add Google Analytics to your website.&lt;br /&gt;Generate a code for your site by going to https://www.google.com/analytics.&lt;br /&gt;&lt;br /&gt;The script will get generated at the top of the page, it is recommended that you use the asynchronous script, if you experience problems switch to the synchronous version. Using the synchronous script may delay start-up time for each page as it waits for a response from Google.&lt;br /&gt;&lt;br /&gt;Disable tracking for logged on users if only admins are logging in and updating posts and/or comments. This allows for more accurate tracking of real site usage.</Help>
+    <Hidden>false</Hidden>
+    <Index>0</Index>
+    <IsScalar>true</IsScalar>
+    <KeyField>trackerID</KeyField>
+    <Name>GoogleAsyncAnalytics</Name>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Google Tracking Code</Label>
+      <MaxLength>20</MaxLength>
+      <Name>trackerID</Name>
+      <ParamType>String</ParamType>
+      <Required>true</Required>
+      <SelectedValue />
+      <Values>UA-XXXXXXX-Y</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Use new asynchronous script</Label>
+      <MaxLength>100</MaxLength>
+      <Name>isAsync</Name>
+      <ParamType>Boolean</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>True</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Disable when users are logged in</Label>
+      <MaxLength>100</MaxLength>
+      <Name>disableForLoggedInUsers</Name>
+      <ParamType>Boolean</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>False</Values>
+    </Parameters>
+    <ShowAdd>true</ShowAdd>
+    <ShowDelete>true</ShowDelete>
+    <ShowEdit>true</ShowEdit>
+  </Settings>
+  <ShowSettings>true</ShowSettings>
+  <Version>1.1</Version>
+</ManagedExtension>

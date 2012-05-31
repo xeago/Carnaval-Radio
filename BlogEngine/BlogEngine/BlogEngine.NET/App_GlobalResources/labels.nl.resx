@@ -1736,4 +1736,7 @@
   <data name="VriendenVanCR" xml:space="preserve">
     <value>Vrienden van Carnaval Radio</value>
   </data>
+  <data name="shortCuts" xml:space="preserve">
+    <value>Snelkoppelingen</value>
+  </data>
 </root>

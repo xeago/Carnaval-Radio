@@ -1820,4 +1820,7 @@
   <data name="VriendenVanCR" xml:space="preserve">
     <value>Sponsor type 5</value>
   </data>
+  <data name="shortCuts" xml:space="preserve">
+    <value>Short Cuts</value>
+  </data>
 </root>
