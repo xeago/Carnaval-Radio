@@ -20,7 +20,8 @@ public class Sponsor
         //Comment.Serving += new EventHandler<ServingEventArgs>(Post_CommentServing);
         var settings = new ExtensionSettings("Sponsor");
 
-        settings.AddParameter("Name", labels.name, 150, true, true, ParameterType.String);
+        settings.AddParameter("ID", labels.ID, 150, true, true, ParameterType.String);
+        settings.AddParameter("Name", labels.name, 150, true, false, ParameterType.String);
         settings.AddParameter("URL", labels.website, 255);
 
         #region Type Bools

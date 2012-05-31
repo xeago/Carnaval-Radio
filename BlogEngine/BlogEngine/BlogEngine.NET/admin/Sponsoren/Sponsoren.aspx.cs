@@ -4,6 +4,11 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Web.UI.WebControls;
+using BlogEngine.Core.Providers;
+
 namespace Admin.Sponsoren
 {
     using System;
@@ -11,6 +16,7 @@ namespace Admin.Sponsoren
 
     using Page = System.Web.UI.Page;
     using App_Code;
+    using BlogEngine.Core.Web.Extensions;
 
     /// <summary>
     /// The admin pages pages.
@@ -18,7 +24,7 @@ namespace Admin.Sponsoren
     public partial class SponsorenPage : Page
     {
         #region Methods
-
+        static protected ExtensionSettings Settings;
         /// <summary>
         /// Raises the <see cref="E:System.Web.UI.Control.Init"/> event to initialize the page.
         /// </summary>
@@ -28,8 +34,10 @@ namespace Admin.Sponsoren
             //TODO check admin rights for sponsor instead of pages
             WebUtils.CheckRightsForAdminPagesPages(false);
             MaintainScrollPositionOnPostBack = true;
-          
+
             Page.Title = labels.sponsoren;
+
+
 
             base.OnInit(e);
         }
@@ -40,40 +48,54 @@ namespace Admin.Sponsoren
         /// <param name="e">The <see cref="T:System.EventArgs"/> object that contains the event data.</param>
         protected override void OnLoad(EventArgs e)
         {
+            Settings = ExtensionManager.GetSettings("Sponsor");
+          
             base.OnLoad(e);
+
+            if (!IsPostBack)
+            {
+                BindGrid();
+            }
         }
 
-        /// <summary>
-        /// Formats the size.
-        /// </summary>
-        /// <param name="size">The size to format.</param>
-        /// <param name="formatString">The format string.</param>
-        /// <returns>The formatted string.</returns>
-        private static string SizeFormat(float size, string formatString)
+        private void BindGrid()
         {
-            if (size < 1024)
-            {
-                return string.Format("{0} bytes", size.ToString(formatString));
-            }
-
-            if (size < Math.Pow(1024, 2))
-            {
-                return string.Format("{0} kb", (size / 1024).ToString(formatString));
-            }
-
-            if (size < Math.Pow(1024, 3))
-            {
-                return string.Format("{0} mb", (size / Math.Pow(1024, 2)).ToString(formatString));
-            }
-
-            if (size < Math.Pow(1024, 4))
-            {
-                return string.Format("{0} gb", (size / Math.Pow(1024, 3)).ToString(formatString));
-            }
-
-            return size.ToString(formatString);
+            grid.DataSource = Settings.GetDataTable();
+            grid.DataBind();
         }
+
+
+
+        /*
+        <ul class="rowTools">
+                    <li>
+                        <a class="toolsAction" href="#"><span class="">Tools</span></a>
+                        <ul class="rowToolsMenu">
+                            {#if $T.p.CanUserEdit}<li><a class="editAction" href="EditPage.aspx?id={$T.p.Id}">Wijzigen</a></li>{#/if}
+                            {#if $T.p.HasChildren == false && $T.p.CanUserDelete}<li><a href="#" class="deleteAction" onclick="return DeletePage(this);">Verwijderen</a></li>{#/if}
+                       </ul>
+                    </li>
+        </ul>*/
 
         #endregion
+
+        protected void GridRowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+
+                e.Row.Cells[0].Text = e.Row.Cells[0].Text == "True"
+                                          ? "<span class=\"published-true\"></span>"
+                                          : (e.Row.Cells[0].Text == "False"
+                                                 ? "<span class=\"published-false\"></span>"
+                                                 : "");
+                //Response.Write(DateTime.Now.ToString());
+
+                const string format = "dd-MM-yyyy HH:mm:ss"; 
+                if (!string.IsNullOrEmpty(e.Row.Cells[2].Text))
+                    e.Row.Cells[2].Text = DateTime.ParseExact((e.Row.Cells[2].Text), format, null).ToString("dd-MM-yyyy");
+
+            }
+        }
     }
 }
