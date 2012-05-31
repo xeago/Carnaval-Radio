@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <post>
-  <author>Admin</author>
+  <author>admin</author>
   <title>Welcome to BlogEngine.NET 2.5</title>
   <description>The description is used as the meta description as well as shown in the related posts. It is recommended that you write a description, but not mandatory</description>
   <content>&lt;p&gt;If you see this post it means that BlogEngine.NET 2.5 is running and the hard part of creating your own blog is done. There is only a few things left to do.&lt;/p&gt;
@@ -21,7 +21,7 @@
   <isdeleted>False</isdeleted>
   <iscommentsenabled>True</iscommentsenabled>
   <pubDate>2011-06-11 10:00:00</pubDate>
-  <lastModified>2011-06-11 10:49:25</lastModified>
+  <lastModified>2012-05-25 10:27:59</lastModified>
   <raters>5</raters>
   <rating>4.24</rating>
   <slug>Welcome-to-BlogEngineNET-25</slug>

@@ -3,7 +3,7 @@
     <table class="tblForm">
         <tr>
             <td>
-                <label for="txtFirstName" class="lbl">First Name</label>
+                <label for="txtFirstName" class="lbl">Voornaam</label>
                 <input type="text" id="txtFirstName" class="txt200" value="{$T.d.FirstName}" />
             </td>
             <td>
@@ -13,27 +13,27 @@
         </tr>
         <tr>
             <td>
-                <label for="txtLastName" class="lbl">Last Name</label>
+                <label for="txtLastName" class="lbl">Achternaam</label>
                 <input type="text" id="txtLastName" class="txt200" value="{$T.d.LastName}" />
             </td>
             <td>
-                <label for="txtBirthday" class="lbl">Birthday</label>
+                <label for="txtBirthday" class="lbl">Geboortedatum</label>
                 <input type="text" id="txtBirthday" class="txt200" value="{formatJSONDate($T.d.Birthday)}" />
             </td>
         </tr>
         <tr>
             <td>
-                <label for="txtMiddleName" class="lbl">Middle Name</label>
+                <label for="txtMiddleName" class="lbl">Tussenvoegsel/Middelste naam</label>
                 <input type="text" id="txtMiddleName" class="txt200" value="{$T.d.MiddleName}" />
             </td>
             <td>
-                <label for="txtPhotoURL" class="lbl">Photo URL</label>
+                <label for="txtPhotoURL" class="lbl">Foto URL</label>
                 <input type="text" id="txtPhotoURL" class="txt200" value="{$T.d.PhotoUrl}" />
             </td>
         </tr>
         <tr>
             <td>
-                <label for="txtDispalayName" class="lbl">Display Name</label>
+                <label for="txtDispalayName" class="lbl">Weergavenaam</label>
                 <input type="text" id="txtDispalayName" class="txt200" value="{$T.d.DisplayName}" />
             </td>
             <td>
@@ -41,7 +41,7 @@
                 <div class="clear"></div>
                 <div style="padding-top: 8px">
                     <input type="checkbox" id="chkPrivate" {#if $T.d.Private} checked {#/if} />
-                    <label for="chkPrivate">Is Private</label>
+                    <label for="chkPrivate">Is privé?</label>
                 </div>
             </td>
         </tr>

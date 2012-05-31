@@ -1790,4 +1790,49 @@
   <data name="LowAudioStreamServer" xml:space="preserve">
     <value>Low quality Server</value>
   </data>
+  <data name="addNewSponsor" xml:space="preserve">
+    <value>Add new sponsor</value>
+  </data>
+  <data name="postOnFacebook" xml:space="preserve">
+    <value>Post on facebook</value>
+  </data>
+  <data name="postOnTwitter" xml:space="preserve">
+    <value>Post on twitter</value>
+  </data>
+  <data name="sponsoren" xml:space="preserve">
+    <value>Sponsors</value>
+  </data>
+  <data name="stream" xml:space="preserve">
+    <value>Streams</value>
+  </data>
+  <data name="ClubVan50" xml:space="preserve">
+    <value>Sponsor type 4</value>
+  </data>
+  <data name="endDate" xml:space="preserve">
+    <value>Ending Date</value>
+  </data>
+  <data name="HoofdSponsor" xml:space="preserve">
+    <value>Sponsor type 1</value>
+  </data>
+  <data name="Solid" xml:space="preserve">
+    <value>Solid</value>
+  </data>
+  <data name="Sponsor" xml:space="preserve">
+    <value>Sponsor type 2</value>
+  </data>
+  <data name="sponsorlogo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
+  <data name="SubSponsor" xml:space="preserve">
+    <value>Sponsor type 3</value>
+  </data>
+  <data name="Switch" xml:space="preserve">
+    <value>Switching</value>
+  </data>
+  <data name="VriendenVanCR" xml:space="preserve">
+    <value>Sponsor type 5</value>
+  </data>
+  <data name="shortCuts" xml:space="preserve">
+    <value>Short Cuts</value>
+  </data>
 </root>

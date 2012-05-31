@@ -36,6 +36,24 @@ namespace Admin
         {
             var a = new HtmlAnchor { InnerHtml = string.Format("<span>{0}</span>", text), HRef = url };
 
+            string adminRootFolder = string.Format("{0}admin", Utils.RelativeWebRoot);
+            var startIndx = url.LastIndexOf("/admin/") > 0 ? url.LastIndexOf("/admin/") : 0;
+            var endIndx = url.LastIndexOf(".") > 0 ? url.LastIndexOf(".") : url.Length;
+            var nodeDir = url.Substring(startIndx, endIndx - startIndx);
+
+            if (Request.RawUrl.IndexOf(nodeDir, StringComparison.OrdinalIgnoreCase) != -1)
+            {
+                a.Attributes["class"] = "current";
+            }
+
+            // if "page" has its own subfolder (comments, extensions) should 
+            // select parent tab when navigating through child tabs
+            if (!SubUrl(Request.RawUrl, true).Equals(adminRootFolder, StringComparison.OrdinalIgnoreCase) &&
+                SubUrl(Request.RawUrl, true) == SubUrl(url, false))
+            {
+                a.Attributes["class"] = "current";
+            }
+
             var li = new HtmlGenericControl("li");
             li.Controls.Add(a);
             ulMenu.Controls.Add(li);
@@ -135,6 +153,9 @@ namespace Admin
                     }
                 }
             }
+
+            AddItem(
+                labels.sponsoren, string.Format("{0}Admin/Sponsoren/Sponsoren.aspx", Utils.RelativeWebRoot));
 
             if (!Request.RawUrl.ToUpperInvariant().Contains("/ADMIN/"))
             {

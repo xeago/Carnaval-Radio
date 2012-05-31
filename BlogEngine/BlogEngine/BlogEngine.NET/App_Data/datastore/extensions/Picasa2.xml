@@ -51,7 +51,7 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>72</Values>
+      <Values>160</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>

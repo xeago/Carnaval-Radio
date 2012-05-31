@@ -1,18 +1,18 @@
 ﻿{#if $T.d.length == 0}
 <br />
 <div class="info">
-    No blogs were found.
+    Er zijn geen blogs gevonden
 </div>
 {#else}
 <table id="Blogs" class="beTable rounded" style="width:100%">
     <thead>
         <tr>
-            <th width="70" style="text-align:center;">Active</th>
-            <th width="70" style="text-align:center;">Primary</th>
-            <th width="auto">Name</th>
+            <th width="70" style="text-align:center;">Actief</th>
+            <th width="70" style="text-align:center;">Standaard</th>
+            <th width="auto">Naam</th>
             <th width="250">Host Name</th>
-            <th width="120">Text Accepted Before Host Name</th>
-            <th width="120">Virtual Path</th>
+            <th width="120">Tekst geaccepteerd</th>
+            <th width="120">Virtueel Pad</th>
             <th width="120">Storage Container</th>
 	        <th width="70">&nbsp;</th>
         </tr>
@@ -32,8 +32,8 @@
                     <li>
                         <a class="toolsAction" href="#"><span class="">Tools</span></a>
                         <ul class="rowToolsMenu">
-                            {#if $T.b.CanUserEdit}<li><a class="editAction" href="#" onclick="return EditBlog(this);">Edit</a></li>{#/if}
-                            {#if $T.b.CanUserDelete}<li><a class="deleteAction" href="#" onclick="return DeleteBlog(this);">Delete</a></li>{#/if}
+                            {#if $T.b.CanUserEdit}<li><a class="editAction" href="#" onclick="return EditBlog(this);">Wijzigen</a></li>{#/if}
+                            {#if $T.b.CanUserDelete}<li><a class="deleteAction" href="#" onclick="return DeleteBlog(this);">Verwijderen</a></li>{#/if}
                        </ul>
                     </li>
                </ul>

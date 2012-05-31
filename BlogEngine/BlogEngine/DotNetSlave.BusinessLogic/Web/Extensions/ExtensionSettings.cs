@@ -272,6 +272,19 @@
             this.AddParameter(name, label, maxLength, required, keyfield, ParameterType.String);
         }
 
+
+        ///<summary>
+        ///</summary>
+        ///<param name="name"></param>
+        ///<param name="label"></param>
+        ///<param name="required"></param>
+        ///<param name="keyfield"></param>
+        ///<param name="parType"></param>
+        public void AddParameter(string name, string label, bool required, bool keyfield, ParameterType parType)
+        {
+            this.AddParameter(name, label, 999999, required, keyfield, parType);
+        }
+
         /// <summary>
         /// Add Parameter
         /// </summary>
@@ -815,6 +828,9 @@
                     break;
                 case "Decimal":
                     par.ParamType = ParameterType.Decimal;
+                    break;
+                case "DateTime":
+                    par.ParamType = ParameterType.DateTime;
                     break;
             }
         }

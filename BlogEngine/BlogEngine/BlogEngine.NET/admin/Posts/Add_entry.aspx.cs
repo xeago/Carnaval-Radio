@@ -131,12 +131,18 @@
             if (!String.IsNullOrEmpty(Request.QueryString["id"]) && Request.QueryString["id"].Length == 36)
             {
                 var id = new Guid(Request.QueryString["id"]);
-                Page.Title = string.Format("{0} {1}", labels.edit, labels.post);
+                PageTitle.Text = Page.Title = string.Format("{0} {1}", labels.edit, labels.post);
+                
+                //Set checkboxes false for editing
+                cbPostFB.Checked = false;
+                cbPostTwitter.Checked = false;
+
                 BindPost(id);
                 BindCategories(id);
             }
             else
             {
+                PageTitle.Text = string.Format("{0} {1}", labels.add, labels.post);
                 BindCategories(Guid.Empty);
                 PreSelectAuthor(Page.User.Identity.Name);
                 txtDate.Text = DateTime.Now.AddHours(BlogSettings.Instance.Timezone).ToString("yyyy-MM-dd");
