@@ -2,3 +2,27 @@
 Date: 24-5-2012 12:41:13
 Contents Below
 PackageManager.InstallPackage: The file 'C:\PROJECTS\Git\Carnaval-Radio\BlogEngine\BlogEngine\BlogEngine.NET\themes\freshcitrus\images\bg.jpg' already exists.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 31-5-2012 9:55:21
+Contents Below
+App_Code.Controls.Blogroll.ProcessRequest: The remote name could not be resolved: 'feeds.feedburner.com'
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 31-5-2012 9:55:21
+Contents Below
+App_Code.Controls.Blogroll.ProcessRequest: The remote name could not be resolved: 'feeds.feedburner.com'
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 31-5-2012 9:55:22
+Contents Below
+App_Code.Controls.Blogroll.ProcessRequest: The remote name could not be resolved: 'feeds.feedburner.com'
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 31-5-2012 9:55:22
+Contents Below
+App_Code.Controls.Blogroll.ProcessRequest: The remote name could not be resolved: 'johndyer.name'
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 31-5-2012 9:55:22
+Contents Below
+App_Code.Controls.Blogroll.ProcessRequest: The remote name could not be resolved: 'feeds.feedburner.com'
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 31-5-2012 9:55:23
+Contents Below
+App_Code.Controls.Blogroll.ProcessRequest: The remote name could not be resolved: 'feeds.feedburner.com'

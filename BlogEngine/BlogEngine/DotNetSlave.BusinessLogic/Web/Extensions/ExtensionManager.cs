@@ -276,7 +276,7 @@
         /// </param>
         public static void SaveSettings(string extensionName, ExtensionSettings settings)
         {
-            var ext = extensions.FirstOrDefault(x => x.Key == extensionName);
+           var ext = extensions.FirstOrDefault(x => x.Key == extensionName);
             if (ext.Value != null)
             {
                 ext.Value.SaveSettings(settings);

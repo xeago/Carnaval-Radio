@@ -23,20 +23,20 @@ public class AudioStream
         settings.AddParameter("HighStream", "HighStream.", 500, true, false, ParameterType.String);
         settings.AddParameter("LowStream", "LowStream.", 500, true, false, ParameterType.String);
 
-       // settings.AddValue("HighStream", "Http://HighStreamVoorbeeld.nl");
+        // settings.AddValue("HighStream", "Http://HighStreamVoorbeeld.nl");
         //settings.AddValue("LowStream", "Http://lowstreamVoorbeeld.nl");
-        
+
         settings.IsScalar = true;
         ExtensionManager.ImportSettings(settings);
-        
+
 
     }
     #region AudioStreamcreatorstuffvantwan
 
     public static void writeOut(string high, string low, string path)
     {
-        if (!high.StartsWith(@"http://")) high = @"http://" + high;
-        if (!low.StartsWith(@"http://")) low = @"http://" + low;
+        if (!high.ToLower().StartsWith(@"http://")) high = @"http://" + high;
+        if (!low.ToLower().StartsWith(@"http://")) low = @"http://" + low;
 
         if (!Directory.Exists(path))
             Directory.CreateDirectory(path);

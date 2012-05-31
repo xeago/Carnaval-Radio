@@ -21,7 +21,7 @@
       <ParamType>String</ParamType>
       <Required>true</Required>
       <SelectedValue />
-      <Values>Http://HighStrdsadsadsaeamVoorbeeld.nl</Values>
+      <Values>Http://192.168.30.1/High</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -31,7 +31,7 @@
       <ParamType>String</ParamType>
       <Required>true</Required>
       <SelectedValue />
-      <Values>Http://lowstreamVoorbeeld.nl</Values>
+      <Values>Http://192.168.30.1/Low</Values>
     </Parameters>
     <ShowAdd>true</ShowAdd>
     <ShowDelete>true</ShowDelete>

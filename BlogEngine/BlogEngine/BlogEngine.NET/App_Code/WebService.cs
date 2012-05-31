@@ -27,31 +27,23 @@ public class WebService : System.Web.Services.WebService
         //InitializeComponent(); 
     }
 
-    [WebMethod]
-    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-    public byte[] GetAudioStreamJson()
-    {
+//    [WebMethod]
+//    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+//    public string GetAudioStreamJson()
+//    {
         
         
-Dictionary<string, ManagedExtension> extensions = ExtensionManager.Extensions;
-        string highServer = extensions["AudioStream"].Settings[0].GetSingleValue("HighStream");
-        string lowhServer = extensions["AudioStream"].Settings[0].GetSingleValue("LowStream");
+//Dictionary<string, ManagedExtension> extensions = ExtensionManager.Extensions;
+//        string highServer = extensions["AudioStream"].Settings[0].GetSingleValue("HighStream");
+//        string lowhServer = extensions["AudioStream"].Settings[0].GetSingleValue("LowStream");
 
-        string path = Server.MapPath("..\\AudioStreams\\");
-        string filePath = path + "json.json";
-            AudioStream.writeOut(highServer,lowhServer, path);
-        byte[] output = new byte[0];
-        //TODO FIlestream stuff
-        using (FileStream f = File.Open(filePath, FileMode.Open))
-        {
-            byte[] outputObject = new byte[f.Length];
-            f.Read(outputObject, 0, (int)f.Length);
-            output = outputObject;
-        }
+//        string path = Server.MapPath("..\\AudioStreams\\");
+//        string filePath = path + "json.json";
+//            AudioStream.writeOut(highServer,lowhServer, path);
+//            File output = File.Open(filePath, FileMode.Open);
 
-
-        return output;
-    }
+//        return output;
+//    }
 
 }
 
