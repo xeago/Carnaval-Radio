@@ -28,6 +28,8 @@ public class CRSponsor
     private static ExtensionSettings s = ExtensionManager.GetSettings("Sponsor");
 
     private int index;
+    private bool IsEdit = false;
+
     public Guid ID { get; set; }
     public string Name { get; set; }
     public string Url { get; set; }
@@ -58,6 +60,7 @@ public class CRSponsor
         var dr = dt.Rows.Cast<DataRow>().SingleOrDefault(i => new Guid(i["ID"].ToString()) == id);
         if (dr == null) return;
 
+        IsEdit = true;
         this.index = dt.Rows.IndexOf(dr);
         this.ID = id;
         this.Name = dr["Name"].ToString();
