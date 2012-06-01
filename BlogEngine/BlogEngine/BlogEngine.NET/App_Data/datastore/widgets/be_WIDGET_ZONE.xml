@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <widgets>
-  <widget id="1ef27b78-0218-420c-bfda-038163510def" title="About the author" showTitle="True">TextBox</widget>
   <widget id="42fcbe7c-2c9c-440a-bad9-65a94472fccc" title="Administration" showTitle="True">Administration</widget>
   <widget id="a7f87c1d-48e7-4ffb-b83f-05953bef0226" title="AudioPlayer" showTitle="True">AudioPlayer</widget>
 </widgets>
