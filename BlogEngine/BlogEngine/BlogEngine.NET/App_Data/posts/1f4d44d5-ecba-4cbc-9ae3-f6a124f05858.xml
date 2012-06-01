@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<post>
+  <author>Admin</author>
+  <title>Audio test</title>
+  <description />
+  <content>&lt;!-- BEGINS: AUTO-GENERATED FFMP3 CODE --&gt;
+&lt;object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="130" height="60" bgcolor="#FFFFFF"&gt;
+&lt;param name="movie" value="ffmp3-tiny.swf" /&gt;
+&lt;param name="flashvars" value="url=http://50.7.241.10:8021/;&amp;lang=auto&amp;codec=mp3&amp;volume=100&amp;introurl=&amp;tracking=true&amp;jsevents=false&amp;buffering=5&amp;title=CarnavalRadio" /&gt;
+&lt;param name="wmode" value="window" /&gt;
+&lt;param name="allowscriptaccess" value="always" /&gt;
+&lt;param name="scale" value="noscale" /&gt;
+&lt;embed src="ffmp3-tiny.swf" flashvars="url=http://50.7.241.10:8021/;&amp;lang=auto&amp;codec=mp3&amp;volume=100&amp;introurl=&amp;tracking=true&amp;jsevents=false&amp;buffering=5&amp;title=Carnavalradio" width="130" scale="noscale" height="60" wmode="window" bgcolor="#FFFFFF" allowscriptaccess="always" type="application/x-shockwave-flash" /&gt;
+&lt;/object&gt;
+&lt;!-- ENDS: AUTO-GENERATED FFMP3 CODE --&gt;</content>
+  <ispublished>True</ispublished>
+  <isdeleted>True</isdeleted>
+  <iscommentsenabled>True</iscommentsenabled>
+  <pubDate>2012-06-01 09:41:00</pubDate>
+  <lastModified>2012-06-01 09:57:31</lastModified>
+  <raters>0</raters>
+  <rating>0</rating>
+  <slug>Audio-test</slug>
+  <tags />
+  <comments />
+  <categories />
+  <notifications />
+</post>
