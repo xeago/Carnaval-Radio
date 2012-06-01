@@ -60,7 +60,7 @@ namespace Admin.Sponsoren
 
         private void BindGrid()
         {
-            grid.DataSource = Settings.GetDataTable();
+            grid.DataSource = CRSponsor.GetList();
             grid.DataBind();
         }
 
@@ -90,11 +90,6 @@ namespace Admin.Sponsoren
                                                  ? "<span class=\"published-false\"></span>"
                                                  : "");
                 //Response.Write(DateTime.Now.ToString());
-
-                const string format = "dd-MM-yyyy HH:mm:ss"; 
-                if (!string.IsNullOrEmpty(e.Row.Cells[2].Text))
-                    e.Row.Cells[2].Text = DateTime.ParseExact((e.Row.Cells[2].Text), format, null).ToString("dd-MM-yyyy");
-
             }
         }
     }

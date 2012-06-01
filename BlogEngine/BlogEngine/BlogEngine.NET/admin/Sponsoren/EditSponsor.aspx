@@ -62,7 +62,7 @@ ValidateRequest="false" CodeFile="EditSponsor.aspx.cs" Inherits="Admin.Sponsoren
                                 <cr:DateBox runat="server" ID="dtEndDate"  />
                             </li>
                             <li>
-                                <asp:CheckBox runat="Server" ID="cbPublished" Checked="true" Text="<%$ Resources:labels, Active %>" />
+                                <asp:CheckBox runat="Server" ID="cbActive" Checked="true" Text="<%$ Resources:labels, Active %>" />
                             </li>
                         </ul>
                     </td>
@@ -101,7 +101,8 @@ ValidateRequest="false" CodeFile="EditSponsor.aspx.cs" Inherits="Admin.Sponsoren
             </table>
 
             <div class="action_buttons">
-                <input type="button" id="btnSave" value="<%=Resources.labels.saveSponsor %>" class="btn primary" onclick="return SavePage()" /> <%=Resources.labels.or %> 
+                <asp:Button runat="server" ID="btnSave" CssClass="btn primary" OnClick="BtnSaveClick" Text="<%$ Resources:labels, saveSponsor %>" />
+                <%=Resources.labels.or %> 
                 <a href="Sponsoren.aspx" title="Cancel"><%=Resources.labels.cancel %></a>
             </div>
         </div>

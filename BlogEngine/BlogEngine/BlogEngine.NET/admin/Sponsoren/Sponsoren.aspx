@@ -27,6 +27,7 @@
                     <Columns>
                         <asp:BoundField DataField="Active" HeaderText="<%$ Resources:labels, Active %>" />
                         <asp:BoundField DataField="Name" HeaderText="<%$ Resources:labels,name %>" />
+                        <asp:BoundField DataField="Url" HeaderText="<%$ Resources:labels,Website %>" />
                         <asp:BoundField DataField="EndDate" HeaderText="<%$ Resources:labels,EndDate %>" />
                         <asp:TemplateField ItemStyle-Width="65">
                             <ItemTemplate>

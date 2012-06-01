@@ -9,16 +9,6 @@ using BlogEngine.Core.Web.Controls;
 using BlogEngine.Core.Web.Extensions;
 using Resources;
 
-public enum SponsorType
-{
-    Hoofdsponsor =1,
-    Sponsor,
-    Subsponsor,
-    ClubVan50,
-    VriendenVanCr
-
-}
-
 /// <summary>
 /// Summary description for AudioStream
 /// </summary>

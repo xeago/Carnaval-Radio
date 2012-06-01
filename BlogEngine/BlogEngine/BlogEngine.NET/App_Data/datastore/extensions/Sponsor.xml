@@ -9,7 +9,7 @@
     <Delimiter>44</Delimiter>
     <Help />
     <Hidden>false</Hidden>
-    <Index>0</Index>
+    <Index>2</Index>
     <IsScalar>false</IsScalar>
     <KeyField>ID</KeyField>
     <Name>Sponsor</Name>
@@ -20,9 +20,10 @@
       <Name>ID</Name>
       <ParamType>String</ParamType>
       <Required>true</Required>
-      <SelectedValue />
-      <Values>79406D34-AB07-11E1-B626-24F96188709B</Values>
-      <Values>A7F6AD9E-AB09-11E1-A59E-20FC6188709B</Values>
+      <SelectedValue>0773a226-d4ce-4ad9-a70a-1934cf3b41ac</SelectedValue>
+      <Values>2ADD7B35-0712-431E-81A0-262906B815E4</Values>
+      <Values>CDB455B2-70A6-4E0B-AF71-005105501A76</Values>
+      <Values>08458E7B-9647-4B80-9D7A-9B96E3DC77DB</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -31,9 +32,10 @@
       <Name>Name</Name>
       <ParamType>String</ParamType>
       <Required>true</Required>
-      <SelectedValue />
-      <Values>Will Smits Schilderwerken</Values>
+      <SelectedValue>Will Smits Schilderwerken123123123</SelectedValue>
+      <Values>Wil Smits3</Values>
       <Values>Fred Vluggen</Values>
+      <Values>Live Club Woetsjtok2</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -43,61 +45,19 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
-      <Values />
+      <Values>www.wilsmits.nl</Values>
+      <Values>fredjevluggen.nl</Values>
+      <Values>www.woetsjtok.nl</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
-      <Label>Hoofdsponsor</Label>
+      <Label>Sponsor type</Label>
       <MaxLength>100</MaxLength>
-      <Name>SponsorPage_Hoofdsponsor</Name>
+      <Name>SponsorPage_SponsorType</Name>
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
       <Values />
-      <Values />
-    </Parameters>
-    <Parameters>
-      <KeyField>false</KeyField>
-      <Label>Sponsor</Label>
-      <MaxLength>100</MaxLength>
-      <Name>SponsorPage_Sponsor</Name>
-      <ParamType>String</ParamType>
-      <Required>false</Required>
-      <SelectedValue />
-      <Values />
-      <Values />
-    </Parameters>
-    <Parameters>
-      <KeyField>false</KeyField>
-      <Label>Subsponsor</Label>
-      <MaxLength>100</MaxLength>
-      <Name>SponsorPage_Subsponsor</Name>
-      <ParamType>String</ParamType>
-      <Required>false</Required>
-      <SelectedValue />
-      <Values />
-      <Values />
-    </Parameters>
-    <Parameters>
-      <KeyField>false</KeyField>
-      <Label>Club van 50</Label>
-      <MaxLength>100</MaxLength>
-      <Name>SponsorPage_ClubVan50</Name>
-      <ParamType>String</ParamType>
-      <Required>false</Required>
-      <SelectedValue />
-      <Values />
-      <Values />
-    </Parameters>
-    <Parameters>
-      <KeyField>false</KeyField>
-      <Label>Vrienden van Carnaval Radio</Label>
-      <MaxLength>100</MaxLength>
-      <Name>SponsorPage_VriendenVanCR</Name>
-      <ParamType>String</ParamType>
-      <Required>false</Required>
-      <SelectedValue />
       <Values />
       <Values />
     </Parameters>
@@ -111,6 +71,7 @@
       <SelectedValue />
       <Values />
       <Values />
+      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -122,10 +83,11 @@
       <SelectedValue />
       <Values />
       <Values />
+      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
-      <Label>Wisselend</Label>
+      <Label>Widget</Label>
       <MaxLength>100</MaxLength>
       <Name>Widget_Switch</Name>
       <ParamType>String</ParamType>
@@ -133,26 +95,41 @@
       <SelectedValue />
       <Values />
       <Values />
+      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
       <Label>Wisselend</Label>
       <MaxLength>100</MaxLength>
-      <Name>Mobile</Name>
+      <Name>Mobile_Switch</Name>
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
       <Values />
       <Values />
+      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
-      <Label>Wisselend</Label>
+      <Label>Vast</Label>
+      <MaxLength>100</MaxLength>
+      <Name>Mobile_Solid</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Frequentie</Label>
       <MaxLength>100</MaxLength>
       <Name>Mobile_Frequency</Name>
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values />
       <Values />
       <Values />
     </Parameters>
@@ -166,6 +143,7 @@
       <SelectedValue />
       <Values />
       <Values />
+      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -175,6 +153,7 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values />
       <Values />
       <Values />
     </Parameters>
@@ -188,6 +167,7 @@
       <SelectedValue />
       <Values />
       <Values />
+      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -197,8 +177,9 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>31-05-2012 12:25:09</Values>
-      <Values>31-05-2012 12:25:09</Values>
+      <Values>12-02-2012 00:00:00</Values>
+      <Values>12-12-2012 00:00:00</Values>
+      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -208,6 +189,7 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>True</Values>
       <Values>True</Values>
       <Values>False</Values>
     </Parameters>
