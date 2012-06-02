@@ -9,7 +9,7 @@
     <Delimiter>44</Delimiter>
     <Help />
     <Hidden>false</Hidden>
-    <Index>2</Index>
+    <Index>0</Index>
     <IsScalar>false</IsScalar>
     <KeyField>ID</KeyField>
     <Name>Sponsor</Name>
@@ -20,10 +20,11 @@
       <Name>ID</Name>
       <ParamType>String</ParamType>
       <Required>true</Required>
-      <SelectedValue>0773a226-d4ce-4ad9-a70a-1934cf3b41ac</SelectedValue>
-      <Values>2ADD7B35-0712-431E-81A0-262906B815E4</Values>
-      <Values>CDB455B2-70A6-4E0B-AF71-005105501A76</Values>
-      <Values>08458E7B-9647-4B80-9D7A-9B96E3DC77DB</Values>
+      <SelectedValue />
+      <Values>35a84e42-82ec-4d9e-9788-b1ab7a5cbe13</Values>
+      <Values>b9de0131-3f59-47ba-8ddf-338a6ad580cd</Values>
+      <Values>37dd5ef8-e03a-443b-a2ce-676ce2d484b0</Values>
+      <Values>c000a5fc-ad29-43f5-b4ca-7a6af252987d</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -32,10 +33,11 @@
       <Name>Name</Name>
       <ParamType>String</ParamType>
       <Required>true</Required>
-      <SelectedValue>Will Smits Schilderwerken123123123</SelectedValue>
-      <Values>Wil Smits3</Values>
-      <Values>Fred Vluggen</Values>
-      <Values>Live Club Woetsjtok2</Values>
+      <SelectedValue />
+      <Values>test34asdasdasdasd</Values>
+      <Values>tester2</Values>
+      <Values>test</Values>
+      <Values>Mooi</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -45,9 +47,10 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>www.wilsmits.nl</Values>
-      <Values>fredjevluggen.nl</Values>
-      <Values>www.woetsjtok.nl</Values>
+      <Values>tester</Values>
+      <Values>teser2</Values>
+      <Values>test</Values>
+      <Values>Mooi</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -57,9 +60,10 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
-      <Values />
-      <Values />
+      <Values>0</Values>
+      <Values>0</Values>
+      <Values>0</Values>
+      <Values>Hoofdsponsor</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -69,9 +73,10 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
-      <Values />
-      <Values />
+      <Values>False</Values>
+      <Values>false</Values>
+      <Values>False</Values>
+      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -81,9 +86,10 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
-      <Values />
-      <Values />
+      <Values>True</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -93,9 +99,10 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
-      <Values />
-      <Values />
+      <Values>True</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -105,9 +112,10 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
-      <Values />
-      <Values />
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -117,9 +125,10 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
-      <Values />
-      <Values />
+      <Values>True</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -129,9 +138,10 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
-      <Values />
-      <Values />
+      <Values>0</Values>
+      <Values>0</Values>
+      <Values>0</Values>
+      <Values>0</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -141,9 +151,10 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>Upload/sponsoren/35a84e42-82ec-4d9e-9788-b1ab7a5cbe13.png</Values>
       <Values />
-      <Values />
-      <Values />
+      <Values>Upload/sponsoren/37dd5ef8-e03a-443b-a2ce-676ce2d484b0.png</Values>
+      <Values>Upload/sponsoren/c000a5fc-ad29-43f5-b4ca-7a6af252987d.png</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -153,9 +164,10 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>we testen de omschrijving!</Values>
       <Values />
       <Values />
-      <Values />
+      <Values>Mooi</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -165,9 +177,10 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values />
-      <Values />
-      <Values />
+      <Values>2-6-2012 15:02:14</Values>
+      <Values>2-6-2012 15:24:01</Values>
+      <Values>2-6-2012 15:46:52</Values>
+      <Values>2-6-2012 17:07:31</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -177,9 +190,10 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>12-02-2012 00:00:00</Values>
-      <Values>12-12-2012 00:00:00</Values>
+      <Values>2-6-2012 0:00:00</Values>
       <Values />
+      <Values>2-6-2012 15:46:52</Values>
+      <Values>31-8-2012 0:00:00</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -190,8 +204,9 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>True</Values>
-      <Values>True</Values>
       <Values>False</Values>
+      <Values>False</Values>
+      <Values>True</Values>
     </Parameters>
     <ShowAdd>true</ShowAdd>
     <ShowDelete>true</ShowDelete>

@@ -12,6 +12,7 @@ using App_Code;
 using BlogEngine.Core;
 using BlogEngine.Core.Web.Extensions;
 using CodeCarvings.Piczard;
+using CodeCarvings.Piczard.Web;
 using Resources;
 using Page = System.Web.UI.Page;
 
@@ -36,14 +37,46 @@ namespace Admin.Sponsoren
             ID = Request.QueryString["id"];
             IsEdit = !String.IsNullOrEmpty(ID) && ID.Length == 36;
 
+            if (!IsPostBack)
+            {
+                imgLogo.CropConstraint = new FixedCropConstraint(300, 200);
+                imgLogo.PreviewFilter = new FixedResizeConstraint(300, 200, Color.Black);
+            }
+
             if (IsEdit)
             {
                 crSponsor = new CRSponsor(new Guid(ID));
                 txtName.Text = crSponsor.Name;
                 txtUrl.Text = crSponsor.Url;
+
+                ddlSponsorType.SelectedValue = ((int) crSponsor.SponsorType).ToString();
+                    
+                if (!string.IsNullOrEmpty(crSponsor.LogoURL))
+                    imgLogo.LoadImageFromFileSystem(crSponsor.LogoPhysicalPath);
                 cbActive.Checked = crSponsor.Active;
 
+                cbShowInWidget.Checked = crSponsor.WidgetSwitch;
+                cbShowInPlayerSwitch.Checked = crSponsor.PlayerSwitch;
+                cbShowInPlayerSolid.Checked = crSponsor.PlayerSolid;
+                cbShowInMobileSwitch.Checked = crSponsor.MobileSwitch;
+                cbShowInMobileSolid.Checked = crSponsor.MobileSolid;
+
+                ddlMobileFrequency.SelectedValue = ((int)crSponsor.MFrequency).ToString();
+
+                txtDescription.Text = crSponsor.Description;
+                dtEndDate.SetDate(crSponsor.EndDate);
+
                 BindSponsorTypes(SponsorType.Hoofdsponsor);
+            }
+            else
+            {
+                crSponsor = new CRSponsor();
+                BindSponsorTypes(SponsorType.Sponsor);
+            }
+
+
+            if(IsEdit)
+            {
             }
             else if (!String.IsNullOrEmpty(Request.QueryString["delete"]) &&
                      Request.QueryString["delete"].Length == 36)
@@ -59,10 +92,7 @@ namespace Admin.Sponsoren
                     return;
                 }
 
-                crSponsor = new CRSponsor();
-                BindSponsorTypes(SponsorType.Sponsor);
-
-                //TODO create sponsor right
+               //TODO create sponsor right
                 //cbActive.Checked = Security.IsAuthorizedTo(Rights.PublishOwnPages);
             }
             Page.Title = labels.sponsoren;
@@ -76,11 +106,6 @@ namespace Admin.Sponsoren
         /// <param name="e">The <see cref="T:System.EventArgs"/> object that contains the event data.</param>
         protected override void OnLoad(EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                imgLogo.CropConstraint = new FixedCropConstraint(300, 200);
-                imgLogo.PreviewFilter = new FixedResizeConstraint(300, 200, Color.Black);
-            }
             base.OnLoad(e);
         }
 
@@ -108,7 +133,32 @@ namespace Admin.Sponsoren
         {
             crSponsor.Name = txtName.Text;
             crSponsor.Url = txtUrl.Text;
-            Response.Write(crSponsor.Save());
+
+            if (!string.IsNullOrEmpty(ddlSponsorType.SelectedValue))
+                crSponsor.SponsorType = (SponsorType)Convert.ToInt32(ddlSponsorType.SelectedValue);
+
+            crSponsor.WidgetSwitch = cbShowInWidget.Checked;
+            crSponsor.PlayerSwitch = cbShowInPlayerSwitch.Checked;
+            crSponsor.PlayerSolid = cbShowInPlayerSolid.Checked;
+            crSponsor.MobileSwitch = cbShowInMobileSwitch.Checked;
+            crSponsor.MobileSolid = cbShowInMobileSolid.Checked;
+            if(!string.IsNullOrEmpty(ddlMobileFrequency.SelectedValue))
+                crSponsor.MFrequency = (MobileFrequency)Convert.ToInt32(ddlMobileFrequency.SelectedValue);
+            if(imgLogo.HasImage)
+            {
+                crSponsor.LogoURL = string.Format("Upload/sponsoren/{0}.png", crSponsor.ID);
+                if(imgLogo.ImageEdited)
+                    imgLogo.SaveProcessedImageToFileSystem(crSponsor.LogoPhysicalPath);
+            }
+            if(dtEndDate.Date.HasValue)
+            {
+                crSponsor.EndDate = dtEndDate.Date;
+            }
+
+            crSponsor.Description = txtDescription.Text;
+            crSponsor.Active = cbActive.Checked;
+            
+            crSponsor.Save();
         }
     }
 }

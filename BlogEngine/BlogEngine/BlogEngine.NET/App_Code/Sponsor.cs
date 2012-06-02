@@ -45,6 +45,11 @@ public class CRSponsor
     public DateTime CreationDate { get; set; }
     public DateTime? EndDate { get; set; }
     public bool Active { get; set; }
+
+    public string LogoPhysicalPath
+    {
+        get { return HttpContext.Current.Server.MapPath("../../" + LogoURL); }
+    }
     
 	public CRSponsor()
 	{
@@ -57,7 +62,7 @@ public class CRSponsor
         //GetSponsor
         var dt = s.GetDataTable();
 
-        var dr = dt.Rows.Cast<DataRow>().SingleOrDefault(i => new Guid(i["ID"].ToString()) == id);
+        var dr = dt.Rows.Cast<DataRow>().SingleOrDefault(i => Guid.Parse(i["ID"].ToString()) == id);
         if (dr == null) return;
 
         IsEdit = true;
@@ -78,7 +83,7 @@ public class CRSponsor
         this.LogoURL = dr["Logo"].ToString();
         this.Description = dr["Description"].ToString();
         this.CreationDate = GSDlib.Utils.NullableDateTime(dr["CreationDate"].ToString()) ?? DateTime.MinValue;
-        this.EndDate = GSDlib.Utils.NullableDateTime(dr["CreationDate"].ToString());
+        this.EndDate = GSDlib.Utils.NullableDateTime(dr["EndDate"].ToString());
         this.Active = ConvertBoolElseFalse(dr["Active"]);
     }
 
@@ -86,21 +91,82 @@ public class CRSponsor
     {
         ExtensionSettings settings = ExtensionManager.GetSettings("Sponsor");
 
-        foreach (var parameter in settings.Parameters)
+        if (!IsEdit)
         {
-            switch (parameter.Name)
+            //settings.KeyField = ID.ToString();
+            settings.AddValue("ID", ID.ToString());
+            settings.AddValue("Name", Name);
+            settings.AddValue("URL", Url ?? string.Empty);
+            settings.AddValue("SponsorPage_SponsorType", ((SponsorType)(GSDlib.Utils.NullableInt(this.SponsorType) ?? 1)).ToString());
+            settings.AddValue("Player_Switch", PlayerSwitch.ToString().ToLower());
+            settings.AddValue("Player_Solid", PlayerSolid.ToString());
+            settings.AddValue("Widget_Switch", WidgetSwitch.ToString());
+            settings.AddValue("Mobile_Switch", MobileSwitch.ToString());
+            settings.AddValue("Mobile_Solid", MobileSolid.ToString());
+            settings.AddValue("Mobile_Frequency", ((MobileFrequency)(GSDlib.Utils.NullableInt(this.MFrequency) ?? 1)).ToString());
+            settings.AddValue("Logo", LogoURL ?? string.Empty);
+            settings.AddValue("Description", Description ?? string.Empty);
+            settings.AddValue("CreationDate", DateTime.Now.ToString());
+            settings.AddValue("EndDate", EndDate.ToString());
+            settings.AddValue("Active", Active.ToString());
+        }
+        else
+        {
+            int i = this.index;
+            foreach (var parameter in settings.Parameters)
             {
-                case "Name":
-                    parameter.Values[this.index] = Name;
-                    break;
-                case "URL":
-                    parameter.Values[this.index] = Url;
-                    break;
-                default:
-                    break;
+                switch (parameter.Name)
+                {
+                    case "Name":
+                        parameter.Values[i] = Name;
+                        break;
+                    case "URL":
+                        parameter.Values[i] = Url;
+                        break;
+                    case "SposnorPage_SponsorType":
+                        parameter.Values[i] =
+                            ((SponsorType) (GSDlib.Utils.NullableInt(this.SponsorType) ?? 1)).ToString();
+                        break;
+                    case "Player_Switch":
+                        parameter.Values[i] = PlayerSwitch.ToString();
+                        break;
+                    case "Player_Solid":
+                        parameter.Values[i] = PlayerSolid.ToString();
+                        break;
+                    case "Widget_Switch":
+                        parameter.Values[i] = WidgetSwitch.ToString();
+                        break;
+                    case "Mobile_Switch":
+                        parameter.Values[i] = MobileSwitch.ToString();
+                        break;
+                    case "Mobile_Solid":
+                        parameter.Values[i] = MobileSolid.ToString();
+                        break;
+                    case "Mobile_Frequency":
+                        parameter.Values[i] = ((MobileFrequency)(GSDlib.Utils.NullableInt(this.MFrequency) ?? 1)).ToString();
+                        break;
+                    case "Logo":
+                        parameter.Values[i] = LogoURL;
+                        break;
+                    case "Description":
+                        parameter.Values[i] = Description;
+                        break;
+                    //case "CreationDate":
+                    //    parameter.Values[i] = CreationDate.ToString();
+                    //    break;
+                    case "EndDate":
+                        parameter.Values[i] = EndDate.HasValue ? EndDate.ToString() : string.Empty;
+                        break;
+                    case "Active":
+                        parameter.Values[i] = Active.ToString();
+                        break;
+                    default:
+                        
+                        break;
+                }
             }
         }
-        
+
         ExtensionManager.SaveSettings("Sponsor", settings);
         return settings.IsKeyValueExists(ID.ToString());
     }
