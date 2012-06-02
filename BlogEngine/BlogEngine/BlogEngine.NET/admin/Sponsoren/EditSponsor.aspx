@@ -26,7 +26,7 @@ ValidateRequest="false" CodeFile="EditSponsor.aspx.cs" Inherits="Admin.Sponsoren
 </script>
     <div class="content-box-outer">
         <div class="content-box-full">
-            <h1><%=Resources.labels.editSponsor %></h1>
+            <h1><asp:Literal runat="server" ID="PageTitle" /></h1>
             <table class="tblForm largeForm" style="width:100%; margin:0;">
                 <tr>
                     <td style="vertical-align:top; padding:0 40px 0 0;">

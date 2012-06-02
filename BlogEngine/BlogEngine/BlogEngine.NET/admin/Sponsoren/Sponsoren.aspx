@@ -20,6 +20,7 @@
 		<div class="content-box-left">
             <h1><%=Resources.labels.sponsoren %></h1>
             <div class="tableToolBox">
+            </div>
                 <asp:GridView runat="server" OnRowDataBound="GridRowDataBound" ID="grid" RowStyle-BorderWidth="0" RowStyle-BorderStyle="None" GridLines="None"
                     Width="100%" AlternatingRowStyle-BackColor="#f8f8f8" AlternatingRowStyle-BorderColor="#f8f8f8"
                     HeaderStyle-BackColor="#F1F1F1" UseAccessibleHeader="true" AutoGenerateColumns="false"
@@ -31,7 +32,7 @@
                         <asp:BoundField DataField="EndDate" HeaderText="<%$ Resources:labels,EndDate %>" DataFormatString="{0:dd-MM-yyyy}" />
                         <asp:TemplateField ItemStyle-Width="65">
                             <ItemTemplate>
-                                <ul class="rowTools">
+                                <ul class="rowTools sponsorTools">
                                     <li><a class="toolsAction" href="#"><span class="">Tools</span></a>
                                         <ul class="rowToolsMenu">
                                             <li><a class="editAction" href="EditSponsor.aspx?id=<%# Eval("ID") %>">Wijzigen</a></li>
@@ -44,7 +45,7 @@
                     </Columns>
                 </asp:GridView>
 
-            </div>
+
             <div id="Container"></div>
         </div>
     </div>

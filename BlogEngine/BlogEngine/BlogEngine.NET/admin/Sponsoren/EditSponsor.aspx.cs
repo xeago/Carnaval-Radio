@@ -21,6 +21,7 @@ namespace Admin.Sponsoren
     public partial class EditSponsor : Page
     {
         private string ID;
+        private Guid GuidID;
         private bool IsEdit;
         private CRSponsor crSponsor;
 
@@ -35,8 +36,8 @@ namespace Admin.Sponsoren
             MaintainScrollPositionOnPostBack = true;
 
             ID = Request.QueryString["id"];
-            IsEdit = !String.IsNullOrEmpty(ID) && ID.Length == 36;
-
+            IsEdit = !String.IsNullOrEmpty(ID) && Guid.TryParse(ID, out GuidID);
+            
             if (!IsPostBack)
             {
                 imgLogo.CropConstraint = new FixedCropConstraint(300, 200);
@@ -45,7 +46,8 @@ namespace Admin.Sponsoren
 
             if (IsEdit)
             {
-                crSponsor = new CRSponsor(new Guid(ID));
+                PageTitle.Text = labels.editSponsor;
+                crSponsor = new CRSponsor(GuidID);
                 txtName.Text = crSponsor.Name;
                 txtUrl.Text = crSponsor.Url;
 
@@ -70,6 +72,7 @@ namespace Admin.Sponsoren
             }
             else
             {
+                PageTitle.Text = labels.addNewSponsor;
                 crSponsor = new CRSponsor();
                 BindSponsorTypes(SponsorType.Sponsor);
             }

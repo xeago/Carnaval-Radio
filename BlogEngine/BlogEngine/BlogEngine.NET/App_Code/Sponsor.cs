@@ -93,7 +93,6 @@ public class CRSponsor
 
         if (!IsEdit)
         {
-            //settings.KeyField = ID.ToString();
             settings.AddValue("ID", ID.ToString());
             settings.AddValue("Name", Name);
             settings.AddValue("URL", Url ?? string.Empty);
