@@ -29,6 +29,7 @@ public class CRSponsor
 
     private int index;
     private bool IsEdit = false;
+    private DataTable dt;
 
     public Guid ID { get; set; }
     public string Name { get; set; }
@@ -46,6 +47,8 @@ public class CRSponsor
     public DateTime? EndDate { get; set; }
     public bool Active { get; set; }
 
+    
+
     public string LogoPhysicalPath
     {
         get { return HttpContext.Current.Server.MapPath("../../" + LogoURL); }
@@ -57,10 +60,10 @@ public class CRSponsor
 	    CreationDate = DateTime.Now;
 	}
 
-    public CRSponsor(Guid id)
+    public CRSponsor(Guid id, bool IsDelete)
     {
         //GetSponsor
-        var dt = s.GetDataTable();
+        dt = s.GetDataTable();
 
         var dr = dt.Rows.Cast<DataRow>().SingleOrDefault(i => Guid.Parse(i["ID"].ToString()) == id);
         if (dr == null) return;
@@ -90,7 +93,6 @@ public class CRSponsor
     public bool Save()
     {
         ExtensionSettings settings = ExtensionManager.GetSettings("Sponsor");
-
         if (!IsEdit)
         {
             settings.AddValue("ID", ID.ToString());
@@ -170,9 +172,23 @@ public class CRSponsor
         return settings.IsKeyValueExists(ID.ToString());
     }
 
+    public bool Delete()
+    {
+        ExtensionSettings settings = ExtensionManager.GetSettings("Sponsor");
+        int i = this.index;
+        foreach (var parameter in settings.Parameters)
+        {
+            parameter.DeleteValue(i);
+        }
+        
+        ExtensionManager.SaveSettings("Sponsor", settings);
+        //return if row is deleted
+        return dt.Rows.Cast<DataRow>().SingleOrDefault(dr => Guid.Parse(dr["ID"].ToString()) == ID) == null;
+    }
+
     public static List<CRSponsor> GetList()
     {
-        return s.GetDataTable().Rows.Cast<DataRow>().Select(dr => new CRSponsor(new Guid(dr["ID"].ToString()))).ToList();
+        return s.GetDataTable().Rows.Cast<DataRow>().Select(dr => new CRSponsor(Guid.Parse(dr["ID"].ToString()), false)).ToList();
     }
 
 

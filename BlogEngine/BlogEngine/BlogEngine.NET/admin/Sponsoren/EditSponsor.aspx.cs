@@ -21,8 +21,10 @@ namespace Admin.Sponsoren
     public partial class EditSponsor : Page
     {
         private string ID;
+        private string Delete;
         private Guid GuidID;
         private bool IsEdit;
+        private bool IsDelete;
         private CRSponsor crSponsor;
 
         /// <summary>
@@ -36,7 +38,11 @@ namespace Admin.Sponsoren
             MaintainScrollPositionOnPostBack = true;
 
             ID = Request.QueryString["id"];
-            IsEdit = !String.IsNullOrEmpty(ID) && Guid.TryParse(ID, out GuidID);
+            Delete = Request.QueryString["delete"];
+            if (!String.IsNullOrEmpty(ID))
+                IsEdit = Guid.TryParse(ID, out GuidID);
+            if (!String.IsNullOrEmpty(Delete))
+                IsDelete = Guid.TryParse(Delete, out GuidID);
             
             if (!IsPostBack)
             {
@@ -47,7 +53,7 @@ namespace Admin.Sponsoren
             if (IsEdit)
             {
                 PageTitle.Text = labels.editSponsor;
-                crSponsor = new CRSponsor(GuidID);
+                crSponsor = new CRSponsor(GuidID, false);
                 txtName.Text = crSponsor.Name;
                 txtUrl.Text = crSponsor.Url;
 
@@ -69,6 +75,12 @@ namespace Admin.Sponsoren
                 dtEndDate.SetDate(crSponsor.EndDate);
 
                 BindSponsorTypes(SponsorType.Hoofdsponsor);
+            }
+            else if(IsDelete)
+            {
+                crSponsor = new CRSponsor(GuidID, true);
+                Response.Write(crSponsor.Delete().ToString());
+                Response.Redirect("Sponsoren.aspx");
             }
             else
             {

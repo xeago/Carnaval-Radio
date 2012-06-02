@@ -22,9 +22,6 @@
       <Required>true</Required>
       <SelectedValue />
       <Values>35a84e42-82ec-4d9e-9788-b1ab7a5cbe13</Values>
-      <Values>b9de0131-3f59-47ba-8ddf-338a6ad580cd</Values>
-      <Values>37dd5ef8-e03a-443b-a2ce-676ce2d484b0</Values>
-      <Values>c000a5fc-ad29-43f5-b4ca-7a6af252987d</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -35,9 +32,6 @@
       <Required>true</Required>
       <SelectedValue />
       <Values>test34asdasdasdasd</Values>
-      <Values>tester2</Values>
-      <Values>test</Values>
-      <Values>Mooi</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -48,9 +42,6 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>tester</Values>
-      <Values>teser2</Values>
-      <Values>test</Values>
-      <Values>Mooi</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -61,9 +52,6 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>0</Values>
-      <Values>0</Values>
-      <Values>0</Values>
-      <Values>Hoofdsponsor</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -73,9 +61,6 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>False</Values>
-      <Values>false</Values>
-      <Values>False</Values>
       <Values>False</Values>
     </Parameters>
     <Parameters>
@@ -87,9 +72,6 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>True</Values>
-      <Values>False</Values>
-      <Values>False</Values>
-      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -100,9 +82,6 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>True</Values>
-      <Values>False</Values>
-      <Values>False</Values>
-      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -112,9 +91,6 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>False</Values>
-      <Values>False</Values>
-      <Values>False</Values>
       <Values>False</Values>
     </Parameters>
     <Parameters>
@@ -126,9 +102,6 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>True</Values>
-      <Values>False</Values>
-      <Values>False</Values>
-      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -138,9 +111,6 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>0</Values>
-      <Values>0</Values>
-      <Values>0</Values>
       <Values>0</Values>
     </Parameters>
     <Parameters>
@@ -152,9 +122,6 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>Upload/sponsoren/35a84e42-82ec-4d9e-9788-b1ab7a5cbe13.png</Values>
-      <Values />
-      <Values>Upload/sponsoren/37dd5ef8-e03a-443b-a2ce-676ce2d484b0.png</Values>
-      <Values>Upload/sponsoren/c000a5fc-ad29-43f5-b4ca-7a6af252987d.png</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -165,9 +132,6 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>we testen de omschrijving!</Values>
-      <Values />
-      <Values />
-      <Values>Mooi</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -178,9 +142,6 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>2-6-2012 15:02:14</Values>
-      <Values>2-6-2012 15:24:01</Values>
-      <Values>2-6-2012 15:46:52</Values>
-      <Values>2-6-2012 17:07:31</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -191,9 +152,6 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>2-6-2012 0:00:00</Values>
-      <Values />
-      <Values>2-6-2012 15:46:52</Values>
-      <Values>31-8-2012 0:00:00</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -203,9 +161,6 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>True</Values>
-      <Values>False</Values>
-      <Values>False</Values>
       <Values>True</Values>
     </Parameters>
     <ShowAdd>true</ShowAdd>
