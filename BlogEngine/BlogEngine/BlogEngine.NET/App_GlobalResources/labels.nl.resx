@@ -1751,4 +1751,7 @@
   <data name="LowAudioStreamServer" xml:space="preserve">
     <value>Lage Kwaliteit Server</value>
   </data>
+  <data name="Social Media" xml:space="preserve">
+    <value>Social Media</value>
+  </data>
 </root>
