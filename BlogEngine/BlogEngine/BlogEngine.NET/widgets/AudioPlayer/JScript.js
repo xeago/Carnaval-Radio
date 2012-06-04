@@ -26,7 +26,7 @@ function openAudioPlayer() {
     return false;
 }
 
-function flashFallback(stream) {
+function loadStream(stream) {
     var audioplayer = document.getElementById('player');
     if (document.createElement('audio').canPlayType) {
         if (!document.createElement('audio').canPlayType('audio/mpeg')) {
@@ -50,5 +50,15 @@ function mediaCheck(audioplayer, stream) {
     }
     else {
         audioplayer.innerHTML = '<a href="http://get.adobe.com/flashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_adobe_flash_player.png" alt="Get Flash Player" /></a>';
+    }
+}
+
+function toggleDownload() {
+    $('#dltab').toggle();
+}
+
+function download(file) {
+    if (file != null) {
+        window.open(file, 'Download');
     }
 }
