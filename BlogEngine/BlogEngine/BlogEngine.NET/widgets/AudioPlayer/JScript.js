@@ -55,6 +55,13 @@ function mediaCheck(audioplayer, stream) {
 
 function toggleDownload() {
     $('#dltab').toggle();
+    $('#dltab').animate({
+        -moz-transform:rotate(180deg),
+        -webkit-transform:rotate(180deg),
+        -o-transform:rotate(180deg),
+        -ms-transform:rotate(180deg),
+        filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1)
+    }, 1000);
 }
 
 function download(file) {
