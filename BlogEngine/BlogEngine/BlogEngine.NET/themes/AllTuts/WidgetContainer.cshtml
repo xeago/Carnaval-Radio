@@ -20,7 +20,7 @@
     string rightboxMidDivEnd = "</div><div class=\"rightBoxBottom\"></div></div>";
 }
 <div class="widget @Model.Widget.Name.Replace(" ", String.Empty).ToLowerInvariant()"
-    id="widget-@(Model.Widget.WidgetId)">
+    id="widget@(Model.Widget.WidgetId)">
     @if (IsInBottomZone == false)
     {
         @Html.Raw(rightboxMidDivStart);
