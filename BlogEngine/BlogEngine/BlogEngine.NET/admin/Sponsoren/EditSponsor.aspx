@@ -9,7 +9,8 @@ ValidateRequest="false" CodeFile="EditSponsor.aspx.cs" Inherits="Admin.Sponsoren
     function ShowHideCheckbox() {
         var isChecked = $("#<%= cbShowInMobileSwitch.ClientID %>").is(':checked');
         if (isChecked == true) {
-            $("#uidMobileFrequency").show();
+            //TODO wisselende banner frequentie
+            //$("#uidMobileFrequency").show();
         }
         else {
             $("#uidMobileFrequency").hide();

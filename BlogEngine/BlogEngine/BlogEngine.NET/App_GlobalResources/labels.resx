@@ -1865,4 +1865,7 @@
   <data name="VisibilityOptions" xml:space="preserve">
     <value>Visibility options</value>
   </data>
+  <data name="confirmDelete" xml:space="preserve">
+    <value>Are you sure you want to delete this item?</value>
+  </data>
 </root>

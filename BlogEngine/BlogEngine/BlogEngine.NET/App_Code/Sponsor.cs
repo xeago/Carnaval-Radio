@@ -46,9 +46,7 @@ public class CRSponsor
     public DateTime CreationDate { get; set; }
     public DateTime? EndDate { get; set; }
     public bool Active { get; set; }
-
     
-
     public string LogoPhysicalPath
     {
         get { return HttpContext.Current.Server.MapPath("../../" + LogoURL); }
@@ -60,7 +58,7 @@ public class CRSponsor
 	    CreationDate = DateTime.Now;
 	}
 
-    public CRSponsor(Guid id, bool IsDelete)
+    public CRSponsor(Guid id, bool isDelete)
     {
         //GetSponsor
         dt = s.GetDataTable();
@@ -73,7 +71,7 @@ public class CRSponsor
         this.ID = id;
         this.Name = dr["Name"].ToString();
         this.Url = dr["URL"].ToString();
-        this.SponsorType = (SponsorType) (GSDlib.Utils.NullableInt(dr["SponsorPage_SponsorType"]) ?? 1);
+        this.SponsorType = (SponsorType) (GSDlib.Utils.NullableInt(dr["SponsorPage_SponsorType"]) ?? 5);
 
         this.PlayerSwitch = ConvertBoolElseFalse(dr["Player_Switch"]);
         this.PlayerSolid = ConvertBoolElseFalse(dr["Player_Solid"]);
@@ -81,7 +79,7 @@ public class CRSponsor
         this.MobileSwitch = ConvertBoolElseFalse(dr["Mobile_Switch"]);
         this.MobileSolid = ConvertBoolElseFalse(dr["Mobile_Solid"]);
 
-        this.MFrequency = (MobileFrequency) (GSDlib.Utils.NullableInt(dr["Mobile_Frequency"]) ?? 1);
+        this.MFrequency = (MobileFrequency) (GSDlib.Utils.NullableInt(dr["Mobile_Frequency"]) ?? 5);
 
         this.LogoURL = dr["Logo"].ToString();
         this.Description = dr["Description"].ToString();
@@ -98,13 +96,13 @@ public class CRSponsor
             settings.AddValue("ID", ID.ToString());
             settings.AddValue("Name", Name);
             settings.AddValue("URL", Url ?? string.Empty);
-            settings.AddValue("SponsorPage_SponsorType", ((SponsorType)(GSDlib.Utils.NullableInt(this.SponsorType) ?? 1)).ToString());
+            settings.AddValue("SponsorPage_SponsorType", ((int)this.SponsorType).ToString());
             settings.AddValue("Player_Switch", PlayerSwitch.ToString().ToLower());
             settings.AddValue("Player_Solid", PlayerSolid.ToString());
             settings.AddValue("Widget_Switch", WidgetSwitch.ToString());
             settings.AddValue("Mobile_Switch", MobileSwitch.ToString());
             settings.AddValue("Mobile_Solid", MobileSolid.ToString());
-            settings.AddValue("Mobile_Frequency", ((MobileFrequency)(GSDlib.Utils.NullableInt(this.MFrequency) ?? 1)).ToString());
+            settings.AddValue("Mobile_Frequency", ((int)this.MFrequency).ToString());
             settings.AddValue("Logo", LogoURL ?? string.Empty);
             settings.AddValue("Description", Description ?? string.Empty);
             settings.AddValue("CreationDate", DateTime.Now.ToString());
@@ -124,9 +122,9 @@ public class CRSponsor
                     case "URL":
                         parameter.Values[i] = Url;
                         break;
-                    case "SposnorPage_SponsorType":
+                    case "SponsorPage_SponsorType":
                         parameter.Values[i] =
-                            ((SponsorType) (GSDlib.Utils.NullableInt(this.SponsorType) ?? 1)).ToString();
+                            ((int) this.SponsorType).ToString();
                         break;
                     case "Player_Switch":
                         parameter.Values[i] = PlayerSwitch.ToString();
@@ -144,7 +142,7 @@ public class CRSponsor
                         parameter.Values[i] = MobileSolid.ToString();
                         break;
                     case "Mobile_Frequency":
-                        parameter.Values[i] = ((MobileFrequency)(GSDlib.Utils.NullableInt(this.MFrequency) ?? 1)).ToString();
+                        parameter.Values[i] = ((int)this.MFrequency).ToString();
                         break;
                     case "Logo":
                         parameter.Values[i] = LogoURL;
@@ -190,8 +188,6 @@ public class CRSponsor
     {
         return s.GetDataTable().Rows.Cast<DataRow>().Select(dr => new CRSponsor(Guid.Parse(dr["ID"].ToString()), false)).ToList();
     }
-
-
 
     private static bool ConvertBoolElseFalse(object a)
     {

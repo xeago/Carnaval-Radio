@@ -36,7 +36,7 @@
                                     <li><a class="toolsAction" href="#"><span class="">Tools</span></a>
                                         <ul class="rowToolsMenu">
                                             <li><a class="editAction" href="EditSponsor.aspx?id=<%# Eval("ID") %>">Wijzigen</a></li>
-                                            <li><a href="EditSponsor.aspx?delete=<%# Eval("ID") %>" class="deleteAction">Verwijderen</a></li>
+                                            <li><a href="EditSponsor.aspx?delete=<%# Eval("ID") %>" onclick="return confirm('<%= Resources.labels.confirmDelete  %>')" class="deleteAction">Verwijderen</a></li>
                                         </ul>
                                     </li>
                                 </ul>

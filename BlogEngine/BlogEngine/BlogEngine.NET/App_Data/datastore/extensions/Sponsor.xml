@@ -22,6 +22,8 @@
       <Required>true</Required>
       <SelectedValue />
       <Values>35a84e42-82ec-4d9e-9788-b1ab7a5cbe13</Values>
+      <Values>b55601e9-8734-4705-b337-69b4e40449b6</Values>
+      <Values>bf6a1502-3b2e-45ef-9786-b9dd2abae861</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -32,6 +34,8 @@
       <Required>true</Required>
       <SelectedValue />
       <Values>test34asdasdasdasd</Values>
+      <Values>test12318293123</Values>
+      <Values>Will Smits Schilderwerken</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -42,6 +46,8 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>tester</Values>
+      <Values>askjdaiuwdhnasoidj.nl</Values>
+      <Values>www.wilsmits.nl</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -51,7 +57,9 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>0</Values>
+      <Values>3</Values>
+      <Values>2</Values>
+      <Values>3</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -61,7 +69,9 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>False</Values>
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -71,7 +81,9 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>True</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -81,6 +93,8 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>True</Values>
+      <Values>True</Values>
       <Values>True</Values>
     </Parameters>
     <Parameters>
@@ -92,6 +106,8 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -101,6 +117,8 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>True</Values>
+      <Values>False</Values>
       <Values>True</Values>
     </Parameters>
     <Parameters>
@@ -112,6 +130,8 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>0</Values>
+      <Values>0</Values>
+      <Values>0</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -122,6 +142,8 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>Upload/sponsoren/35a84e42-82ec-4d9e-9788-b1ab7a5cbe13.png</Values>
+      <Values>Upload/sponsoren/b55601e9-8734-4705-b337-69b4e40449b6.png</Values>
+      <Values>Upload/sponsoren/bf6a1502-3b2e-45ef-9786-b9dd2abae861.png</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -132,6 +154,8 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>we testen de omschrijving!</Values>
+      <Values>dit is een beschrijving waar je wat kan vertellen over de sponsor, wordt echter niks mee gedaan.</Values>
+      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -142,6 +166,8 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>2-6-2012 15:02:14</Values>
+      <Values>4-6-2012 10:23:37</Values>
+      <Values>4-6-2012 11:03:48</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -151,7 +177,9 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>2-6-2012 0:00:00</Values>
+      <Values>31-8-2012 0:00:00</Values>
+      <Values>16-6-2012 0:00:00</Values>
+      <Values>30-9-2012 0:00:00</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -161,6 +189,8 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>True</Values>
+      <Values>True</Values>
       <Values>True</Values>
     </Parameters>
     <ShowAdd>true</ShowAdd>

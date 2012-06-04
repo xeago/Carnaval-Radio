@@ -9,7 +9,9 @@
   </role>
   <role>
     <name>Editors</name>
-    <users />
+    <users>
+      <user>Test</user>
+    </users>
   </role>
   <role>
     <name>Anonymous</name>

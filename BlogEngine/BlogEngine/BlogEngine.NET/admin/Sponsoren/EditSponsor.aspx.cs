@@ -57,7 +57,8 @@ namespace Admin.Sponsoren
                 txtName.Text = crSponsor.Name;
                 txtUrl.Text = crSponsor.Url;
 
-                ddlSponsorType.SelectedValue = ((int) crSponsor.SponsorType).ToString();
+                BindSponsorTypes(crSponsor.SponsorType);
+                //ddlSponsorType.SelectedValue = ((int) crSponsor.SponsorType).ToString();
                     
                 if (!string.IsNullOrEmpty(crSponsor.LogoURL))
                     imgLogo.LoadImageFromFileSystem(crSponsor.LogoPhysicalPath);
@@ -74,7 +75,7 @@ namespace Admin.Sponsoren
                 txtDescription.Text = crSponsor.Description;
                 dtEndDate.SetDate(crSponsor.EndDate);
 
-                BindSponsorTypes(SponsorType.Hoofdsponsor);
+
             }
             else if(IsDelete)
             {
@@ -86,7 +87,7 @@ namespace Admin.Sponsoren
             {
                 PageTitle.Text = labels.addNewSponsor;
                 crSponsor = new CRSponsor();
-                BindSponsorTypes(SponsorType.Sponsor);
+                BindSponsorTypes(SponsorType.VriendenVanCr);
             }
 
 
@@ -174,6 +175,8 @@ namespace Admin.Sponsoren
             crSponsor.Active = cbActive.Checked;
             
             crSponsor.Save();
+
+            Response.Redirect("Sponsoren.aspx");
         }
     }
 }

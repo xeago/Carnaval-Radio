@@ -24,7 +24,7 @@
   <contactformmessage>&lt;p&gt;I'll answer the mail as soon as I can.&lt;/p&gt;</contactformmessage>
   <searchbuttontext>Search</searchbuttontext>
   <showincludecommentsoption>False</showincludecommentsoption>
-  <israzortheme>True</israzortheme>
+  <israzortheme>False</israzortheme>
   <enablewebsiteincomments>False</enablewebsiteincomments>
   <enablecontactattachments>True</enablecontactattachments>
   <blogrollmaxlength>23</blogrollmaxlength>
@@ -53,10 +53,10 @@
   <culture>Auto</culture>
   <disquswebsitename />
   <handlewwwsubdomain />
-  <theme>AllTuts</theme>
+  <theme>Standard</theme>
   <sendmailoncomment>True</sendmailoncomment>
   <description>De vastelaoves Radio!!</description>
-  <blogrollvisibleposts>3</blogrollvisibleposts>
+  <blogrollvisibleposts>5</blogrollvisibleposts>
   <geocodinglatitude>0</geocodinglatitude>
   <numberofreferrerdays>1</numberofreferrerdays>
   <iscommentsenabled>True</iscommentsenabled>

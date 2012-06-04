@@ -1772,4 +1772,7 @@
   <data name="VisibilityOptions" xml:space="preserve">
     <value>Zichtbaarheid instellingen</value>
   </data>
+  <data name="confirmDelete" xml:space="preserve">
+    <value>Weet je zeker dat je deze record wilt verwijderen?</value>
+  </data>
 </root>
