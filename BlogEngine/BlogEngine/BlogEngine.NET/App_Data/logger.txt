@@ -2,3 +2,13 @@
 Date: 5/31/2012 10:39:46 AM
 Contents Below
 Error retrieving Twitter feed. The remote server returned an error: (401) Unauthorized.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/4/2012 10:34:52 AM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/4/2012 10:34:52 AM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri

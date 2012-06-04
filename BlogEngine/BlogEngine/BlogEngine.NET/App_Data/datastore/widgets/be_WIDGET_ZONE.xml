@@ -2,4 +2,5 @@
 <widgets>
   <widget id="42fcbe7c-2c9c-440a-bad9-65a94472fccc" title="Administration" showTitle="True">Administration</widget>
   <widget id="a7f87c1d-48e7-4ffb-b83f-05953bef0226" title="AudioPlayer" showTitle="True">AudioPlayer</widget>
+  <widget id="cb5534fc-94a1-4f00-9d42-5b2e61875ce9" title="Twitter" showTitle="True">Twitter</widget>
 </widgets>

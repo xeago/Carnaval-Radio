@@ -39,6 +39,7 @@ namespace Widgets.Twitter
             settings["maxitems"] = this.txtTwits.Text.Trim();
             settings["pollinginterval"] = this.txtPolling.Text.Trim();
             settings["followmetext"] = this.txtFollowMe.Text.Trim();
+            settings["imgUrl"] = string.Format("http://api.twitter.com/1/users/profile_image/{0}", this.txtAccount.Text);
             this.SaveSettings(settings);
 
             // Don't need to clear Feed out of cache because when the Settings are cleared,

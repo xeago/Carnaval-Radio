@@ -174,15 +174,8 @@ namespace Widgets.Twitter
             text.Text = twit.Title;
             date.Text = twit.PubDate.ToString("MMMM d. HH:mm");
 
-            //fugly :<
-            try
-            {
-                img.ImageUrl = string.IsNullOrWhiteSpace(twit.ImgUrl.ToString()) ? "" : twit.ImgUrl.ToString();
-            }
-            catch
-            {
-                img.ImageUrl = @"http://a0.twimg.com/profile_images/1617188758/hyves_logo_Carnaval-radio.nl_normal.png";
-            }
+            img.ImageUrl = twit.ImgUrl.ToString();
+            
         }
 
         /// <summary>
@@ -292,17 +285,22 @@ namespace Widgets.Twitter
                     }
 
 
-                    //fugly
+                    //retrieve user-image
                     try
                     {
                         string fullnode = node.InnerXml;
-                        var bla = fullnode.Split(new string[] { "<google:image_link" }, StringSplitOptions.RemoveEmptyEntries)[1].Split(new string[] { " xmlns:google=\"http://base.google.com/ns/1.0\">","</google:image_link>" }, StringSplitOptions.RemoveEmptyEntries)[0];
-                        if (!string.IsNullOrWhiteSpace(bla))
+                        var imgurl = fullnode.Split(new string[] { "<google:image_link" }, StringSplitOptions.RemoveEmptyEntries)[1].Split(new string[] { " xmlns:google=\"http://base.google.com/ns/1.0\">","</google:image_link>" }, StringSplitOptions.RemoveEmptyEntries)[0];
+                        if (!string.IsNullOrWhiteSpace(imgurl))
                         {
-                            twit.ImgUrl = new Uri(bla, UriKind.Absolute);
+                            twit.ImgUrl = new Uri(imgurl, UriKind.Absolute);
+                        }
+                        else { //default Twitter image
+                            twit.ImgUrl = new Uri(@"http://a0.twimg.com/sticky/default_profile_images/default_profile_1_normal.png");
                         }
                     }
-                    catch { }
+                    catch (IndexOutOfRangeException e) { //No google:image_link means it's from the profile feed, so set account image
+                        twit.ImgUrl = GetTwitterSettings().AccountImageUrl;
+                    }
                     
                     twits.Add(twit);
 
@@ -311,7 +309,7 @@ namespace Widgets.Twitter
             }
 
             twits.Sort();
-            twits = twits.Take(15).ToList();
+            twits = twits.Take(GetTwitterSettings().MaxItems).ToList();
             this.repItems.DataSource = twits;
             this.repItems.DataBind();
         }
@@ -429,6 +427,10 @@ namespace Widgets.Twitter
                 Uri accountFeedUrl;
                 Uri.TryCreate(string.Format("http://api.twitter.com/1/statuses/user_timeline.rss?screen_name={0}", settings["account"]), UriKind.Absolute, out accountFeedUrl);
                 twitterSettings.AccountFeedUrl = accountFeedUrl;
+
+                Uri accountImageUrl;
+                Uri.TryCreate(string.Format("http://api.twitter.com/1/users/profile_image/{0}", settings["account"]), UriKind.Absolute, out accountImageUrl);
+                twitterSettings.AccountImageUrl = accountImageUrl;
             }
 
             if (settings.ContainsKey("hashtags") && !string.IsNullOrEmpty(settings["hashtags"]))
@@ -569,6 +571,11 @@ namespace Widgets.Twitter
             /// The account feed url.
             /// </summary>
             public Uri AccountFeedUrl;
+
+            /// <summary>
+            /// The account feed url.
+            /// </summary>
+            public Uri AccountImageUrl;
 
             /// <summary>
             /// The hashtag url.
