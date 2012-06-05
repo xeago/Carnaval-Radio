@@ -83,14 +83,7 @@ namespace Guestbook
             int i = 0;
             string lsOrder = null;
 
-            if (lbOrder)
-            {
-                lsOrder = "desc";
-            }
-            else
-            {
-                lsOrder = "asc";
-            }
+            lsOrder = lbOrder ? "desc" : "asc";
 
             if (ldRatio < 1)
             {

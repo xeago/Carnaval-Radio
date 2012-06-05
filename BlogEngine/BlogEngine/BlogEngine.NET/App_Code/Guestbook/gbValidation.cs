@@ -6,39 +6,9 @@ namespace Guestbook
 {
     public class gbValidation
     {
-        public bool IsEmail(string lsEmail)
-        {
-            bool lbReturn = false;
-            string lsPattern =
-                "^[a-zA-Z][\\w\\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\\w\\.-]*[a-zA-Z0-9]\\.[a-zA-Z][a-zA-Z\\.]*[a-zA-Z]$";
-            Match lmEmailMatch = Regex.Match(lsEmail.Trim(), lsPattern, RegexOptions.IgnoreCase);
-
-            if (lmEmailMatch.Success)
-            {
-                lbReturn = true;
-            }
-            else
-            {
-                lbReturn = false;
-            }
-
-            return lbReturn;
-        }
-
         public bool IsSpam(string psMessage, string psConfigPath, string psIP)
         {
-            bool lbReturn = false;
-
-            if (IsBadWord(psMessage, psConfigPath) || IsIPBanned(psIP, psConfigPath))
-            {
-                lbReturn = true;
-            }
-            else
-            {
-                lbReturn = false;
-            }
-
-            return lbReturn;
+            return IsBadWord(psMessage, psConfigPath) || IsIPBanned(psIP, psConfigPath);
         }
 
         public bool IsBadWord(string lsMessage, string lsConfigPath)
@@ -52,13 +22,9 @@ namespace Guestbook
             loXMLNodes = loXMLDoc.GetElementsByTagName("word");
             foreach (XmlNode loXMLNode in loXMLNodes)
             {
-                if (lsMessage.IndexOf(loXMLNode.InnerText) >= 0)
-                {
-                    lbReturn = true;
-                    break; // TODO: might not be correct. Was : Exit For
-                }
+                return lsMessage.IndexOf(loXMLNode.InnerText) >= 0;
             }
-            return lbReturn;
+            return false;
         }
 
         public bool IsIPBanned(string lsIP, string lsConfigPath)
