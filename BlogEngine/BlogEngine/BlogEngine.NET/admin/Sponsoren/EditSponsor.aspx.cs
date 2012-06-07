@@ -1,9 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <summary>
-//   The page editor.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
@@ -20,7 +15,7 @@ namespace Admin.Sponsoren
 {
     public partial class EditSponsor : Page
     {
-        private string ID;
+        private string SponsorID;
         private string Delete;
         private Guid GuidID;
         private bool IsEdit;
@@ -37,10 +32,10 @@ namespace Admin.Sponsoren
             WebUtils.CheckRightsForAdminPagesPages(false);
             MaintainScrollPositionOnPostBack = true;
 
-            ID = Request.QueryString["id"];
+            SponsorID = Request.QueryString["id"];
             Delete = Request.QueryString["delete"];
-            if (!String.IsNullOrEmpty(ID))
-                IsEdit = Guid.TryParse(ID, out GuidID);
+            if (!String.IsNullOrEmpty(SponsorID))
+                IsEdit = Guid.TryParse(SponsorID, out GuidID);
             if (!String.IsNullOrEmpty(Delete))
                 IsDelete = Guid.TryParse(Delete, out GuidID);
             

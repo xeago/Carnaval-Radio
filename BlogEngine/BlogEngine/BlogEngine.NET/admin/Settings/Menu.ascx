@@ -5,6 +5,7 @@
     <li <%=Current("Feed.aspx")%>><a href="Feed.aspx"><%=Resources.labels.feed %></a></li>
     <li <%=Current("Picasa.aspx")%>><a href="Picasa.aspx"><%=Resources.labels.PhotoAlbums %></a></li>
     <li <%=Current("AudioStream.aspx")%>><a href="AudioStream.aspx"><%=Resources.labels.AudioStream %></a></li>
+    <li <%=Current("SocialMedia.aspx")%>><a href="SocialMedia.aspx"><%=Resources.labels.SocialMedia %></a></li>
     <li <%=Current("Email.aspx")%>><a href="Email.aspx"><%=Resources.labels.email %></a></li>
     <li <%=Current("Themes.cshtml")%>><a href="Themes.cshtml"><%=Resources.labels.themes %></a></li>
     

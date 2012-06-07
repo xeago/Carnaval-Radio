@@ -1838,6 +1838,9 @@
   <data name="ID" xml:space="preserve">
     <value>ID</value>
   </data>
+  <data name="SocialMedia" xml:space="preserve">
+    <value>Social Media</value>
+  </data>
   <data name="editSponsor" xml:space="preserve">
     <value>Edit sponsor</value>
   </data>
