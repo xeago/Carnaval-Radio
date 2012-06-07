@@ -133,13 +133,16 @@ namespace Widgets.Twitter
             {
                 var xml = (string)Blog.CurrentInstance.Cache[TwitterFeedsCacheKey];
                 var doc = new XmlDocument();
-                doc.LoadXml(xml);
-                this.BindFeed(doc, settings.MaxItems);
+                if (!string.IsNullOrWhiteSpace(xml))
+                {
+                    doc.LoadXml(xml);
+                    this.BindFeed(doc, settings.MaxItems);
+                }
             }
 
             if (DateTime.Now <= settings.LastModified.AddMinutes(settings.PollingInterval))
             {
-                return;
+                //return;
             }
             
             settings.LastModified = DateTime.Now;
@@ -298,7 +301,7 @@ namespace Widgets.Twitter
                             twit.ImgUrl = new Uri(@"http://a0.twimg.com/sticky/default_profile_images/default_profile_1_normal.png");
                         }
                     }
-                    catch (IndexOutOfRangeException e) { //No google:image_link means it's from the profile feed, so set account image
+                    catch (IndexOutOfRangeException) { //No google:image_link means it's from the profile feed, so set account image
                         twit.ImgUrl = GetTwitterSettings().AccountImageUrl;
                     }
                     
@@ -320,51 +323,73 @@ namespace Widgets.Twitter
         /// <param name="result">
         /// The result.
         /// </param>
-        private static void EndGetResponse(List<IAsyncResult> results)
+        private void EndGetResponse(List<IAsyncResult> results)
         {
             XmlDocument xml = null;
-            foreach (var result in results)
+            if (results.Count != 0)
             {
-                try
+                foreach (var result in results)
                 {
-                    GetRequestData data = (GetRequestData)result.AsyncState;
-                    Blog.InstanceIdOverride = data.BlogInstanceId;
-
-                    using (var response = (HttpWebResponse)data.HttpWebRequest.GetResponse())
+                    try
                     {
-                        var doc = new XmlDocument();
-                        var responseStream = response.GetResponseStream();
-                        if (responseStream != null)
-                        {
-                            doc.Load(responseStream);
-                        }
+                        GetRequestData data = (GetRequestData)result.AsyncState;
+                        Blog.InstanceIdOverride = data.BlogInstanceId;
 
-                        if (xml == null)
+                        using (var response = (HttpWebResponse)data.HttpWebRequest.GetResponse())
                         {
-                            xml = doc;
-                        }
-                        else
-                        {
+                            var doc = new XmlDocument();
+                            var responseStream = response.GetResponseStream();
+                            if (responseStream != null)
+                            {
+                                doc.Load(responseStream);
+                            }
+
                             var x = doc.SelectNodes("//item");
-                            var z=xml.SelectSingleNode("//channel");
                             for (int i = 0; i < x.Count; i++)
                             {
-                                XmlNode importNode = z.OwnerDocument.ImportNode(x[i], true);
-                                z.AppendChild(importNode);
+                                var author = x[i].SelectSingleNode("author");
+                                if (author == null)
+                                {
+                                    XmlNode auth = x[i].OwnerDocument.CreateNode(XmlNodeType.Element, "author", "");
+                                    auth.InnerText = GetTwitterSettings().Account;
+                                    x[i].AppendChild(auth);
+
+                                }
+                                else
+                                {                                
+                                    if (author.InnerText.Contains("@"))
+                                        author.InnerText = author.InnerText.Substring(0, author.InnerText.IndexOf("@"));
+                                }
                             }
+                            
+
+                            if (xml == null)
+                            {
+                                xml = doc;
+                            }
+                            else
+                            {
+                                var z = xml.SelectSingleNode("//channel");
+                                for (int i = 0; i < x.Count; i++)
+                                {
+                                    XmlNode importNode = z.OwnerDocument.ImportNode(x[i], true);
+                                    z.AppendChild(importNode);
+                                }
+                            }
+
                         }
-                        
+                    }
+                    catch (Exception ex)
+                    {
+                        var msg = "Error retrieving Twitter feed.";
+                        msg += string.Format(" {0}", ex.Message);
+                        Utils.Log(msg);
                     }
                 }
-                catch (Exception ex)
-                {
-                    var msg = "Error retrieving Twitter feed.";
-                    msg += string.Format(" {0}", ex.Message);
-                    Utils.Log(msg);
-                }
+                Blog.CurrentInstance.Cache[TwitterFeedsCacheKey] = xml.OuterXml;
+                SaveLastFeed(xml);
             }
-            Blog.CurrentInstance.Cache[TwitterFeedsCacheKey] = xml.OuterXml;
-            SaveLastFeed(xml);
+            
         }
 
         /// <summary>
@@ -415,11 +440,15 @@ namespace Widgets.Twitter
             var maxItems = 3;
             var pollingInterval = 15;
             const string FollowMeText = "Follow me";
+            twitterSettings.AccountImageUrl = new Uri(@"http://api.twitter.com/1/users/profile_image/Twitter");
 
             var settings = this.GetSettings();
 
             if (settings.ContainsKey("account") && !string.IsNullOrEmpty(settings["account"]))
             {
+                string account = settings["account"];
+                twitterSettings.Account = account;
+
                 Uri accountUrl;
                 Uri.TryCreate(string.Format("http://www.twitter.com/{0}", settings["account"]), UriKind.Absolute, out accountUrl);
                 twitterSettings.AccountUrl = accountUrl;
@@ -561,6 +590,11 @@ namespace Widgets.Twitter
         internal class TwitterSettings
         {
             #region Constants and Fields
+
+            /// <summary>
+            /// The account name.
+            /// </summary>
+            public string Account;
 
             /// <summary>
             /// The account url.
