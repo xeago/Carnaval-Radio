@@ -45,8 +45,6 @@ namespace admin.Settings
                     litContent.Text = labels.ErrorConnectingPicasa + pEx.Message;
                 }
             }
-
-
         }
 
         protected string GetAlbumsTable()

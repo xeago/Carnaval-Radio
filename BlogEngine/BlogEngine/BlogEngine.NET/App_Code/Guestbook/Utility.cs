@@ -32,47 +32,25 @@ namespace Guestbook
             return functionReturnValue;
         }
 
-        public static void GetStartAndEnd(ref int liStart, ref int liEnd, int liTotalCount, int liPage, bool lbOrder,
+        public static void GetStartAndEnd(ref int liStart, ref int liEnd, int liTotalCount, int liPage,
                                           int piMsgPerPage)
         {
-            if (lbOrder)
+            // desc
+            if (liTotalCount < piMsgPerPage)
             {
-                // asc
-                if (liTotalCount < piMsgPerPage)
-                {
-                    liStart = 0;
-                    liEnd = liTotalCount;
-                }
-                else
-                {
-                    //liStart = (liPage - 1) * piMsgPerPage;
-                    //liEnd = (liStart + piMsgPerPage) - 1;
-                    liStart = (liPage - 1)*piMsgPerPage;
-                    liEnd = (liStart + piMsgPerPage);
-                    if (liEnd > liTotalCount)
-                    {
-                        liEnd = liTotalCount;
-                    }
-                }
+                liStart = liTotalCount;
+                liEnd = 0;
             }
             else
             {
-                // desc
-                if (liTotalCount < piMsgPerPage)
+                liStart = liTotalCount - ((liPage - 1)*piMsgPerPage);
+                liEnd = (liStart - piMsgPerPage); // +1;
+                if (liEnd < 0)
                 {
-                    liStart = liTotalCount;
                     liEnd = 0;
                 }
-                else
-                {
-                    liStart = liTotalCount - ((liPage - 1)*piMsgPerPage);
-                    liEnd = (liStart - piMsgPerPage); // +1;
-                    if (liEnd < 0)
-                    {
-                        liEnd = 0;
-                    }
-                }
             }
+
         }
 
         public static string GenerateNavigation(int liTotalCount, int liPage, bool lbOrder, string psPageName,
@@ -87,7 +65,7 @@ namespace Guestbook
 
             if (ldRatio < 1)
             {
-                lsNavigation = "Page <a href=\"List.aspx\">1</a>";
+                lsNavigation = "Page <a href=\"Gastenboek.aspx\">1</a>";
             }
             else
             {

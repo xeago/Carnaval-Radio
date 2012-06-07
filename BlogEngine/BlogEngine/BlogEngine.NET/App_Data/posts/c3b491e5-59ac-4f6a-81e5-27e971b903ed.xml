@@ -21,14 +21,11 @@
   <isdeleted>False</isdeleted>
   <iscommentsenabled>False</iscommentsenabled>
   <pubDate>2011-06-11 10:00:00</pubDate>
-  <lastModified>2012-06-04 15:10:17</lastModified>
+  <lastModified>2012-06-06 10:36:59</lastModified>
   <raters>5</raters>
   <rating>4.24</rating>
   <slug>Welcome-to-BlogEngineNET-25</slug>
-  <tags>
-    <tag>blog</tag>
-    <tag>welcome</tag>
-  </tags>
+  <tags />
   <comments>
     <comment id="82c3783e-5ea4-4a6e-b5b2-55d53da0a6c6" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="False">
       <date>2010-01-03 17:58:00</date>

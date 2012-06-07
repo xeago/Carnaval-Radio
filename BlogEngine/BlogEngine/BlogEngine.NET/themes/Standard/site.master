@@ -42,8 +42,6 @@
       <asp:ContentPlaceHolder ID="cphBody" runat="server" />
       
       <p id="footer">
-        Powered by <a href="http://www.dotnetblogengine.net">BlogEngine.NET</a> <%=BlogSettings.Instance.Version() %><br />
-        Theme by <a href="http://madskristensen.net">Mads Kristensen</a>
       </p>
     </div>
 

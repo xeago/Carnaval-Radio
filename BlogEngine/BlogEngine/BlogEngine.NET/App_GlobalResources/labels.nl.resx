@@ -1353,7 +1353,7 @@
     <value>Nieuw wachtwoord is vereist</value>
   </data>
   <data name="emailIsInvalid" xml:space="preserve">
-    <value>E-mail adres is ongelding</value>
+    <value>E-mail adres is ongeldig</value>
   </data>
   <data name="oldPasswordIsRequired" xml:space="preserve">
     <value>Oud wachtwoord is vereist</value>

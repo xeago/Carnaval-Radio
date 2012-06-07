@@ -33,17 +33,17 @@ public partial class guestbook : BlogBasePage
         string lsPath = Request.ApplicationPath;
 
         laFiles = coSerialize.GetFileNames();
-        Utility.GetStartAndEnd(ref liStart, ref liEnd, laFiles.Count, ciPage, true, Convert.ToInt16(ciMsgPerPage));
+        Utility.GetStartAndEnd(ref liStart, ref liEnd, laFiles.Count, ciPage, Convert.ToInt16(ciMsgPerPage));
 
         StringBuilder messages = new StringBuilder();
-        for (i = liStart; i < liEnd; i++)
+        for (i = liStart; i > liEnd; i--)
         {
-            var loMessage = coSerialize.DeserializeMessage(laFiles[i].ToString(), ref lsError);
+            var loMessage = coSerialize.DeserializeMessage(laFiles[i - 1].ToString(), ref lsError);
             messages.Append(coSerialize.DisplayMessage(loMessage, lsPath, csPath));
         }
         MsgDisplay.Text = messages.ToString();
 
-        lblNavigation.Text = GenerateNavigation(laFiles.Count, ciPage, "List", Convert.ToInt16(ciMsgPerPage));
+        lblNavigation.Text = GenerateNavigation(laFiles.Count, ciPage, "Gastenboek", Convert.ToInt16(ciMsgPerPage));
     }
     
     private string GetVisitorIP()

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using BlogEngine.Core;
 using BlogEngine.Core.Web.Controls;
@@ -7,6 +8,24 @@ using BlogEngine.Core.Web.Extensions;
 
 namespace App_Code.Extensions
 {
+    public class PicasaAlbum
+    {
+        public AlbumAccessor Accessor { get; set; }
+        public string ThumbNailURl { get; set; }
+        public string AlbumUri{ get; set; }
+        public List<PicasaPhoto> AlbumContent 
+        {
+            get { return Picasa2.GetAlbumContent(Accessor.Name); }
+        }
+    }
+
+    public class PicasaPhoto
+    {
+        public string Title { get; set; }
+        public string Url { get; set; }
+        public string ImageSrc { get; set; }
+    }
+
     /// <summary>
     /// Picasa extension for BlogEngine 2.0
     /// </summary>
@@ -145,7 +164,7 @@ namespace App_Code.Extensions
             return s;
         }
 
-        private static string GetAlbum(string album)
+        public static string GetAlbum(string album)
         {
             string retVal;
             try
@@ -183,6 +202,73 @@ namespace App_Code.Extensions
                 retVal = qex.Message;
             }
             return retVal;
+        }
+
+        public static List<PicasaPhoto> GetAlbumContent(string album)
+        {
+            List<PicasaPhoto> retVal = new List<PicasaPhoto>();
+            try
+            {
+                var service = new PicasaService("exampleCo-exampleApp-1");
+
+                string usr = Settings.GetSingleValue("Account") + "@gmail.com";
+                string pwd = Settings.GetSingleValue("Password");
+
+                service.setUserCredentials(usr, pwd);
+
+                var query = new PhotoQuery(PicasaQuery.CreatePicasaUri(usr, album));
+                PicasaFeed feed = service.Query(query);
+
+                foreach (PicasaEntry entry in feed.Entries)
+                {
+                    var firstThumbUrl = entry.Media.Thumbnails[0].Attributes["url"] as string;
+                    string thumGrp = "/s" + Settings.GetSingleValue("PicWidth") + "/";
+
+                    if (firstThumbUrl != null) firstThumbUrl = firstThumbUrl.Replace("/s72/", thumGrp);
+
+                    var contentUrl = entry.Media.Content.Attributes["url"] as string;
+
+                    if (contentUrl != null) contentUrl = contentUrl.Substring(0, contentUrl.LastIndexOf("/"));
+
+                    contentUrl += "/s640/" + entry.Title.Text;
+
+                    retVal.Add(new PicasaPhoto(){Title = entry.Title.Text, ImageSrc = contentUrl, Url = firstThumbUrl});
+                }
+            }
+            catch
+            {
+                retVal = null;
+            }
+            return retVal;
+        }
+
+        public static List<PicasaAlbum> GetAlbums()
+        {
+            Settings = ExtensionManager.GetSettings("Picasa2");
+            if (string.IsNullOrEmpty(Settings.GetSingleValue("Account"))) return null;
+
+            var service = new PicasaService("exampleCo-exampleApp-1");
+
+            string usr = Settings.GetSingleValue("Account") + "@gmail.com";
+            string pwd = Settings.GetSingleValue("Password");
+
+            service.setUserCredentials(usr, pwd);
+
+            var query = new AlbumQuery(PicasaQuery.CreatePicasaUri(usr));
+            PicasaFeed feed = service.Query(query);
+
+            var albums = new List<PicasaAlbum>();
+            foreach (PicasaEntry entry in feed.Entries)
+            {
+                var ac = new AlbumAccessor(entry);
+
+                // thumbnail
+                string albumUri = ((Google.GData.Client.AtomEntry)(entry)).AlternateUri.ToString();
+                string firstThumbUrl = entry.Media.Thumbnails[0].Attributes["url"] as string;
+                albums.Add(new PicasaAlbum() { Accessor = ac, ThumbNailURl = firstThumbUrl, AlbumUri = albumUri });
+
+            }
+            return albums;
         }
 
         protected void InitSettings()

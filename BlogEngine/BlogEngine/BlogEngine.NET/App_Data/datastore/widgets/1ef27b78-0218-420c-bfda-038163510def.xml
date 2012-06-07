@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SerializableStringDictionary>
   <SerializableStringDictionary>
-    <DictionaryEntry Key="content" Value="Something about the author&#xD;&#xA;" />
+    <DictionaryEntry Key="content" Value="&lt;p&gt;Something about the author&lt;/p&gt;" />
   </SerializableStringDictionary>
 </SerializableStringDictionary>
