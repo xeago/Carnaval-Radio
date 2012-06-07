@@ -16,7 +16,7 @@
 
         public override bool IsEditable
         {
-            get { return true; }
+            get { return false; }
         }
 
         public override string Name

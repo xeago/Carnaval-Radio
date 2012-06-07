@@ -55,13 +55,20 @@ function mediaCheck(audioplayer, stream) {
 
 function toggleDownload() {
     $('#dltab').toggle();
-    $('#dltab').animate({
-        -moz-transform:rotate(180deg),
-        -webkit-transform:rotate(180deg),
-        -o-transform:rotate(180deg),
-        -ms-transform:rotate(180deg),
-        filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1)
-    }, 1000);
+    if ($('#dltab').is(':visible')) {
+        $('#dlimg').css({ '-moz-transform': 'rotate(180deg)' });
+        $('#dlimg').css({ WebkitTransform: 'rotate(180deg)' });
+        $('#dlimg').css({ '-o-transform': 'rotate(180deg)' });
+        $('#dlimg').css({ '-ms-transform': 'rotate(180deg)' });
+        $('#dlimg').css({ 'filter:progid': 'DXImageTransform.Microsoft.BasicImage(rotation=1)' });
+    }
+    else {
+        $('#dlimg').css({ '-moz-transform': 'rotate(0deg)' });
+        $('#dlimg').css({ WebkitTransform: 'rotate(0deg)' });
+        $('#dlimg').css({ '-o-transform': 'rotate(0deg)' });
+        $('#dlimg').css({ '-ms-transform': 'rotate(0deg)' });
+        $('#dlimg').css({ 'filter:progid': 'DXImageTransform.Microsoft.BasicImage(rotation=0)' });
+    }
 }
 
 function download(file) {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <widgets>
   <widget id="42fcbe7c-2c9c-440a-bad9-65a94472fccc" title="Administration" showTitle="True">Administration</widget>
-  <widget id="a7f87c1d-48e7-4ffb-b83f-05953bef0226" title="AudioPlayer" showTitle="True">AudioPlayer</widget>
-  <widget id="cb5534fc-94a1-4f00-9d42-5b2e61875ce9" title="Twitter" showTitle="True">Twitter</widget>
+  <widget id="67ce837d-6a8c-4ff6-94a9-1786cc5c8e7d" title="Shoutbox" showTitle="True">Shoutbox</widget>
+  <widget id="94f763f6-a4b9-48c8-aa9a-dc1073241408" title="AudioPlayer" showTitle="True">AudioPlayer</widget>
 </widgets>
