@@ -198,22 +198,6 @@ img {
 	color: #666;
 	padding-right: 5px;
 }
-
-#menu ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-#menu ul li{
-	display:inline;
-}
-
-#menu ul li a{
-	padding: 10px;
-	font-weight: bold;
-}
-
 #menu ul li a.feed img{
 	margin-right: 3px;
 	margin-bottom: -2px;

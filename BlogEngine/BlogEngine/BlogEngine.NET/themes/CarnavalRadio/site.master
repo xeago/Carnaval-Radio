@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="shortcut icon" href="~/pics/blogengine.ico" type="image/x-icon"/>
     <asp:ContentPlaceHolder ID="cphHeader" runat="server" />
+    <asp:Literal ID="StylesAndScripts" runat="server" />
+    <script type="text/javascript">
+        jQuery(function () { jQuery('ul.head-menu').superfish(); });
+    </script>
 </head>
 <body>
 
@@ -33,13 +37,14 @@
          <span runat="server" id="aUser"></span><a runat="server" id="aLogin" />
     </div>
    
-    <ul>
+    <ul class="head-menu">
       <li><a href="<%=Utils.AbsoluteWebRoot %>" rel="home"><%=Resources.labels.home %></a></li>
       <li><a href="<%=Utils.AbsoluteWebRoot %>archive.aspx"><%=Resources.labels.archive %></a></li>
-      <li><a href="<%=Utils.AbsoluteWebRoot %>contact.aspx"><%=Resources.labels.contact %></a></li>
       <asp:Literal runat="server" ID="litMenu" />
-      <li><a href="<%=Utils.FeedUrl %>" class="feed"><img src="<%=Utils.ApplicationRelativeWebRoot %>pics/rssButton.png" alt="Feed" /><%=Resources.labels.subscribe %></a></li>
-      <li><a href="javascript:void(BlogEngine.filterByAPML())" class="apmlfilter"><%=Resources.labels.filterByApml %></a></li>
+
+        <li><a href="<%=Utils.AbsoluteWebRoot %>contact.aspx">
+            <%=Resources.labels.contact %></a></li>
+      <!--<li><a href="javascript:void(BlogEngine.filterByAPML())" class="apmlfilter"><%=Resources.labels.filterByApml %></a></li>!-->
       <% if (Utils.IsMobile)
          { %>
       <li><blog:MobileThemeSwitch runat="server" /></li>
@@ -62,7 +67,8 @@
     <div id="sidepanel">
       <blog:WidgetZone runat="server" ZoneName="be_WIDGET_ZONE" />
     </div>
-    
+  <li><a href="<%=Utils.FeedUrl %>" class="feed">
+      <img src="<%=Utils.ApplicationRelativeWebRoot %>pics/rssButton.png" alt="Feed" /><%=Resources.labels.subscribe %></a></li>
   </form>
   
 </body>

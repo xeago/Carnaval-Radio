@@ -41,10 +41,10 @@ namespace App_Code.Extensions
                 const string js = "<script type=\"text/javascript\" src=\"{0}{1}\"></script>";
                 const string css = "<link type=\"text/css\" href=\"{0}\" rel=\"stylesheet\" />";
 
-                scriptLinks.Append(string.Format(css, Utils.RelativeWebRoot + PrettyPhotoFolder + "/css/prettyPhoto.css"));
-                scriptLinks.Append(string.Format(js, Utils.RelativeWebRoot, "Scripts/jquery.js"));
-                scriptLinks.Append(string.Format(js, Utils.RelativeWebRoot, PrettyPhotoFolder + "/js/jquery.prettyPhoto.js"));
-                scriptLinks.Append(string.Format(js, Utils.RelativeWebRoot, PrettyPhotoFolder + "/js/PrettyPhotoStarter.js"));
+                //scriptLinks.Append(string.Format(css, Utils.RelativeWebRoot + PrettyPhotoFolder + "/css/prettyPhoto.css"));
+                //scriptLinks.Append(string.Format(js, Utils.RelativeWebRoot, "Scripts/jquery.js"));
+                //scriptLinks.Append(string.Format(js, Utils.RelativeWebRoot, PrettyPhotoFolder + "/js/jquery.prettyPhoto.js"));
+                //scriptLinks.Append(string.Format(js, Utils.RelativeWebRoot, PrettyPhotoFolder + "/js/PrettyPhotoStarter.js"));
 
                 litLinks.Text = scriptLinks.ToString();  
                 basePage.Header.Controls.Add(litLinks);

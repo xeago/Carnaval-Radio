@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <page>
-  <title>Sponsoren</title>
+  <title>Informatie</title>
   <description />
-  <content>&lt;p&gt;[No text]&lt;/p&gt;</content>
+  <content>&lt;p&gt;Test informatie&lt;/p&gt;</content>
   <keywords />
-  <slug>test-pagina-fotoalbum</slug>
+  <slug>Informatie</slug>
   <parent>00000000-0000-0000-0000-000000000000</parent>
   <isfrontpage>False</isfrontpage>
   <showinlist>True</showinlist>
   <ispublished>True</ispublished>
   <isdeleted>False</isdeleted>
-  <datecreated>2012-05-24 12:35:11</datecreated>
-  <datemodified>2012-06-08 12:32:28</datemodified>
+  <datecreated>2012-06-08 12:34:16</datecreated>
+  <datemodified>2012-06-08 12:34:16</datemodified>
 </page>

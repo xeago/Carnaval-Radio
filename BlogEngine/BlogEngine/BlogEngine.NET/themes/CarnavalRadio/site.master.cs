@@ -21,9 +21,10 @@ public partial class StandardSite : System.Web.UI.MasterPage
 			aLogin.HRef = Utils.RelativeWebRoot + "Account/login.aspx";
 			aLogin.InnerText = Resources.labels.login;
 		}
-
+      RegisterStyleSheetInclude(string.Format("{0}{1}", Utils.AbsoluteWebRoot,
+                                              "themes/CarnavalRadio/styles/superfish.css"));
+      RegisterClientScriptInclude(string.Format("{0}{1}", Utils.AbsoluteWebRoot, "themes/CarnavalRadio/js/superfish.js"));
       litMenu.Text = buildMenu("");
-
   }
 
     private string buildMenu(string currentPage)
@@ -52,6 +53,36 @@ public partial class StandardSite : System.Web.UI.MasterPage
         }
 
         return menu.ToString();
+    }
+
+    /// <summary>
+    /// Registers the client script include.
+    /// </summary>
+    /// <param name="src">The file name.</param>
+    private void RegisterClientScriptInclude(string src)
+    {
+        var si = new System.Web.UI.HtmlControls.HtmlGenericControl();
+        si.TagName = "script";
+        si.Attributes.Add("type", "text/javascript");
+        si.Attributes.Add("src", src);
+        this.Page.Header.Controls.Add(si);
+        this.Page.Header.Controls.Add(new LiteralControl("\n"));
+    }
+
+    /// <summary>
+    /// Registers the client script include.
+    /// </summary>
+    /// <param name="src">The file name.</param>
+    private void RegisterStyleSheetInclude(string src)
+    {
+        var si = new System.Web.UI.HtmlControls.HtmlGenericControl();
+        si.TagName = "link";
+        si.Attributes.Add("type", "text/css");
+        si.Attributes.Add("rel", "stylesheet");
+        si.Attributes.Add("media", "screen");
+        si.Attributes.Add("href", src);
+        this.Page.Header.Controls.Add(si);
+        this.Page.Header.Controls.Add(new LiteralControl("\n"));
     }
 
 }
