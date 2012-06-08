@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Video Slider</title>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/base/advanced-slider-base.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/glossy-curved-square/gray/glossy-curved-square-gray.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/video-js/video-js.min.css">
+<link rel="stylesheet" type="text/css" href="css/video-slider.css" media="screen"/>
+
+<link rel="stylesheet" type="text/css" href="../presentation-assets/presentation.css" media="screen"/>
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="../presentation-assets/presentation-ie7.css" media="screen"/><![endif]-->
+
+<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="js/froogaloop.min.js"></script>
+<script type="text/javascript" src="js/video.min.js"></script>
+<script type="text/javascript" src="js/jquery.videoController.min.js"></script>
+<script type="text/javascript" src="js/jquery.advancedSlider.min.js"></script>
+
+<script type="text/javascript">	
+	jQuery(document).ready(function($){
+		$('#video-slider').advancedSlider({width: 1080,
+										   height: 483,
+										   scaleType: 'outsideFit',
+										   skin: 'glossy-curved-square-gray',
+										   effectType: 'fade',
+										   overrideTransition: true,
+										   keyboardNavigation: true,
+										   timerStrokeColor1: '#ffffff', 
+										   timerStrokeColor2: '#000000', 
+										   timerStrokeOpacity1: 0.3, 
+										   timerStrokeOpacity2: 0.3, 
+										   timerStrokeWidth1: 6, 
+										   timerStrokeWidth2: 3, 
+										   slideshowDelay: 10000,
+										   slideProperties: {
+												1: {effectType: 'slide'},
+												3: {effectType: 'slide'},
+												5: {effectType: 'slide'}
+										   }
+										   });
+	});
+	
+	
+</script>
+
+</head>
+
+<body>
+
+	<div class="advanced-slider" id="video-slider">
+		<ul class="slides">
+			<li class="slide">
+				<div class="html">
+					<div class="video-container">
+						<iframe class="video" src="http://www.youtube.com/embed/msIjWthwWwI?rel=0&enablejsapi=1&wmode=transparent" width="700" height="400" frameborder="0"></iframe>
+					</div>
+            		
+					<div class="description">
+						<div class="title"> 
+							<p>Cathedral</p>
+						</div>
+						
+						<div class="content"> 
+							<p>The film is based on a short story by Jacek Dukaj under the same title. In 2002 "Cathedral" was awarded the main prize at SIGGRAPH festival ("Best Animated Short"). A year later it received an Oscar nomination in the category "Best Animated Short Film".</p>
+							<p>SYNOPSIS: Story of a pilgrim who comes to the Cathedral on the border of the known world. He wants to find answers. He finds tranquility.</p>
+							<p>DIRECTOR: Tomasz Baginski</p>
+						</div>
+						
+						<div class="link">
+							<p>SOURCE: <a href="http://www.youtube.com/watch?v=msIjWthwWwI" target="_blank">youtube.com/watch?v=msIjWthwWwI</a></p>
+						</div>
+						
+					</div>
+            	</div>
+			</li>
+			
+			<li class="slide">
+				<div class="html">
+					<div class="video-container">
+						<iframe class="video" src="http://player.vimeo.com/video/3116167?api=1" width="700" height="400" frameborder="0"></iframe>
+					</div>
+            		
+					<div class="description">
+						<div class="title"> 
+							<p>ARK</p>
+						</div>
+						
+						<div class="content"> 
+							<p>An unknown virus has destroyed almost the entire human population. Oblivious to the true nature of the disease, the only remaining survivors escape to the sea. In great ships, they set off in search of uninhabited land. So begins the exodus, led by one man.</p>
+							<p>DIRECTOR: Grzegorz Jonkajtys</p>
+							<p>PRODUCERS: Grzegorz Jonkajtys, Marcin Kobylecki</p>
+							<p>CO-PRODUCERS: Piotr Sikora, Jaroslaw Sawko (Platige Image)</p>
+						</div>
+						
+						<div class="link">
+							<p>SOURCE: <a href="http://vimeo.com/3116167" target="_blank">vimeo.com/3116167</a></p>						
+						</div>
+					</div>
+            	</div>
+			</li>
+			
+			<li class="slide">
+				<div class="html">
+					<div class="video-container">
+						<video id="video-1" class="video video-js vjs-default-skin" controls="controls" preload="none" width="700" height="400"
+							   poster="http://bqworks.com/products/assets/videos/sintel/sintel-poster.jpg" data-video="{}">
+							<source src="http://bqworks.com/products/assets/videos/sintel/sintel-trailer.mp4" type='video/mp4'/>
+							<source src="http://bqworks.com/products/assets/videos/sintel/sintel-trailer.ogv" type='video/ogg'/>
+						</video>
+					</div>
+					
+					<div class="description">
+						<div class="title"> 
+							<p>Sintel</p>
+						</div>
+						
+						<div class="content"> 
+							<p>"Sintel" is an independently produced short film, initiated by the Blender Foundation as a means to further improve and validate the free/open source 3D creation suite Blender. With initial funding provided by 1000s of donations via the internet community, it has again proven to be a viable development model for both open 3D technology as for independent animation film.</p>
+							<p>This 15 minute film has been realized in the studio of the Amsterdam Blender Institute, by an international team of artists and developers. In addition to that, several crucial technical and creative targets have been realized online, by developers and artists and teams all over the world.</p>
+						</div>
+						
+						<div class="link">
+							<p>SOURCE: <a href="http://www.sintel.org/" target="_blank">sintel.org</a></p>
+						</div>
+						
+					</div>
+            	</div>
+			</li>
+			
+			<li class="slide">
+				<div class="html">
+					<div class="video-container">
+						<iframe class="video" src="http://www.youtube.com/embed/sKMxtfMSPTM?rel=0&enablejsapi=1&wmode=transparent" width="700" height="400" frameborder="0"></iframe>
+					</div>
+					
+					<div class="description">
+						<div class="title"> 
+							<p>The Thomas Beale Cipher</p>
+						</div>
+						
+						<div class="content"> 
+							<p>Based on a true legend of the famous unsolved code. The film contains 16 hidden messages that hold clues to the characters' secrets. Eight are fairly easy requiring only a close eye. Six are moderately difficult using various encryption methods. Two are extremely difficult requiring a genius mind to decrypt.</p>
+							<p>More about the film: <a href="http://thomasbealecipher.com" target="_blank">thomasbealecipher.com</a></p>
+							<p>Distributed by Short of the Week: <a href="http://shortoftheweek.com" target="_blank">shortoftheweek.com</a></p>
+						</div>
+						
+						<div class="link">
+							<p>SOURCE: <a href="http://www.youtube.com/watch?v=sKMxtfMSPTM" target="_blank">youtube.com/watch?v=sKMxtfMSPTM</a></p>
+						</div>
+					</div>
+            	</div>
+			</li>
+			
+			<li class="slide">
+				<div class="html">
+					<div class="video-container">
+						<iframe class="video" src="http://player.vimeo.com/video/25181651?api=1" width="700" height="400" frameborder="0"></iframe>
+					</div>
+					
+					<div class="description">
+						<div class="title"> 
+							<p>Resonance</p>
+						</div>
+						
+						<div class="content"> 
+							<p>Resonance is the vision of SR Partners; a collaborative project with over 30 independent visual and audio designers/studios. The aim was to explore the relationship between geometry and audio in unique ways.</p>
+							<p>This piece is my approach to the connection between audio and shapes. I tried to give this abstract animation a certain type of emotion, that every movement happening on screen would be more than the sole propose of look cool and sync to the sound. To do this I based this video on a section of John Bunyan's "The Pilgrim's Progress", when Christian is guided trough the Interpreters House. It's a very personal, graphic and non-descriptive explanation of this part of one of my favorite books. It's intended more to help me as the animator to give some meaning to the animation rather than narrate the story.</p>
+						</div>
+						
+						<div class="link">
+							<p>SOURCE: <a href="http://vimeo.com/25181651" target="_blank">vimeo.com/25181651</a></p>
+						</div>
+					</div>
+            	</div>			
+			</li>
+			
+			<li class="slide">
+				<div class="html">
+					<div class="video-container">
+						<video class="video" controls="controls" preload="none" width="700" height="400"
+							   poster="http://bqworks.com/products/assets/videos/bbb/bbb-poster.jpg">
+							<source src="http://bqworks.com/products/assets/videos/bbb/bbb-trailer.mp4" type='video/mp4'/>
+							<source src="http://bqworks.com/products/assets/videos/bbb/bbb-trailer.ogg" type='video/ogg'/>
+						</video>
+					</div>
+            		
+					<div class="description">
+						<div class="title"> 
+							<p>Big Buck Bunny</p>
+						</div>
+						
+						<div class="content"> 
+							<p>As a follow-up to the successful project Orange's "Elephants Dream", the Blender Foundation initiated another open movie project. Again a small team (7) of the best 3D artists and developers in the Blender community have been invited to come together to work in Amsterdam from October 2007 until April 2008 on completing a short 3D animation movie.</p>
+							<p>The creative concept of "Peach" was completely different as for "Orange". This time it is "funny and furry"!</p>
+							<p>The Blender Foundation and Blender community have been the main financiers for Peach. Additional support from sponsors and subsidy funds has been realized as well.</p>
+							<p>Peach also was the first Open Project hosted by the new Blender Institute in Amsterdam.</p>
+						</div>
+						
+						<div class="link">
+							<p>SOURCE: <a href="http://www.bigbuckbunny.org" target="_blank">bigbuckbunny.org</a></p>
+						</div>
+						
+					</div>
+            	</div>
+			</li>
+			
+			<li class="slide">
+				<div class="html">
+					<div class="video-container">
+						<iframe class="video" src="http://www.youtube.com/embed/LOMbySJTKpg?rel=0&enablejsapi=1&wmode=transparent" width="700" height="400" frameborder="0"></iframe>
+					</div>
+					
+					<div class="description">
+						<div class="title"> 
+							<p>Zero</p>
+						</div>
+						
+						<div class="content"> 
+							<p>In a world that judges people by their number, Zero faces constant prejudice and persecution. He walks a lonely path until a chance encounter changes his life forever: he meets a female zero. Together they prove that through determination, courage, and love, nothing can be truly something.</p>
+							<p>Zero has screened in over 50 festivals and has won 15 awards including 'Best Animation' from LA Shorts Fest and the Rhode Island International Film Festival and has been nominated for an AFI Award in the 'Best Short Animation' category.</p>
+							<p>DIRECTOR: Christopher Kezelos has recently relocated to Los Angeles from Sydney, Australia and is seeking new Directing opportunities. To get in touch, you can contact him <a href="http://www.zealouscreative.com/contact/" target="_blank">here</a>. To view a trailer for his latest work "The Maker", check out: <a href=">http://themakerfilm.com" target="_blank">http://themakerfilm.com</a></p>
+						</div>
+						
+						<div class="link">
+							<p>SOURCE: <a href="http://www.youtube.com/watch?v=LOMbySJTKpg" target="_blank">youtube.com/watch?v=LOMbySJTKpg</a></p>
+						</div>
+					</div>
+            	</div>
+			</li>
+			
+		</ul>
+	</div>
+	
+	<div id="example-navigation-container">
+		<div id="example-navigation">
+			<ul id="list">
+				<li><a href="../responsive/responsive.html">Responsive</a></li>
+				<li><a href="../responsive-proportional/responsive-proportional.html">Responsive Proportional</a></li>
+				<li><a href="../basic/basic.html">Basic</a></li>
+				<li><a href="../minimal/minimal.html">Minimal</a></li>
+				<li class="active"><a href="../video/video.html">Video</a></li>
+				<li><a href="../lightbox/lightbox.html">Lightbox</a></li>
+				<li><a href="../lazy-loading/lazy-loading.html">Lazy Loading</a></li>
+				<li><a href="../mixed/mixed.html">Mixed</a></li>
+				<li><a href="../xml/xml.html">XML</a></li>
+			</ul>
+			
+			<div id="description">
+				<p id="features-header">Highlighted Features:</p>
+				<ul>
+					<li><strong>Inline HTML content.</strong> You can combine video, text and any other content in the same slide.</li>
+					<li><strong>Multiple Video types.</strong> The slider has built-in support for YouTube, Vimeo and HTML5 videos.</li>
+					<li><strong>Automatic Video Handling.</strong> The slideshow will be automatically paused when the video starts playing and the video will be paused automatically when you navigate to another slide.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

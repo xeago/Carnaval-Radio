@@ -1,0 +1,35 @@
+html, body {
+	height: 100%;	
+}
+
+
+#responsive-slider {
+	max-width: 840px;
+	max-height: 550px;
+}
+
+
+#responsive-slider .rounded-caption .background {
+	border-radius: 14px;
+}
+
+
+#responsive-slider .caption ul {
+	list-style: circle;
+	margin-left: 20px;
+}
+
+
+@media (max-width:500px), (max-height:600px) {
+	#responsive-slider .rounded-caption .caption-container {
+		visibility: hidden;
+	}
+}
+
+
+@media (max-height:500px), (max-width:400px) {
+	#responsive-slider .slide-arrows,
+	#responsive-slider .timer-animation {
+		visibility: hidden;
+	}
+}

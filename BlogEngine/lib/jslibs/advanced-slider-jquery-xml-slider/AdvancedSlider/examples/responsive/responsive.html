@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Responsive Slider</title>
+
+<link rel="stylesheet" type="text/css" href="css/base/advanced-slider-base.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/glossy-square/gray/glossy-square-gray.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/responsive-slider.css" media="screen"/>
+
+<link rel="stylesheet" type="text/css" href="../presentation-assets/presentation.css" media="screen"/>
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="../presentation-assets/presentation-ie7.css" media="screen"/><![endif]-->
+
+<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.transition.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="js/jquery.advancedSlider.min.js"></script>
+
+<script type="text/javascript">	
+	jQuery(document).ready(function($){
+		$('#responsive-slider').advancedSlider({width: '80%',
+												height: '70%',
+												scaleType: 'outsideFit',
+												skin: 'glossy-square-gray',
+												effectType: 'swipe',
+												pauseSlideshowOnHover: true,
+												swipeThreshold: 50,
+												slideButtons: false,
+												thumbnailType: 'scroller',
+												thumbnailButtons: true,
+												thumbnailScrollerResponsive: true,
+												minimumVisibleThumbnails: 2,
+											    slideProperties:{
+													0:{captionSize: 35, captionHideEffect: 'slide'},
+													1:{captionPosition: 'custom', captionShowEffect: 'fade', captionHeight: 160, captionLeft: 70, slideshowDelay: 10000},
+													3:{captionSize: 40},
+													5:{captionPosition: 'left', captionSize: 150, captionHideEffect: 'slide'},
+													7:{captionPosition: 'right', captionSize: 150, captionHideEffect: 'slide'}
+												}
+		});
+	});
+	
+	
+</script>
+
+</head>
+
+<body>
+
+	<div class="advanced-slider" id="responsive-slider">
+		<ul class="slides">
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image1.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image1.jpg" alt="Slide 1"/>
+				<div class="caption">This is just a simple caption.</div>
+			</li>
+			
+			<li class="slide rounded-caption">
+				<img class="image" src="../presentation-assets/images/slides/image2.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image2.jpg" alt="Slide 2"/>
+				<div class="caption"><b><i>Custom size and position</i></b> <br/><br/> You can set the caption's position to left, right, top or bottom, but you can also give it a custom position and size, as you can see in this example. Also, you can choose from 2 caption effects: slide and fade.</div>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image3.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image3.jpg" alt="Slide 3"/>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image4.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image4.jpg" alt="Slide 4"/>
+				<div class="caption">You can also add <b>HTML</b> elements like <a href="http://codecanyon.net">links</a> or <input type="button" value="Buttons"/></div>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image5.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image5.jpg" alt="Slide 5"/>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image6.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image6.jpg" alt="Slide 6"/>
+				<div class="caption"><u>Title</u><br/><br/>This is a list of items:<ul><li>first item</li><li>second item</li><li>third item</li></ul></div>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image7.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image7.jpg" alt="Slide 7"/>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image8.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image8.jpg" alt="Slide 8"/>
+				<div class="caption"><u>Title</u><br/><br/><br/>List of items:<ul><li>first item</li><li>second item</li><li>third item</li></ul></div>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image9.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image9.jpg" alt="Slide 9"/>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image10.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image10.jpg" alt="Slide 10"/>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="example-navigation-container">
+		<div id="example-navigation">
+			<ul id="list">
+				<li class="active"><a href="../responsive/responsive.html">Responsive</a></li>
+				<li><a href="../responsive-proportional/responsive-proportional.html">Responsive Proportional</a></li>
+				<li><a href="../basic/basic.html">Basic</a></li>
+				<li><a href="../minimal/minimal.html">Minimal</a></li>
+				<li><a href="../video/video.html">Video</a></li>
+				<li><a href="../lightbox/lightbox.html">Lightbox</a></li>
+				<li><a href="../lazy-loading/lazy-loading.html">Lazy Loading</a></li>
+				<li><a href="../mixed/mixed.html">Mixed</a></li>
+				<li><a href="../xml/xml.html">XML</a></li>
+			</ul>
+			
+			<div id="description">
+				<p id="features-header">Highlighted Features:</p>
+				<ul>
+					<li><strong>Responsive layout.</strong> The width and height of the slider are specified in percentages and are relative to the window size. The thumbnail scroller is also responsive.</li>
+					<li><strong>Touch screen support.</strong> You can swipe the main slide horizontally (vertical swipe is also available). You can also use the mouse to drag the slides.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

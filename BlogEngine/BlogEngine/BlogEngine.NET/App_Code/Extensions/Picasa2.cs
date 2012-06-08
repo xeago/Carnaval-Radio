@@ -232,7 +232,7 @@ namespace App_Code.Extensions
 
                     contentUrl += "/s640/" + entry.Title.Text;
 
-                    retVal.Add(new PicasaPhoto(){Title = entry.Title.Text, ImageSrc = contentUrl, Url = firstThumbUrl});
+                    retVal.Add(new PicasaPhoto() { Title = entry.Summary.Text, ImageSrc = contentUrl, Url = firstThumbUrl });
                 }
             }
             catch

@@ -1,0 +1,2724 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Advanced Slider Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    
+	<style type="text/css">
+		body {
+			padding-top: 60px;
+			padding-bottom: 40px;
+		}
+	</style>
+    
+	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="assets/css/custom.css" rel="stylesheet">
+
+   
+    
+    </head>
+    
+<body data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+			<a class="brand" href="#">Advanced Slider</a>
+			<div class="nav-collapse">
+				<ul class="nav">
+
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Introduction <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#introduction1">1. Copy required files</a></li>
+							<li><a href="#introduction2">2. Include files in the page</a></li>
+							<li><a href="#introduction3">3. Create HTML markup</a></li>
+							<li><a href="#introduction4">4. Instantiate the slider</a></li>
+							<li><a href="#introduction5">5. Updating guide</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Using HTML <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#using-html1">1. Captions and tooltips</a></li>
+							<li><a href="#using-html2">2. Lazy loaded images</a></li>
+							<li><a href="#using-html3">3. Links and Lightboxes</a></li>
+							<li><a href="#using-html4">4. Inline HTML content</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Using XML <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#using-xml1">1. Basic XML example</a></li>
+							<li><a href="#using-xml2">2. Advanced XML use</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">JavaScript Reference <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#javascript-reference1">1. Properties</a></li>
+							<li><a href="#javascript-reference2">2. Public Methods</a></li>
+							<li><a href="#javascript-reference3">3. Callbacks</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Skinning the Slider <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#skinning1">1. Introduction</a></li>
+							<li><a href="#skinning2">2. Creating custom skins</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Miscellaneous topics <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#miscellaneous1">1. Automatic video handling</a></li>
+							<li><a href="#miscellaneous2">2. Responsive sliders</a></li>
+							<li><a href="#miscellaneous3">3. CSS3 transitions</a></li>
+						</ul>
+					</li>
+					
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Troubleshooting <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#troubleshooting1">1. The slider breaks when the 'slide' effect is used</a></li>
+							<li><a href="#troubleshooting2">2. The slider loads but doesn't respond to input</a></li>
+							<li><a href="#troubleshooting3">3. The self-hosted, HTML5 videos don't play</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of Navbar -->
+
+
+<!-- Main Container Beginning -->			
+			
+<div class="container">
+    
+	<div class="masthead">
+		<h1>Advanced Slider</h1>
+		<p class="marketing-byline">built by <a href="http://codecanyon.net/user/bqworks">bqworks</a></p>
+		<p class="marketing-byline">version 3.0.1</p>
+		<p>One of the best jQuery sliders available on the market at the moment.</p>
+	</div>
+	
+	
+	<div id="intro">
+		<p class="highlight hero-unit">Thank you for purchasing Advanced Slider. If you have any questions that are beyond the scope of this documentation, please feel free to email at <strong>contact@bqworks.com</strong> or via my user page contact form <a href="http://codecanyon.net/user/bqworks">here</a>.</p>
+	</div>
+	
+      
+<section id="introduction">
+	<div class="page-header">
+	  <h1>Introduction <small>Getting started with Advanced Slider</small></h1>
+	</div>
+	
+	<p> All the scripts that you will ever need are in the 'source files' folder. There are a few mandatory files while the rest are optional and need to be included in your page only if you use certain features. You are provided with both minified and developer files, which contain the uncompressed and commented source code. In the _dev folder you can also find the PSD files for the skins.</p>
+	<p> Let's try to create a new slider. As it is a good practice to keep your files organized, I'm going to create separate directories for the JavaScript and CSS files: 'js' and 'css'.</p> 
+	<img src="assets/img/folders.jpg" style="margin-bottom:15px;"/>
+	
+	<div class="row">
+		<div class="span3">
+			<h3 id="introduction1">1. Copy required files</h3>
+        	<p>Copy the JavaScript and CSS files</p>
+		</div>
+		
+		<div class="span9">
+			<h4>JavaScript files</h4>
+			<p>Next I will copy the files that I need from the 'source files' folder into these 2 directories. For now, I'm only going to use the mandatory files, so from 'source files/js' I will copy the jQuery library (jquery-1.7.2.min.js), the Advanced Slider script (jquery.advancedSlider.min.js) and the Excanvas script (excanvas.compiled.js), which is mandatory for older versions of IE (IE8 and lower). </p> 
+			
+			<h4>CSS files</h4>
+			<p>From 'source files/css/base' I will copy 'advanced-slider-base.css', which is the skeleton for the skin CSS files, and the 'images' folder which contains some common image assets. I also need to copy one of the skin folders, which can be found in 'source files/css/slider-skins'. I will copy the 'pixel' folder.</p>
+		</div>
+	</div>
+	
+	<hr />
+	
+	<div class="row">
+		<div class="span3">
+			<h3 id="introduction2">2. Include files in the page</h3>
+        	<p>After copying all the necessary files, I need to include them in the header of the HTML page.</p>
+		</div>
+		
+		<div class="span9">
+<pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/advanced-slider-base.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/pixel/pixel.css&quot; /&gt;
+		
+    &lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;>&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.advancedSlider.min.js&quot;>&lt;/script&gt;
+    &lt;!--[if IE]>&lt;script type=&quot;text/javascript&quot; src=&quot;js/excanvas.compiled.js&quot;>&lt;/script>&lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+		</div>
+	</div>
+	
+	<hr />
+	
+	<div class="row">
+		<div class="span3">
+			<h3 id="introduction3">3. Create HTML markup</h3>
+        	<p>Although you can use XML instead of HTML markup to specify the content, in this introductory example I will use some basic HTML. Later, I will show you how to use XML as well.</p> 		
+			<p>The HTML markup needs to be specified inside the &lt;body&gt; tag.</p>
+			<p>As you can see in the code on the right, you need to create a main DIV container to which you assign the "advanced-slider" class. It's also recommended to assign a unique ID, which you can use to reference the slider in the CSS or JavaScript code. Inside the main container you need to create an unordered list (ul element) and assign it the "slides" class. Each "li" element represents a slide and you need to assign the "slide" class to each. Then, inside the "li" element you can add elements for the slide. In this example I'm only adding a main image and a thumbnail but, as you will see later, slides can contain more complex content. It's optional to specify a main slide image or a thumbnail image. However, if you do, the "image" and "thumbnail" classes are mandatory.</p>
+		</div>
+		
+		<div class="span9">
+<pre class="prettyprint linenums">
+&lt;body&gt;
+
+    &lt;div class=&quot;advanced-slider&quot; id=&quot;my-slider&quot;&gt;
+        &lt;ul class=&quot;slides&quot;&gt;
+            &lt;li class=&quot;slide&quot;&gt;
+                &lt;img class=&quot;image&quot; src=&quot;../images/slides/image1.jpg&quot; alt=&quot;&quot;/&gt;
+                &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image1.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;/li&gt;
+		
+            &lt;li class=&quot;slide&quot;&gt;
+                &lt;img class=&quot;image&quot; src="../images/slides/image2.jpg&quot; alt=&quot;&quot;/&gt;
+                &lt;img class=&quot;thumbnail&quot; src="../images/thumbnails/image2.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;/li&gt;
+		
+            &lt;li class="slide"&gt;
+                &lt;img class=&quot;image&quot; src=&quot;../images/slides/image3.jpg&quot; alt=&quot;&quot;/&gt;
+                &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image3.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;/li&gt;
+		
+            &lt;li class="slide"&gt;
+                &lt;img class=&quot;image&quot; src=&quot;../images/slides/image4.jpg&quot; alt=&quot;&quot;/&gt;
+                &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image4.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;/li&gt;
+		
+            &lt;li class=&quot;slide&quot;&gt;
+                &lt;img class=&quot;image&quot; src=&quot;../images/slides/image5.jpg&quot; alt=&quot;&quot;/&gt;
+                &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image5.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+	
+&lt;/body&gt;
+</pre>
+		</div>
+	</div>
+	
+	<hr />	
+		
+    <div class="row">
+		<div class="span3">
+			<h3 id="introduction4">4. Instantiate the slider</h3>
+        	<p>The last step is to instantiate the slider. In this example I won't pass any property to the slider, which means that the default values will be used. This code needs to be added after including the necessary files for the slider.</p>
+		</div>
+		
+		<div class="span9">
+<pre class="prettyprint js linenums">
+&lt;script type=&quot;text/javascript&quot;&gt;
+    jQuery(document).ready(function($){
+        $('#my-slider').advancedSlider();
+    });
+&lt;/script&gt;
+</pre>
+		</div>
+	</div>
+      
+	<p>These are all the required steps for creating a basic slider. In the following chapters you will learn how to create more advanced sliders.</p>
+
+	<div class="row">
+		<div class="span12">
+			<h3 id="introduction5">5. Updating guide</h3>
+			<p>If you're updating from a pre-V3 version, please note that in V3 there were introduced some modification to the name of some JavaScript properties and CSS selectors. These changes are meant to improve the slider's semantics but if you think it's too much work to make the necessary edits, keep in mind that it's not necessary to update. However, if you do update and make the necessary edits, it will be worth it in the long run.</p>
+			
+			<p>One of the most important changes is the role of the 'width' and 'height' properties. These properties no longer refer to the width and height of the slide image but rather to the width and height of the whole slider, which includes controls, shadow, thumbnail scroller, etc. This modification was introduces in order to allow the slider to be responsive. When you want to determine the required width and height that you need to set the slider to, in order to have a certain width and height for the slides, you can use the slider's getSize() method. This mehod will return both the width/height of the slider and the width/height of the slide. Having this information you will know by how much to increase/decrease the width/height of the slider so that the width/height of the slide is set to a certain value.</p>
+			
+			<h3>1. JavaScrip Modifications</h3>
+			
+			<p>The following properties were removed: skipBroken and slidesPreloaded.</p>
+			
+			<p>The following properties had their name or role changed:</p>
+			
+			<ul class="custom-list">
+				<li>visibleThumbnails -> maximumVisibleThumbnails</li>
+				<li>slideStartRatio and sliceStartPosition ->  sliceStartRatio and sliceStartPosition</li>
+				<li>effectType accepts the following values: fade, slide, swipe, slice and none, and a new property was introduced for the slice effects: sliceEffectType</li>
+				<li>the "horizontalAlternativ", "verticalAlternativ" values of the sliceStartPosition property were changed to "horizontalAlternate" and "verticalAlternate"</li>
+				<li>thumbnailsType -> thumbnailType</li>
+				<li>the "navigation" value of the thumnbailsType property was changed to "scroller"</li>
+				<li>navigationArrows -> slideArrows</li>
+				<li>fadeNavigationArrows -> slideArrowsToggle</li>
+				<li>navigationArrowsShowDuration -> slideArrowsShowDuration</li>
+				<li>navigationArrowsHideDuration -> slideArrowsHideDuration</li>
+				<li>navigationButtons -> slideButtons</li>
+				<li>navigationButtonsNumbers -> slideButtonsNumber</li>
+				<li>fadeNavigationSlideButtons -> slideButtonsToggle</li>
+				<li>navigationButtonsShowDuration -> slideButtonsShowDuration</li>
+				<li>navigationButtonsHideDuration -> slideButtonsHideDuration</li>
+				<li>navigationButtonsCenter -> slideButtonsCenter</li>
+				<li>navigationButtonsContainerCenter -> slideButtonsContainerCenter</li>
+				<li>thumbnailNavigationShowDuration -> thumbnailScrollerShowDuration</li>
+				<li>thumbnailNavigationHideDuration -> thumbnailScrollerHideDuration</li>
+				<li>thumbnailNavigationCenter -> thumbnailScrollerCenter</li>
+				<li>fadeThumbnailNavigation -> thumbnailScrollerToggle</li>
+				<li>fadeCaption -> captionToggle</li>
+				<li>fadeSlideshowControls -> slideshowControlsToggle</li>
+				<li>fadeTimer -> timerToggle</li>
+				<li>fadeThumbnailCaption -> thumbnailCaptionToggle</li>
+				<li>fadeThumbnailButtons -> thumbnailButtonsToggle</li>
+				<li>fadeThumbnailArrows -> thumbnailArrowsToggle</li>
+				<li>fadeThumbnailScrollbar -> thumbnailScrollbarToggle</li>
+			</ul>
+			
+			<hr />
+			
+			<h3>2. CSS Modifications</h3>
+			
+			<p>The following CSS selector were changed:</p>
+			
+			<ul class="custom-list">
+				<li>.curved-square .navigation-arrows -> .curved-square .slide-arrows</li>
+				<li>.curved-square .caption .background -> .curved-square .caption-container .background</li>
+				<li>.curved-square .caption .content -> .curved-square .caption-container .caption</li>
+				<li>.curved-square .navigation-buttons -> .curved-square .slide-buttons</li>
+				<li>.curved-square .navigation-buttons .buttons -> .curved-square .slide-buttons .buttons-inner</li>
+				<li>.curved-square .navigation-buttons .buttons .thumbnail -> .curved-square .slide-buttons .buttons-inner .thumbnail-wrapper</li>
+				<li>.curved-square .navigation-thumbnails -> .curved-square .thumbnail-scroller</li>
+				<li>.curved-square .navigation-thumbnails .thumbnail -> .curved-square .thumbnail-scroller .thumbnail-wrapper</li>
+			</ul>
+		</div>
+	</div>
+
+</section>	
+
+
+<hr />
+
+
+<section id="using-html">
+	<div class="page-header">
+		<h1>Using HTML <small>Complete guide on how to use HTML with Advanced Slider</small></h1>
+	</div>
+	
+	<p>This chapter will show you how to write the HTML markup for the slider when you want to use certain features supported by Advanced Slider. You will see how to add lightboxes, lazy loaded slide images, html content and more.</p>
+	
+	<h3 id="using-html1">1. Captions and tooltips</h3>
+	
+	<div class="row">
+    	<div class="span3">
+			<h4>Slide captions</h4>
+  			<p>It's very simple to add captions to the slides. All you have to do is create a DIV with the 'caption' class and add the text inside this DIV. The slider will automatically create a transparent background, with the opacity and color you set, for that captions. Later you will learn how to customize the caption's position, size, color and transparency but, for now, we will only take a look at the required HTML markup.</p>
+		</div>
+		
+		<div class="span9">
+<pre class="prettyprint linenums">
+&lt;div class=&quot;advanced-slider&quot; id=&quot;my-slider&quot;&gt;
+    &lt;ul class=&quot;slides&quot;&gt;
+        &lt;li class=&quot;slide&quot;&gt;
+            &lt;img class=&quot;image&quot; src=&quot;../images/slides/image1.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image1.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;div class=&quot;caption&quot;&gt;Simple caption for the first slide.&lt;/div&gt;
+        &lt;/li&gt;
+		
+        &lt;li class=&quot;slide&quot;&gt;
+            &lt;img class=&quot;image&quot; src="../images/slides/image2.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;img class=&quot;thumbnail&quot; src="../images/thumbnails/image2.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;div class=&quot;caption&quot;&gt;Some text for the second slide.&lt;/div&gt;
+        &lt;/li&gt;
+		
+        &lt;li class="slide"&gt;
+            &lt;img class=&quot;image&quot; src=&quot;../images/slides/image3.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image3.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;div class=&quot;caption&quot;&gt;Yet another captions.&lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+	</div>
+	
+	<div class="row">
+    	<div class="span3">
+			<h4>Thumbnail captions and tooltips</h4>
+  			<p>You can specify captions for the thumbnails by inserting some text in the thumbnail's ALT attribute and you can specify tooltips by using the thumbnail's TITLE attribute. Please see the code example on the right. In order to enable the tooltip you will also need to set the slider's 'thumbnailTooltip' property to true.</p>
+		</div>
+		
+		<div class="span9">
+<pre class="prettyprint linenums">
+&lt;div class=&quot;advanced-slider&quot; id=&quot;my-slider&quot;&gt;
+    &lt;ul class=&quot;slides&quot;&gt;
+        &lt;li class=&quot;slide&quot;&gt;
+            &lt;img class=&quot;image&quot; src=&quot;../images/slides/image1.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image1.jpg&quot; alt=&quot;Slide 1&quot; title=&quot;some tooltip content&quot;/&gt;
+            &lt;div class=&quot;caption&quot;&gt;Simple caption for the first slide.&lt;/div&gt;
+        &lt;/li&gt;
+		
+        &lt;li class=&quot;slide&quot;&gt;
+            &lt;img class=&quot;image&quot; src="../images/slides/image2.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;img class=&quot;thumbnail&quot; src="../images/thumbnails/image2.jpg&quot; alt=&quot;Slide 2&quot; title=&quot;some tooltip content&quot;/&gt;
+            &lt;div class=&quot;caption&quot;&gt;Some text for the second slide.&lt;/div&gt;
+        &lt;/li&gt;
+		
+        &lt;li class=&quotslide&quot&gt;
+            &lt;img class=&quot;image&quot; src=&quot;../images/slides/image3.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image3.jpg&quot; alt=&quot;Slide 3&quot; title=&quot;some tooltip content&quot;/&gt;
+            &lt;div class=&quot;caption&quot;&gt;Yet another captions.&lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+	</div>
+	
+	<hr />
+	
+	<h3 id="using-html2">2. Lazy loaded images</h3>
+	<div class="row">
+    	<div class="span3">
+			<p>When you insert images in the page using the &lt;/img&gt; tag, all the images will load when the page loads. Sometimes you want an image to load only when you navigate to the slide that contains it. This will speed up the initial load of the page, and it's especially useful if you have a slider that contains many images. In order to achieve this functionality for the slider, you will have to specify the image using a data attribute instead of using the &lt;/img&gt; tag. The data attribute is "data-image" and must be added to the &lt;/li&gt; tag, as you can see in the example on the right.</p>
+		</div>
+		
+		<div class="span9">
+<pre class="prettyprint linenums">
+&lt;div class=&quot;advanced-slider&quot; id=&quot;my-slider&quot;&gt;
+    &lt;ul class=&quot;slides&quot;&gt;
+        &lt;li class=&quot;slide&quot; data-image=&quot;../images/slides/image1.jpg&quot;&gt;
+            &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image1.jpg&quot;/&gt;
+            &lt;div class=&quot;caption&quot;&gt;Simple caption for the first slide.&lt;/div&gt;
+        &lt;/li&gt;
+		
+        &lt;li class=&quot;slide&quot; data-image=&quot;../images/slides/image2.jpg&quot;&gt;
+            &lt;img class=&quot;thumbnail&quot; src="../images/thumbnails/image2.jpg&quot;/&gt;
+            &lt;div class=&quot;caption&quot;&gt;Some text for the second slide.&lt;/div&gt;
+        &lt;/li&gt;
+		
+        &lt;li class=&quotslide&quot data-image=&quot;../images/slides/image3.jpg&quot;&gt;
+            &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image3.jpg&quot;/&gt;
+            &lt;div class=&quot;caption&quot;&gt;Yet another captions.&lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+	</div>	
+	
+	<hr />
+	
+	<h3 id="using-html3">3. Links and Lightboxes</h3>
+	<p>You can add links and lightboxes for the main slide image but also for the thumbnail images. When you click a thumbnail image that has a link or a lightbox specified for it, the default action of navigating to the corresponding slide will not occur, but instead the link or lightbox will be opened.</p>
+	
+	<div class="row">
+    	<div class="span3">
+			<h4>Links</h4>
+			<p>In order to add a link to an image all you have to do is wrap the image within the anchor tag. Please see the code example on the right. The first slide has a link for the slide image and the second slide has a link for the thumbnail image.</p>
+		</div>
+		
+		<div class="span9">
+<pre class="prettyprint linenums">
+&lt;div class=&quot;advanced-slider&quot; id=&quot;my-slider&quot;&gt;
+    &lt;ul class=&quot;slides&quot;&gt;
+        &lt;li class=&quot;slide&quot;&gt;
+            &lt;a href=&quot;http://yahoo.com&quot;&gt;
+                &lt;img class=&quot;image&quot; src=&quot;../images/slides/image1.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;/a&gt;
+            &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image1.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;div class=&quot;caption&quot;&gt;Simple caption for the first slide.&lt;/div&gt;
+        &lt;/li&gt;
+		
+        &lt;li class=&quot;slide&quot;&gt;
+            &lt;img class=&quot;image&quot; src="../images/slides/image2.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;a href=&quot;http://yahoo.com&quot;&gt;
+                &lt;img class=&quot;thumbnail&quot; src="../images/thumbnails/image2.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;/a&gt;
+            &lt;div class=&quot;caption&quot;&gt;Some text for the second slide.&lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+	</div>
+	
+	
+	<div class="row">
+    	<div class="span3">
+			<h4>Basic lightboxes</h4>
+			<p>If you worked with lightbox scripts before, you already know how to use them in the slider: you create an anchor tag that wraps the image and then you identify that link as a lightbox by adding a 'rel' attribute for it and giving that attribute a certain value. For Advanced Slider, you will need to use a predefined value: 'slider-lightbox'.</p> 
+			<p>Please note that in order to enable the built-in lightbox you will need to set the slider's 'lightbox' property to true. In the list of available JavaScript properties you will find several more properties that allow you to control how the lightbox will work.</p>
+			<p>In the code example I specified a slide image lightbox for the first and third slides and a thumbnail image lightbox for the second and fourth slide. The slide lightboxes will create a lightbox gallery by having an extra identifier inside the 'rel' attribute. The thumbnail lightboxes don't have the extra identifier so each lightbox will be separate but it's possible to have them as a gallery as well.</p>
+			<p>Please notice that for each image that has a lightbox I specified some text in the ALT attribute, which will be used as the lightbox title, and for the anchor element I added a TITLE attribute, which will be used as lightbox description.</p>
+		</div>
+		
+		<div class="span9">
+<pre class="prettyprint linenums">
+&lt;div class=&quot;advanced-slider&quot; id=&quot;my-slider&quot;&gt;
+    &lt;ul class=&quot;slides&quot;&gt;
+        &lt;li class=&quot;slide&quot;&gt;
+            &lt;a rel=&quot;slider-lightbox[g]&quot; href=&quot;../images/slides/image1.jpg&quot; title=&quot;Some lightbox description&quot;&gt;
+                &lt;img class=&quot;image&quot; src=&quot;../images/slides/image1.jpg&quot; alt=&quot;Slide 1 title&quot;/&gt;
+            &lt;/a&gt;
+            &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image1.jpg&quot; alt=&quot;&quot;/&gt;
+        &lt;/li&gt;
+		
+        &lt;li class=&quot;slide&quot;&gt;
+            &lt;img class=&quot;image&quot; src="../images/slides/image2.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;a rel=&quot;slider-lightbox&quot; href=&quot;../images/slides/image2.jpg&quot; title=&quot;Some lightbox description&quot;&gt;
+                &lt;img class=&quot;thumbnail&quot; src="../images/thumbnails/image2.jpg&quot; alt=&quot;Thumbnail 2 title&quot;/&gt;
+            &lt;/a&gt;
+            &lt;div class=&quot;caption&quot;&gt;Some text for the second slide.&lt;/div&gt;
+        &lt;/li&gt;
+		
+        &lt;li class=&quot;slide&quot;&gt;
+            &lt;a rel=&quot;slider-lightbox[g]&quot; href=&quot;../images/slides/image3.jpg&quot; title=&quot;Some lightbox description&quot;&gt;
+                &lt;img class=&quot;image&quot; src=&quot;../images/slides/image3.jpg&quot; alt=&quot;Slide 3 title&quot;/&gt;
+            &lt;/a&gt;
+            &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image3.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;div class=&quot;caption&quot;&gt;Caption for the third slide.&lt;/div&gt;
+        &lt;/li&gt;
+		
+        &lt;li class=&quot;slide&quot;&gt;
+            &lt;img class=&quot;image&quot; src="../images/slides/image4.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;a rel=&quot;slider-lightbox&quot; href=&quot;../images/slides/image4.jpg&quot; title=&quot;Some lightbox description&quot;&gt;
+                &lt;img class=&quot;thumbnail&quot; src="../images/thumbnails/image4.jpg&quot; alt=&quot;Thumbnail 4 title&quot;/&gt;
+            &lt;/a&gt;
+            &lt;div class=&quot;caption&quot;&gt;Yet another caption text.&lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+	</div>
+	
+	
+	<div class="row">
+    	<div class="span3">
+			<h4>Video and other content in the lightbox</h4>
+			<p>In the first lightbox example you saw how to open images inside the lightbox. However, it's also possible to open YouTube and Vimeo videos, web pages, or inline HTML content.</p>
+			<p>When you open a Vimeo or YouTube video all you have to do is specify the URL of the youtube/vimeo page, and if you want to set a certain size for the video you can do this by passing a width and a height to the URL of the video. The code example has a youtube video for the first slide and a vimeo video for the second slide.</p>
+			<p>When you open a web page you need to pass 'iframe=true' to the URL of the page and you can also pass a width and a height. For loading inline HTML content all you have to do is specify the ID attribute of the content in the HREF attribute of the anchor tag. In the example, the third slide has a lightbox that will open a web page and the fourth slide has a lightbox that will open inline HTML content.</p>
+		</div>
+		
+		<div class="span9">
+<pre class="prettyprint linenums">
+&lt;body&gt;
+
+    &lt;div class=&quot;advanced-slider&quot; id=&quot;my-slider&quot;&gt;
+        &lt;ul class=&quot;slides&quot;&gt;
+            &lt;li class=&quot;slide&quot;&gt;
+                &lt;a rel=&quot;slider-lightbox[]&quot; href=&quot;http://www.youtube.com/watch?v=JVuUwvUUPro?width=700&amp;height=400&quot; title=&quot;Nuit Blanche explores a fleeting moment between two strangers.&quot;&gt;
+                    &lt;img class=&quot;image&quot; src=&quot;../images/slides/image1.jpg&quot; alt=&quot;Nuit Blanche - Arev Manoukian&quot;/&gt;
+                &lt;/a&gt;
+                &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image1.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;/li&gt;
+		
+            &lt;li class=&quot;slide&quot;&gt;
+                &lt;a rel=&quot;slider-lightbox[]&quot; href=&quot;http://vimeo.com/10829255?width=700&amp;height=400&quot; title=&quot;New York invasion by 8-bits creatures ! PIXELS is Patrick Jean' latest short film, shot on location in New York.&quot;&gt;
+                    &lt;img class=&quot;image&quot; src="../images/slides/image2.jpg&quot; alt=&quot;PIXELS&quot;/&gt;
+                &lt;/a&gt;
+                &lt;img class=&quot;thumbnail&quot; src="../images/thumbnails/image2.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;/li&gt;
+		
+            &lt;li class="slide"&gt;
+                &lt;a rel=&quot;slider-lightbox[]&quot; href=&quot;http://yahoo.com?iframe=true&amp;width=700&amp;height=400&quot; title=&quot;Some description of this page&quot;&gt;
+                    &lt;img class=&quot;image&quot; src=&quot;../images/slides/image3.jpg&quot; alt=&quot;Yahoo&quot;/&gt;
+                &lt;/a&gt;
+                &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image3.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;/li&gt;
+		
+            &lt;li class="slide"&gt;
+                &lt;a rel=&quot;slider-lightbox[]&quot; href=&quot;#my-content&quot; title=&quot;Some description of this content&quot;&gt;    
+                    &lt;img class=&quot;image&quot; src=&quot;../images/slides/image4.jpg&quot; alt=&quot;Inline HTML&quot;/&gt;
+                &lt;/a&gt;	
+                &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image4.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+	
+    &lt;div id="my-content"&gt;
+        &lt;p class="title">Some Title&lt;/p&gt;
+        &lt;p class="description">Description: Some description of this content.&lt;/p&gt;
+    &lt;/div&gt;
+	
+&lt;/body&gt;
+</pre>
+		</div>
+	</div>
+	
+	
+	<div class="row">
+    	<div class="span3">
+			<h4>Integration with lazy loaded images</h4>
+			<p>As you saw in the previous example, the link or lightbox must be wrapped aroung the &lt;img&gt; tag. However, when you use lazy loading you don't have to specify an &lt;img&gt; tag and use the "data-image" attribute instead. So, the solution for having both links/lightboxes and lazy loaded images for the same slide is to use a mockup image as a replacement for the main image and wrap the link/lightbox around that mockup image, while the actual image will be specified using the "data-image" attribute. For the mockup image it's recommended to use an image that's very small in size, something like a one pixel image.</p>
+		</div>
+		
+		<div class="span9">
+<pre class="prettyprint linenums">
+&lt;div class=&quot;advanced-slider&quot; id=&quot;my-slider&quot;&gt;
+    &lt;ul class=&quot;slides&quot;&gt;
+        &lt;li class=&quot;slide&quot; data-image=&quot;../images/slides/image1.jpg&quot;&gt;
+            &lt;a rel=&quot;slider-lightbox[]&quot; href=&quot;http://www.youtube.com/watch?v=JVuUwvUUPro&quot;&gt;
+                &lt;img class=&quot;image&quot; src=&quot;mockup.jpg&quot; alt=&quot;Nuit Blanche - Arev Manoukian&quot;/&gt;
+            &lt;/a&gt;
+            &lt;img class=&quot;thumbnail&quot; src=&quot;../images/thumbnails/image1.jpg&quot; alt=&quot;&quot;/&gt;
+        &lt;/li&gt;
+		
+        &lt;li class=&quot;slide&quot; data-image=&quot;../images/slides/image2.jpg&quot;&gt;
+            &lt;a rel=&quot;slider-lightbox[]&quot; href=&quot;http://vimeo.com/10829255&quot;&gt;
+                &lt;img class=&quot;image&quot; src="mockup.jpg&quot; alt=&quot;PIXELS&quot;/&gt;
+            &lt;/a&gt;
+            &lt;img class=&quot;thumbnail&quot; src="../images/thumbnails/image2.jpg&quot; alt=&quot;&quot;/&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+	</div>
+	
+	<hr />
+	
+	<h3 id="using-html4">4. Inline HTML content</h3>
+	<p>One of the strong features of this slider is the possibility to add HTML content inside the slides. In this section you will learn how to add simple HTML content as well as more complex content such as videos.</p>
+	
+	<div class="row">
+    	<div class="span3">
+			<h4>Simple HTML content</h4>
+			<p>In order to add HTML content to a slide all you have to do is create an additional DIV, give it the "html" class and insert all the content inside that div. Any HTML element is allowed.</p>
+			<p>In the example on the right, the first and third slides contain HTML content. The first slide contains 4 image boxes and a box of text. As you can see, there are some CSS classes assigned to the HTML elements, which are used to customize the position and look of the elements. It's recommended to insert the custom CSS code in a separate CSS file. The third slide also contains inline HTML content but it also contains a main slide image.</p>
+		</div>
+		
+		<div class="span9">
+<pre class="prettyprint linenums">
+&lt;div class=&quot;advanced-slider&quot; id=&quot;my-slider&quot;&gt;
+    &lt;ul class=&quot;slides&quot;&gt;
+        &lt;li class=&quot;slide&quot;&gt;
+            &lt;div class=&quot;html&quot;&gt;
+                &lt;div class=&quot;images-box&quot;&gt;
+                    &lt;img src=&quot;../presentation-assets/images/other/image7.jpg&quot; alt=&quot;&quot;/&gt;
+                    &lt;img src=&quot;../presentation-assets/images/other/image8.jpg&quot; alt=&quot;&quot;/&gt;
+                    &lt;img src=&quot;../presentation-assets/images/other/image9.jpg&quot; alt=&quot;&quot;/&gt;
+                    &lt;img src=&quot;../presentation-assets/images/other/image10.jpg&quot; alt=&quot;&quot;/&gt;
+                &lt;/div&gt;
+					
+                &lt;div class=&quot;content-box&quot;&gt;
+                    &lt;p class=&quot;title&quot;&gt;Inline HTML content&lt;/p&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+                    &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Read More&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+			
+        &lt;li class=&quot;slide&quot;&gt;
+            &lt;img class=&quot;image&quot; src=&quot;../presentation-assets/images/slides/image1.jpg&quot; alt=&quot;&quot;/&gt;
+        &lt;/li&gt;
+			
+        &lt;li class=&quot;slide&quot;&gt;
+            &lt;img class=&quot;image&quot; src=&quot;../presentation-assets/images/slides/image2.jpg&quot; alt=&quot;&quot;/&gt;
+            &lt;div class=&quot;html&quot;&gt;
+                &lt;div class=&quot;content-box&quot;&gt;
+                    &lt;p class=&quot;title&quot;&gt;Inline HTML content&lt;/p&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+                    &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Read More&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+	</div>
+	
+	
+	<div class="row">
+    	<div class="span3">
+			<h4>Video content</h4>
+			<p>Not only you can insert videos inside the slides but Advanced Slider has built-in support for automatic handling of those videos. For example, the slider will pause or stop a video when you navigate away from the slide, or it will pause or stop the automatic slideshow when a video starts playing. Without this automatic handling you would have to manually pause/stop the video or pause/stop the slideshow, which isn't very convenient.</p>
+			<p>The slider has built-in support for YouTube videos, Vimeo videos, simple HTML5 videos, and HTML5 videos enhanced with VideoJS. VideoJS is a 3rd party library that will enhance the look of the HTML5 video and will provide a Flash fallback for browsers that don't support the HTML5 video element, like IE8 and below.</p>
+			<p>In the example code on the right you can see how to insert each type of videos. Please note that in order to have the the videos automatically handled you also need to load some additional JavaScript files in the page. In the examples provided you will see the required files and in a later chapter you will also see a description of all files provided with the plugin and when you need to use each of them.</p>
+			
+			<div class="alert alert-info"> <strong>Heads Up!</strong> The Vimeo and YouTube APIs will work only after you move the page on a  local or online server.</div>
+			
+		</div>
+		
+		<div class="span9">
+			<h5>YouTube videos</h5>
+			<p>First, you need to get the embed code from the YouTube page. The code will be an iframe, to which you will need to add the "video" class. Also, to the URL or the video you will need to append the following parameters: "enablejsapi=1" and "wmode=transparent". The first parameter is necessary in order to enable the automatic handling and the second parameter is necessary if the video loads in the flash player.</p>
+<pre class="prettyprint linenums">
+&lt;li class=&quot;slide&quot;&gt;
+  &lt;div class=&quot;html&quot;&gt;
+    &lt;iframe class=&quot;video&quot; src=&quot;http://www.youtube.com/embed/msIjWthwWwI?rel=0&enablejsapi=1&wmode=transparent&quot; width=&quot;580&quot; height=&quot;380&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+</pre>
+
+			<h5>Vimeo videos</h5>
+			<p>For Vimeo videos you need to get the embed code from Vimeo and add the "video" class to the iframe, just like with YouTube videos. Then, append "api=1" to the URL of the video.</p>
+<pre class="prettyprint linenums">
+&lt;li class=&quot;slide&quot;&gt;
+  &lt;div class=&quot;html&quot;&gt;
+    &lt;iframe class=&quot;video&quot; src=&quot;http://player.vimeo.com/video/3116167?api=1&quot; width=&quot;580&quot; height=&quot;380&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+</pre>
+
+			<h5>HTML5 videos</h5>
+			<p>When you insert simple HTML5 videos, you just need to add the "video" class to the &lt;video&gt; tag.</p>
+<pre class="prettyprint linenums">
+&lt;li class=&quot;slide&quot;&gt;
+  &lt;div class=&quot;html&quot;&gt;
+    &lt;video class=&quot;video&quot; controls preload=&quot;none&quot; width=&quot;580&quot; height=&quot;380&quot;
+           poster=&quot;http://bqworks.com/products/assets/videos/bbb/bbb-poster.jpg&quot;&gt;
+      &lt;source src=&quot;http://bqworks.com/products/assets/videos/bbb/bbb-trailer.mp4&quot; type=&quot;video/mp4&quot;/&gt;
+      &lt;source src=&quot;http://bqworks.com/products/assets/videos/bbb/bbb-trailer.ogg&quot; type=&quot;video/ogg&quot;/&gt;
+    &lt;/video&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+</pre>
+
+			<h5>VideoJS videos</h5>
+			<p>Loading VideoJS enhanced HTML5 videos is similar to loading simple HTML5 videos but in addition to adding the "video" class you need to add some VideoJS specific classes. Also, you will need to give the video a unique ID and add the "data-video" attribute.</p>
+<pre class="prettyprint linenums">
+&lt;li class=&quot;slide&quot;&gt;
+  &lt;div class=&quot;html&quot;&gt;
+    &lt;video id=&quot;video-1&quot; class=&quot;video video-js vjs-default-skin&quot; controls=&quot;controls&quot; preload=&quot;none&quot; width=&quot;580&quot; height=&quot;380&quot;
+           poster=&quot;http://bqworks.com/products/assets/videos/sintel/sintel-poster.jpg&quot; data-video=&quot;{}&quot;&gt;
+      &lt;source src=&quot;http://bqworks.com/products/assets/videos/sintel/sintel-trailer.mp4&quot; type=&quot;video/mp4&quot;/&gt;
+      &lt;source src=&quot;http://bqworks.com/products/assets/videos/sintel/sintel-trailer.ogv&quot; type=&quot;video/ogg&quot;/&gt;
+    &lt;/video&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+</pre>
+		</div>
+	</div>
+	
+</section>
+
+
+<hr />
+
+
+<section id="using-xml">
+	<div class="page-header">
+		<h1>Using XML <small>Complete guide on how to use XML with Advanced Slider</small></h1>
+	</div>
+	
+	<p>Using XML instead of HTML markup is very easy and recommended for users who don't have much experience with HTML. One disadvantage, though, is that XML is not as SEO-friendly as HTML but sometimes this is not a concern. In this chapter you will learn everything you need to know about creating an XML file for Advanced Slider and, as you will notice, the structure of the XML file will be very similar to the required HTML structure.</p>
+	
+	<div class="row">
+    	<div class="span3">
+			<h3 id="using-xml1">1. Basic XML example</h3>
+  			<p>The XML file must have a main &lt;slider&gt; node and for each slide you need to create a &lt;slide&gt; node. Then, inside the &lt;slide&gt; node you specify the images, captions and inline HTML content. In the right side you can see a simple example of the required XML structure.</p>
+		</div>
+		
+		<div class="span9">
+<pre class="prettyprint linenums">
+&lt;slider&gt;
+    &lt;slide&gt;
+        &lt;image&gt;../presentation-assets/images/slides/image1.jpg&lt;/image&gt;
+        &lt;thumbnail&gt;../presentation-assets/images/thumbnails/image1.jpg&lt;/thumbnail&gt;
+    &lt;/slide&gt;
+	
+    &lt;slide&gt;
+        &lt;image&gt;../presentation-assets/images/slides/image2.jpg&lt;/image&gt;
+        &lt;thumbnail&gt;../presentation-assets/images/thumbnails/image2.jpg&lt;/thumbnail&gt;
+    &lt;/slide&gt;
+	
+    &lt;slide&gt;
+        &lt;image&gt;../presentation-assets/images/slides/image3.jpg&lt;/image&gt;
+        &lt;thumbnail&gt;../presentation-assets/images/thumbnails/image3.jpg&lt;/thumbnail&gt;
+    &lt;/slide&gt;
+&lt;/slider&gt;
+</pre>
+		</div>
+	</div>
+	
+	<hr />
+	
+	<div class="row">
+    	<div class="span3">
+			<h3 id="using-xml2">2. Advanced XML use</h3>
+  			<p>Just like with HTML markup, you can use XML to add links, both to the slide and thumbnail, captions, lightboxes and inline HTML content.</p>
+			
+			<h4>Captions</h4>
+			<p>To add a caption for the main slide you need to create a &lt;caption&gt; node, and to create a caption for the thumbnail you need to add the "alt" attribute to the &lt;thumbnail&gt; node. You can also add a a tooltip to the thumbnail by using the "title" attribute. As you can see in the code example on the right, the format is similar to the HTML markup.</p>
+			
+			<h4>Links and lightboxes</h4>
+			<p>Adding links and lightboxes is different from doing the same in HTML, but it's still very easy. Instead of wrapping the image tag/node inside an anchor you will need to create a &lt;link&gt; node for the main slide link, and a &lt;thumbnailLink&gt; node for the thumbnail. The URL of the link will need to be added inside this node. If you want to transform a link to a lightbox you will need to add some extra attributes to the link node: </p>
+			
+			<ul>
+				<li><b>type=&quot;slider-lightbox&quot;</b> for indicating that the link is a lightbox</li>
+				<li><b>group=&quot;some_group&quot;</b> to create a lightbox gallery</li>
+				<li><b>title</b> attribute for specifying the description of the lightbox</li>
+			</ul> 
+			
+			<p>In order to specify a title for the lightbox you will need to add the "alt" attribute to the &lt;image&gt; and/or &lt;thumbnail&gt; node.</p>
+			<p>The example on the right has simple links for the first two slides and lightbox links for the third and fourth slides.</p>
+			
+			<h4>Lazy loaded images</h4>
+			<p>When you want an image to be lazy loaded you will need to add the "data-image" attribute to the &lt;slide&gt; node instead of adding the path inside the node. In the code example on the right, the fifth and sixth slides contain lazy loaded images.</p>
+			
+			<h4>Inline HTML content</h4>
+			<p>The same rules for working with inline HTML content apply when you work with XML. If you skipped the "Using HTML" chapter, please take a look at the sections that show hot to use inline HTML content and how to have the videos automatically handled.</p>
+			<p>You will need to use the &lt;html&gt; node to insert the inline HTML and, also, you will need to add the content inside a CDATA tag. Please see the last two slides in the code example.</p>
+		</div>
+		
+		<div class="span9">
+<pre class="prettyprint linenums">
+&lt;slider&gt;
+    &lt;!-- Slides with images, captions, links and lightboxes--&gt;
+	
+    &lt;slide&gt;
+        &lt;image&gt;../presentation-assets/images/slides/image1.jpg&lt;/image&gt;
+        &lt;link&gt;http://yahoo.com&lt;/link&gt;
+        &lt;thumbnail alt=&quot;Slide 1&quot; title=&quot;tooltip content&quot;&gt;../path/to/image1.jpg&lt;/thumbnail&gt;
+        &lt;caption&gt;Caption for the first slide.&lt;/caption&gt;
+    &lt;/slide&gt;
+	
+    &lt;slide&gt;
+        &lt;image&gt;../presentation-assets/images/slides/image2.jpg&lt;/image&gt;
+        &lt;thumbnail alt=&quot;Slide 2&quot; title=&quot;tooltip content&quot;&gt;../path/to/image2.jpg&lt;/thumbnail&gt;
+        &lt;thumbnailLink&gt;http://yahoo.com&lt;/thumbnailLink&gt;
+        &lt;caption&gt;Some caption for the second slide.&lt;/caption&gt;
+    &lt;/slide&gt;
+	
+    &lt;slide&gt;
+        &lt;image&gt;../presentation-assets/images/slides/image3.jpg&lt; alt=&quot;Slide 3&quot;/image&gt;
+        &lt;link type=&quot;slider-lightbox&quot; group=&quot;slides&quot; title=&quot;some description&quot;&gt;../path/to/image.jpg&lt;/link&gt;
+        &lt;thumbnail alt=&quot;Slide 3&quot; title=&quot;tooltip content&quot;&gt;../path/to/image3.jpg&lt;/thumbnail&gt;
+        &lt;caption&gt;Yet another caption.&lt;/caption&gt;
+    &lt;/slide&gt;
+	
+    &lt;slide&gt;
+        &lt;image&gt;../presentation-assets/images/slides/image4.jpg&lt; alt=&quot;Slide 4&quot;/image&gt;
+        &lt;thumbnail alt=&quot;Slide 4&quot; title=&quot;tooltip content&quot;&gt;../path/to/image4.jpg&lt;/thumbnail&gt;
+        &lt;thumbnailLink type=&quot;slider-lightbox&quot; group=&quot;thumbs&quot; title=&quot;some description&quot;&gt;../path/to/image.jpg&lt;/thumbnailLink&gt;
+    &lt;/slide&gt;
+	
+    &lt;!-- Slides with lazy loaded images--&gt;
+	
+    &lt;slide data-image=&quot../presentation-assets/images/slides/image5.jpg&quot&gt;
+        &lt;thumbnail&gt;../presentation-assets/images/thumbnails/image5.jpg&lt;/thumbnail&gt;
+    &lt;/slide&gt;
+	
+    &lt;slide data-image=&quot../presentation-assets/images/slides/image6.jpg&quot&gt;
+        &lt;thumbnail&gt;../presentation-assets/images/thumbnails/image6.jpg&lt;/thumbnail&gt;
+    &lt;/slide&gt;
+	
+    &lt;!-- Slides with inline HTML content--&gt;
+	
+    &lt;slide&gt;
+        &lt;html&gt;
+            &lt;![CDATA[
+                &lt;div class=&quot;images-box&quot;&gt;
+                    &lt;img src=&quot;../presentation-assets/images/other/image7.jpg&quot; alt=&quot;&quot;/&gt;
+                    &lt;img src=&quot;../presentation-assets/images/other/image8.jpg&quot; alt=&quot;&quot;/&gt;
+                    &lt;img src=&quot;../presentation-assets/images/other/image9.jpg&quot; alt=&quot;&quot;/&gt;
+                    &lt;img src=&quot;../presentation-assets/images/other/image10.jpg&quot; alt=&quot;&quot;/&gt;
+                &lt;/div&gt;
+					
+                &lt;div class=&quot;content-box&quot;&gt;
+                    &lt;p class=&quot;title&quot;&gt;Inline HTML content&lt;/p&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+                    &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Read More&lt;/a&gt;
+                &lt;/div&gt;
+            ]]&gt;
+        &lt;/html&gt;
+    &lt;/slide&gt;
+
+    &lt;slide&gt;
+        &lt;html&gt;
+            &lt;![CDATA[
+                &lt;video id=&quot;video-1&quot; class=&quot;video video-js vjs-default-skin&quot; controls=&quot;controls&quot; preload=&quot;none&quot; width=&quot;580&quot; height=&quot;380&quot; poster=&quot;../videos/sintel/sintel-poster.jpg&quot; data-video=&quot;{}&quot;&gt;
+                    &lt;source src=&quot;../videos/sintel/sintel-trailer.mp4&quot; type=&quot;video/mp4&quot;/&gt;
+                    &lt;source src=&quot;../videos/sintel/sintel-trailer.ogv&quot; type=&quot;video/ogg&quot;/&gt;
+                &lt;/video&gt;
+            ]]&gt;
+        &lt;/html&gt;
+    &lt;/slide&gt;
+	
+    &lt;slide&gt;
+        &lt;html&gt;
+            &lt;![CDATA[
+                &lt;iframe class=&quot;video&quot; src=&quot;http://www.youtube.com/embed/msIjWthwWwI?rel=0&enablejsapi=1&wmode=transparent&quot; width=&quot;580&quot; height=&quot;380&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+            ]]&gt;
+        &lt;/html&gt;
+    &lt;/slide&gt;
+
+&lt;/slider&gt;
+</pre>
+		</div>
+	</div>
+	
+</section>	
+
+
+<hr />
+
+
+<section id="javascript-reference">
+	<div class="page-header">
+		<h1>JavaScript Reference <small>Presentation of the JavaScript properties, public methods (functions) and callbacks (events)</small></h1>
+	</div>
+	
+	<h3 id="javascript-reference1">1. Properties</h3>
+
+	<div class="row">
+    	<div class="span3">	
+			<p>Advanced Slider has over 150 properties that can can be used to customize the look and feel of the slider. These properties need to be set when the plugin is instantiated, as can see in the example on the right.</p>
+		</div>
+		
+		<div class="span9">        
+<pre class="prettyprint linenums">
+&lt;script type=&quot;text/javascript&quot;&gt;
+    $(document).ready(function(){
+        $('#my-slider').advancedSlider({width:'100%', height:400, effectType:'swipe', timerAnimation:false});
+    });         
+&lt;/script&gt;
+</pre>
+		</div>
+	</div>
+        
+	<p>Below is a list of all the available properties, their default value and description.</p>	
+	
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th>Property Name</th>
+				<th>Default value</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr>
+				<td colspan="3"><b>General</b></td>
+			</tr>
+			
+			<tr>
+				<td>xmlSource</td>
+				<td><i>null</i></td>
+				<td>The path to the XML source file</td>
+			</tr>
+			
+			<tr>
+				<td>skin</td>
+				<td><i>'pixel'</i></td>
+				<td>Sets the main skin of the slider</td>
+			</tr>
+			
+			 <tr>
+				<td>width</td>
+				<td><i>500</i></td>
+				<td>The width of the slider. Can be set in percentages if the '%' symbol is used or in pixels if only a number is used.</td>
+			</tr>
+			
+            <tr>
+				<td>height</td>
+				<td><i>300</i></td>
+				<td>The height of the slider. Can be set in percentages if the '%' symbol is used or in pixels if only a number is used.</td>
+			</tr>
+			
+			<tr>
+				<td>scaleType</td>
+				<td><i>'outsideFit'</i></td>
+				<td>Indicates the scale type of the slide images. Available values are: 'insideFit', 'outsideFit', 'proportionalFit', 'exactFit' and 'noScale'.</td>
+			</tr>
+			
+            <tr>
+				<td>alignType</td>
+				<td><i>'leftTop'</i></td>
+				<td>Indicates the alignment of the image if its size is higher than the specified width or height. Available values are: 'leftTop', 'leftCenter', 'leftBottom', 'centerTop', 'centerCenter', 'centerBottom', 'rightTop', 'rightCenter', 'rightBottom'</td>
+			</tr>
+			
+			<tr>
+				<td>allowScaleUp</td>
+				<td><i>false</i></td>
+				<td>Allows the image to scale up to a size larger than the original size.</td>
+			</tr>
+			
+			<tr>
+				<td>preloadNearbyImages</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the images located nearby the currently opened image will be preloaded. This will happen only if the nearby images are set to lazy load.</td>
+			</tr>
+			
+			<tr>
+				<td>slideStart</td>
+				<td><i>0</i></td>
+				<td>The index of the first displayed slide.</td>
+			</tr>
+			
+            <tr>
+				<td>shuffle</td>
+				<td><i>false</i></td>
+				<td>Randomizes the slides.</td>
+			</tr>
+			
+			<tr>
+				<td>shadow</td>
+				<td><i>true</i></td>
+				<td>Indicates whether the shadow will be displayed under the slide.</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3"><b>Slideshow</b></td>
+			</tr>
+			
+															   
+            <tr>
+				<td>slideshow</td>
+				<td><i>true</i></td>
+				<td>Sets the slider to the auto slideshow mode.</td>
+			</tr>
+			
+			<tr>
+				<td>slideshowLoop</td>
+				<td><i>true</i></td>
+				<td>Indicates whether the slider will loop continuously through the slides or only one time.</td>
+			</tr>
+			
+            <tr>
+				<td>slideshowDelay</td>
+				<td><i>5000</i></td>
+				<td>The delay, in milliseconds, between transitions.</td>
+			</tr>
+			
+            <tr>
+				<td>slideshowDirection</td>
+				<td><i>'next'</i></td>
+				<td>Sets the slider to navigate to the next slide or to the previous slide. Available values are 'next' and 'previous'.</td>
+			</tr>
+			
+            <tr>
+				<td>slideshowControls</td>
+				<td><i>false</i></td>
+				<td>Displays the play/pause button for the slideshow.</td>
+			</tr>
+			
+           	<tr>
+				<td>slideshowControlsToggle</td>
+				<td><i>true</i></td>
+				<td>Indicates whether the slideshow button will fade in/out on  mouse hover.</td>
+			</tr>
+			
+            <tr>
+				<td>slideshowControlsShowDuration</td>
+				<td><i>500</i></td>
+				<td>Sets the duration, in milliseconds, of the slideshow's controls show animation.</td>
+			</tr>
+			
+			<tr>
+				<td>slideshowControlsHideDuration</td>
+				<td><i>500</i></td>
+				<td>Sets the duration, in milliseconds, of the slideshow's controls hide animation.</td>
+			</tr>
+			
+            <tr>
+				<td>pauseSlideshowOnHover</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the slideshow will be paused when the mouse is over the slide.</td>
+			</tr>
+			
+			<tr>
+				<td colspan="3"><b>Timer Animation</b></td>
+			</tr>
+			
+            <tr>
+				<td>timerAnimation</td>
+				<td><i>true</i></td>
+				<td>Indicates whether the timer animation will be displayed. For this to be displayed the 'slideshow' property also has to be set to 'true'.</td>
+			</tr>
+			
+			<tr>
+				<td>timerAnimationControls</td>
+				<td><i>true</i></td>
+				<td>Indicates whether the play and pause button will be displayed inside the timer animation.</td>
+			</tr>
+			
+			<tr>
+				<td>timerToggle</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the timer will be hidden and only shown on mouse hover.</td>
+			</tr>
+			
+			<tr>
+				<td>timerFadeDuration</td>
+				<td><i>500</i></td>
+				<td>The duration for the timer to fade in/out.</td>
+			</tr>
+			
+            <tr>
+				<td>timerRadius</td>
+				<td><i>18</i></td>
+				<td>The radius of the timer circle.</td>
+			</tr>
+			
+            <tr>
+				<td>timerStrokeColor1</td>
+				<td><i>'#000000'</i></td>
+				<td>The color of the underlying circle.</td>
+			</tr>
+			
+            <tr>
+				<td>timerStrokeColor2</td>
+				<td><i>'#FFFFFF'</i></td>
+				<td>The color of the animated circle.</td>
+			</tr>
+			
+            <tr>
+				<td>timerStrokeOpacity1</td>
+				<td><i>0.5</i></td>
+				<td>The alpha of the underlying circle.</td>
+			</tr>
+			
+            <tr>
+				<td>timerStrokeOpacity2</td>
+				<td><i>0.7</i></td>
+				<td>The alpha of the animated circle.</td>
+			</tr>
+			
+            <tr>
+				<td>timerStrokeWidth1</td>
+				<td><i>8</i></td>
+				<td>The width of the underlying circle's stroke.</td>
+			</tr>
+			
+            <tr>
+				<td>timerStrokeWidth2</td>
+				<td><i>4</i></td>
+				<td>The width of the animated circle's stroke.</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3"><b>Lightbox</b></td>
+			</tr>
+			
+			
+            <tr>
+				<td>lightbox</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the lightbox will be enabled.</td>
+			</tr>
+			
+            <tr>
+				<td>lightboxTheme</td>
+				<td><i>'pp_default'</i></td>
+				<td>The theme of the lightbox. Available values are: 'pp_default', 'light_rounded', 'dark_rounded', 'light_square', 'dark_square' and 'facebook'.</td>
+			</tr>
+			
+            <tr>
+				<td>lightboxOpacity</td>
+				<td><i>0.8</i></td>
+				<td>The opacity of the lightbox's overlay.</td>
+			</tr>
+			
+            <tr>
+				<td>lightboxIcon</td>
+				<td><i>true</i></td>
+				<td>Indicate whether an overlay icon will appear when a slide or thumbnail has a lightbox attached to it.</td>
+			</tr>
+									
+			<tr>
+				<td>lightboxIconToggle</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the lightbox icon will fade in/out on hover.</td>
+			</tr>
+														  
+			<tr>
+				<td>lightboxIconFadeDuration</td>
+				<td><i>500</i></td>
+				<td>Sets the duration for the fade in/out animation of the lightbox icon.</td>
+			</tr>
+									
+			<tr>
+				<td>thumbnailLightboxIcon</td>
+				<td><i>true</i></td>
+				<td>Indicates whether a lightbox icon will be displayed on the thumbnail when the corresponding slide has a lightbox attached to it. Not to be confused with the possibility of having the icon displayed when a lightbox is attached to the thumbnail itself. For this, only the 'lightboxIcon' property option needs to be enabled.</td>
+			</tr>
+																	 
+			<tr>
+				<td>thumbnailLightboxIconToggle</td>
+				<td><i>true</i></td>
+				<td>Indicates whether the thumbnail lightbox icon will fade in/out on hover. This option is used only when the lightbox icon is enabled for the thumbnails that correspond to slides that have a lightbox attached to them.</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3"><b>Transition Effects</b></td>
+			</tr>
+			        	
+			
+            <tr>
+				<td>effectType</td>
+				<td><i>'random'</i></td>
+				<td>The type of the transition effect. Available values are: 'fade', 'slide', 'swipe', 'slice' and 'random'.</td>
+			</tr>
+			
+			<tr>
+				<td>sliceEffectType</td>
+				<td><i>'random'</i></td>
+				<td>Sets the effect type for the "slice" transition. Available values are: 'fade', 'scale', 'width', 'height' and 'random'.</td>
+			</tr>
+			
+			<tr>
+				<td>initialEffect</td>
+				<td><i>true</i></td>
+				<td>Indicates whether the initial slide will have a transition effect. If set to false, the first slide will initially appear instantly.</td>
+			</tr>
+			
+			<tr>
+				<td>htmlDuringTransition</td>
+				<td><i>true</i></td>
+				<td>Indicates whether specified HTML content will be displayed while the transition is in progress. A transition which displayes HTML will be slower.</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3"><b>'Slide' transition effect</b></td>
+			</tr>
+			
+			
+			<tr>
+				<td>slideDirection</td>
+				<td><i>'autoHorizontal'</i></td>
+				<td>Sets the direction of the slides. Available values are: autoHorizontal, autoVertical, rightToLeft, leftToRight, topToBottom and bottomToTop.</td>
+			</tr>
+			
+			<tr>
+				<td>slideLoop</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the slides will run in a loop when the 'autoHorizontal' or 'autoVertical' directions are used.</td>
+			</tr>
+			
+			<tr>
+				<td>slideDuration</td>
+				<td><i>700</i></td>
+				<td>Sets the duration of the transition.</td>
+			</tr>
+			
+			<tr>
+				<td>slideEasing</td>
+				<td><i>'easeInOutExpo'</i></td>
+				<td>Sets the easing of the transition effect. Available values are: 'swing', 'easeInQuad', 'easeOutQuad', 'easeInOutQuad', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic', 'easeInQuart', 'easeOutQuart', 'easeInOutQuart', 'easeInQuint', 'easeOutQuint', 'easeInOutQuint', 'easeInSine', 'easeOutSine', 'easeInOutSine', 'easeInExpo', 'easeOutExpo', 'easeInOutExpo', 'easeInCirc', 'easeOutCirc', 'easeInOutCirc', 'easeInElastic', 'easeOutElastic', 'easeInOutElastic', 'easeInBack', 'easeOutBack', 'easeInOutBack', 'easeInBounce', 'easeOutBounce', 'easeInOutBounce'.</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3"><b>'Swipe' transition effect</b></td>
+			</tr>
+			
+			
+			<tr>
+				<td>swipeTouchDrag</td>
+				<td><i>true</i></td>
+				<td>Indicates whether the swipe effect will work for touch gestures.</td>
+			</tr>
+			
+			<tr>
+				<td>swipeMouseDrag</td>
+				<td><i>true</i></td>
+				<td>Indicates whether the swipe effect will work when the mouse is used.</td>
+			</tr>
+								
+			<tr>
+				<td>swipeOrientation</td>
+				<td><i>'horizontal'</i></td>
+				<td>Sets the orientation of the slides and the direction for which the swipe gestures will work. Available values are 'horizontal' and 'vertical'.</td>
+			</tr>
+								
+			<tr>
+				<td>swipeThreshold</td>
+				<td><i>50</i></td>
+				<td>Sets the minimum amount that the slides need to be dragged in order to navigate to the new slide.</td>
+			</tr>
+								
+			<tr>
+				<td>swipeDuration</td>
+				<td><i>700</i></td>
+				<td>Sets the duration of the swipe transition.</td>
+			</tr>
+								
+			<tr>
+				<td>swipeBackDuration</td>
+				<td><i>300</i></td>
+				<td>Sets the duration of slide's movement when the drag amount is below the threshold.</td>
+			</tr>
+								
+			<tr>
+				<td>swipeSlideDistance</td>
+				<td><i>10</i></td>
+				<td>Sets the distance between slides.</td>
+			</tr>
+			
+			<tr>
+				<td>swipeGrabCursor</td>
+				<td><i>true</i></td>
+				<td>Enables the grabbing cursor for the Swipe effect.</td>
+			</tr>
+								
+			<tr>
+				<td>swipeEasing</td>
+				<td><i>'swing'</i></td>
+				<td>Sets the easing of the transition. Available values are: 'swing', 'easeInQuad', 'easeOutQuad', 'easeInOutQuad', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic', 'easeInQuart', 'easeOutQuart', 'easeInOutQuart', 'easeInQuint', 'easeOutQuint', 'easeInOutQuint', 'easeInSine', 'easeOutSine', 'easeInOutSine', 'easeInExpo', 'easeOutExpo', 'easeInOutExpo', 'easeInCirc', 'easeOutCirc', 'easeInOutCirc', 'easeInElastic', 'easeOutElastic', 'easeInOutElastic', 'easeInBack', 'easeOutBack', 'easeInOutBack', 'easeInBounce', 'easeOutBounce', 'easeInOutBounce'.</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3"><b>'Fade' transition effect</b></td>
+			</tr>
+			
+													
+			<tr>
+				<td>fadeInDuration</td>
+				<td><i>500</i></td>
+				<td>Sets the duration of 'in' transition.</td>
+			</tr>
+								  
+			<tr>
+				<td>fadeInEasing</td>
+				<td><i>'swing'</i></td>
+				<td>Sets the easing type of 'in' transition. Available values are: 'swing', 'easeInQuad', 'easeOutQuad', 'easeInOutQuad', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic', 'easeInQuart', 'easeOutQuart', 'easeInOutQuart', 'easeInQuint', 'easeOutQuint', 'easeInOutQuint', 'easeInSine', 'easeOutSine', 'easeInOutSine', 'easeInExpo', 'easeOutExpo', 'easeInOutExpo', 'easeInCirc', 'easeOutCirc', 'easeInOutCirc', 'easeInElastic', 'easeOutElastic', 'easeInOutElastic', 'easeInBack', 'easeOutBack', 'easeInOutBack', 'easeInBounce', 'easeOutBounce', 'easeInOutBounce'.</td>
+			</tr>
+								  
+			<tr>
+				<td>fadeOutDuration</td>
+				<td><i>500</i></td>
+				<td>Sets the duration of 'out' transition.</td>
+			</tr>
+			
+			<tr>
+				<td>fadeOutEasing</td>
+				<td><i>'swing'</i></td>
+				<td>Sets the easing type of 'out' transition. Available values are: 'swing', 'easeInQuad', 'easeOutQuad', 'easeInOutQuad', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic', 'easeInQuart', 'easeOutQuart', 'easeInOutQuart', 'easeInQuint', 'easeOutQuint', 'easeInOutQuint', 'easeInSine', 'easeOutSine', 'easeInOutSine', 'easeInExpo', 'easeOutExpo', 'easeInOutExpo', 'easeInCirc', 'easeOutCirc', 'easeInOutCirc', 'easeInElastic', 'easeOutElastic', 'easeInOutElastic', 'easeInBack', 'easeOutBack', 'easeInOutBack', 'easeInBounce', 'easeOutBounce', 'easeInOutBounce'.</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3"><b>'Slice' transition effect</b></td>
+			</tr>
+			
+			
+			<tr>
+				<td>fadePreviousSlide</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the previous slide will fade out during transition.</td>
+			</tr>
+			
+			<tr>
+				<td>fadePreviousSlideDuration</td>
+				<td><i>300</i></td>
+				<td>Sets the duration of the fade out animation of the previous slide.</td>
+			</tr>
+			
+			<tr>
+				<td>horizontalSlices</td>
+				<td><i>5</i></td>
+				<td>The number of horizontal slices.</td>
+			</tr>
+			
+            <tr>
+				<td>verticalSlices</td>
+				<td><i>3</i></td>
+				<td>The number of vertical slices.</td>
+			</tr>
+			
+            <tr>
+				<td>slicePattern</td>
+				<td><i>'random'</i></td>
+				<td>The order in which the slices will be animated. Available values are: 'randomPattern', 'topToBottom', 'bottomToTop', 'leftToRight', 'rightToLeft', 'topLeftToBottomRight', 'topRightToBottomLeft', 'bottomLeftToTopRight', 'bottomRightToTopLeft', 'horizontalMarginToCenter', 'horizontalCenterToMargin', 'marginToCenter', 'verticalCenterToMargin', 'skipOneTopToBottom', 'skipOneBottomToTop', 'skipOneLeftToRight', 'skipOneRightToLeft', 'skipOneHorizontal', 'skipOneVertical', 'spiralMarginToCenterCW', 'spiralMarginToCenterCCW', 'spiralCenterToMarginCW', 'spiralCenterToMarginCCW' and 'random'</td>
+			</tr>
+													 
+            <tr>
+				<td>sliceDelay</td>
+				<td><i>50</i></td>
+				<td>The delay between each slice animation.</td>
+			</tr>
+			
+            <tr>
+				<td>sliceEasing</td>
+				<td><i>'swing'</i></td>
+				<td>Sets the easing of each slice animation. Available values are: 'swing', 'easeInQuad', 'easeOutQuad', 'easeInOutQuad', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic', 'easeInQuart', 'easeOutQuart', 'easeInOutQuart', 'easeInQuint', 'easeOutQuint', 'easeInOutQuint', 'easeInSine', 'easeOutSine', 'easeInOutSine', 'easeInExpo', 'easeOutExpo', 'easeInOutExpo', 'easeInCirc', 'easeOutCirc', 'easeInOutCirc', 'easeInElastic', 'easeOutElastic', 'easeInOutElastic', 'easeInBack', 'easeOutBack', 'easeInOutBack', 'easeInBounce', 'easeOutBounce', 'easeInOutBounce'.</td>
+			</tr>
+			
+            <tr>
+				<td>sliceDuration</td>
+				<td><i>1000</i></td>
+				<td>The duration for each slice animation.</td>
+			</tr>
+			
+            <tr>
+				<td>slicePoint</td>
+				<td><i>'centerCenter'</i></td>
+				<td>Determines the starting point for the slice animation when the 'scale', 'width' or 'height' effects are used. Available values are: 'leftTop', 'leftCenter', 'leftBottom', 'centerTop', 'centerCenter', 'centerBottom', 'rightTop', 'rightCenter', 'rightBottom' and 'random'.</td>
+			</tr>
+			
+            <tr>
+				<td>slideStartPosition</td>
+				<td><i>'left'</i></td>
+				<td>The starting position of the slice animation when the "slide" effect is used. Available values are: 'left', 'right', 'top', 'bottom', 'leftTop', 'rightTop', 'leftBottom', 'rightBottom', 'horizontalAlternate', 'verticalAlternate' and 'random'.</td>
+			</tr>
+			
+            <tr>
+				<td>slideStartRatio</td>
+				<td><i>1</i></td>
+				<td>Sets the actual distance between the starting and ending point for the 'slide' animation. The actual distance will be determined by multiplying the slice's width/height to the 'slideStartRatio' property.</td>
+			</tr>
+			
+            <tr>
+				<td>sliceFade</td>
+				<td><i>true</i></td>
+				<td>Will set the opacity of the slices to 0 and fade them in during the animation.</td>
+			</tr>
+			
+            <tr>
+				<td>slideMask</td>
+				<td><i>false</i></td>
+				<td>Indicates whether or not the slide will have overflow hidden during the transition.</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3"><b>Slide navigation controls</b></td>
+			</tr>
+			
+			
+		  	<tr>
+				<td>slideArrows</td>
+				<td><i>true</i></td>
+				<td>Displays the right and left arrows.</td>
+			</tr>
+			
+            <tr>
+				<td>slideArrowsToggle</td>
+				<td><i>true</i></td>
+				<td>If set to true, the arrow buttons will fade in on mouse over and fade out on mouse out. If set to false, the buttons will be visible all the time.</td>
+			</tr>
+			
+			<tr>
+				<td>slideArrowsShowDuration</td>
+				<td><i>500</i></td>
+				<td>Sets the duration for the show animation of the main navigation arrows.</td>
+			</tr>
+			
+			<tr>
+				<td>slideArrowsHideDuration</td>
+				<td><i>500</i></td>
+				<td>Sets the duration for the hide animation of the main navigation arrows.</td>
+			</tr>
+			
+            <tr>
+				<td>slideButtons</td>
+				<td><i>true</i></td>
+				<td>Displays the navigation buttons.</td>
+			</tr>
+			
+            <tr>
+				<td>slideButtonsNumber</td>
+				<td><i>false</i></td>
+				<td>Indicates whether numbers will be displayed inside the navigation buttons/bullets.</td>
+			</tr>
+			
+            <tr>
+				<td>slideButtonsToggle</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the navigation buttons will fade in/out on hover.</td>
+			</tr>
+			
+            <tr>
+				<td>slideButtonsShowDuration</td>
+				<td><i>500</i></td>
+				<td>Sets the duration for the show animation of the main navigation buttons/bullets.</td>
+			</tr>
+			
+            <tr>
+				<td>slideButtonsHideDuration</td>
+				<td><i>500</i></td>
+				<td>Sets the duration for the show animation of the main navigation buttons.</td>
+			</tr>
+			
+            <tr>
+				<td>slideButtonsCenter</td>
+				<td><i>true</i></td>
+				<td>Will center the navigation buttons within the container horizontally.</td>
+			</tr>
+			
+            <tr>
+				<td>slideButtonsContainerCenter</td>
+				<td><i>true</i></td>
+				<td>Will center the container of the navigation buttons horizontally.</td>
+			</tr>
+			
+			<tr>
+				<td>keyboardNavigation</td>
+				<td><i>false</i></td>
+				<td>Indicates whether keyboard navigation will be enabled. This options allows navigation through the slides by using the left and right arrow keyboard keys. Also if you have a link attached to a slide, it' possible to open that link by pressing the 'Enter' key.</td>
+			</tr>
+															 
+			<tr>
+				<td>keyboardNavigationOnFocusOnly</td>
+				<td><i>false</i></td>
+				<td>Indicates whether keyboard navigation will be enabled only when  the slider has focus.</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3"><b>Thumbnails</b></td>
+			</tr>
+			
+			
+            <tr>
+				<td>thumbnailType</td>
+				<td><i>'tooltip'</i></td>
+				<td>Indicates the way in which the thumbnails will be displayed. Avaialble values are: 'tooltip', 'scroller', 'tooltipAndScroller' and 'none'. If 'tooltip' is used the thumbnails will slide in on top of the slide buttons when you roll over them. If 'scroller' is used the thumbnails will appear inside the thumbnail scroller. If 'none' is used the thumbnails will not be displayed.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailWidth</td>
+				<td><i>80</i></td>
+				<td>Sets the width of the thumbnail.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailHeight</td>
+				<td><i>50</i></td>
+				<td>Sets the height of the thumbnail.</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3"><b>Tooltip Thumbnails</b></td>
+			</tr>
+			
+			
+            <tr>
+				<td>thumbnailSlideAmount</td>
+				<td><i>10</i></td>
+				<td>Sets the sliding amount of the thumbnail, when thumbnailsType is set to 'tooltip'.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailSlideDuration</td>
+				<td><i>300</i></td>
+				<td>Sets the sliding  duration of the thumbnail, when thumbnailsType is set to 'tooltip'.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailSlideEasing</td>
+				<td><i>'swing'</i></td>
+				<td>Sets the sliding  duration of the thumbnail, when thumbnailsType is set to 'tooltip'.</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3"><b>Thumbnails Scroller</b></td>
+			</tr>
+			
+			
+            <tr>
+				<td>thumbnailScrollerToggle</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the navigation thumbnails will fade in/out on hover.</td>
+			</tr>
+			
+			<tr>
+				<td>thumbnailScrollerHideDuration</td>
+				<td><i>500</i></td>
+				<td>Sets the duration for the fade out animation of the thumbnail scroller.</td>
+			</tr>
+									
+			<tr>
+				<td>thumbnailScrollerShowDuration</td>
+				<td><i>500</i></td>
+				<td>Sets the duration for the fade in animation of the thumbnail scroller.</td>
+			</tr>
+			
+			<tr>
+				<td>thumbnailSync</td>
+				<td><i>true</i></td>
+				<td>Indicates whether the thumbnail page will always be synchronized with the current slide.</td>
+			</tr>
+			
+			<tr>
+				<td>thumbnailScrollerResponsive</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the thumbnail scroller will be responsive as well if the slider's size is set in percentages.</td>
+			</tr>
+									
+			 <tr>
+				<td>maximumVisibleThumbnails</td>
+				<td><i>5</i></td>
+				<td>Sets the maximum number of thumbnails per page.</td>
+			</tr>
+											
+			 <tr>
+				<td>minimumVisibleThumbnails</td>
+				<td><i>1</i></td>
+				<td>Sets the minimum number of thumbnails per page. This property is useful in a responsive layout.</td>
+			</tr>
+			
+			 <tr>
+				<td>thumbnailLayers</td>
+				<td><i>1</i></td>
+				<td>Indicates the number of layers that will be used. Layers can represent either rows, when the thumbnail orientation is set to 'horizontal', or columns, when the thumbnail orientation is set to 'vertical'. In order to use the maximum amount of layers allowed, set this option to -1.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailOrientation</td>
+				<td><i>'horizontal'</i></td>
+				<td>Indicates whether the thumbnails will be arranged horizontally or vertically. Possible values are 'horizontal' and 'vertical'</td>
+			</tr>
+			
+			<tr>
+				<td>thumbnailScrollerCenter</td>
+				<td><i>true</i></td>
+				<td>Indicates whether the navigation thumbnails will be centered relativelly to the slide.</td>
+			</tr>
+			
+			<tr>
+				<td>thumbnailScrollDuration</td>
+				<td><i>1000</i></td>
+				<td>Sets the duration of the scrolling animation when the thumbnail arrows or thumbnail buttons are used for scrolling.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailScrollEasing</td>
+				<td><i>'swing'</i></td>
+				<td>Sets the easing of the scrolling animation when the thumbnail arrows or thumbnail buttons are used for scrolling. Possible values are  'easeInQuad', 'easeOutQuad', 'easeInOutQuad', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic', 'easeInQuart', 'easeOutQuart', 'easeInOutQuart',
+'easeInQuint', 'easeOutQuint', 'easeInOutQuint', 'easeInSine', 'easeOutSine', 'easeInOutSine', 'easeInExpo', 'easeOutExpo', 'easeInOutExpo', 
+'easeInCirc', 'easeOutCirc', 'easeInOutCirc', 'easeInElastic', 'easeOutElastic', 'easeInOutElastic', 'easeInBack', 'easeOutBack', 'easeInOutBack', 
+'easeInBounce', 'easeOutBounce', 'easeInOutBounce'.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailScrollbar</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the navigation thumbnails will have a scrollbar.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailButtons</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the navigation thumbnails will have buttons (bullets) for navigating through thumbnail pages.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailArrows</td>
+				<td><i>true</i></td>
+				<td>undicates whether the navigation thumbnails will have arrows for navigating through thumbnail pages.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailButtonsToggle</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the thumbnail buttons will fade in/out on hover.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailArrowsToggle</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the thumbnail arrows will fade in/out on hover.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailScrollbarToggle</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the thumbnail scrollbar will fade in/out on hover.</td>
+			</tr>
+			
+			<tr>
+				<td>scrollbarSkin</td>
+				<td><i>'scrollbar-1'</i></td>
+				<td>Sets the skin of the scrollbar.</td>
+			</tr>
+			
+            <tr>
+				<td>scrollbarArrowScrollAmount</td>
+				<td><i>100</i></td>
+				<td>Sets the amount, in pixels, by which the thumbnails will be scrolled when one of the scrollbar's arrows is clicked.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailArrowsHideDuration</td>
+				<td><i>500</i></td>
+				<td>Indicates the duration for the fade out animation of the thumbnail arrows. </td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailArrowsShowDuration</td>
+				<td><i>500</i></td>
+				<td>Indicates the duration for the fade in animation of the thumbnail arrows. </td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailButtonsHideDuration</td>
+				<td><i>500</i></td>
+				<td>Indicates the duration for the fade out animation of the thumbnail buttons. </td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailButtonsShowDuration</td>
+				<td><i>500</i></td>
+				<td>Indicates the duration for the fade in animation of the thumbnail buttons. </td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailScrollbarHideDuration</td>
+				<td><i>500</i></td>
+				<td>Indicates the duration for the fade out animation of the thumbnail scrollbar. </td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailScrollbarShowDuration</td>
+				<td><i>500</i></td>
+				<td>Indicates the duration for the fade in animation of the thumbnail scrollbar. </td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailScrollbarEase</td>
+				<td><i>10</i></td>
+				<td>Indicates the easing amount for the scrollbar scrolling.</td>
+			</tr>            
+			
+            <tr>
+				<td>thumbnailMouseScroll</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the thumbnails can be scrolled by moving the mouse over them.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailMouseScrollEase</td>
+				<td><i>90</i></td>
+				<td>Sets the ease of the mouse scrolling when the mouse leaves the thumbnails area.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailMouseScrollSpeed</td>
+				<td><i>10</i></td>
+				<td>Sets the speed of the thumbnail mouse scrolling.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailMouseWheel</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the thumbnails can be scrolled using the mouse wheel.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailMouseWheelSpeed</td>
+				<td><i>20</i></td>
+				<td>Sets the speed of the thumbnail mouse wheel scrolling.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailMouseWheelReverse</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the thumbnails will be scrolled in the opposite direction when mouse wheel scrolling is used.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailTooltip</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the tooltip will be displayed for those thumbnails for which the tooltip content was specified.</td>
+			</tr>
+			
+            <tr>
+				<td>tooltipShowDuration</td>
+				<td><i>300</i></td>
+				<td>Sets the duration of the tooltip's fade in animation.</td>
+			</tr>
+			
+            <tr>
+				<td>tooltipHideDuration</td>
+				<td><i>300</i></td>
+				<td>Sets the duration of the tooltip's fade out animation.</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3"><b>Thumbnail Caption</b></td>
+			</tr>
+			
+			
+            <tr>
+				<td>thumbnailCaptionPosition</td>
+				<td><i>'bottom'</i></td>
+				<td>Sets the position of the caption inside the thumbnail. Can be set to 'top' or 'bottom'. </td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailCaptionTogle</td>
+				<td><i>true</i></td>
+				<td>Indicates whether the thumbnail caption will be hidden/shown on hover.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailCaptionEffect</td>
+				<td><i>'slide'</i></td>
+				<td>Sets the animation effect type for the captions. Possible values are 'slide' and 'fade'.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailCaptionShowDuration</td>
+				<td><i>500</i></td>
+				<td>Sets the duration of the fade/slide in animation of the caption.</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailCaptionHideDuration</td>
+				<td><i>500</i></td>
+				<td>Sets the duration of the fade/slide out animation of the caption</td>
+			</tr>
+			
+            <tr>
+				<td>thumbnailCaptionEasing</td>
+				<td><i>'swing'</i></td>
+				<td>Sets the easing of the caption's animation. Possible values are  'easeInQuad', 'easeOutQuad', 'easeInOutQuad', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic', 'easeInQuart', 'easeOutQuart', 'easeInOutQuart', 'easeInQuint', 'easeOutQuint', 'easeInOutQuint', 'easeInSine', 'easeOutSine', 'easeInOutSine', 'easeInExpo', 'easeOutExpo', 'easeInOutExpo', 
+'easeInCirc', 'easeOutCirc', 'easeInOutCirc', 'easeInElastic', 'easeOutElastic', 'easeInOutElastic', 'easeInBack', 'easeOutBack', 'easeInOutBack', 'easeInBounce', 'easeOutBounce', 'easeInOutBounce' </td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3"><b>Caption</b></td>
+			</tr>
+			
+			
+            <tr>
+				<td>captionToggle</td>
+				<td><i>false</i></td>
+				<td>Indicates whether the slide caption will be hidden/shown on hover.</td>
+			</tr>
+			
+            <tr>
+				<td>captionPosition</td>
+				<td><i>'bottom'</i></td>
+				<td>Sets the caption's position. Available values are: 'top', 'bottom', 'left', 'right' and 'custom'.</td>
+			</tr>
+			
+            <tr>
+				<td>captionBackgroundColor</td>
+				<td><i>'#000000'</i></td>
+				<td>Sets the caption's background color</td>
+			</tr>
+			
+            <tr>
+				<td>captionBackgroundOpacity</td>
+				<td><i>0.5</i></td>
+				<td>Sets the caption's background opacity</td>
+			</tr>
+			
+            <tr>
+				<td>captionSize</td>
+				<td><i>70</i></td>
+				<td>Sets the width/height of the caption's background, unless the caption's position is 'custom'.</td>
+			</tr>
+			            
+            <tr>
+				<td>captionLeft</td>
+				<td><i>50</i></td>
+				<td>Sets the left position of the caption when captionPosition is 'custom'</td>
+			</tr>
+			
+			<tr>
+				<td>captionTop</td>
+				<td><i>50</i></td>
+				<td>Sets the top position of the caption when captionPosition is 'custom'</td>
+			</tr>
+			
+			<tr>
+				<td>captionWidth</td>
+				<td><i>300</i></td>
+				<td>Sets the width of the caption when captionPosition is 'custom'</td>
+			</tr>
+			
+			<tr>
+				<td>captionHeight</td>
+				<td><i>100</i></td>
+				<td>Sets the height of the caption when captionPosition is 'custom'</td>
+			</tr>
+			
+            <tr>
+				<td>captionShowEffect</td>
+				<td><i>'slide'</i></td>
+				<td>Sets the type of effect that will run when the caption appears. Available values are 'fade' and 'slide'</td>
+			</tr>
+			
+            <tr>
+				<td>captionShowEffectDuration</td>
+				<td><i>500</i></td>
+				<td>Sets the duration, in milliseconds, of the show effect</td>
+			</tr>
+			
+            <tr>
+				<td>captionShowEffectEasing</td>
+				<td><i>'swing'</i></td>
+				<td>Sets the easing of the show effect. Possible values are  'easeInQuad', 'easeOutQuad', 'easeInOutQuad', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic', 'easeInQuart', 'easeOutQuart', 'easeInOutQuart', 'easeInQuint', 'easeOutQuint', 'easeInOutQuint', 'easeInSine', 'easeOutSine', 'easeInOutSine', 'easeInExpo', 'easeOutExpo', 'easeInOutExpo', 
+'easeInCirc', 'easeOutCirc', 'easeInOutCirc', 'easeInElastic', 'easeOutElastic', 'easeInOutElastic', 'easeInBack', 'easeOutBack', 'easeInOutBack', 'easeInBounce', 'easeOutBounce', 'easeInOutBounce'</td>
+			</tr>
+			
+            <tr>
+				<td>captionShowSlideDirection</td>
+				<td><i>'auto'</i></td>
+				<td>Sets the direction in which the caption will slide when it appears. Possible values are 'topToBottom', 'bottomToTop', 'leftToRight', 'rightToLeft' and 'auto'. When 'auto' is used, the direction will depend on the captionPosition property. So, if captionPosition is 'top', the caption will slide from top to bottom, if captionPosition is 'left', the caption will slide from left to right and so on.</td>
+			</tr>
+			
+            <tr>
+				<td>captionHideEffect</td>
+				<td><i>'fade'</i></td>
+				<td>Sets the type of effect that will run when the caption is removed. Available values are 'fade' and 'slide'</td>
+			</tr>
+			
+            <tr>
+				<td>captionHideEffectDuration</td>
+				<td><i>300</i></td>
+				<td>Sets the duration, in milliseconds, of the hide effect</td>
+			</tr>
+			
+            <tr>
+				<td>captionHideSlideDirection</td>
+				<td><i>'auto'</i></td>
+				<td>Similar to the 'captionShowSlideDirection' but applied when the caption is removed.</td>
+			</tr>
+			
+            <tr>
+				<td>captionHideEffectEasing</td>
+				<td><i>'swing'</i></td>
+				<td>Sets the easing of the hide effect. Possible values are  'easeInQuad', 'easeOutQuad', 'easeInOutQuad', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic', 'easeInQuart', 'easeOutQuart', 'easeInOutQuart', 'easeInQuint', 'easeOutQuint', 'easeInOutQuint', 'easeInSine', 'easeOutSine', 'easeInOutSine', 'easeInExpo', 'easeOutExpo', 'easeInOutExpo', 
+'easeInCirc', 'easeOutCirc', 'easeInOutCirc', 'easeInElastic', 'easeOutElastic', 'easeInOutElastic', 'easeInBack', 'easeOutBack', 'easeInOutBack', 'easeInBounce', 'easeOutBounce', 'easeInOutBounce'</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3"><b>Video</b></td>
+			</tr>
+			
+			
+			<tr>
+				<td>videoPlayAction</td>
+				<td><i>'stopSlideshow'</i></td>
+				<td>Sets the action that will be triggered when the video starts playing. Possible values are: stopSlideshow, pauseSlideshow and none.</td>
+			</tr>
+									
+			<tr>
+				<td>videoPauseAction</td>
+				<td><i>'none'</i></td>
+				<td>Sets the action that will be triggered when the video is paused. Possible values are: startSlideshow, resumeSlideshow and none.</td>
+			</tr>
+									
+			<tr>
+				<td>videoEndAction</td>
+				<td><i>'startSlideshow'</i></td>
+				<td>Sets the action that will be triggered when the video end. Possible values are: resetVideo, startSlideshow, resumeSlideshow, nextSlide and none.</td>
+			</tr>
+									
+			<tr>
+				<td>leaveVideoAction</td>
+				<td><i>'pauseVideo'</i></td>
+				<td>Sets the action that will be triggered when the navigates away from the video. Possible values are: pauseVideo, stopVideo and pauseVideoAndBuffering.</td>
+			</tr>
+															
+			<tr>
+				<td>reachVideoAction</td>
+				<td><i>'none'</i></td>
+				<td>Sets the action that will be triggered when the user reaches a slide that contains a video. Possible values are: startVideo and none</td>
+			</tr>
+																											
+            <tr>
+				<td>slideProperties</td>
+				<td><i>null</i></td>
+				<td>An object that allows to define a set of settings for each particular slide</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	
+	<p>When you set any of the above properties they will apply globally, for all the slides, but you can override some of these global settings by setting specific values for each slide. This can be done for both HTML sliders and XML-driven sliders. The following properties can be set for individual slides: alignType, effectType, sliceEffectType, sliceDelay, sliceDuration, sliceEasing, horizontalSlices, verticalSlices', slicePattern, slicePoint, sliceStartPosition, sliceStartRatio, sliceFade, captionSize, captionPosition, captionShowEffectDuration, captionShowEffectEasing, captionHideEffectDuration', 'captionHideEffectEasing, captionShowEffect, captionHideEffect, captionLeft, captionTop, captionWidth, captionHeight, captionShowSlideDirection, captionHideSlideDirection, captionBackgroundColor, captionBackgroundOpacity, slideshowDelay, slideMask, slideDirection, slideDuration, slideEasing, slideLoop, fadeInDuration, fadeOutDuration, fadeInEasing, fadeOutEasing','fadePreviousSlide, fadePreviousSlideDuration, thumbnailType, captionDelay, htmlDuringTransition.</p>
+	
+	<br />
+	
+	<div class="row">
+    	<div class="span3">	
+			<p>The above properties will be passed to the "slideProperties" object. For example if you want to edit the 1st and 4th slide, you will do as you see in the code example on the right. You can see that first you indicate the index of the slide (note that enumeration starts from 0) and then to this index you pass an object that contains the settings.</p>
+		</div>
+		
+		<div class="span9">        
+<pre class="prettyprint linenums">
+&lt;script type=&quot;text/javascript&quot;&gt;
+    $('#my-slider').advancedSlider({
+        width:750, 
+        height:345, 
+        pauseSlideshowOnHover:true, 
+        slideProperties:{
+            0:{effectType:'slice', horizontalSlices:'6', verticalSlices:'3'},
+            3:{effectType:'fade', captionPosition:'top', captionSize:'40'}
+    }});
+&lt;/script&gt;
+</pre>
+		</div>
+	</div>
+	
+	
+	<div class="row">
+    	<div class="span3">	
+			<p>For XML-driven sliders, you also have the option to specify the settings using attributes for each &lt;slide&gt; tag, as you can see in the example.</p>
+		</div>
+		
+		<div class="span9">        
+<pre class="prettyprint linenums">
+&lt;slider&gt;	
+    &lt;slide effectType="slice" sliceEffectType="scale" horizontalSlices="6" verticalSlices="3"&gt;
+        &lt;image&gt;../presentation-assets/images/slides/image1.jpg&lt;/image&gt;
+        &lt;link&gt;http://yahoo.com&lt;/link&gt;
+        &lt;thumbnail alt=&quot;Slide 1&quot; title=&quot;tooltip content&quot;&gt;../path/to/image1.jpg&lt;/thumbnail&gt;
+        &lt;caption&gt;Caption for the first slide.&lt;/caption&gt;
+    &lt;/slide&gt;
+	
+    &lt;slide effectType="fade" captionPosition="bottom" captionSize="35"&gt;
+        &lt;image&gt;../presentation-assets/images/slides/image2.jpg&lt;/image&gt;
+        &lt;thumbnail alt=&quot;Slide 2&quot; title=&quot;tooltip content&quot;&gt;../path/to/image2.jpg&lt;/thumbnail&gt;
+        &lt;thumbnailLink&gt;http://yahoo.com&lt;/thumbnailLink&gt;
+        &lt;caption&gt;Some caption for the second slide.&lt;/caption&gt;
+    &lt;/slide&gt;
+&lt;/slider&gt;
+</pre>
+		</div>
+	</div>
+	
+	<hr />
+	
+	<h3 id="javascript-reference2">2. Public Methods</h3>
+		
+	<p>The public methods will allow you to manipulate the slider using external controls. This is a very useful capability if you want to integrate the slider with other applications.</p>
+	
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th>Method Name</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+        	<tr>
+				<td>nextSlide()</td>
+				<td>Opens the next slide.</td>
+            </tr>
+			
+			<tr>
+				<td>previousSlide()</td>
+				<td>Opens the previous slide.</td>
+            </tr>
+            
+			<tr>
+				<td>gotoSlide(index)</td>
+				<td>Opens the slide at the specified index.</td>
+            </tr>
+            
+			<tr>
+				<td>startSlideshow()</td>
+				<td>Starts the slideshow mode.</td>
+            </tr>
+            
+			<tr>
+				<td>stopSlideshow()</td>
+				<td>Stops the slideshow mode.</td>
+            </tr>
+            
+			<tr>
+				<td>pauseSlideshow()</td>
+				<td>Pauses the slideshow.</td>
+            </tr>
+            
+			<tr>
+				<td>resumeSlideshow()</td>
+				<td>Resumes the slideshow.</td>
+            </tr>
+			
+			<tr>
+				<td>scrollToThumbnailPage()</td>
+				<td>Moves the thumbnail scroller to the specified page.</td>
+            </tr>	
+		
+			<tr>
+				<td>scrollToNextThumbnailPage()</td>
+				<td>Moves the thumbnail scroller to the next page.</td>
+            </tr>
+		
+			<tr>
+				<td>scrollToPreviousThumbnailPage()</td>
+				<td>Moves the thumbnail scroller to the previous page.</td>
+            </tr>
+		
+			<tr>
+				<td>startThumbnailMouseScroll()</td>
+				<td>Starts the mouse scrolling functionality.</td>
+            </tr>
+		
+			<tr>
+				<td>stopThumbnailMouseScroll()</td>
+				<td>Stops the mouse scrolling functionality.</td>
+            </tr>
+		
+			<tr>
+				<td>startThumbnailMouseWheel()</td>
+				<td>Starts the mouse wheel functionality.</td>
+            </tr>
+		
+			<tr>
+				<td>stopThumbnailMouseWheel()</td>
+				<td>Stops the mouse wheel functionality.</td>
+            </tr>
+		
+			<tr>
+				<td>doSliderLayout()</td>
+				<td>Forces the slider to re-position all elements. The position of the elements depends on the specified width, height, scaleType and alignType.</td>
+            </tr>
+		
+			<tr>
+				<td>getSlideshowState()</td>
+				<td>Gets the current slideshow state. Returns 'playing', 'paused' or 'stopped'.</td>
+            </tr>
+            
+			<tr>
+				<td>getCurrentIndex()</td>
+				<td>Gets the index of the current slide.</td>
+            </tr>
+            
+			<tr>
+				<td>getSlideAt(index)</td>
+				<td>Gets all the data of the slide at the specified index. Returns an object that contains all the data specified for that slide.</td>
+            </tr>
+            
+			<tr>
+				<td>getTriggerType()</td>
+				<td>Returns a string that indicates what triggered the slider to navigate to a different slide. Possible values are: 'none', 'previousButton', 'nextButton', 'button', 'slideshow' and 'thumbnail'.</td>
+            </tr>
+			<tr>
+				<td>isTransition()</td>
+				<td>Checks if the slider is in the transition phase. Returns true or false.</td>
+            </tr>
+            
+			<tr>
+				<td>getTotalSlides()</td>
+				<td>Returns the total number of slides.</td>
+            </tr>
+            
+			<tr>
+				<td>getSize()</td>
+				<td>Returns an object that contains the width and height of both the slider and the slide. The returned object has the following properties: sliderWidth, sliderHeight, slideWidth and slideHeight.</td>
+            </tr>
+			
+			<tr>
+				<td>destroy()</td>
+				<td>Stops all running actions. It's reccomended to call this method before removing the slider from the DOM.</td>
+            </tr>
+		</tbody>
+		
+	</table>
+ 	
+	<br />
+	
+	<div class="row">
+    	<div class="span3">	
+			<p>In the code example on the right you can see that we use 2 external buttons to navigate to the previous and to the next slide. As you can notice, first we need to assign the slider instance to a variable, in this example: 'slider', and then we use that variable to call the slider methods that we want.</p>
+		</div>
+		
+		<div class="span9">
+<pre class="prettyprint linenums">
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+    var slider;
+	
+    jQuery(document).ready(function($) {
+        slider = $('#my-slider').advancedSlider({width: '100%', 
+                                                 height: 400, 
+                                                 horizontalSlices: 8, 
+                                                 verticalSlices: 4,
+                                                 thumbnailsType: 'scroller', 
+                                                 visibleThumbnails: 4
+                                                });
+    });
+	
+	
+    function previous() {
+        slider.previousSlide();
+    }	
+	
+    function next() {
+        slider.nextSlide();
+    }
+	
+&lt;/script&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;input type=&quot;button&quot; value=&quot;Previous Slide&quot; onclick=&quot;previous();&quot;/&gt;
+    &lt;input type=&quot;button&quot; value=&quot;Next Slide&quot; onclick=&quot;next();&quot;/&gt;
+&lt;/body&gt;
+</pre>
+		</div>
+	</div>		
+		
+	<hr />
+	
+	<h3 id="javascript-reference3">3. Callbacks</h3>
+	
+  	<p>The callbacks, or events, are useful for detecting when certain actions take place. For example we can detect when a transition is complete or when a slide was clicked. Below is a list of all the available callbacks.</p>
+	
+	
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th>Callback Name</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+        	<tr>
+				<td>transitionStart</td>
+				<td>Triggered when a transition starts.</td>
+            </tr>
+			
+			<tr>
+				<td>transitionComplete</td>
+				<td>Triggered when a transition is complete.</td>
+            </tr>
+            
+			<tr>
+				<td>slideRequest</td>
+				<td>Triggered when a slide is requested/called.</td>
+            </tr>
+            
+			<tr>
+				<td>slideClick</td>
+				<td>Triggered when a slide is clicked.</td>
+            </tr>
+            
+			<tr>
+				<td>slideMouseOver</td>
+				<td>Triggered when the mouse is rolled over a slide.</td>
+            </tr>
+            
+			<tr>
+				<td>slideMouseOut</td>
+				<td>Triggered when the mouse is rolled out of a slide.</td>
+            </tr>
+			
+			<tr>
+				<td>thumbnailClick</td>
+				<td>Triggered when a thumbnail is clicked.</td>
+            </tr>
+			
+			<tr>
+				<td>thumbnailMouseOver</td>
+				<td>Triggered when the mouse is rolled over a thumbnail.</td>
+            </tr>
+			
+			<tr>
+				<td>thumbnailMouseOut</td>
+				<td>Triggered when the mouse is rolled out of a thumbnail.</td>
+            </tr>
+			
+			<tr>
+				<td>xmlLoaded</td>
+				<td>Triggered when the XML file is completely loaded.</td>
+            </tr>
+			
+			<tr>
+				<td>doSliderLayout</td>
+				<td>Triggered when the layout is modified.</td>
+            </tr>
+		</tbody>
+	</table>
+			
+         
+ 	<p>Most of these callback functions will return an object that contain certain information. The slide related callbacks, for example, will contain information about the slide that triggered the event. The information contained is the index of the slide(0, 2, 5 etc.), the type of event(slideClick, transitionComplete etc.) and a 'data' object that contains all the slide's information that was specified for that slide.</p>
+    
+	<br />
+	  
+	<div class="row">
+    	<div class="span3">	
+			<p>The code example on the right shows you how to detect when a transition is over and when the slider's layout is changed. You can use the first callback to identify which slide is currently visible and you can also get certain data about that slide. The second callback is useful if you want to keep track of the slider's size.</p>
+		</div>
+		
+		<div class="span9">
+<pre class="prettyprint linenums">
+&lt;script type=&quot;text/javascript&quot;&gt;                
+    jQuery(document).ready(function($) {
+        var slider = $('#my-slider').advancedSlider({width: 840, 
+                                                     height: 400,
+                                                     transitionComplete: onTransitionComplete,
+                                                     doSliderLayout: onSliderLayout});
+    });
+                
+    function onTransitionComplete(obj) {
+        console.log('You are viewing slide ' + obj.index);
+        console.log(obj.type, obj.data);
+    }
+	
+    function onSliderLayout() {
+        console.log(slider.getSize());
+    }
+&lt;/script&gt;
+</pre>
+		</div>
+	</div>
+	
+</section>
+	
+<hr />
+
+<section id="skinning">
+	<div class="page-header">
+		<h1>Skinning the slider</h1>
+	</div>
+	
+	<div class="row">
+		<div class="span3">
+			<h3 id="skinning1">1. Introduction</h3>
+			
+			<p>The slider offers you several main skins to chose from and also a few skins just for the scrollbar. When you want to apply one of these skins, you first need to include the CSS file in the header and then use the 'skin' or 'scrollbarSkin' properties to specify the skin that was included in the header. Let's say you want to include the minimal-small skin for the slider and the 'scrollbar-3-light' skin for the scrollbar. For this, you need to include the minimal-small.css and scrollbar-3-light.css files in the header. Also, don't forget about the advanced-slider-base.css file.</p>
+		
+			<p>If you open the minimall-small.css or the scrollbar-3-light.css files you will see some information about the skin.</p> 
+		
+			<p>The 'Class' information gives you the value that you will need to specify for the 'skin' property.</p> 
+		
+			<p>The CSS files are commented and the selectors are also suggestive so it should be pretty easy to customize the skin. Also you are being provided with the layered PSD (or PNG in some cases) files, so that you're able to modify the size and color of the graphic elements. These files are in 'source files/_dev/css'.</p>
+		</div>
+		
+		<div class="span9">
+			<h4>Including the CSS files in the page</h4>
+			
+<pre class="prettyprint linenums">
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/advanced-slider-base.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/minimal-small/minimal-small.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/scrollbar-3-light/scrollbar-3-light.css&quot; /&gt;
+</pre>
+       
+	
+       		<h4>Slider skin example</h4>
+			
+<pre class="prettyprint linenums">
+/*
+    Skin Name: Minimal Small
+    Class: minimal-small
+    Description: Minimal Small skin for Advanced Slider jQuery plugin
+    Author: David
+*/
+
+
+/* MAIN SLIDE */
+
+.minimal-small .slide-wrapper
+{
+    background-color:#000;
+    border:8px solid #000;
+    -moz-box-shadow: 0px 0px 10px #000;
+    -webkit-box-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 10px #000;
+}
+</pre>
+
+
+        	<h4>Scrollbar skin example</h4>
+			
+<pre class="prettyprint linenums">
+/*
+    Skin Name: Scrollbar 3 Light
+    Class: scrollbar-3-light
+    Description: Scrollbar 3 Light skin for Advanced Slider jQuery plugin
+    Author: David
+*/
+
+
+/* HORIZONTAL SCROLLBAR */
+
+/* MAIN CONTAINER */
+
+.scrollbar-3-light.horizontal
+{
+    position:absolute;
+    width:340px;
+    height:21px;
+}
+</pre>
+        
+	
+        	<h4>Specifying the skins to the slider</h4>
+			
+<pre class="prettyprint linenums">
+$('#my-slider').advancedSlider({width:750, 
+                                height:345, 
+                                skin:'minimal-small', 
+                                scrollbarSkin:'scrollbar-3-light', 
+                                thumbnailsType:'navigation', 
+                                thumbnailScrollbar:true
+                                });
+</pre>
+
+		</div>
+	</div>
+	
+	<hr />
+	
+	<div class="row">
+		<div class="span3">
+			<h3 id="skinning2">2. Creating custom skins</h3>
+			
+			<p>Some of the visual aspects of the slider can be customized only by editing the slider's CSS. However, if you need to do CSS edits, it's recommended to create your own custom skin instead of modifying one of the default skins. You can duplicate one of the existing skins and then add your edits to the custom skin.</p>
+     
+	 		<p>Let's try to create a custom skin, by copying the 'pixel' skin and modifying a few elements. The new skin will be called 'my-custom-skin'. I'm going to start by creating a copy of the 'pixel' directory and name the directory: 'my-custom-skin'. Inside the 'my-custom-skin' folder change the name of the CSS file to 'my-custom-skin.css' and then open the file. What we'll first need to change inside the my-custom-skin.css file is the header information and the selectors.</p>
+	 
+     		<p>As you can see in the example on the right, in the skin's header I changed the 'Skin Name' to 'My Custom Skin' and the 'Class' to 'my-custom-skin'. I also change the selector from '.pixel' to '.my-custom-skin'. The selector needs to match the value of the 'Class'. At this point, the two skins will apply the same styling, so let's start making some modifications. For example let's change the border color to red and the background color to black.</p>
+	 
+			<p>After adding the new skin, you can include it in the page and then set the 'skin' property to name of the new skin, 'my-custom-skin'.</p>
+		</div>
+		
+		<div class="span9">
+			
+<pre class="prettyprint linenums">
+/*
+    Skin Name: My Custom Skin
+    Class: my-custom-skin
+    Description: Custom skin for Advanced Slider jQuery plugin
+    Author: David
+*/
+
+
+/* MAIN SLIDE */
+
+.my-custom-skin .slide-wrapper
+{
+    background-color: #000;
+    border: 8px solid #FFF;
+    -moz-box-shadow: 0px 0px 10px #000;
+    -webkit-box-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 10px #000;
+}
+</pre>
+
+
+<pre class="prettyprint linenums">
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/advanced-slider-base.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/my-custom-skin/my-custom-skin.css&quot; /&gt;
+</pre>
+
+
+<pre class="prettyprint linenums">
+$('#my-slider').advancedSlider({width:750, 
+                                height:345, 
+                                skin:'my-custom-skin'
+                                });
+</pre>
+		</div>
+	</div>
+		
+</section>
+
+
+<hr />
+
+
+<section id="miscellaneous">
+	<div class="page-header">
+		<h1>Miscellaneous topics</h1>
+	</div>
+	
+	<p>This chapter will cover several topics like how to have the videos automatically handled or how to setup the responsive feature properly, and more in the future.</p>
+
+	<h3 id="miscellaneous1">1. Automatic video handling</h3>
+	<div class="row">
+    	<div class="span12">
+			<p>This topic was covered in the 'Using HTML -> Inline HTML content' chapter, so in case you missed it please go <a href="#using-html4">here</a>.</p>
+		</div>
+	</div>
+
+	<hr />
+
+	<h3 id="miscellaneous2">2. Responsive slider</h3>
+	<div class="row">
+		<div class="span12">
+			<p>In order to make a slider responsive, you will need to set its 'width' and 'height' properties to percentage values, for example '100%'. When you set the width and height to '100%', it will make the slider adjust to fill its container entirely. Please note that sometimes the container has a height of 0px so when you set the slider to be a certain percentage from 0px, the height will become 0px. So, in order to properly create a responsive slider, there are several solutions:</p>
+
+			<p>1. Set the 'scaleType' option to 'proportionalFit'.</p>
+
+			<p>2. You can also set a minimum and/or maximum size for the slider using custom CSS code:</p>
+
+<pre class="prettyprint linenums">
+#my-slider {
+    max-width: 500px;
+    max-height: 500px;
+    min-height: 100px;
+    min-width: 100px;
+}
+</pre>
+
+			<p>3. If you want the height of the images to be automatically set based on the width, you can also add some custom JavaScript code. The JavaScript code that you need to add is this:</p>
+
+<pre class="prettyprint linenums">
+jQuery(document).ready(function($){                                
+    // set the initial height of the slider to 50% from the width
+    $('#my-slider').css('height', $('#my-slider').width() * 0.50);
+    $('#my-slider').advancedSlider().doSliderLayout();
+
+    // as the window resizes, maintain the slider's height at 50% from the width
+    $(window).resize(function() {
+        $('#my-slider').css('height', $('#my-slider').width() * 0.50);
+    });                     
+});
+</pre>
+
+			<p>The above code will maintain the height of the slider at 50% from the width.</p>
+		</div>
+	</div>
+
+	<hr />
+
+	<h3 id="miscellaneous3">3. CSS3 transitions</h3>
+	<div class="row">
+		<div class="span12">
+			<p>The slider gives you the possibility to use CSS3 transitions by simply loading the jquery.transition.min.js file in the page. Please note that this feature requires a recent version of the jQuery library, preferably jQuery 1.7+. If you enable the feature but use an older jQuery version, the transition effects will not work.</p>
+		</div>
+	</div>
+
+
+</section>
+
+
+<hr />
+
+
+<section id="troubleshooting">
+	<div class="page-header">
+		<h1>Troubleshooting <small>Answers to some of the common problems</small></h1>
+	</div>
+	
+	<p>If something doesn't work as expected, the first thing you need is a little patience :) and the assurance that you have my free assistance for resolving the problem. Please see if the indications below help, and if they don't please kindly email me and I'll gladly help you.</p>	
+
+	<h4 id="troubleshooting1">1. The slider breaks when the 'slide' effect is used</h4>
+
+	<p>The default easing type for the 'slide' effect is 'easeInOutExpo'. This is a custom easing type so in order for it to work, the jQuery Easings library needs to be loaded in the page, as you can see in the 'minimal' or 'basic' examples.</p>
+	
+	<hr />
+
+	<h4 id="troubleshooting2">2. The slider loads but doesn't respond to input</h4>
+    
+    <p>It can happen when you're loading an older jQuery library in the page and use CSS3 transitions at the same time. In order for the CSS3 transitions to work, you need a recent release of the jQuery library, preferably version 1.7+. If you can't use a newer jQuery library, you will need to disable the CSS3 Transitions. This option can be found inside the Transition Effects sidebar panel.</p>
+	
+	<hr />
+
+	<h4 id="troubleshooting3">3. The self-hosted, HTML5 videos don't play</h4>
+
+    <p>It can happen if the server is not configured to deliver the types of videos you're trying to play. In order to make this possible, open the .htaccess file from your site's root folder, or create it if it doesn't exist, and add the following lines:
+
+<pre>
+AddType video/ogg .ogm
+AddType video/ogg .ogv
+AddType video/ogg .ogg
+AddType video/webm .webm
+AddType audio/webm .weba
+AddType video/mp4 .mp4
+AddType video/x-m4v .m4v
+</pre>
+
+	<p>If the videos still don't play, it could happen because the server is set to not read the .htaccess file. In this case, you might need to contact the hosting provider and ask them to add the above mime types for you.</p>
+</section>
+
+
+<hr />
+
+
+<section id="files-presentation">
+	<div class="page-header">
+		<h1>Presentation of the JavaScript and CSS files</h1>
+	</div>
+
+	<div class="row">
+    	<div class="span3">
+  			<h3>1. JavaScript files</h3>
+  			<p>All the JavaScript files can be found in the 'source files/js' folder. The uncompressed version of these files can be found in '_dev/js'</p>
+		</div>
+		
+		<div class="span9">
+			<table class="table table-bordered table-striped">
+				<thead>
+					<tr>
+						<th>File Name</th>
+						<th>Description</th>
+					</tr>
+			  	</thead>
+				
+				<tbody>
+					<tr>
+						<td><code>jquery-1.7.2.min.js</code></td>
+						<td>The jQuery library contains the base code for most of the following files. It's not necessary to use this exact code; you can use your own jQuery library version and you can load it from a CDN. However, it's important to include the jQuery library before all the other scripts.</td>
+					</tr>
+					
+					<tr>
+						<td><code>jquery.advancedSlider.min.js</code></td>
+						<td>Contains the main code of the slider and must be included in all pages where you use the slider.</td>
+					</tr>
+					
+					<tr>
+						<td><code>excanvas.compiled.js</code></td>
+						<td>This file is necessary for IE8 and lower versions of IE. Because these browsers don't support the HTML5 canvas element, this script is used to emulate a canvas. If you don't include this script, the timer animation will not work in IE8 and lower.</td>
+					</tr>
+					
+					<tr>
+						<td><code>jquery.transition.min.js</code></td>
+						<td>This script will enable hardware accelerated CSS3 transitions, which will make the slider's transition effects run smoother. The performance increase is more visible on mobile devices. While this library is not mandatory, it's recommended to include it in the page. Also, please note that it requires a recent version of the jQuery library.</td>
+					</tr>
+					
+					<tr>
+						<td><code>jquery.touchSwipe.min.js</code></td>
+						<td>If you want to use the 'swipe' effect you need to include this script. It will enable touch gestures on touch devices.</td>
+					</tr>
+					
+					<tr>
+						<td><code>jquery.videoController.min.js</code></td>
+						<td>This script is necessary if you load YouTube, Vimeo or HTML5 videos inside the slides. It will enable the automatic handling of the videos.</td>
+					</tr>
+					
+					<tr>
+						<td><code>video.min.js</code></td>
+						<td>Only necessary when you want to use VideoJS for your HTML5 videos. VideoJS is a 3rd party library that will enhance the look of the HTML5 video and will provide a Flash fallback for browsers that don't support the HTML5 video element, like IE8 and below.</td>
+					</tr>
+					
+					<tr>
+						<td><code>froogaloop.min.js</code></td>
+						<td>This script is necessary if you load Vimeo videos.</td>
+					</tr>
+					
+					<tr>
+						<td><code>jquery.easing.1.3.min.js</code></td>
+						<td>Load this script only if you want to use a custom easing type for the animations. This script is also necessary if you use the 'slide' effect because the default easing type for 'slide' effect is provided by this script.</td>
+					</tr>
+					
+					<tr>
+						<td><code>jquery.mousewheel.min.js</code></td>
+						<td>Include this if you want to use the mouse wheel feature for the thumbnail scroller.</td>
+					</tr>
+					
+					<tr>
+						<td><code>jquery.prettyPhoto.custom.min.js</code></td>
+						<td>This file is necessary if you want to use the lightbox feature.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+    
+	<hr />
+    
+	<div class="row">
+    	<div class="span3">
+  			<h3>2. CSS files and folders</h3>
+  			<p>The CSS files are categorized in folders and can be found in 'source files/css'. The layered PSD/PNG files used for the skins can be found in '_dev/css'</p>
+		</div>
+		
+		<div class="span9">
+			<table class="table table-bordered table-striped">
+				<thead>
+					<tr>
+						<th>Folder</th>
+						<th>Description</th>
+					</tr>
+			  	</thead>
+				
+				<tbody>
+					<tr>
+						<td><code>base</code></td>
+						<td>Contains the CSS skeleton of the slider, advanced-slider-base.css, and a folder of image assets.</td>
+					</tr>
+					
+					<tr>
+						<td><code>slider-skins</code></td>
+						<td>Contains the slider skins. Some of the skins are available in multiple color variations.</td>
+					</tr>
+					
+					<tr>
+						<td><code>scrollbar-skins</code></td>
+						<td>Contains the scrollbar skins.</td>
+					</tr>
+					
+					<tr>
+						<td><code>lightbox</code></td>
+						<td>Contains the CSS and image assets for the lightbox.</td>
+					</tr>
+					
+					<tr>
+						<td><code>video-js</code></td>
+						<td>Contains the CSS and image assets for the VideoJS player.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+</section>
+
+
+<hr />
+
+
+<section id="credits">
+	<div class="page-header">
+		<h1>Credits Files <small>Some open source projects that I used for the slider</small></h1>
+	</div>
+	
+	<ul>
+		<li><a href="http://jquery.com/">jQuery</a> <small>&mdash; jQuery library </small></li>
+		<li><a href="http://code.google.com/p/explorercanvas/">Excanvas</a> <small>&mdash; HTML5 canvas emulation </small></li>
+		<li><a href="http://gsgd.co.uk/sandbox/jquery/easing/">Easings</a> <small>&mdash; easing equations for jQuery </small></li>
+		<li><a href="http://labs.skinkers.com/touchSwipe/">TouchSwipe</a> <small>&mdash; touch swipe plugin for jQuery </small></li>
+		<li><a href="https://github.com/louisremi/jquery.transition.js/">CSS3 Transitions</a> <small>&mdash; overrides the jQuery animate method to use CSS3 transitions </small></li>
+		<li><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">PrettyPhoto</a> <small>&mdash; jQuery lightbox </small></li>
+		<li><a href="https://github.com/brandonaaron/jquery-mousewheel">MouseWheel</a> <small>&mdash; jQuery mouse wheel plugin. </small></li>
+		<li><a href="https://github.com/vimeo/player-api/tree/master/javascript">Froogaloop</a> <small>&mdash; script for controlling the Vimeo player </small></li>
+		<li><a href="http://videojs.com/">VideoJS</a> <small>&mdash; HTML5 video enhancer with Flash fallback </small></li>
+	</ul>
+</section>
+
+<hr />
+
+<div class="goodbye">
+	<p>Once again, thank you so much for purchasing this product!</p>
+</div>
+
+<hr />
+
+</div><!-- /container --> 
+
+
+<script src="assets/js/jquery-1.7.2.min.js"></script> 
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-transition.js"></script>
+<script src="assets/js/bootstrap-dropdown.js"></script> 
+<script src="assets/js/bootstrap-collapse.js"></script>
+</body>
+</html>

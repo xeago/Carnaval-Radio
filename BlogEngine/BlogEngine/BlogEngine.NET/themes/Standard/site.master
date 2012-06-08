@@ -6,6 +6,7 @@
 <head runat="server" profile="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="shortcut icon" href="~/pics/blogengine.ico" type="image/x-icon"/>
+    <asp:ContentPlaceHolder ID="cphHeader" runat="server" />
 </head>
 <body>
 

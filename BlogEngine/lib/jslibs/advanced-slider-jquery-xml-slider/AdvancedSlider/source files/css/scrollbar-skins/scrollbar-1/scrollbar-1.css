@@ -1,0 +1,255 @@
+/*
+	Skin Name: Scrollbar 1
+	Class: scrollbar-1
+	Description: Scrollbar 1 skin for Slider PRO WordPress plugin
+	Author: David
+*/
+
+
+/* HORIZONTAL SCROLLBAR */
+
+/* MAIN CONTAINER */
+
+.scrollbar-1.horizontal {
+	position: absolute;
+	width: 340px;
+	max-width: 340px;
+	min-width: 110px;
+	height: 20px;
+}
+
+/* END OF MAIN CONTAINER */
+
+
+/* TRACK */
+
+.scrollbar-1.horizontal .track {
+	position: absolute;
+	width: 300px;
+	height: 20px;
+	left: 20px;
+}
+
+
+.scrollbar-1.horizontal .track .track-back {
+	position: absolute;
+	background-image: url(images/track_back.png);
+	width: 11px;
+	height: 20px;
+	left: 0;
+}
+
+
+.scrollbar-1.horizontal .track .track-middle {
+	position: absolute;
+	background-image: url(images/track_middle.png);
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 20px;
+}
+
+
+.scrollbar-1.horizontal .track .track-forward {
+	position: absolute;
+	background-image: url(images/track_forward.png);
+	width: 11px;
+	height: 20px;
+	right: 0;
+}
+
+/* END OF TRACK */
+
+
+/* THUMB */
+
+.scrollbar-1.horizontal .thumb {
+	position: absolute;
+	cursor: pointer;
+	width: 70px;
+	height: 20px;
+}
+
+
+.scrollbar-1.horizontal .thumb .thumb-back {
+	position: absolute;
+	background-image: url(images/thumb_back.png);
+	width: 11px;
+	height: 20px;
+	left: 0;
+}
+
+
+.scrollbar-1.horizontal .thumb .thumb-middle {
+	position: absolute;
+	background-image: url(images/thumb_middle.png);
+	background-repeat: repeat-x;
+	width: 48px;
+	height: 20px;
+	left: 11px;
+}
+
+
+.scrollbar-1.horizontal .thumb .thumb-forward {
+	position: absolute;
+	background-image: url(images/thumb_forward.png);
+	width: 11px;
+	height: 20px;
+	right: 0;
+}
+
+/* END OF THUMB */
+
+
+/* BACK BUTTON */
+
+.scrollbar-1.horizontal .back {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/back.png);
+	width: 20px;
+	height: 20px;
+	left: 0;
+}
+
+/* END OF BACK BUTTON */
+
+
+/* FORWARD BUTTON */
+
+.scrollbar-1.horizontal .forward {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/forward.png);
+	width: 20px;
+	height: 20px;
+	right: 0;
+}
+
+/* END OF FORWARD BUTTON */
+
+/* END OF HORIZONTAL SCROLLBAR */
+
+
+
+/* VERTICAL SCROLLBAR */
+
+/* MAIN CONTAINER */
+
+.scrollbar-1.vertical {
+	position: absolute;
+	height: 340px;
+	max-height: 340px;
+	min-height: 110px;
+	width: 20px;
+}
+
+/* END OF MAIN CONTAINER */
+
+
+/* TRACK */
+
+.scrollbar-1.vertical .track {
+	position: absolute;
+	width: 20px;
+	height: 300px;
+	top: 20px;
+}
+
+
+.scrollbar-1.vertical .track .track-back {
+	position: absolute;
+	background-image: url(images/track_back_v.png);
+	width: 20px;
+	height: 11px;
+	top: 0;
+}
+
+
+.scrollbar-1.vertical .track .track-middle {
+	position: absolute;
+	background-image: url(images/track_middle_v.png);
+	background-repeat: repeat-y;
+	height: 100%;
+	width: 20px;
+}
+
+
+.scrollbar-1.vertical .track .track-forward {
+	position: absolute;
+	background-image: url(images/track_forward_v.png);
+	width: 20px;
+	height: 11px;
+	bottom: 0;
+}
+
+/* END OF TRACK */
+
+
+/* THUMB */
+
+.scrollbar-1.vertical .thumb {
+	position: absolute;
+	cursor: pointer;
+	width: 20px;
+	height: 70px;
+}
+
+
+.scrollbar-1.vertical .thumb .thumb-back {
+	position: absolute;
+	background-image: url(images/thumb_back_v.png);
+	height: 11px;
+	width: 20px;
+	top: 0;
+}
+
+
+.scrollbar-1.vertical .thumb .thumb-middle {
+	position: absolute;
+	background-image: url(images/thumb_middle_v.png);
+	background-repeat: repeat-y;
+	height: 48px;
+	width: 20px;
+	top: 11px;
+}
+
+
+.scrollbar-1.vertical .thumb .thumb-forward {
+	position: absolute;
+	background-image: url(images/thumb_forward_v.png);
+	height: 11px;
+	width: 20px;
+	bottom: 0;
+}
+
+/* END OF THUMB */
+
+
+/* BACK BUTTON */
+
+.scrollbar-1.vertical .back {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/back_v.png);
+	width: 20px;
+	height: 20px;
+	top: 0;
+}
+
+/* END OF BACK BUTTON */
+
+
+/* FORWARD BUTTON */
+
+.scrollbar-1.vertical .forward {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/forward_v.png);
+	width: 20px;
+	height: 20px;
+	bottom: 0;
+}
+
+/* END OF FORWARD BUTTON */
+
+/* END OF VERTICAL SCROLLBAR */

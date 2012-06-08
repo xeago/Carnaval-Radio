@@ -16,7 +16,7 @@
   <showdescriptioninpostlistforpostsbytagorcategory>False</showdescriptioninpostlistforpostsbytagorcategory>
   <commentblacklistcount>2</commentblacklistcount>
   <iscocommentenabled>False</iscocommentenabled>
-  <compresswebresource>True</compresswebresource>
+  <compresswebresource>False</compresswebresource>
   <addiptowhitelistfilteronapproval>False</addiptowhitelistfilteronapproval>
   <themecookiename>theme</themecookiename>
   <trustauthenticatedusers>True</trustauthenticatedusers>
@@ -41,7 +41,7 @@
   <useblognameinpagetitles>True</useblognameinpagetitles>
   <smtpusername>username</smtpusername>
   <enableerrorlogging>False</enableerrorlogging>
-  <enablehttpcompression>True</enablehttpcompression>
+  <enablehttpcompression>False</enablehttpcompression>
   <enablepasswordreset>True</enablepasswordreset>
   <disqusaddcommentstopages>False</disqusaddcommentstopages>
   <alternatefeedurl />
@@ -53,7 +53,7 @@
   <culture>Auto</culture>
   <disquswebsitename />
   <handlewwwsubdomain />
-  <theme>Standard</theme>
+  <theme>CarnavalRadio</theme>
   <sendmailoncomment>True</sendmailoncomment>
   <description>De vastelaoves Radio!!</description>
   <blogrollvisibleposts>5</blogrollvisibleposts>
@@ -81,7 +81,7 @@
   <remotefiledownloadtimeout>30000</remotefiledownloadtimeout>
   <enableenclosures>False</enableenclosures>
   <endorsement>http://www.dotnetblogengine.net/syndication.axd</endorsement>
-  <removewhitespaceinstylesheets>True</removewhitespaceinstylesheets>
+  <removewhitespaceinstylesheets>False</removewhitespaceinstylesheets>
   <commentwhitelistcount>1</commentwhitelistcount>
   <descriptioncharacters>300</descriptioncharacters>
   <addiptoblacklistfilteronrejection>False</addiptoblacklistfilteronrejection>

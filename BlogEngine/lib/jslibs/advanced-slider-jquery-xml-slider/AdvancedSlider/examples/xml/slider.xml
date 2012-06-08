@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<slider effectType="slice">
+
+	<slide sliceEffectType="scale" horizontalSlices="6" verticalSlices="3" slicePattern="spiralCenterToMarginCW" sliceDelay="80" captionPosition="top" captionSize="35">
+		<image>../presentation-assets/images/slides/image1.jpg</image>
+		<thumbnail alt="Title 1" title="Some tooltip content">../presentation-assets/images/thumbnails/image1.jpg</thumbnail>
+		<caption>This is just a simple caption.</caption>
+	</slide>
+	
+	<slide effectType="fade" captionPosition="top" captionSize="35">
+		<image>../presentation-assets/images/slides/image2.jpg</image>
+		<thumbnail alt="Title 2" title="Some tooltip content">../presentation-assets/images/thumbnails/image2.jpg</thumbnail>
+		<caption>You can set the caption's position to left, right, top or bottom.</caption>
+	</slide>
+	
+	<slide sliceEffectType="slide" horizontalSlices="10" verticalSlices="1" slicePattern="rightToLeft" sliceDuration="700">
+		<image>../presentation-assets/images/slides/image3.jpg</image>
+		<thumbnail alt="Title 3" title="Some tooltip content">../presentation-assets/images/thumbnails/image3.jpg</thumbnail>
+	</slide>
+	
+	<slide sliceEffectType="height" horizontalSlices="10" verticalSlices="1" slicePattern="leftToRight" slicePoint="centerBottom" sliceDuration="500" captionPosition="top" captionSize="45">
+		<image>../presentation-assets/images/slides/image4.jpg</image>
+		<thumbnail alt="Title 4" title="Some tooltip content">../presentation-assets/images/thumbnails/image4.jpg</thumbnail>
+		<caption><![CDATA[You can also add <b>HTML</b> elements like <a href="http://codecanyon.net">links</a> or <input type="button" value="Buttons"/>]]></caption>
+	</slide>
+	
+	<slide sliceEffectType="scale" horizontalSlices="10" verticalSlices="5" sliceDuration="800">
+		<image>../presentation-assets/images/slides/image5.jpg</image>
+		<thumbnail alt="Title 5" title="Some tooltip content">../presentation-assets/images/thumbnails/image5.jpg</thumbnail>
+	</slide>
+
+	<slide sliceEffectType="height" horizontalSlices="1" verticalSlices="15" slicePattern="bottomToTop" slicePoint="centerTop" captionPosition="left" captionSize="150">
+		<image>../presentation-assets/images/slides/image6.jpg</image>
+		<thumbnail alt="Title 6" title="Some tooltip content">../presentation-assets/images/thumbnails/image6.jpg</thumbnail>
+		<caption><![CDATA[<u>Title</u><br/><br/>This is a list of items:<ul><li>first item</li><li>second item</li><li>third item</li></ul>]]></caption>
+	</slide>
+
+	<slide sliceEffectType="slide" horizontalSlices="6" verticalSlices="3" slicePattern="topLeftToBottomRight" slideStartPosition="rightBottom" slideStartRatio="0.5" sliceDuration="700">
+		<image>../presentation-assets/images/slides/image7.jpg</image>
+		<thumbnail alt="Title 7" title="Some tooltip content">../presentation-assets/images/thumbnails/image7.jpg</thumbnail>
+	</slide>
+
+</slider>

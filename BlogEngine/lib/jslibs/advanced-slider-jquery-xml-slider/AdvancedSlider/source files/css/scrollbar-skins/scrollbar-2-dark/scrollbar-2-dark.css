@@ -1,0 +1,257 @@
+/*
+	Skin Name: Scrollbar 2 Dark
+	Class: scrollbar-2-dark
+	Description: Scrollbar 2 Dark skin for Slider PRO WordPress plugin
+	Author: David
+*/
+
+
+/* HORIZONTAL SCROLLBAR */
+
+/* MAIN CONTAINER */
+
+.scrollbar-2-dark.horizontal {
+	position: absolute;
+	width: 340px;
+	max-width: 340px;
+	min-width: 121px;
+	height: 24px;
+}
+
+/* END OF MAIN CONTAINER */
+
+
+/* TRACK */
+
+.scrollbar-2-dark.horizontal .track {
+	position: absolute;
+	width: 292px;
+	height: 24px;
+	left: 24px;
+}
+
+
+.scrollbar-2-dark.horizontal .track .track-back {
+	position: absolute;
+	background-image: url(images/track_back.png);
+	width: 6px;
+	height: 24px;
+	left: 0;
+}
+
+
+.scrollbar-2-dark.horizontal .track .track-middle {
+	position: absolute;
+	background-image: url(images/track_middle.png);
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 24px;
+}
+
+
+.scrollbar-2-dark.horizontal .track .track-forward {
+	position: absolute;
+	background-image: url(images/track_forward.png);
+	width: 6px;
+	height: 24px;
+	right: 0;
+}
+
+/* END OF TRACK */
+
+
+/* THUMB */
+
+.scrollbar-2-dark.horizontal .thumb {
+	position: absolute;
+	cursor: pointer;
+	width: 70px;
+	height: 14px;
+	margin-top: 5px;
+}
+
+
+.scrollbar-2-dark.horizontal .thumb .thumb-back {
+	position: absolute;
+	background-image: url(images/thumb_back.png);
+	width: 6px;
+	height: 14px;
+	left: 0;
+}
+
+
+.scrollbar-2-dark.horizontal .thumb .thumb-middle {
+	position: absolute;
+	background-image: url(images/thumb_middle.png);
+	background-repeat: repeat-x;
+	width: 58px;
+	height: 14px;
+	left: 6px;
+}
+
+
+.scrollbar-2-dark.horizontal .thumb .thumb-forward {
+	position: absolute;
+	background-image: url(images/thumb_forward.png);
+	width: 6px;
+	height: 14px;
+	right: 0;
+}
+
+/* END OF THUMB */
+
+
+/* BACK BUTTON */
+
+.scrollbar-2-dark.horizontal .back {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/back.png);
+	width: 24px;
+	height: 24px;
+	left: 0;
+}
+
+/* END OF BACK BUTTON */
+
+
+/* FORWARD BUTTON */
+
+.scrollbar-2-dark.horizontal .forward {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/forward.png);
+	width: 24px;
+	height: 24px;
+	right: 0;
+}
+
+/* END OF FORWARD BUTTON */
+
+/* END OF HORIZONTAL SCROLLBAR */
+
+
+
+/* VERTICAL SCROLLBAR */
+
+/* MAIN CONTAINER */
+
+.scrollbar-2-dark.vertical {
+	position: absolute;
+	height: 340px;
+	max-height: 340px;
+	min-height: 121px;
+	width: 24px;
+}
+
+/* END OF MAIN CONTAINER */
+
+
+/* TRACK */
+
+.scrollbar-2-dark.vertical .track {
+	position: absolute;
+	width: 24px;
+	height: 292px;
+	top: 24px;
+}
+
+
+.scrollbar-2-dark.vertical .track .track-back {
+	position: absolute;
+	background-image: url(images/track_back_v.png);
+	width: 24px;
+	height: 7px;
+	top: 0;
+}
+
+
+.scrollbar-2-dark.vertical .track .track-middle {
+	position: absolute;
+	background-image: url(images/track_middle_v.png);
+	background-repeat: repeat-y;
+	height: 100%;
+	width: 24px;
+}
+
+
+.scrollbar-2-dark.vertical .track .track-forward {
+	position: absolute;
+	background-image: url(images/track_forward_v.png);
+	width: 24px;
+	height: 7px;
+	bottom: 0;
+}
+
+/* END OF TRACK */
+
+
+/* THUMB */
+
+.scrollbar-2-dark.vertical .thumb {
+	position: absolute;
+	cursor: pointer;
+	width: 14px;
+	height: 70px;
+	margin-left: 5px;
+}
+
+
+.scrollbar-2-dark.vertical .thumb .thumb-back {
+	position: absolute;
+	background-image: url(images/thumb_back_v.png);
+	height: 6px;
+	width: 14px;
+	top: 0;
+}
+
+
+.scrollbar-2-dark.vertical .thumb .thumb-middle {
+	position: absolute;
+	background-image: url(images/thumb_middle_v.png);
+	background-repeat: repeat-y;
+	height: 58px;
+	width: 14px;
+	top: 6px;
+}
+
+
+.scrollbar-2-dark.vertical .thumb .thumb-forward {
+	position: absolute;
+	background-image: url(images/thumb_forward_v.png);
+	height: 6px;
+	width: 14px;
+	bottom: 0;
+}
+
+/* END OF THUMB */
+
+
+/* BACK BUTTON */
+
+.scrollbar-2-dark.vertical .back {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/back_v.png);
+	width: 24px;
+	height: 24px;
+	top: 0;
+}
+
+/* END OF BACK BUTTON */
+
+
+/* FORWARD BUTTON */
+
+.scrollbar-2-dark.vertical .forward {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/forward_v.png);
+	width: 24px;
+	height: 24px;
+	bottom: 0;
+}
+
+/* END OF FORWARD BUTTON */
+
+/* END OF VERTICAL SCROLLBAR */

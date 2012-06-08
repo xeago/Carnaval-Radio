@@ -68,7 +68,7 @@
 	height: 10px;
 }
 .small-star, .small-star a:hover, .small-star a:active, .small-star a:focus, .small-star .current-rating {
-	background-image: url(../../pics/star_small.gif);
+	background-image: url(../pics/star_small.gif);
 	line-height: 10px;
 	height: 10px;
 }
@@ -104,7 +104,7 @@ div.post .text a[rel] {
 	background-position: right center;
 }
 div.post .text a[rel="me"] {	
-	background-image:url('../../pics/xfn/me.gif');
+	background-image:url('../pics/xfn/me.gif');
 }
 
 /*-------- [ These should cascade to pick the correct icon for the contact ]--*/
@@ -113,27 +113,27 @@ div.post .text a[rel="me"] {
 div.post .text a[rel~="contact"] ,
 div.post .text a[rel~="acquaintance"],
 div.post .text a[rel~="friend"] {
-	background-image:url('../../pics/xfn/contact.gif');
+	background-image:url('../pics/xfn/contact.gif');
 	padding-right:11px;
 }
 /*-------- [ Normal contacts youve met ]--*/
 div.post .text a[rel~="contact"][rel~="met"] ,
 div.post .text a[rel~="acquaintance"][rel~="met"] ,
 div.post .text a[rel~="friend"][rel~="met"] {
-	background-image:url('../../pics/xfn/contactMet.gif');
+	background-image:url('../pics/xfn/contactMet.gif');
 	padding-right:11px;
 }
 
 /*-------- [ Colleague and co worker icon more important than contact ]--*/
 div.post .text a[rel~="colleague"] ,
 div.post .text a[rel~="co-worker"] {
-	background-image:url('../../pics/xfn/colleague.gif');
+	background-image:url('../pics/xfn/colleague.gif');
 	padding-right:11px;
 }
 /*-------- [ Colleague and co worker icon when met ]--*/
 div.post .text a[rel~="colleague"][rel~="met"] ,
 div.post .text a[rel~="co-worker"][rel~="met"] {
-	background-image:url('../../pics/xfn/colleagueMet.gif');
+	background-image:url('../pics/xfn/colleagueMet.gif');
 	padding-right:11px;
 }
 
@@ -142,7 +142,7 @@ div.post .text a[rel~="muse"] ,
 div.post .text a[rel~="crush"] ,  
 div.post .text a[rel~="date"] ,
 a[rel~="sweetheart"] {
-	background-image:url('../../pics/xfn/sweet.gif');
+	background-image:url('../pics/xfn/sweet.gif');
 	padding-right:11px;
 }
 /*-------- [ ...and if youve met them thats even better ]--*/
@@ -150,7 +150,7 @@ div.post .text a[rel~="muse"][rel~="met"] ,
 div.post .text a[rel~="crush"][rel~="met"] ,  
 div.post .text a[rel~="date"][rel~="met"] ,
 div.post .text a[rel~="sweetheart"][rel~="met"] {
-	background-image:url('../../pics/xfn/sweetMet.gif');
+	background-image:url('../pics/xfn/sweetMet.gif');
 	padding-right:11px;
 }
 
@@ -207,24 +207,36 @@ div.post .text a[rel~="sweetheart"][rel~="met"] {
     display:inline-block;
 }
 .imgDelete {
-    background-image:url('../../admin/images/action-delete-small-lt.png');
+    background-image:url('../admin/images/action-delete-small-lt.png');
 }
 .imgDelete:hover {
-    background-image:url('../../admin/images/action-delete-small.png');
+    background-image:url('../admin/images/action-delete-small.png');
 }
 .imgMove {
-    background-image:url('../../admin/images/action-tools-small-lt.png');
+    background-image:url('../admin/images/action-tools-small-lt.png');
 }
 .imgMove:hover {
-    background-image:url('../../admin/images/action-tools-small.png');
+    background-image:url('../admin/images/action-tools-small.png');
 }
 .imgEdit {
-    background-image:url('../../admin/images/action-edit-small-lt.png');
+    background-image:url('../admin/images/action-edit-small-lt.png');
 }
 .imgEdit:hover {
-    background-image:url('../../admin/images/action-edit-small.png');
+    background-image:url('../admin/images/action-edit-small.png');
 }
 
 .widget a:hover { text-decoration: none; }
 
 #comment-form p { margin: 1px; display: inline-table; width: 100%; }
+
+div.BreadCrumb
+{
+   height:30px;
+   margin-bottom:10px;
+   padding-left:30px;
+}
+div.BreadCrumb a
+{
+    height:30px;
+    line-height:30px;
+}
