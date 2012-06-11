@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<shouts>
+  <shout id="1">
+    <name>TestSubject1</name>
+    <message>TestMessage1</message>
+  </shout>
+  <shout id="2">
+    <name>TestSubject2</name>
+    <message>TestMessage2</message>
+  </shout>
+  <shout id="3">
+    <name>test</name>
+    <message>test</message>
+  </shout>
+  <shout id="4">
+    <name>test</name>
+    <message>test</message>
+  </shout>
+  <shout id="5">
+    <name>test2</name>
+    <message>test2</message>
+  </shout>
+  <shout id="6">
+    <name>blaat</name>
+    <message>testje</message>
+  </shout>
+</shouts>
