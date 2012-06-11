@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net.Mime;
+using System.Reflection;
+using System.Resources;
 using System.Web;
 using BlogEngine.Core.Web.Extensions;
 
@@ -192,6 +195,13 @@ public class CRSponsor
     public static List<CRSponsor> GetList()
     {
         return s.GetDataTable().Rows.Cast<DataRow>().Select(dr => new CRSponsor(Guid.Parse(dr["ID"].ToString()), false)).ToList();
+    }
+
+    public static string GetLabelBySponsorType(SponsorType s)
+    {
+        var rm = new ResourceManager(typeof(Resources.labels));
+        var text = rm.GetString(s.ToString());
+        return string.IsNullOrEmpty(text) ? s.ToString() : text;
     }
 
     private static bool ConvertBoolElseFalse(object a)

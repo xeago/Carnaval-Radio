@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <settings>
   <displayratingsonrecentposts>True</displayratingsonrecentposts>
-  <authorname>My name</authorname>
-  <email>name@example.com</email>
+  <authorname>Carnaval Radio</authorname>
+  <email>info@carnaval-radio.nl</email>
   <mobiletheme>Mobile</mobiletheme>
   <postsperfeed>10</postsperfeed>
   <postsperpage>10</postsperpage>
   <htmlheader />
-  <contactthankmessage>&lt;h1&gt;Thank you&lt;/h1&gt;&lt;p&gt;The message was sent.&lt;/p&gt;</contactthankmessage>
-  <emailsubjectprefix>Weblog</emailsubjectprefix>
+  <contactthankmessage>&lt;h1&gt;Bedankt&lt;/h1&gt;&lt;p&gt;Je bericht is verzonden, er wordt z.s.m. op gereageerd.&lt;/p&gt;</contactthankmessage>
+  <emailsubjectprefix>[Support] </emailsubjectprefix>
   <trackingscript />
   <showdescriptioninpostlist>False</showdescriptioninpostlist>
   <commentsperpage>10</commentsperpage>
@@ -21,17 +21,17 @@
   <themecookiename>theme</themecookiename>
   <trustauthenticatedusers>True</trustauthenticatedusers>
   <enablecountryincomments>True</enablecountryincomments>
-  <contactformmessage>&lt;p&gt;I'll answer the mail as soon as I can.&lt;/p&gt;</contactformmessage>
-  <searchbuttontext>Search</searchbuttontext>
+  <contactformmessage>&lt;p&gt;Voor vragen, informatie over sponsoring of overige opmerkingen kunt u onderstaand contactformulier gebruiken.&lt;/p&gt;</contactformmessage>
+  <searchbuttontext>Zoeken</searchbuttontext>
   <showincludecommentsoption>False</showincludecommentsoption>
   <israzortheme>False</israzortheme>
   <enablewebsiteincomments>False</enablewebsiteincomments>
-  <enablecontactattachments>True</enablecontactattachments>
+  <enablecontactattachments>False</enablecontactattachments>
   <blogrollmaxlength>23</blogrollmaxlength>
   <showpingbacks>False</showpingbacks>
-  <searchdefaulttext>Enter search term or APML url</searchdefaulttext>
-  <language>en-US</language>
-  <smtpserver>mail.example.com</smtpserver>
+  <searchdefaulttext>Zoeken...</searchdefaulttext>
+  <language>nl-NL</language>
+  <smtpserver>smtp.carnaval-radio.nl</smtpserver>
   <disqusdevmode>False</disqusdevmode>
   <showpostnavigation>True</showpostnavigation>
   <displaycommentsonrecentposts>True</displaycommentsonrecentposts>
@@ -39,7 +39,7 @@
   <enableopensearch>True</enableopensearch>
   <dayscommentsareenabled>0</dayscommentsareenabled>
   <useblognameinpagetitles>True</useblognameinpagetitles>
-  <smtpusername>username</smtpusername>
+  <smtpusername>info</smtpusername>
   <enableerrorlogging>False</enableerrorlogging>
   <enablehttpcompression>False</enablehttpcompression>
   <enablepasswordreset>True</enablepasswordreset>
@@ -67,7 +67,7 @@
   <timestamppostlinks>True</timestamppostlinks>
   <enablereferrertracking>False</enablereferrertracking>
   <avatar>wavatar</avatar>
-  <smtppassword>password</smtppassword>
+  <smtppassword>radio1</smtppassword>
   <numberofrecentcomments>10</numberofrecentcomments>
   <enablerecaptchaoncontactform>False</enablerecaptchaoncontactform>
   <enablessl>False</enablessl>
@@ -87,7 +87,7 @@
   <addiptoblacklistfilteronrejection>False</addiptoblacklistfilteronrejection>
   <descriptioncharactersforpostsbytagorcategory>0</descriptioncharactersforpostsbytagorcategory>
   <commentreportmistakes>False</commentreportmistakes>
-  <searchcommentlabeltext>Include comments in search</searchcommentlabeltext>
+  <searchcommentlabeltext>Reacties?</searchcommentlabeltext>
   <numberofrecentposts>10</numberofrecentposts>
   <selfregistrationinitialrole>Select</selfregistrationinitialrole>
   <enableselfregistration>False</enableselfregistration>
@@ -95,5 +95,5 @@
   <geocodinglongitude>0</geocodinglongitude>
   <requiresslmetaweblogapi>False</requiresslmetaweblogapi>
   <enablerating>False</enablerating>
-  <enablecommentsearch>True</enablecommentsearch>
+  <enablecommentsearch>False</enablecommentsearch>
 </settings>

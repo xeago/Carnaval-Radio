@@ -7,7 +7,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphBody" Runat="Server">
   <div id="page">
-  <div style="margin-top:60px;">
+  <div>
+    <h1><%= Resources.labels.fotos %> - <asp:Literal runat="server" id="litTitle" /></h1>
+    <p class="desc"><asp:Literal runat="server" id="litDesc" /></p>
     <div class="BreadCrumb"><a href="foto_albums.aspx">Terug naar albums</a></div>
     <asp:Literal runat="server" ID="litAlbums" />
 

@@ -52,6 +52,8 @@ public partial class fotoalbum : BlogBasePage
         PicasaAlbum picasaAlbum = Picasa2.GetAlbums().SingleOrDefault(i => i.Accessor.Id == albumID);
         if (picasaAlbum == null){Response.Redirect("foto_albums.aspx");}
 
+        litTitle.Text = picasaAlbum.Accessor.Name;
+        litDesc.Text = picasaAlbum.Accessor.AlbumSummary;
         var sb = new StringBuilder();
 
         sb.AppendFormat("<div class=\"advanced-slider\" id=\"{0}\">", "lightbox-slider");

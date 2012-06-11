@@ -1715,7 +1715,7 @@
   <data name="endDate" xml:space="preserve">
     <value>Verloop datum</value>
   </data>
-  <data name="HoofdSponsor" xml:space="preserve">
+  <data name="Hoofdsponsor" xml:space="preserve">
     <value>Hoofdsponsor</value>
   </data>
   <data name="Solid" xml:space="preserve">
@@ -1727,13 +1727,13 @@
   <data name="sponsorlogo" xml:space="preserve">
     <value>Logo</value>
   </data>
-  <data name="SubSponsor" xml:space="preserve">
+  <data name="Subsponsor" xml:space="preserve">
     <value>Subsponsor</value>
   </data>
   <data name="Switch" xml:space="preserve">
     <value>Wisselend</value>
   </data>
-  <data name="VriendenVanCR" xml:space="preserve">
+  <data name="VriendenVanCr" xml:space="preserve">
     <value>Vrienden van Carnaval Radio</value>
   </data>
   <data name="shortCuts" xml:space="preserve">
@@ -1777,5 +1777,8 @@
   </data>
   <data name="confirmDelete" xml:space="preserve">
     <value>Weet je zeker dat je deze record wilt verwijderen?</value>
+  </data>
+  <data name="fotos" xml:space="preserve">
+    <value>Foto's</value>
   </data>
 </root>

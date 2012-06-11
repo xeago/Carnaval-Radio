@@ -27,7 +27,9 @@
 				"smtpPassword": $("[id$='_txtSmtpPassword']").val(),
 				"sendMailOnComment": $("[id$='_cbComments']").attr('checked'),
 				"enableSsl": $("[id$='_cbEnableSsl']").attr('checked'),
-				"emailSubjectPrefix": $("[id$='_txtEmailSubjectPrefix']").val()
+				"emailSubjectPrefix": $("[id$='_txtEmailSubjectPrefix']").val(),
+				"contactThankMessage": $("[id$='_txtThankMessage']").val(),
+                "contactDescription": $("[id$='_txtDescription']").val()
 			};
 			
             $.ajax({
@@ -58,7 +60,7 @@
                 "smtpPassword": $("[id$='_txtSmtpPassword']").val(),
                 "sendMailOnComment": $("[id$='_cbComments']").attr('checked'),
                 "enableSsl": $("[id$='_cbEnableSsl']").attr('checked'),
-                "emailSubjectPrefix": $("[id$='_txtEmailSubjectPrefix']").val()
+                "emailSubjectPrefix": $("[id$='_txtEmailSubjectPrefix']").val(),
             };
 
             $.ajax({
@@ -113,6 +115,16 @@
                     <li>
                         <label class="lbl" for="<%=txtEmailSubjectPrefix.ClientID %>"><%=Resources.labels.emailSubjectPrefix %></label>
                         <asp:TextBox runat="server" ID="txtEmailSubjectPrefix" Width="300" />
+                    </li>
+                    <li>
+                        <label class="lbl" for="<%=txtThankMessage.ClientID %>">
+                            <%=Resources.labels.thankYouMessage %></label>
+                        <asp:TextBox runat="server" ID="txtThankMessage" Width="300" TextMode="MultiLine" />
+                    </li>
+                    <li>
+                        <label class="lbl" for="<%=txtDescription.ClientID %>">
+                            <%=Resources.labels.description %></label>
+                        <asp:TextBox runat="server" ID="txtDescription" Width="300" TextMode="MultiLine" />
                     </li>
                     <li>
                         <label class="lbl"><%=Resources.labels.otherSettings %></label>

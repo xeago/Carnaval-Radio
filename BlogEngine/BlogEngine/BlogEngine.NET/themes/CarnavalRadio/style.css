@@ -980,3 +980,90 @@ input[type="submit"]:hover, input[type="button"]:hover {
 #newsletterform input[type="text"] {
     margin: 10px 0;
 }
+
+/*----------------------------
+				 Sponsoren
+----------------------------*/
+div#Sponsoren
+{
+    padding-bottom:30px;
+}
+div.SponsorTypes
+{
+    clear:both;
+}
+
+div.SponsorTypes h3
+{
+    clear:both;
+    margin:0;
+    padding:0;
+    line-height:30px;
+    border-bottom: 1px solid #eee;
+    margin-bottom:15px;
+}
+
+div.SponsorTypes ul
+{
+    margin:0; padding:0;
+    list-style-type:none;
+}
+
+div.SponsorTypes ul li a img { border:solid 1px #ccc; }
+
+div.SponsorTypes ul li
+{
+    margin-right:5px;
+    float:left;
+}
+
+div.SponsorTypes ul li:last-child
+{ margin:0; }
+
+div.Hoofdsponsor ul li {margin-right:15px;}
+div.Sponsor ul li {margin-right:7.5px;}
+div.Subsponsor ul li{margin-right:5px;}
+div.ClubVan50 ul li{margin-right:3.75px;}
+
+/*----------------------------
+					 Foto's
+----------------------------*/
+div.albums
+{
+    
+}
+div.albums ul 
+{
+    list-style-type:none;
+}
+div.albums ul li
+{
+    width:200px;
+    height:200px;
+    background-color:#eee;
+
+    border:1px solid #ddd;
+}
+div.albums ul li:hover
+{
+    background-color:#fad170;
+}
+div.albums ul li p
+{    
+    color:#000;
+    
+    text-align:center;
+    margin:0;
+    padding:5px 0;
+}
+div.albums ul li p:hover, div.albums ul li a:hover
+{
+    text-decoration:none;
+}
+div.albums ul li img
+{ 
+    border:1px solid #ccc;
+    margin:0;
+    margin-left:20px;
+    width:160px;
+}

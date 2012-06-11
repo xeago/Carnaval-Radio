@@ -33,15 +33,17 @@
   </div>  
   <div id="menu">
     <div class="left-corner"></div>
-    <div class="login">
-         <span runat="server" id="aUser"></span><a runat="server" id="aLogin" />
-    </div>
+
    
     <ul class="head-menu">
       <li><a href="<%=Utils.AbsoluteWebRoot %>" rel="home"><%=Resources.labels.home %></a></li>
-      <li><a href="<%=Utils.AbsoluteWebRoot %>archive.aspx"><%=Resources.labels.archive %></a></li>
       <asp:Literal runat="server" ID="litMenu" />
-
+        <li><a href="<%=Utils.AbsoluteWebRoot %>sponsoren.aspx">
+            <%=Resources.labels.sponsoren %></a></li>
+        <li><a href="<%=Utils.AbsoluteWebRoot %>gastenboek.aspx">
+            <%=Resources.labels.guestbook %></a></li>
+        <li><a href="<%=Utils.AbsoluteWebRoot %>foto_albums.aspx">
+            <%=Resources.labels.fotos %></a></li>
         <li><a href="<%=Utils.AbsoluteWebRoot %>contact.aspx">
             <%=Resources.labels.contact %></a></li>
       <!--<li><a href="javascript:void(BlogEngine.filterByAPML())" class="apmlfilter"><%=Resources.labels.filterByApml %></a></li>!-->
@@ -51,6 +53,7 @@
       <%
          }
       %>
+
     </ul>
       <div class="right-corner">
       </div>
@@ -65,10 +68,18 @@
     </div>
 
     <div id="sidepanel">
-      <blog:WidgetZone runat="server" ZoneName="be_WIDGET_ZONE" />
+      <blog:WidgetZone runat="server" ZoneName="Sidebar" />
     </div>
-  <li><a href="<%=Utils.FeedUrl %>" class="feed">
-      <img src="<%=Utils.ApplicationRelativeWebRoot %>pics/rssButton.png" alt="Feed" /><%=Resources.labels.subscribe %></a></li>
+  
+  
+  <div style="clear:both;">
+  <div class="login">
+      <span runat="server" id="aUser"></span><a runat="server" id="aLogin" />
+  </div>
+  
+  <a href="<%=Utils.FeedUrl %>" class="feed">
+  <img src="<%=Utils.ApplicationRelativeWebRoot %>pics/rssButton.png" alt="Feed" /><%=Resources.labels.subscribe %></a>
+  </div>
   </form>
   
 </body>

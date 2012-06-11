@@ -6,9 +6,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphBody" Runat="Server">
   <div id="page">
-      <div style="margin-top:60px;">
+  <div id="Sponsoren">
         <asp:Literal runat="server" ID="litSponsors" />
-        <div></div>
-      </div>
+  </div>
   </div>
 </asp:Content>

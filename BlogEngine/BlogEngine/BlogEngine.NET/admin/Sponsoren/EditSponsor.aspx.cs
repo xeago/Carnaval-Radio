@@ -41,8 +41,8 @@ namespace Admin.Sponsoren
             
             if (!IsPostBack)
             {
-                imgLogo.CropConstraint = new FixedCropConstraint(300, 200);
-                imgLogo.PreviewFilter = new FixedResizeConstraint(300, 200, Color.Black);
+                imgLogo.CropConstraint = new FixedCropConstraint(GfxUnit.Pixel,300, 194.117F);
+                imgLogo.PreviewFilter = new FixedResizeConstraint(GfxUnit.Pixel, 300, 194.117F, Color.Black);
             }
 
             if (IsEdit)

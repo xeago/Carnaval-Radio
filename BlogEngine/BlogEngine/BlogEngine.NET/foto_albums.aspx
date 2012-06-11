@@ -6,10 +6,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphBody" Runat="Server">
   <div id="page">
-      <div style="margin-top:60px;">
+        <h1><%= Resources.labels.fotos %></h1>
         <asp:Literal runat="server" ID="litAlbums" />
-
         <div></div>
-      </div>
   </div>
 </asp:Content>

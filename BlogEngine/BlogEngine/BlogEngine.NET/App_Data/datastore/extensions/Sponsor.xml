@@ -24,6 +24,15 @@
       <Values>35a84e42-82ec-4d9e-9788-b1ab7a5cbe13</Values>
       <Values>b55601e9-8734-4705-b337-69b4e40449b6</Values>
       <Values>bf6a1502-3b2e-45ef-9786-b9dd2abae861</Values>
+      <Values>c3bf0da6-2f4f-4082-84a3-38804968ce8d</Values>
+      <Values>824e928d-7ddc-4a3e-9bdc-fa8932bb659b</Values>
+      <Values>05a663b5-7b20-417a-bd2c-a30f9ca55deb</Values>
+      <Values>5929ad80-0680-455f-902f-d94c981fd3da</Values>
+      <Values>fbf33027-535d-41b3-a3b2-780979ee5652</Values>
+      <Values>22033e07-f4f2-432c-818d-c39ebe4c419c</Values>
+      <Values>7b7cdaeb-8ad1-431a-9ac1-ae4490aaad0b</Values>
+      <Values>2646b840-e004-4f3a-81fd-361163c0dce6</Values>
+      <Values>33298e43-7310-48f5-9efd-626dc3b71912</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -33,9 +42,18 @@
       <ParamType>String</ParamType>
       <Required>true</Required>
       <SelectedValue />
-      <Values>test34asdasdasdasd</Values>
-      <Values>test12318293123</Values>
+      <Values>Woetjstok</Values>
+      <Values>LOO TV</Values>
       <Values>Will Smits Schilderwerken</Values>
+      <Values>Gemeente Brunssum</Values>
+      <Values>Autoplaza Brunssum</Values>
+      <Values>Fred Vluggen</Values>
+      <Values>CompuTare</Values>
+      <Values>Van Ravenstein</Values>
+      <Values>TSW</Values>
+      <Values>Andy Cobben</Values>
+      <Values>Roy Heijnens</Values>
+      <Values>Vriendje van ons</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -45,9 +63,18 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>tester</Values>
-      <Values>askjdaiuwdhnasoidj.nl</Values>
-      <Values>www.wilsmits.nl</Values>
+      <Values>http://www.woetsjtok.nl</Values>
+      <Values>http://www.lootv.nl</Values>
+      <Values>http://www.wilsmits.nl</Values>
+      <Values>http://www.brunssum.nl</Values>
+      <Values />
+      <Values />
+      <Values>www.computare.nl</Values>
+      <Values />
+      <Values />
+      <Values />
+      <Values />
+      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -60,6 +87,15 @@
       <Values>3</Values>
       <Values>2</Values>
       <Values>3</Values>
+      <Values>1</Values>
+      <Values>1</Values>
+      <Values>2</Values>
+      <Values>2</Values>
+      <Values>3</Values>
+      <Values>3</Values>
+      <Values>4</Values>
+      <Values>4</Values>
+      <Values>5</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -72,6 +108,15 @@
       <Values>True</Values>
       <Values>True</Values>
       <Values>True</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>false</Values>
+      <Values>False</Values>
+      <Values>false</Values>
+      <Values>False</Values>
+      <Values>false</Values>
+      <Values>false</Values>
+      <Values>false</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -81,6 +126,15 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
       <Values>False</Values>
       <Values>False</Values>
       <Values>False</Values>
@@ -96,6 +150,15 @@
       <Values>True</Values>
       <Values>True</Values>
       <Values>True</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -105,6 +168,15 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
       <Values>False</Values>
       <Values>False</Values>
       <Values>False</Values>
@@ -120,6 +192,15 @@
       <Values>True</Values>
       <Values>False</Values>
       <Values>True</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -129,6 +210,15 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>0</Values>
+      <Values>0</Values>
+      <Values>0</Values>
+      <Values>0</Values>
+      <Values>0</Values>
+      <Values>0</Values>
+      <Values>0</Values>
+      <Values>0</Values>
+      <Values>0</Values>
       <Values>0</Values>
       <Values>0</Values>
       <Values>0</Values>
@@ -144,6 +234,15 @@
       <Values>Upload/sponsoren/35a84e42-82ec-4d9e-9788-b1ab7a5cbe13.png</Values>
       <Values>Upload/sponsoren/b55601e9-8734-4705-b337-69b4e40449b6.png</Values>
       <Values>Upload/sponsoren/bf6a1502-3b2e-45ef-9786-b9dd2abae861.png</Values>
+      <Values>Upload/sponsoren/c3bf0da6-2f4f-4082-84a3-38804968ce8d.png</Values>
+      <Values>Upload/sponsoren/824e928d-7ddc-4a3e-9bdc-fa8932bb659b.png</Values>
+      <Values>Upload/sponsoren/05a663b5-7b20-417a-bd2c-a30f9ca55deb.png</Values>
+      <Values>Upload/sponsoren/5929ad80-0680-455f-902f-d94c981fd3da.png</Values>
+      <Values>Upload/sponsoren/fbf33027-535d-41b3-a3b2-780979ee5652.png</Values>
+      <Values>Upload/sponsoren/22033e07-f4f2-432c-818d-c39ebe4c419c.png</Values>
+      <Values>Upload/sponsoren/7b7cdaeb-8ad1-431a-9ac1-ae4490aaad0b.png</Values>
+      <Values>Upload/sponsoren/2646b840-e004-4f3a-81fd-361163c0dce6.png</Values>
+      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -155,6 +254,15 @@
       <SelectedValue />
       <Values>we testen de omschrijving!</Values>
       <Values>dit is een beschrijving waar je wat kan vertellen over de sponsor, wordt echter niks mee gedaan.</Values>
+      <Values />
+      <Values />
+      <Values />
+      <Values />
+      <Values />
+      <Values />
+      <Values />
+      <Values />
+      <Values />
       <Values />
     </Parameters>
     <Parameters>
@@ -168,6 +276,15 @@
       <Values>2-6-2012 15:02:14</Values>
       <Values>4-6-2012 10:23:37</Values>
       <Values>4-6-2012 11:03:48</Values>
+      <Values>11-6-2012 11:39:23</Values>
+      <Values>11-6-2012 11:47:33</Values>
+      <Values>11-6-2012 11:52:35</Values>
+      <Values>11-6-2012 11:55:10</Values>
+      <Values>11-6-2012 11:56:07</Values>
+      <Values>11-6-2012 11:56:28</Values>
+      <Values>11-6-2012 11:57:06</Values>
+      <Values>11-6-2012 11:57:32</Values>
+      <Values>11-6-2012 15:26:29</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -177,9 +294,18 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>31-8-2012 0:00:00</Values>
+      <Values>31-12-2023 0:00:00</Values>
       <Values>16-6-2012 0:00:00</Values>
       <Values>30-9-2012 0:00:00</Values>
+      <Values>31-10-2012 0:00:00</Values>
+      <Values />
+      <Values />
+      <Values />
+      <Values />
+      <Values />
+      <Values />
+      <Values />
+      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -189,6 +315,15 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
       <Values>True</Values>
       <Values>True</Values>
       <Values>True</Values>

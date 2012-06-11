@@ -1811,7 +1811,7 @@
   <data name="endDate" xml:space="preserve">
     <value>Ending Date</value>
   </data>
-  <data name="HoofdSponsor" xml:space="preserve">
+  <data name="Hoofdsponsor" xml:space="preserve">
     <value>Sponsor type 1</value>
   </data>
   <data name="Solid" xml:space="preserve">
@@ -1823,13 +1823,13 @@
   <data name="sponsorlogo" xml:space="preserve">
     <value>Logo</value>
   </data>
-  <data name="SubSponsor" xml:space="preserve">
+  <data name="Subsponsor" xml:space="preserve">
     <value>Sponsor type 3</value>
   </data>
   <data name="Switch" xml:space="preserve">
     <value>Switching</value>
   </data>
-  <data name="VriendenVanCR" xml:space="preserve">
+  <data name="VriendenVanCr" xml:space="preserve">
     <value>Sponsor type 5</value>
   </data>
   <data name="shortCuts" xml:space="preserve">
@@ -1870,5 +1870,11 @@
   </data>
   <data name="confirmDelete" xml:space="preserve">
     <value>Are you sure you want to delete this item?</value>
+  </data>
+  <data name="fotos" xml:space="preserve">
+    <value>Pictures</value>
+  </data>
+  <data name="guestbook" xml:space="preserve">
+    <value>Gastenboek</value>
   </data>
 </root>

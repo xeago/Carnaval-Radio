@@ -27,6 +27,8 @@ public partial class sponsoren : BlogBasePage
      */
     protected void Page_Load(object sender, EventArgs e)
     {
+        this.Title = Resources.labels.sponsoren.ToLowerInvariant();
+
         System.Web.HttpBrowserCapabilities browser = Request.Browser;
         string name = browser.Browser;
         float version = (float)(browser.MajorVersion + browser.MinorVersion);
@@ -37,55 +39,53 @@ public partial class sponsoren : BlogBasePage
         var listSponsors = CRSponsor.GetList().Where(i => i.Active);
         foreach (SponsorType sponsorType in Enum.GetValues(typeof(SponsorType)))
         {
-            sb.Append("<div class=\"SponsorType\">");
-            sb.AppendFormat("<h3>{0}</h3>", sponsorType.ToString());
-            sb.Append("<ul>");
+            double width = 0;
+            double height = 0;
+            getTypeSpecificSettings(sponsorType, out width, out height);
             
-            int width = 0;
-            int height = 0;
-            GetTypeSpecificSettings(sponsorType, out width, out height);
-
+            var sponsor = new StringBuilder();
             foreach (var crSponsor in listSponsors.Where(i => i.SponsorType == sponsorType))
             {
-                string Tag = crSponsor.HasLogo ? string.Format("<img src=\"{0}\" width=\"{2}\" height=\"{3}\" alt=\"{1}\" title=\"{1}\" />", crSponsor.LogoURL, crSponsor.Name, width, height) : crSponsor.Name;
+                string Tag = crSponsor.HasLogo ? string.Format("<img src=\"{0}\" width=\"{2}\" height=\"{3}\" alt=\"{1}\" title=\"{1}\" />", crSponsor.LogoURL, crSponsor.Name, (int)width, (int)height) : crSponsor.Name;
 
-                sb.AppendFormat("<li><a href=\"{1}\" title=\"{2}\">{0}</a></li>", Tag, crSponsor.LogoURL, crSponsor.Name);
+                sponsor.AppendFormat("<li><a target=\"_blank\" href=\"{1}\" title=\"{2}\">{0}</a></li>", Tag, crSponsor.Url, crSponsor.Name);
             }
-            sb.Append("</ul>");
-            sb.Append("</div>");
-        }
 
+            if(!string.IsNullOrEmpty(sponsor.ToString()))
+            {
+                sb.AppendFormat("<div class=\"SponsorTypes {0}\">", sponsorType.ToString());
+                sb.AppendFormat("<h3>{0}</h3>", CRSponsor.GetLabelBySponsorType(sponsorType));
+                sb.Append("<ul>");
+                sb.Append(sponsor.ToString());
+                sb.Append("</ul>");
+                sb.Append("</div>");
+            }
+        }
         litSponsors.Text = sb.ToString();
     }
 
-    private void GetTypeSpecificSettings(SponsorType type, out int logoWidth, out int logoHeight)
+    private static void getTypeSpecificSettings(SponsorType type, out double logoWidth, out double logoHeight)
     {
         logoWidth = 300;
-        logoHeight = 200;
         switch (type)
         {
             case SponsorType.Hoofdsponsor:
                 logoWidth = 300;
-                logoHeight = 200;
                 break;
             case SponsorType.Sponsor:
-                logoWidth = 250;
-                logoHeight = 167;
+                logoWidth = 200;
                 break;
             case SponsorType.Subsponsor:
-                logoWidth = 200;
-                logoHeight = 133;
+                logoWidth = 150;
                 break;
             case SponsorType.ClubVan50:
-                logoWidth = 175;
-                logoHeight = 117;
+                logoWidth = 120;
                 break;
             default:
                 logoWidth = 300;
-                logoHeight = 200;
                 break;
         }
-
+        logoHeight = logoWidth / 1.54545454545;
     }
 
     /// <summary>
