@@ -7,7 +7,7 @@ function loadShouts() {
         dataType: "xml",
         success: function showShouts(xml) {
             $('#shouts').html("");
-            $(xml).find('shout').each(function () {
+            $(xml).find('shout').slice(-20).each(function () {
                 var id = $(this).attr('id');
                 var name = $(this).find('name').text();
                 var msg = $(this).find('message').text();
@@ -26,7 +26,8 @@ function submitMsg() {
             url: 'widgets/Shoutbox/postShout.asmx/SubmitMessage',
             data: "{ name: '" + $('#tbName').val() + "', message: '" + $('#tbMessage').val() + "' }",
             success: function () {
-                alert('Message sent!');
+                $('#tbName').val('');
+                $('#tbMessage').val('');
                 loadShouts();
             }
         });

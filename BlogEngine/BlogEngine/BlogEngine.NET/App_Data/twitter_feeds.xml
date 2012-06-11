@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:twitter="http://api.twitter.com" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:georss="http://www.georss.org/georss">
+<rss xmlns:georss="http://www.georss.org/georss" xmlns:twitter="http://api.twitter.com" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Twitter / L1nws</title>
     <link>http://twitter.com/L1nws</link>
@@ -7,6 +7,26 @@
     <description>Twitter updates from L1 NWS / L1nws.</description>
     <language>en-us</language>
     <ttl>40</ttl>
+    <item>
+      <title>L1nws: Verbinding natuurgebieden Roermond http://t.co/zOvEKIZr</title>
+      <description>L1nws: Verbinding natuurgebieden Roermond http://t.co/zOvEKIZr</description>
+      <pubDate>Mon, 11 Jun 2012 09:00:43 +0000</pubDate>
+      <guid>http://twitter.com/L1nws/statuses/212107082248368128</guid>
+      <link>http://twitter.com/L1nws/statuses/212107082248368128</link>
+      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
+      <twitter:place />
+      <author>l1nws</author>
+    </item>
+    <item>
+      <title>L1nws: Bijna verdronken meisje alsnog overleden http://t.co/s2c7LHnT</title>
+      <description>L1nws: Bijna verdronken meisje alsnog overleden http://t.co/s2c7LHnT</description>
+      <pubDate>Mon, 11 Jun 2012 09:00:43 +0000</pubDate>
+      <guid>http://twitter.com/L1nws/statuses/212107081522749441</guid>
+      <link>http://twitter.com/L1nws/statuses/212107081522749441</link>
+      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
+      <twitter:place />
+      <author>l1nws</author>
+    </item>
     <item>
       <title>L1nws: Zeven gewonden bij ongeval Aken http://t.co/NpkEvWo9</title>
       <description>L1nws: Zeven gewonden bij ongeval Aken http://t.co/NpkEvWo9</description>
@@ -188,24 +208,56 @@
       <author>l1nws</author>
     </item>
     <item>
-      <title>L1nws: Aanleg attractiepark Grand Canyon vertraagd http://t.co/URh8k38e</title>
-      <description>L1nws: Aanleg attractiepark Grand Canyon vertraagd http://t.co/URh8k38e</description>
-      <pubDate>Sat, 09 Jun 2012 10:44:23 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211408391682265088</guid>
-      <link>http://twitter.com/L1nws/statuses/211408391682265088</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
+      <title>RT @CarnavalHits: Hit promotie:: Laef! - Stedje van de leefde http://t.co/v2dqDro8 #carnaval</title>
+      <link>http://twitter.com/powersjoenkeler/statuses/212105174603415552</link>
+      <description>RT @&lt;a class=" " href="http://twitter.com/CarnavalHits"&gt;CarnavalHits&lt;/a&gt;: Hit promotie:: Laef! - Stedje van de leefde &lt;a href="http://t.co/v2dqDro8"&gt;http://t.co/v2dqDro8&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt;</description>
+      <pubDate>Mon, 11 Jun 2012 08:53:09 +0000</pubDate>
+      <guid>http://twitter.com/powersjoenkeler/statuses/212105174603415552</guid>
+      <author>powersjoenkeler</author>
+      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/sticky/default_profile_images/default_profile_6_normal.png" xmlns:media="http://search.yahoo.com/mrss/" />
+      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/sticky/default_profile_images/default_profile_6_normal.png</google:image_link>
+      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
+        <twitter:result_type>recent</twitter:result_type>
+      </twitter:metadata>
     </item>
     <item>
-      <title>L1nws: Vier zwaargewonden bij ongeluk op Duitse L410 http://t.co/5WNSKmk1</title>
-      <description>L1nws: Vier zwaargewonden bij ongeluk op Duitse L410 http://t.co/5WNSKmk1</description>
-      <pubDate>Sat, 09 Jun 2012 09:43:38 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211393106652831744</guid>
-      <link>http://twitter.com/L1nws/statuses/211393106652831744</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
+      <title>RT @LaetitiaBolle: #me #venizia #mask #carnaval #holiday #italy  http://t.co/YSG72Stt</title>
+      <link>http://twitter.com/FionaManachi/statuses/212104276019904512</link>
+      <description>RT @&lt;a class=" " href="http://twitter.com/LaetitiaBolle"&gt;LaetitiaBolle&lt;/a&gt;: &lt;a href="http://search.twitter.com/search?q=%23me" title="#me" class=" "&gt;#me&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23venizia" title="#venizia" class=" "&gt;#venizia&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23mask" title="#mask" class=" "&gt;#mask&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt; &lt;a href="http://search.twitter.com/search?q=%23holiday" title="#holiday" class=" "&gt;#holiday&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23italy" title="#italy" class=" "&gt;#italy&lt;/a&gt;  &lt;a href="http://t.co/YSG72Stt"&gt;http://t.co/YSG72Stt&lt;/a&gt;</description>
+      <pubDate>Mon, 11 Jun 2012 08:49:34 +0000</pubDate>
+      <guid>http://twitter.com/FionaManachi/statuses/212104276019904512</guid>
+      <author>FionaManachi</author>
+      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/2160099391/image_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
+      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/2160099391/image_normal.jpg</google:image_link>
+      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
+        <twitter:result_type>recent</twitter:result_type>
+      </twitter:metadata>
+    </item>
+    <item>
+      <title>#me #venizia #mask #carnaval #holiday #italy  http://t.co/YSG72Stt</title>
+      <link>http://twitter.com/LaetitiaBolle/statuses/212102980349079552</link>
+      <description>&lt;a href="http://search.twitter.com/search?q=%23me" title="#me" class=" "&gt;#me&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23venizia" title="#venizia" class=" "&gt;#venizia&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23mask" title="#mask" class=" "&gt;#mask&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt; &lt;a href="http://search.twitter.com/search?q=%23holiday" title="#holiday" class=" "&gt;#holiday&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23italy" title="#italy" class=" "&gt;#italy&lt;/a&gt;  &lt;a href="http://t.co/YSG72Stt"&gt;http://t.co/YSG72Stt&lt;/a&gt;</description>
+      <pubDate>Mon, 11 Jun 2012 08:44:25 +0000</pubDate>
+      <guid>http://twitter.com/LaetitiaBolle/statuses/212102980349079552</guid>
+      <author>LaetitiaBolle</author>
+      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/2246984787/image_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
+      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/2246984787/image_normal.jpg</google:image_link>
+      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
+        <twitter:result_type>recent</twitter:result_type>
+      </twitter:metadata>
+    </item>
+    <item>
+      <title>&amp;#191;No es adorable?    #Halloween #disfraz #infancia #carnaval http://t.co/EiBN8UHL</title>
+      <link>http://twitter.com/JessVilloslada/statuses/212100678137561088</link>
+      <description>&amp;#191;No es adorable?    &lt;a href="http://search.twitter.com/search?q=%23Halloween" title="#Halloween" class=" "&gt;#Halloween&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23disfraz" title="#disfraz" class=" "&gt;#disfraz&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23infancia" title="#infancia" class=" "&gt;#infancia&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt; &lt;a href="http://t.co/EiBN8UHL"&gt;http://t.co/EiBN8UHL&lt;/a&gt;</description>
+      <pubDate>Mon, 11 Jun 2012 08:35:16 +0000</pubDate>
+      <guid>http://twitter.com/JessVilloslada/statuses/212100678137561088</guid>
+      <author>JessVilloslada</author>
+      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/1494955297/jessica_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
+      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/1494955297/jessica_normal.jpg</google:image_link>
+      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
+        <twitter:result_type>recent</twitter:result_type>
+      </twitter:metadata>
     </item>
     <item>
       <title>#Décorations et #bricolages à faire soi-même sur le thème du #Carnaval, avec les #enfants http://t.co/GCZjISj9</title>
@@ -346,58 +398,6 @@
       <author>carnaval_news</author>
       <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/1892078832/Nova_imagem_normal.JPG" xmlns:media="http://search.yahoo.com/mrss/" />
       <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/1892078832/Nova_imagem_normal.JPG</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>ohhh Escuchando a Maria Juana - Idilio #Temaso #Bolivia que ganas de #Carnaval en #Oruro http://t.co/QETBudNO</title>
-      <link>http://twitter.com/gusdlf/statuses/211999713740849154</link>
-      <description>ohhh Escuchando a Maria Juana - Idilio &lt;a href="http://search.twitter.com/search?q=%23Temaso" title="#Temaso" class=" "&gt;#Temaso&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23Bolivia" title="#Bolivia" class=" "&gt;#Bolivia&lt;/a&gt; que ganas de &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23Carnaval" title="#Carnaval" class=" "&gt;#Carnaval&lt;/a&gt;&lt;/em&gt; en &lt;a href="http://search.twitter.com/search?q=%23Oruro" title="#Oruro" class=" "&gt;#Oruro&lt;/a&gt; &lt;a href="http://t.co/QETBudNO"&gt;http://t.co/QETBudNO&lt;/a&gt;</description>
-      <pubDate>Mon, 11 Jun 2012 01:54:05 +0000</pubDate>
-      <guid>http://twitter.com/gusdlf/statuses/211999713740849154</guid>
-      <author>gusdlf</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/2287914669/avatar_normal.JPEG" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/2287914669/avatar_normal.JPEG</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>#tentara #indonesia kesukaannya mbak @anis_tintins #blue #soldier #carnaval http://t.co/WRoYD87B</title>
-      <link>http://twitter.com/nichauaua/statuses/211996106362593283</link>
-      <description>&lt;a href="http://search.twitter.com/search?q=%23tentara" title="#tentara" class=" "&gt;#tentara&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23indonesia" title="#indonesia" class=" "&gt;#indonesia&lt;/a&gt; kesukaannya mbak @&lt;a class=" " href="http://twitter.com/anis_tintins"&gt;anis_tintins&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23blue" title="#blue" class=" "&gt;#blue&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23soldier" title="#soldier" class=" "&gt;#soldier&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt; &lt;a href="http://t.co/WRoYD87B"&gt;http://t.co/WRoYD87B&lt;/a&gt;</description>
-      <pubDate>Mon, 11 Jun 2012 01:39:45 +0000</pubDate>
-      <guid>http://twitter.com/nichauaua/statuses/211996106362593283</guid>
-      <author>nichauaua</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/2174155873/profile_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/2174155873/profile_normal.jpg</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>@Judes_Gelate strange, ain't it? Who would of guessed. #Carnaval</title>
-      <link>http://twitter.com/HugoCassivi/statuses/211995845409771523</link>
-      <description>@&lt;a class=" " href="http://twitter.com/Judes_Gelate"&gt;Judes_Gelate&lt;/a&gt; strange, ain't it? Who would of guessed. &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23Carnaval" title="#Carnaval" class=" "&gt;#Carnaval&lt;/a&gt;&lt;/em&gt;</description>
-      <pubDate>Mon, 11 Jun 2012 01:38:42 +0000</pubDate>
-      <guid>http://twitter.com/HugoCassivi/statuses/211995845409771523</guid>
-      <author>HugoCassivi</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/2297331034/3vuo2y4yz8uj7qar1jzc_normal.jpeg" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/2297331034/3vuo2y4yz8uj7qar1jzc_normal.jpeg</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>Nada para mejor para terminar el dia con #Labandadelcapitanveneno de @GiancarloAragon, quiero #carnaval yaaaa !</title>
-      <link>http://twitter.com/NonitoDominguez/statuses/211991043686674432</link>
-      <description>Nada para mejor para terminar el dia con &lt;a href="http://search.twitter.com/search?q=%23Labandadelcapitanveneno" title="#Labandadelcapitanveneno" class=" "&gt;#Labandadelcapitanveneno&lt;/a&gt; de @&lt;a class=" " href="http://twitter.com/GiancarloAragon"&gt;GiancarloAragon&lt;/a&gt;, quiero &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt; yaaaa !</description>
-      <pubDate>Mon, 11 Jun 2012 01:19:38 +0000</pubDate>
-      <guid>http://twitter.com/NonitoDominguez/statuses/211991043686674432</guid>
-      <author>NonitoDominguez</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/1706134949/salto_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/1706134949/salto_normal.jpg</google:image_link>
       <twitter:metadata xmlns:twitter="http://api.twitter.com/">
         <twitter:result_type>recent</twitter:result_type>
       </twitter:metadata>
