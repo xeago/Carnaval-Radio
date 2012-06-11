@@ -34,11 +34,12 @@ namespace Widgets.Twitter
         public override void Save()
         {
             var settings = this.GetSettings();
-            settings["feedurl"] = this.txtUrl.Text;
-            settings["accounturl"] = this.txtAccountUrl.Text;
-            settings["maxitems"] = this.txtTwits.Text;
-            settings["pollinginterval"] = this.txtPolling.Text;
-            settings["followmetext"] = this.txtFollowMe.Text;
+            settings["account"] = this.txtAccount.Text.Trim();
+            settings["hashtags"] = this.txtHashtags.Text.Trim();
+            settings["maxitems"] = this.txtTwits.Text.Trim();
+            settings["pollinginterval"] = this.txtPolling.Text.Trim();
+            settings["followmetext"] = this.txtFollowMe.Text.Trim();
+            settings["imgUrl"] = string.Format("http://api.twitter.com/1/users/profile_image/{0}", this.txtAccount.Text);
             this.SaveSettings(settings);
 
             // Don't need to clear Feed out of cache because when the Settings are cleared,
@@ -58,13 +59,13 @@ namespace Widgets.Twitter
         protected override void OnInit(EventArgs e)
         {
             var settings = this.GetSettings();
-            if (settings.ContainsKey("feedurl"))
+            if (settings.ContainsKey("account"))
             {
-                this.txtUrl.Text = settings["feedurl"];
-                this.txtAccountUrl.Text = settings["accounturl"];
-                this.txtTwits.Text = settings["maxitems"];
-                this.txtPolling.Text = settings["pollinginterval"];
-                this.txtFollowMe.Text = settings["followmetext"];
+                this.txtAccount.Text = settings["account"].Trim();
+                this.txtHashtags.Text = settings["hashtags"].Trim();
+                this.txtTwits.Text = settings["maxitems"].Trim();
+                this.txtPolling.Text = settings["pollinginterval"].Trim();
+                this.txtFollowMe.Text = settings["followmetext"].Trim();
             }
 
             base.OnInit(e);

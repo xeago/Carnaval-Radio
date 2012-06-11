@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerializableStringDictionary>
+  <SerializableStringDictionary>
+    <DictionaryEntry Key="imgurl" Value="http://api.twitter.com/1/users/profile_image/l1nws" />
+    <DictionaryEntry Key="account" Value="l1nws" />
+    <DictionaryEntry Key="maxitems" Value="10" />
+    <DictionaryEntry Key="pollinginterval" Value="1" />
+    <DictionaryEntry Key="hashtags" Value="carnaval" />
+    <DictionaryEntry Key="followmetext" Value="Follow!" />
+  </SerializableStringDictionary>
+</SerializableStringDictionary>
