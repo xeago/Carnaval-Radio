@@ -197,14 +197,14 @@ public class CRSponsor
     /// <summary>
     /// Updates the JSON files for sponsor. It is smart enough to decide if it should or shouldn't update. Pass null or use the parameterless method for extended smartness.
     /// </summary>
-    /// <param name="s">CRSponsor item to base the decision on whether it should or shouldn't update.</param>
-    private static void updateJSON(CRSponsor s)
+    /// <param name="sponsor">CRSponsor item to base the decision on whether it should or shouldn't update.</param>
+    private static void updateJSON(CRSponsor sponsor)
     {
-        bool shouldUpdateMobileSwitch = s == null || s.MobileSwitch;
-        bool shouldUpdatePlayerSwitch = s == null || s.PlayerSwitch;
-        bool shouldUpdateWidgetSwitch = s == null || s.WidgetSwitch;
-        bool shouldUpdateMobileSolid = s == null || s.MobileSolid;
-        bool shouldUpdatePlayerSolid = s == null || s.PlayerSolid;
+        bool shouldUpdateMobileSwitch = sponsor == null || sponsor.MobileSwitch;
+        bool shouldUpdatePlayerSwitch = sponsor == null || sponsor.PlayerSwitch;
+        bool shouldUpdateWidgetSwitch = sponsor == null || sponsor.WidgetSwitch;
+        bool shouldUpdateMobileSolid = sponsor == null || sponsor.MobileSolid;
+        bool shouldUpdatePlayerSolid = sponsor == null || sponsor.PlayerSolid;
 
         if (shouldUpdateMobileSwitch || shouldUpdatePlayerSwitch || shouldUpdateWidgetSwitch || shouldUpdateMobileSolid || shouldUpdatePlayerSolid)
         {
@@ -227,7 +227,7 @@ public class CRSponsor
                 logoUrl = item.LogoURL
             });
         }
-        writeSponsorJSON(mobile, Blog.CurrentInstance.RelativeWebRoot + "rotatingSponsor.json");
+        writeSponsorJSON(mobile, HttpContext.Current.Server.MapPath("~/json/"), "rotatingSponsor.json");
     }
 
     /// <summary>
@@ -235,14 +235,14 @@ public class CRSponsor
     /// </summary>
     /// <param name="obj">Input objects to be written as json.</param>
     /// <param name="path">The output path.</param>
-    private static void writeSponsorJSON(List<dynamic> obj,string path)
+    private static void writeSponsorJSON(List<dynamic> obj,string path, string file)
     {
         var js = new System.Web.Script.Serialization.JavaScriptSerializer();
         var sb = new StringBuilder();
         js.Serialize(obj, sb);
         if (!Directory.Exists(path))
             Directory.CreateDirectory(path);
-        using (var w = new System.IO.StreamWriter(path))
+        using (var w = new System.IO.StreamWriter(path + file))
         {
             try
             {

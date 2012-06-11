@@ -9,20 +9,20 @@
   </SettingsComponent>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="Resources" priority="8" />
-      <Item value="labels`0" priority="15" />
+      <Item value="Resources" priority="18" />
+      <Item value="labels`0" priority="22" />
       <Item value="false" priority="9" />
       <Item value="cbPostTwitter" priority="0" />
       <Item value="Sponsoren" priority="0" />
-      <Item value="using" priority="1" />
+      <Item value="using" priority="2" />
       <Item value="DateTime`0" priority="6" />
       <Item value="ParameterType`0" priority="0" />
       <Item value="parType" priority="0" />
       <Item value="true" priority="3" />
       <Item value="settings" priority="21" />
-      <Item value="int" priority="6" />
+      <Item value="int" priority="13" />
       <Item value="ExtensionManager`0" priority="5" />
-      <Item value="if" priority="21" />
+      <Item value="if" priority="22" />
       <Item value="IsPostBack" priority="0" />
       <Item value="BindGrid`0" priority="1" />
       <Item value="Settings" priority="2" />
@@ -34,7 +34,7 @@
       <Item value="Convert`0" priority="3" />
       <Item value="Response" priority="2" />
       <Item value="IFormatProvider`0" priority="3" />
-      <Item value="new" priority="19" />
+      <Item value="new" priority="25" />
       <Item value="Form" priority="0" />
       <Item value="format" priority="0" />
       <Item value="provider" priority="0" />
@@ -42,7 +42,7 @@
       <Item value="enum" priority="1" />
       <Item value="var" priority="3" />
       <Item value="in" priority="0" />
-      <Item value="SponsorType`0" priority="13" />
+      <Item value="SponsorType`0" priority="19" />
       <Item value="sp" priority="1" />
       <Item value="selected" priority="1" />
       <Item value="null" priority="9" />
@@ -50,43 +50,43 @@
       <Item value="cbShowInMobileSwitch" priority="4" />
       <Item value="BackgroundColor`0" priority="0" />
       <Item value="Color`0" priority="1" />
-      <Item value="this" priority="19" />
+      <Item value="this" priority="20" />
       <Item value="Utils`0" priority="10" />
-      <Item value="public" priority="29" />
-      <Item value="string" priority="24" />
+      <Item value="public" priority="31" />
+      <Item value="string" priority="31" />
       <Item value="ID" priority="6" />
       <Item value="Guid" priority="3" />
-      <Item value="private" priority="9" />
-      <Item value="bool" priority="8" />
+      <Item value="private" priority="11" />
+      <Item value="bool" priority="9" />
       <Item value="IsEdit" priority="6" />
-      <Item value="s" priority="9" />
-      <Item value="foreach" priority="4" />
+      <Item value="s" priority="15" />
+      <Item value="foreach" priority="6" />
       <Item value="dr" priority="14" />
       <Item value="Guid`0" priority="10" />
       <Item value="MobileFrequency`0" priority="4" />
       <Item value="CreationDate" priority="2" />
-      <Item value="CRSponsor`0" priority="6" />
+      <Item value="CRSponsor`0" priority="7" />
       <Item value="id" priority="1" />
       <Item value="Name" priority="2" />
       <Item value="GSDlib" priority="4" />
-      <Item value="void" priority="0" />
+      <Item value="void" priority="1" />
       <Item value="try" priority="0" />
-      <Item value="return" priority="11" />
+      <Item value="return" priority="14" />
       <Item value="ConvertBoolElseFalse`0" priority="1" />
-      <Item value="static" priority="2" />
+      <Item value="static" priority="3" />
       <Item value="List" priority="3" />
       <Item value="CRSponsor" priority="3" />
       <Item value="templist" priority="1" />
       <Item value="NotImplementedException`0" priority="0" />
       <Item value="txtName" priority="1" />
-      <Item value="crSponsor" priority="28" />
+      <Item value="crSponsor" priority="35" />
       <Item value="txtUrl" priority="1" />
       <Item value="cbActive" priority="1" />
       <Item value="ExtensionSettings`0" priority="0" />
       <Item value="parameter" priority="6" />
-      <Item value="switch" priority="0" />
-      <Item value="case" priority="8" />
-      <Item value="break" priority="8" />
+      <Item value="switch" priority="3" />
+      <Item value="case" priority="9" />
+      <Item value="break" priority="10" />
       <Item value="default" priority="0" />
       <Item value="DataTable`0" priority="1" />
       <Item value="ex" priority="0" />
@@ -97,7 +97,7 @@
       <Item value="WidgetSwitch" priority="1" />
       <Item value="MobileSwitch" priority="1" />
       <Item value="MobileSolid" priority="1" />
-      <Item value="LogoURL" priority="2" />
+      <Item value="LogoURL" priority="3" />
       <Item value="Description" priority="1" />
       <Item value="EndDate" priority="2" />
       <Item value="Active" priority="1" />
@@ -105,7 +105,7 @@
       <Item value="Bitmap`0" priority="1" />
       <Item value="logo" priority="0" />
       <Item value="url" priority="0" />
-      <Item value="System" priority="1" />
+      <Item value="System" priority="2" />
       <Item value="Web" priority="1" />
       <Item value="HttpContext`0" priority="0" />
       <Item value="PictureTrimmerValue" priority="0" />
@@ -119,17 +119,17 @@
       <Item value="ddlMobileFrequency" priority="3" />
       <Item value="dtEndDate" priority="2" />
       <Item value="PageTitle" priority="0" />
-      <Item value="out" priority="1" />
+      <Item value="out" priority="6" />
       <Item value="DeletedRowInaccessibleException`0" priority="0" />
       <Item value="Request" priority="0" />
       <Item value="Delete" priority="1" />
       <Item value="IsDelete" priority="0" />
       <Item value="DataRowState`0" priority="0" />
       <Item value="Guestbook" priority="0" />
-      <Item value="StringBuilder" priority="2" />
+      <Item value="StringBuilder" priority="4" />
       <Item value="messages" priority="1" />
       <Item value="MsgDisplay" priority="0" />
-      <Item value="StringBuilder`0" priority="0" />
+      <Item value="StringBuilder`0" priority="1" />
       <Item value="ArrayList`0" priority="1" />
       <Item value="AlbumAccessor`0" priority="0" />
       <Item value="PicasaAlbum`0" priority="1" />
@@ -147,8 +147,8 @@
       <Item value="p" priority="0" />
       <Item value="ExtensionSettings" priority="0" />
       <Item value="stringBuilder" priority="0" />
-      <Item value="sb" priority="4" />
-      <Item value="picasaAlbum" priority="3" />
+      <Item value="sb" priority="14" />
+      <Item value="picasaAlbum" priority="4" />
       <Item value="retVal" priority="0" />
       <Item value="PicasaPhoto" priority="0" />
       <Item value="Title" priority="0" />
@@ -164,14 +164,43 @@
       <Item value="litMenu" priority="0" />
       <Item value="buildMenu`0" priority="0" />
       <Item value="RegisterStyleSheetInclude`0" priority="0" />
+      <Item value="Linq" priority="0" />
+      <Item value="i" priority="1" />
+      <Item value="sponsorType" priority="3" />
+      <Item value="litSponsors" priority="0" />
+      <Item value="BlogSettings`0" priority="5" />
+      <Item value="type" priority="0" />
+      <Item value="GetTypeSpecificSettings`0" priority="0" />
+      <Item value="width" priority="2" />
+      <Item value="height" priority="1" />
+      <Item value="logoWidth" priority="3" />
+      <Item value="logoHeight" priority="2" />
+      <Item value="GfxUnit`0" priority="0" />
+      <Item value="double" priority="2" />
+      <Item value="ResourceReader`0" priority="1" />
+      <Item value="ResourceWriter`0" priority="0" />
+      <Item value="ResourceManager`0" priority="2" />
+      <Item value="ResourceManager" priority="1" />
+      <Item value="resourceManager" priority="0" />
+      <Item value="rr" priority="0" />
+      <Item value="fs" priority="0" />
+      <Item value="Type`0" priority="0" />
+      <Item value="resourceSource" priority="0" />
+      <Item value="rm" priority="1" />
+      <Item value="ReflectionTypeLoadException`0" priority="0" />
+      <Item value="text" priority="1" />
+      <Item value="sponsor" priority="3" />
+      <Item value="txtThankMessage" priority="0" />
+      <Item value="contactThankMessage" priority="0" />
+      <Item value="contactDescription" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Resources.labels">
       <Item value="PhotoAlbums" priority="1" />
       <Item value="password" priority="0" />
       <Item value="title" priority="0" />
-      <Item value="description" priority="2" />
+      <Item value="description" priority="3" />
       <Item value="add" priority="0" />
-      <Item value="sponsoren" priority="3" />
+      <Item value="sponsoren" priority="6" />
       <Item value="name" priority="3" />
       <Item value="setPublishDate" priority="0" />
       <Item value="website" priority="1" />
@@ -188,9 +217,11 @@
       <Item value="addNewSponsor" priority="0" />
       <Item value="emailIsInvalid" priority="0" />
       <Item value="possibleSpam" priority="0" />
+      <Item value="fotos" priority="0" />
+      <Item value="thankYouMessage" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.UI.WebControls.Literal">
-      <Item value="Text" priority="4" />
+      <Item value="Text" priority="6" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.UI.WebControls.CheckBox">
       <Item value="Checked" priority="10" />
@@ -248,7 +279,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Object">
       <Item value="GetType`0" priority="0" />
-      <Item value="ToString`0" priority="9" />
+      <Item value="ToString`0" priority="10" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Convert">
       <Item value="ToDateTime`0" priority="0" />
@@ -260,19 +291,20 @@
       <Item value="Redirect`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
-      <Item value="IsNullOrEmpty`0" priority="2" />
+      <Item value="IsNullOrEmpty`0" priority="7" />
       <Item value="Empty" priority="4" />
-      <Item value="Format`0" priority="2" />
+      <Item value="Format`0" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.String">
       <Item value="Trim`0" priority="0" />
       <Item value="Replace`0" priority="0" />
       <Item value="ToCharArray`0" priority="0" />
-      <Item value="ToString`0" priority="3" />
+      <Item value="ToString`0" priority="4" />
       <Item value="ToLower`0" priority="0" />
+      <Item value="ToLowerInvariant`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SponsorType">
-      <Item value="ToString`0" priority="1" />
+      <Item value="ToString`0" priority="7" />
       <Item value="HasFlag`0" priority="0" />
       <Item value="VriendenVanCr" priority="0" />
     </ItemStatistics>
@@ -283,6 +315,7 @@
       <Item value="Hoofdsponsor" priority="1" />
       <Item value="Sponsor" priority="0" />
       <Item value="VriendenVanCr" priority="0" />
+      <Item value="ClubVan50" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.UI.HtmlControls.HtmlGenericControl">
       <Item value="Visible" priority="0" />
@@ -322,35 +355,38 @@
       <Item value="IsValidMailAddress`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:CRSponsor">
-      <Item value="SponsorType" priority="5" />
+      <Item value="SponsorType" priority="6" />
       <Item value="PlayerSwitch" priority="1" />
-      <Item value="WidgetSwitch" priority="1" />
+      <Item value="WidgetSwitch" priority="2" />
       <Item value="MFrequency" priority="5" />
-      <Item value="LogoURL" priority="2" />
+      <Item value="LogoURL" priority="4" />
       <Item value="Description" priority="2" />
       <Item value="CreationDate" priority="0" />
       <Item value="EndDate" priority="2" />
-      <Item value="Active" priority="2" />
-      <Item value="Name" priority="2" />
-      <Item value="Url" priority="1" />
+      <Item value="Active" priority="3" />
+      <Item value="Name" priority="5" />
+      <Item value="Url" priority="3" />
       <Item value="Save`0" priority="0" />
       <Item value="index" priority="3" />
       <Item value="ID" priority="1" />
       <Item value="LogoPhysicalPath" priority="1" />
       <Item value="MobileSwitch" priority="0" />
-      <Item value="MobileSolid" priority="0" />
+      <Item value="MobileSolid" priority="1" />
       <Item value="PlayerSolid" priority="0" />
       <Item value="Delete`0" priority="1" />
       <Item value="IsEdit" priority="0" />
+      <Item value="HasLogo" priority="0" />
+      <Item value="GetType`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
       <Item value="SingleOrDefault`1" priority="0" />
+      <Item value="Where`1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
       <Item value="Add`0" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.UI.WebControls.TextBox">
-      <Item value="Text" priority="5" />
+      <Item value="Text" priority="6" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Guid">
       <Item value="ToString`0" priority="3" />
@@ -399,9 +435,9 @@
       <Item value="QueryString" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Text.StringBuilder">
-      <Item value="Append`0" priority="4" />
-      <Item value="ToString`0" priority="3" />
-      <Item value="AppendFormat`0" priority="3" />
+      <Item value="Append`0" priority="10" />
+      <Item value="ToString`0" priority="6" />
+      <Item value="AppendFormat`0" priority="5" />
       <Item value="AppendLine`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.UI.WebControls.Label">
@@ -413,10 +449,11 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:Google.GData.Photos.AlbumAccessor">
       <Item value="Id" priority="0" />
-      <Item value="Name" priority="2" />
+      <Item value="Name" priority="3" />
+      <Item value="AlbumSummary" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:App_Code.Extensions.PicasaAlbum">
-      <Item value="Accessor" priority="1" />
+      <Item value="Accessor" priority="3" />
       <Item value="ThumbNailURl" priority="0" />
       <Item value="AlbumContent" priority="0" />
     </ItemStatistics>
@@ -435,71 +472,100 @@
       <Item value="RelativeLink" priority="1" />
       <Item value="Title" priority="1" />
     </ItemStatistics>
+    <ItemStatistics item="Qualified:@CRSponsor">
+      <Item value="GetList`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CodeCarvings.Piczard.GfxUnit">
+      <Item value="Pixel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:sponsoren">
+      <Item value="Title" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Resources.ResourceManager">
+      <Item value="CreateFileBasedResourceManager`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Resources.ResourceManager">
+      <Item value="BaseName" priority="0" />
+      <Item value="GetString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.Mime.MediaTypeNames">
+      <Item value="Application`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Type">
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@BlogEngine.Core.BlogSettings">
+      <Item value="Instance" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BlogEngine.Core.BlogSettings">
+      <Item value="ContactThankMessage" priority="2" />
+      <Item value="ContactFormMessage" priority="1" />
+    </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/f:admin.master.cs" caret="0" fromTop="0" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/f:admin.master" caret="1039" fromTop="18" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:_menu.cshtml" caret="0" fromTop="0" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Menu.ascx.cs" caret="0" fromTop="0" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/f:default.cshtml" caret="0" fromTop="0" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Advanced.aspx" caret="2002" fromTop="38" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Advanced.aspx.cs" caret="819" fromTop="0" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Main.aspx.cs" caret="439" fromTop="0" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Main.aspx" caret="3427" fromTop="33" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:Scripts/f:json2.js" caret="759" fromTop="0" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:Scripts/d:jQuery/f:jquery1.7.2.js" caret="301056" fromTop="33" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:default.aspx" caret="0" fromTop="0" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:default.aspx.cs" caret="605" fromTop="0" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:Global.asax" caret="710" fromTop="22" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:Scripts/f:jquery.js" caret="11290" fromTop="27" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Extensions/f:Editor.cshtml" caret="1984" fromTop="28" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:App_Code/d:Extensions/f:MediaElementPlayer.cs" caret="5104" fromTop="26" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:App_Code/d:Extensions/f:SyntaxHighlighter.cs" caret="17844" fromTop="26" />
       <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:editors/d:tiny_mce_3_4_3_1/d:plugins/d:preview/f:example.html" caret="169" fromTop="3" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:foto_albums.aspx.cs" caret="2138" fromTop="28" />
       <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:editors/d:tiny_mce_3_4_3_1/d:plugins/d:preview/f:preview.html" caret="293" fromTop="4" />
       <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:App_Code/d:Extensions/f:PrettyPhoto2.cs" caret="1890" fromTop="28" />
       <File id="9ED9914A-FB6E-4D21-8C71-9122E8C3076B/d:Web/d:Controls/f:BlogBasePage.cs" caret="7823" fromTop="111" />
       <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/f:_Layout.cshtml" caret="1226" fromTop="21" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:foto_album.aspx.cs" caret="3557" fromTop="14" />
       <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:site.master.cs" caret="821" fromTop="19" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:site.master" caret="3002" fromTop="25" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:foto_album.aspx" caret="0" fromTop="0" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:style.css" caret="2951" fromTop="29" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="1784" fromTop="28" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="1674" fromTop="0" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:page.aspx.cs" caret="3088" fromTop="6" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Sponsoren/f:EditSponsor.aspx" caret="0" fromTop="0" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Sponsoren/f:EditSponsor.aspx.cs" caret="2874" fromTop="41" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:App_Code/d:Extensions/f:Sponsor.cs" caret="1022" fromTop="17" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:sponsoren.aspx.cs" caret="2631" fromTop="26" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:sponsoren.aspx" caret="378" fromTop="5" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:site.master" caret="2048" fromTop="18" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:gastenboek.aspx" caret="0" fromTop="0" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:style.css" caret="15900" fromTop="43" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:foto_albums.aspx.cs" caret="2306" fromTop="33" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:foto_albums.aspx" caret="361" fromTop="8" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:foto_album.aspx" caret="625" fromTop="11" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:foto_album.aspx.cs" caret="2664" fromTop="28" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:App_Data/f:settings.xml" caret="1383" fromTop="9" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:App_GlobalResources/f:labels.nl.resx" caret="19144" fromTop="28" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Widgets/f:Controls.aspx" caret="5229" fromTop="26" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Email.aspx.cs" caret="3916" fromTop="0" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Email.aspx" caret="1321" fromTop="18" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:contact.aspx" caret="2070" fromTop="24" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:contact.aspx.cs" caret="939" fromTop="18" />
+      <File id="9ED9914A-FB6E-4D21-8C71-9122E8C3076B/f:BlogSettings.cs" caret="36864" fromTop="31" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Widgets/f:Controls.aspx.cs" caret="2428" fromTop="27" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:App_Code/f:Sponsor.cs" caret="3098" fromTop="19" />
     </RecentFiles>
     <RecentEdits>
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:App_Code/d:Extensions/f:PrettyPhoto2.cs" caret="1890" fromTop="28" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:site.master" caret="1705" fromTop="38" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:site.master.cs" caret="987" fromTop="25" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:site.master" caret="661" fromTop="10" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:site.master.cs" caret="2014" fromTop="41" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:site.master.cs" caret="3126" fromTop="52" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:site.master.cs" caret="947" fromTop="20" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:site.master.cs" caret="821" fromTop="19" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="28" fromTop="2" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="3828" fromTop="22" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="2462" fromTop="0" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="135" fromTop="8" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="1884" fromTop="28" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="565" fromTop="17" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="3909" fromTop="34" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="2777" fromTop="5" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="1122" fromTop="15" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:site.master" caret="1957" fromTop="34" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:site.master" caret="2390" fromTop="45" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:site.master" caret="3002" fromTop="25" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="1556" fromTop="19" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="1882" fromTop="30" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="2415" fromTop="24" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="2249" fromTop="38" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="1592" fromTop="7" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:style.css" caret="2951" fromTop="29" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="1300" fromTop="13" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="1837" fromTop="17" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="1438" fromTop="28" />
-      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/d:styles/f:superfish.css" caret="1784" fromTop="28" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:style.css" caret="15026" fromTop="36" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:style.css" caret="14807" fromTop="20" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:style.css" caret="14767" fromTop="16" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:site.master" caret="2087" fromTop="19" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:style.css" caret="15495" fromTop="30" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:style.css" caret="16031" fromTop="52" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:style.css" caret="15992" fromTop="48" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:style.css" caret="15792" fromTop="47" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:themes/d:CarnavalRadio/f:style.css" caret="15900" fromTop="43" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:foto_albums.aspx" caret="477" fromTop="10" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:foto_album.aspx" caret="629" fromTop="11" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:foto_album.aspx.cs" caret="2664" fromTop="28" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:App_Data/f:settings.xml" caret="3563" fromTop="23" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:contact.aspx.cs" caret="3460" fromTop="4" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Email.aspx" caret="5605" fromTop="27" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Email.aspx.cs" caret="1992" fromTop="36" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Email.aspx.cs" caret="2956" fromTop="40" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Email.aspx.cs" caret="2575" fromTop="27" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Email.aspx" caret="5926" fromTop="32" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Email.aspx" caret="6017" fromTop="33" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Email.aspx" caret="2823" fromTop="25" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Email.aspx" caret="1424" fromTop="19" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Email.aspx.cs" caret="4371" fromTop="41" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Email.aspx.cs" caret="3916" fromTop="25" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Settings/f:Email.aspx.cs" caret="4019" fromTop="0" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:contact.aspx" caret="2478" fromTop="33" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/f:contact.aspx" caret="2071" fromTop="24" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:admin/d:Widgets/f:Controls.aspx.cs" caret="10136" fromTop="27" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:App_Code/f:Sponsor.cs" caret="8617" fromTop="37" />
+      <File id="B02E9840-1261-47AB-AE40-D333E73BB2C0/d:App_Code/f:Sponsor.cs" caret="7584" fromTop="18" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
