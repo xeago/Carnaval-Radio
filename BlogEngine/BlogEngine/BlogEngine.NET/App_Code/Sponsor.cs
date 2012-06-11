@@ -46,7 +46,12 @@ public class CRSponsor
     public DateTime CreationDate { get; set; }
     public DateTime? EndDate { get; set; }
     public bool Active { get; set; }
-    
+
+    public bool HasLogo
+    {
+        get { return !string.IsNullOrEmpty(LogoURL); }
+    }
+
     public string LogoPhysicalPath
     {
         get { return HttpContext.Current.Server.MapPath("../../" + LogoURL); }

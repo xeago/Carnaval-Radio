@@ -50,3 +50,7 @@ App_Code.Controls.Blogroll.ProcessRequest: The remote name could not be resolved
 Date: 31-5-2012 12:37:53
 Contents Below
 App_Code.Controls.Blogroll.ProcessRequest: The remote name could not be resolved: 'feeds.feedburner.com'
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 8-6-2012 13:51:34
+Contents Below
+App_Code.Controls.Blogroll.ProcessRequest: The remote name could not be resolved: 'feeds.feedburner.com'
