@@ -5,7 +5,7 @@
             <asp:ServiceReference Path="postShout.asmx" InlineScript="true"/>
         </Services>
  </asp:ScriptManager>
-<div id="shouts">
+<div id="shouts" style="max-height:300px; overflow-y: scroll; overflow-x: hidden;">
 </div>
 <table>
     <tr>

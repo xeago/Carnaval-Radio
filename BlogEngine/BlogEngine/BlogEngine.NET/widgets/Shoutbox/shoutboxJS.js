@@ -25,10 +25,15 @@ function submitMsg() {
             dataType: 'json',
             url: 'widgets/Shoutbox/postShout.asmx/SubmitMessage',
             data: "{ name: '" + $('#tbName').val() + "', message: '" + $('#tbMessage').val() + "' }",
-            success: function () {
-                $('#tbName').val('');
-                $('#tbMessage').val('');
-                loadShouts();
+            success: function (msg) {
+                if (msg.d.Success) {
+                    $('#tbName').val('');
+                    $('#tbMessage').val('');
+                    loadShouts();
+                }
+                else {
+                    alert('Something went wrong :(');
+                }
             }
         });
     }
