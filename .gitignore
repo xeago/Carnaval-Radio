@@ -3,6 +3,7 @@ bin
 obj
 *.suo
 _ReSharper.BlogEngine
+BlogEngine/BlogEngine/BlogEngine.5.1.ReSharper.user
 
 # mstest test results
 TestResults
