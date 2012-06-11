@@ -178,15 +178,14 @@ public class CRSponsor
                 #endregion switch parameter
             }
 
-
-
-            bool shouldUpdateRotateJSON = this.MobileSwitch;
-            if (shouldUpdateRotateJSON) CRSponsor.updateJSON(this);
-
             //else
         }
 
         ExtensionManager.SaveSettings("Sponsor", settings);
+
+        //save the json
+        CRSponsor.updateJSON(this);
+        
         return settings.IsKeyValueExists(ID.ToString());
     }
 
