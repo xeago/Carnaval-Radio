@@ -3,6 +3,8 @@
     using System;
     using App_Code.Controls;
     using BlogEngine.Core;
+    using System.Xml.Linq;
+    using System.Web.UI.WebControls;
 
     public partial class Edit : WidgetEditBase
     {

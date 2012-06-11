@@ -17,18 +17,17 @@
     public class postShout : WebService
     {
         string xmlfile = @"C:\Users\Odie20XX\Carnaval-Radio\BlogEngine\BlogEngine\BlogEngine.NET\widgets\Shoutbox\shouts.xml";
-        //string xmlfile = Blog.CurrentInstance.RelativeWebRoot + @"widgets\Shoutbox\shouts.xml";
+        //string xmlfile = /* Blog.CurrentInstance.RelativeWebRoot + */ @"~/widgets\Shoutbox\shouts.xml";
 
         [WebMethod]
-        public JsonResponse submitMessage(string name, string message)
+        public JsonResponse SubmitMessage(string name, string message)
         {
             try
             {
                 XDocument xDoc = XDocument.Load(xmlfile);
-                int count = xDoc.Root.Elements().Count() + 1;
+                int count = int.Parse(xDoc.Root.Elements().Last().Attribute("id").Value) + 1;
                 xDoc.Element("shouts").Add(new XElement("shout",
                                                 new XAttribute("id", count),
-
                                                 new XElement("name", name),
                                                 new XElement("message", message)));
                 xDoc.Save(xmlfile);
@@ -38,8 +37,24 @@
             {
                 return new JsonResponse() { Success = false };
             }
-            
         }
 
+        [WebMethod]
+        public JsonResponse DeleteMessage(int id)
+        {
+            try
+            {
+                XDocument xDoc = XDocument.Load(xmlfile);
+                xDoc.Root.Elements().Where(x => x.Attribute("id").Value == id.ToString()).Remove();
+
+                xDoc.Save(xmlfile);
+
+                return new JsonResponse() { Success = true };
+            }
+            catch (Exception e)
+            {
+                return new JsonResponse() { Success = false };
+            }
+        }
     }
 }

@@ -11,7 +11,7 @@ function loadShouts() {
                 var id = $(this).attr('id');
                 var name = $(this).find('name').text();
                 var msg = $(this).find('message').text();
-                $('<div class="shout" id="shout_' + id + '"></div>').html(/* INSERT DELETE BUTTON + HIDE */name + ': ' + msg).appendTo('#shouts');
+                $('<div class="shout" id="shout_' + id + '"></div>').html(name + ': ' + msg).appendTo('#shouts');
             })
         }
     });
