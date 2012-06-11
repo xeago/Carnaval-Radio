@@ -17,7 +17,7 @@
     public class postShout : WebService
     {
         string xmlfile = @"C:\Users\Odie20XX\Carnaval-Radio\BlogEngine\BlogEngine\BlogEngine.NET\widgets\Shoutbox\shouts.xml";
-        //string xmlfile = /* Blog.CurrentInstance.RelativeWebRoot + */ @"~/widgets\Shoutbox\shouts.xml";
+        //string xmlfile =  /* Blog.CurrentInstance.RelativeWebRoot + */ @"../widgets/Shoutbox/shouts.xml";
 
         [WebMethod]
         public JsonResponse SubmitMessage(string name, string message)
@@ -25,12 +25,20 @@
             try
             {
                 XDocument xDoc = XDocument.Load(xmlfile);
+
                 int count = int.Parse(xDoc.Root.Elements().Last().Attribute("id").Value) + 1;
                 xDoc.Element("shouts").Add(new XElement("shout",
                                                 new XAttribute("id", count),
                                                 new XElement("name", name),
                                                 new XElement("message", message)));
                 xDoc.Save(xmlfile);
+
+                if (xDoc.Root.Elements().Count() > 30)
+                {
+                    xDoc.Root.FirstNode.Remove();
+                    xDoc.Save(xmlfile);
+                }
+
                 return new JsonResponse() { Success = true };
             }
             catch (Exception e)
