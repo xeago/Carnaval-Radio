@@ -17,7 +17,20 @@ public partial class widgets_AudioPlayer_audioplayer : System.Web.UI.Page
         bool s = ExtensionManager.Extensions.ContainsKey("AudioStream");
         if (s)
         {
+
             stream = ExtensionManager.Extensions["AudioStream"].Settings[0].GetSingleValue("HighStream");
+            
+            if(!stream.ToLower().Trim().StartsWith(@"http://"))
+            {
+                stream = @"http://" + stream;
+            }
+
+            if (!stream.ToLower().Trim().EndsWith(@"/;"))
+            {
+                stream += @"/;";
+            }
+
+
             streamFiles[0] = ExtensionManager.Extensions["AudioStream"].Settings[0].GetSingleValue("PlsFile");
             streamFiles[1] = ExtensionManager.Extensions["AudioStream"].Settings[0].GetSingleValue("AsmxFile");
         }
