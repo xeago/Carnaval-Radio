@@ -4,4 +4,5 @@
   <widget id="5607c17b-217a-4702-8432-5baa8c249f33" title="BlogRoll" showTitle="True">Blogroll</widget>
   <widget id="7f094a0f-7f29-4cfa-a21f-f7fece0f4815" title="Twitter" showTitle="True">Twitter</widget>
   <widget id="303b46f8-7b3e-43f2-8bb0-6fac4fd58677" title="Tag cloud" showTitle="True">Tag cloud</widget>
+  <widget id="5a48a0a3-de3c-4b95-b62d-81d4e8d710dd" title="Shoutbox" showTitle="True">Shoutbox</widget>
 </widgets>

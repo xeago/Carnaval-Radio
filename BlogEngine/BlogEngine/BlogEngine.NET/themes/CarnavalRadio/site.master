@@ -12,7 +12,7 @@
         jQuery(function () { jQuery('ul.head-menu').superfish(); });
 
         function OpenStreamPopup() { 
-        return window.open('widgets/AudioPlayer/audioplayer.aspx', 'Carnaval          Radio','resizable=no,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no,width=450,height=380');
+        return window.open('audioplayer.aspx', 'Carnaval          Radio','resizable=no,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no,width=450,height=380');
         }
     </script>
 </head>
