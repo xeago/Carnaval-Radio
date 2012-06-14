@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<post>
+  <author>Nick</author>
+  <title>Test</title>
+  <description />
+  <content>&lt;p&gt;test&lt;/p&gt;
+&lt;p&gt;&lt;img src="/cr/image.axd?picture=2012%2f6%2ftswlogo.png" alt="" width="200" height="100" /&gt;&lt;/p&gt;</content>
+  <ispublished>True</ispublished>
+  <isdeleted>False</isdeleted>
+  <iscommentsenabled>True</iscommentsenabled>
+  <pubDate>2012-06-14 11:15:00</pubDate>
+  <lastModified>2012-06-14 11:17:25</lastModified>
+  <raters>0</raters>
+  <rating>0</rating>
+  <slug>Test</slug>
+  <tags />
+  <comments>
+    <comment id="d8c5fd3f-40a4-4e83-bd16-cc5970f84592" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="True">
+      <date>2012-06-14 11:26:16</date>
+      <author>Nick</author>
+      <email>nicknijenhuis@gmail.com</email>
+      <country>nl</country>
+      <ip>::1</ip>
+      <moderatedby>Rule:authenticated</moderatedby>
+      <avatar />
+      <content>tes bfgsdf erfsdgdsg dfgdfsdg</content>
+    </comment>
+  </comments>
+  <categories />
+  <notifications />
+</post>

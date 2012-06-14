@@ -17,4 +17,12 @@
     <name>Anonymous</name>
     <users />
   </role>
+  <role>
+    <name>test</name>
+    <users />
+  </role>
+  <role>
+    <name>test</name>
+    <users />
+  </role>
 </roles>

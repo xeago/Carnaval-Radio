@@ -25,6 +25,9 @@
       <Values>22033e07-f4f2-432c-818d-c39ebe4c419c</Values>
       <Values>7b7cdaeb-8ad1-431a-9ac1-ae4490aaad0b</Values>
       <Values>2646b840-e004-4f3a-81fd-361163c0dce6</Values>
+      <Values>40472d26-5427-4ee2-aaea-71cb3447f266</Values>
+      <Values>2cbe8bca-8f21-4ce7-bfca-00739a6b82a4</Values>
+      <Values>4ce66946-feb1-4158-84cb-b88fa8efd2d2</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -38,6 +41,9 @@
       <Values>TSW</Values>
       <Values>Andy Cobben</Values>
       <Values>Roy Heijnens</Values>
+      <Values>Woetjstok</Values>
+      <Values>Wil Smits</Values>
+      <Values>Van Ravenstein</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -49,6 +55,9 @@
       <SelectedValue />
       <Values />
       <Values>test</Values>
+      <Values />
+      <Values />
+      <Values>http://www.woetsjtok.nl</Values>
       <Values />
       <Values />
     </Parameters>
@@ -64,6 +73,9 @@
       <Values>3</Values>
       <Values>4</Values>
       <Values>4</Values>
+      <Values>1</Values>
+      <Values>2</Values>
+      <Values>1</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -77,6 +89,9 @@
       <Values>False</Values>
       <Values>False</Values>
       <Values>False</Values>
+      <Values>false</Values>
+      <Values>false</Values>
+      <Values>false</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -86,6 +101,9 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
       <Values>False</Values>
       <Values>False</Values>
       <Values>False</Values>
@@ -103,6 +121,9 @@
       <Values>False</Values>
       <Values>False</Values>
       <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -116,6 +137,9 @@
       <Values>True</Values>
       <Values>True</Values>
       <Values>True</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -129,6 +153,9 @@
       <Values>True</Values>
       <Values>False</Values>
       <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -138,6 +165,9 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>0</Values>
+      <Values>0</Values>
+      <Values>0</Values>
       <Values>0</Values>
       <Values>0</Values>
       <Values>0</Values>
@@ -155,6 +185,9 @@
       <Values>Upload/sponsoren/22033e07-f4f2-432c-818d-c39ebe4c419c.png</Values>
       <Values>Upload/sponsoren/7b7cdaeb-8ad1-431a-9ac1-ae4490aaad0b.png</Values>
       <Values>Upload/sponsoren/2646b840-e004-4f3a-81fd-361163c0dce6.png</Values>
+      <Values>Upload/sponsoren/40472d26-5427-4ee2-aaea-71cb3447f266.png</Values>
+      <Values>Upload/sponsoren/2cbe8bca-8f21-4ce7-bfca-00739a6b82a4.png</Values>
+      <Values>Upload/sponsoren/4ce66946-feb1-4158-84cb-b88fa8efd2d2.png</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -164,6 +197,9 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
       <Values />
       <Values />
       <Values />
@@ -181,6 +217,9 @@
       <Values>11-6-2012 11:56:28</Values>
       <Values>11-6-2012 11:57:06</Values>
       <Values>11-6-2012 11:57:32</Values>
+      <Values>14-6-2012 10:58:56</Values>
+      <Values>14-6-2012 10:59:40</Values>
+      <Values>14-6-2012 11:00:08</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -194,6 +233,9 @@
       <Values />
       <Values />
       <Values />
+      <Values />
+      <Values />
+      <Values />
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -203,6 +245,9 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
       <Values>True</Values>
       <Values>True</Values>
       <Values>True</Values>

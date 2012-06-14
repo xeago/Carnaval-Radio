@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<page>
+  <title>Test</title>
+  <description />
+  <content>&lt;p&gt;test&lt;/p&gt;</content>
+  <keywords />
+  <slug>Test</slug>
+  <parent>bb87690b-7b73-410f-9113-e35239da8051</parent>
+  <isfrontpage>False</isfrontpage>
+  <showinlist>True</showinlist>
+  <ispublished>True</ispublished>
+  <isdeleted>False</isdeleted>
+  <datecreated>2012-06-14 11:12:15</datecreated>
+  <datemodified>2012-06-14 11:12:58</datemodified>
+</page>

@@ -4,4 +4,6 @@
   <widget id="5607c17b-217a-4702-8432-5baa8c249f33" title="BlogRoll" showTitle="True">Blogroll</widget>
   <widget id="7f094a0f-7f29-4cfa-a21f-f7fece0f4815" title="Twitter" showTitle="True">Twitter</widget>
   <widget id="303b46f8-7b3e-43f2-8bb0-6fac4fd58677" title="Tag cloud" showTitle="True">Tag cloud</widget>
+  <widget id="39429ee6-0ebe-47a0-b47e-1a38f14ea1f0" title="Shoutbox" showTitle="True">Shoutbox</widget>
+  <widget id="fdaefe48-a8e4-4707-b5bd-f10e34d6f2a0" title="AudioPlayer" showTitle="True">AudioPlayer</widget>
 </widgets>

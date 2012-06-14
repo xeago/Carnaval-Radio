@@ -1,406 +1,235 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:twitter="http://api.twitter.com" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:georss="http://www.georss.org/georss">
+<rss xmlns:georss="http://www.georss.org/georss" xmlns:twitter="http://api.twitter.com" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Twitter / L1nws</title>
-    <link>http://twitter.com/L1nws</link>
-    <atom:link type="application/rss+xml" rel="self" href="http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=l1nws" />
-    <description>Twitter updates from L1 NWS / L1nws.</description>
+    <title>Twitter / carnavalradio</title>
+    <link>http://twitter.com/carnavalradio</link>
+    <atom:link type="application/rss+xml" rel="self" href="http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=@carnavalradio" />
+    <description>Twitter updates from Carnaval-Radio.nl / carnavalradio.</description>
     <language>en-us</language>
     <ttl>40</ttl>
     <item>
-      <title>L1nws: Actie tegen mogelijke accijnsverhoging tabak http://t.co/u3Pd47kB</title>
-      <description>L1nws: Actie tegen mogelijke accijnsverhoging tabak http://t.co/u3Pd47kB</description>
-      <pubDate>Mon, 11 Jun 2012 10:02:09 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/212122540573855744</guid>
-      <link>http://twitter.com/L1nws/statuses/212122540573855744</link>
+      <title>carnavalradio: Limburgse Aovendj gróót succes!: 
+	Leef Vastelaovesvierders!
+
+	Wat hebben we genoten afgelopen za... http://t.co/vMgGoxo5 #carnavalradio</title>
+      <description>carnavalradio: Limburgse Aovendj gróót succes!: 
+	Leef Vastelaovesvierders!
+
+	Wat hebben we genoten afgelopen za... http://t.co/vMgGoxo5 #carnavalradio</description>
+      <pubDate>Tue, 14 Feb 2012 21:19:44 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/169531292034150400</guid>
+      <link>http://twitter.com/carnavalradio/statuses/169531292034150400</link>
       <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
       <twitter:place />
-      <author>l1nws</author>
+      <author>@carnavalradio</author>
     </item>
     <item>
-      <title>L1nws: Verdachte opgepakt in zaak dode man Geleen http://t.co/lxegMeYI</title>
-      <description>L1nws: Verdachte opgepakt in zaak dode man Geleen http://t.co/lxegMeYI</description>
-      <pubDate>Mon, 11 Jun 2012 10:02:08 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/212122538959056896</guid>
-      <link>http://twitter.com/L1nws/statuses/212122538959056896</link>
+      <title>carnavalradio: @kartoesj Vanavond te gast bij http://t.co/yUI1YdfS We hebben er zin in!</title>
+      <description>carnavalradio: @kartoesj Vanavond te gast bij http://t.co/yUI1YdfS We hebben er zin in!</description>
+      <pubDate>Fri, 10 Feb 2012 14:16:37 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/167975260279422977</guid>
+      <link>http://twitter.com/carnavalradio/statuses/167975260279422977</link>
+      <twitter:source>web</twitter:source>
+      <twitter:place />
+      <author>@carnavalradio</author>
+    </item>
+    <item>
+      <title>carnavalradio: vanavond KARTOESJ live te gast! Dus zorg dat je vanavond weer afstemt op http://t.co/yUI1YdfS vanaf 18:30uur weer LIVE!</title>
+      <description>carnavalradio: vanavond KARTOESJ live te gast! Dus zorg dat je vanavond weer afstemt op http://t.co/yUI1YdfS vanaf 18:30uur weer LIVE!</description>
+      <pubDate>Fri, 10 Feb 2012 14:05:18 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/167972413403967493</guid>
+      <link>http://twitter.com/carnavalradio/statuses/167972413403967493</link>
+      <twitter:source>&lt;a href="http://www.facebook.com/twitter" rel="nofollow"&gt;Facebook&lt;/a&gt;</twitter:source>
+      <twitter:place />
+      <author>@carnavalradio</author>
+    </item>
+    <item>
+      <title>carnavalradio: Vanavond de PREMIERE van de NIEUWE HARRY SCHLAUMEIJER! LUISTEREN om 20:00 uur! (vanaf half 7 live!) LUISTEREN DUS!... http://t.co/cPMB3Ojd</title>
+      <description>carnavalradio: Vanavond de PREMIERE van de NIEUWE HARRY SCHLAUMEIJER! LUISTEREN om 20:00 uur! (vanaf half 7 live!) LUISTEREN DUS!... http://t.co/cPMB3Ojd</description>
+      <pubDate>Wed, 08 Feb 2012 14:46:39 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/167258042012942336</guid>
+      <link>http://twitter.com/carnavalradio/statuses/167258042012942336</link>
+      <twitter:source>&lt;a href="http://www.facebook.com/twitter" rel="nofollow"&gt;Facebook&lt;/a&gt;</twitter:source>
+      <twitter:place />
+      <author>@carnavalradio</author>
+    </item>
+    <item>
+      <title>carnavalradio: Weer gezelliheid in de studio bij dj danique met prinsenpaar van cv de klotsköp http://t.co/QDEbYGLF</title>
+      <description>carnavalradio: Weer gezelliheid in de studio bij dj danique met prinsenpaar van cv de klotsköp http://t.co/QDEbYGLF</description>
+      <pubDate>Mon, 06 Feb 2012 18:15:33 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/166585839634235392</guid>
+      <link>http://twitter.com/carnavalradio/statuses/166585839634235392</link>
+      <twitter:source>&lt;a href="http://www.facebook.com/twitter" rel="nofollow"&gt;Facebook&lt;/a&gt;</twitter:source>
+      <twitter:place />
+      <author>@carnavalradio</author>
+    </item>
+    <item>
+      <title>carnavalradio: Limburgse Aovendj UITVERKOCHT!: 
+	Ter info,
+
+	De Limburgse Aovendj die a.s. zaterdag 11 februari ... http://t.co/jynINd88 #carnavalradio</title>
+      <description>carnavalradio: Limburgse Aovendj UITVERKOCHT!: 
+	Ter info,
+
+	De Limburgse Aovendj die a.s. zaterdag 11 februari ... http://t.co/jynINd88 #carnavalradio</description>
+      <pubDate>Sun, 05 Feb 2012 14:23:52 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/166165145310068736</guid>
+      <link>http://twitter.com/carnavalradio/statuses/166165145310068736</link>
       <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
       <twitter:place />
-      <author>l1nws</author>
+      <author>@carnavalradio</author>
     </item>
     <item>
-      <title>L1nws: Lezing Van Rossem op Arbeidsmarktdag http://t.co/QVn9XQxt</title>
-      <description>L1nws: Lezing Van Rossem op Arbeidsmarktdag http://t.co/QVn9XQxt</description>
-      <pubDate>Mon, 11 Jun 2012 10:02:08 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/212122537923059712</guid>
-      <link>http://twitter.com/L1nws/statuses/212122537923059712</link>
+      <title>carnavalradio: Nu Live carnaval-radio met JULY EN DE MUPPE in de studio!</title>
+      <description>carnavalradio: Nu Live carnaval-radio met JULY EN DE MUPPE in de studio!</description>
+      <pubDate>Wed, 01 Feb 2012 17:41:53 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/164765427816333312</guid>
+      <link>http://twitter.com/carnavalradio/statuses/164765427816333312</link>
+      <twitter:source>&lt;a href="http://www.facebook.com/twitter" rel="nofollow"&gt;Facebook&lt;/a&gt;</twitter:source>
+      <twitter:place />
+      <author>@carnavalradio</author>
+    </item>
+    <item>
+      <title>carnavalradio: @Promilaasj Jullie waren super!! Kan niet wachten tot de feestavond op het nummer Smeris wits doe woe mien beer is?! Super plaat!!!</title>
+      <description>carnavalradio: @Promilaasj Jullie waren super!! Kan niet wachten tot de feestavond op het nummer Smeris wits doe woe mien beer is?! Super plaat!!!</description>
+      <pubDate>Sun, 29 Jan 2012 22:43:17 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/163754113744637952</guid>
+      <link>http://twitter.com/carnavalradio/statuses/163754113744637952</link>
+      <twitter:source>web</twitter:source>
+      <twitter:place />
+      <author>@carnavalradio</author>
+    </item>
+    <item>
+      <title>carnavalradio: Pr%milaasj is naar huis maar het was een super avond!!! Bedankt!!!</title>
+      <description>carnavalradio: Pr%milaasj is naar huis maar het was een super avond!!! Bedankt!!!</description>
+      <pubDate>Sun, 29 Jan 2012 21:31:33 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/163736062039031808</guid>
+      <link>http://twitter.com/carnavalradio/statuses/163736062039031808</link>
+      <twitter:source>&lt;a href="http://www.facebook.com/twitter" rel="nofollow"&gt;Facebook&lt;/a&gt;</twitter:source>
+      <twitter:place />
+      <author>@carnavalradio</author>
+    </item>
+    <item>
+      <title>carnavalradio: Pr%milaasj met de gekregen carnavalradio sjaal @ studio carnaval radio http://t.co/LQZorbac</title>
+      <description>carnavalradio: Pr%milaasj met de gekregen carnavalradio sjaal @ studio carnaval radio http://t.co/LQZorbac</description>
+      <pubDate>Sun, 29 Jan 2012 19:43:13 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/163708797062356992</guid>
+      <link>http://twitter.com/carnavalradio/statuses/163708797062356992</link>
+      <twitter:source>&lt;a href="http://www.facebook.com/twitter" rel="nofollow"&gt;Facebook&lt;/a&gt;</twitter:source>
+      <twitter:place />
+      <author>@carnavalradio</author>
+    </item>
+    <item>
+      <title>carnavalradio: Prijsvraag vanuit Promilaasj: het hoeveelste seizoen is dat van Promilaasj dat ze echt mee doen aan de... http://t.co/TgKfd5bA</title>
+      <description>carnavalradio: Prijsvraag vanuit Promilaasj: het hoeveelste seizoen is dat van Promilaasj dat ze echt mee doen aan de... http://t.co/TgKfd5bA</description>
+      <pubDate>Sun, 29 Jan 2012 18:55:51 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/163696877148188672</guid>
+      <link>http://twitter.com/carnavalradio/statuses/163696877148188672</link>
+      <twitter:source>&lt;a href="http://www.facebook.com/twitter" rel="nofollow"&gt;Facebook&lt;/a&gt;</twitter:source>
+      <twitter:place />
+      <author>@carnavalradio</author>
+    </item>
+    <item>
+      <title>carnavalradio: Weer een heerlijke live uitzendingen vandaag met in de studio DJ Panda, DJ Jaimy, DJ Jeroenski en straks.... Feestband PR%MILAASJ!!!</title>
+      <description>carnavalradio: Weer een heerlijke live uitzendingen vandaag met in de studio DJ Panda, DJ Jaimy, DJ Jeroenski en straks.... Feestband PR%MILAASJ!!!</description>
+      <pubDate>Sun, 29 Jan 2012 17:25:54 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/163674240153956352</guid>
+      <link>http://twitter.com/carnavalradio/statuses/163674240153956352</link>
+      <twitter:source>&lt;a href="http://www.facebook.com/twitter" rel="nofollow"&gt;Facebook&lt;/a&gt;</twitter:source>
+      <twitter:place />
+      <author>@carnavalradio</author>
+    </item>
+    <item>
+      <title>carnavalradio: Gezellige middag in de carnaval-radio studio achter de rug, dit jaar is weer zeer succesvol! http://t.co/fnvypQRM</title>
+      <description>carnavalradio: Gezellige middag in de carnaval-radio studio achter de rug, dit jaar is weer zeer succesvol! http://t.co/fnvypQRM</description>
+      <pubDate>Sat, 28 Jan 2012 16:49:39 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/163302731216457728</guid>
+      <link>http://twitter.com/carnavalradio/statuses/163302731216457728</link>
+      <twitter:source>&lt;a href="http://www.facebook.com/twitter" rel="nofollow"&gt;Facebook&lt;/a&gt;</twitter:source>
+      <twitter:place />
+      <author>@carnavalradio</author>
+    </item>
+    <item>
+      <title>carnavalradio: A.s. donderdag start LIVE-Uitzendingen: 
+	Leef Carnavalisten,
+
+	Vanaf a.s. donderdag 19 januari z... http://t.co/PHnQpPas #carnavalradio</title>
+      <description>carnavalradio: A.s. donderdag start LIVE-Uitzendingen: 
+	Leef Carnavalisten,
+
+	Vanaf a.s. donderdag 19 januari z... http://t.co/PHnQpPas #carnavalradio</description>
+      <pubDate>Tue, 17 Jan 2012 16:27:08 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/159310797871398912</guid>
+      <link>http://twitter.com/carnavalradio/statuses/159310797871398912</link>
       <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
       <twitter:place />
-      <author>l1nws</author>
+      <author>@carnavalradio</author>
     </item>
     <item>
-      <title>L1nws: Verbinding natuurgebieden Roermond http://t.co/zOvEKIZr</title>
-      <description>L1nws: Verbinding natuurgebieden Roermond http://t.co/zOvEKIZr</description>
-      <pubDate>Mon, 11 Jun 2012 09:00:43 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/212107082248368128</guid>
-      <link>http://twitter.com/L1nws/statuses/212107082248368128</link>
+      <title>carnavalradio: Stemmen op July &amp; de Muppe!: 
+	July en de Muppe toch naar het LVK???
+
+	Onlangs heeft het carnaval... http://t.co/zIVoPtCJ #carnavalradio</title>
+      <description>carnavalradio: Stemmen op July &amp; de Muppe!: 
+	July en de Muppe toch naar het LVK???
+
+	Onlangs heeft het carnaval... http://t.co/zIVoPtCJ #carnavalradio</description>
+      <pubDate>Thu, 29 Dec 2011 16:24:24 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/152424741498658816</guid>
+      <link>http://twitter.com/carnavalradio/statuses/152424741498658816</link>
       <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
       <twitter:place />
-      <author>l1nws</author>
+      <author>@carnavalradio</author>
     </item>
     <item>
-      <title>L1nws: Bijna verdronken meisje alsnog overleden http://t.co/s2c7LHnT</title>
-      <description>L1nws: Bijna verdronken meisje alsnog overleden http://t.co/s2c7LHnT</description>
-      <pubDate>Mon, 11 Jun 2012 09:00:43 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/212107081522749441</guid>
-      <link>http://twitter.com/L1nws/statuses/212107081522749441</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
+      <title>carnavalradio: LVK: Stemmen op July &amp; de Muppe!, http://t.co/1Y1VjuC7,  #carnavalradio</title>
+      <description>carnavalradio: LVK: Stemmen op July &amp; de Muppe!, http://t.co/1Y1VjuC7,  #carnavalradio</description>
+      <pubDate>Thu, 29 Dec 2011 16:16:59 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/152422874093846531</guid>
+      <link>http://twitter.com/carnavalradio/statuses/152422874093846531</link>
+      <twitter:source>&lt;a href="http://twitter.com/tweetbutton" rel="nofollow"&gt;Tweet Button&lt;/a&gt;</twitter:source>
       <twitter:place />
-      <author>l1nws</author>
+      <author>@carnavalradio</author>
     </item>
     <item>
-      <title>L1nws: Zeven gewonden bij ongeval Aken http://t.co/NpkEvWo9</title>
-      <description>L1nws: Zeven gewonden bij ongeval Aken http://t.co/NpkEvWo9</description>
-      <pubDate>Mon, 11 Jun 2012 05:56:07 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/212060624522452993</guid>
-      <link>http://twitter.com/L1nws/statuses/212060624522452993</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
+      <title>carnavalradio: I uploaded a @YouTube video http://t.co/82CCsN0g Zanger Rinus - My Jinglebells and Piek Are Gone (Mash</title>
+      <description>carnavalradio: I uploaded a @YouTube video http://t.co/82CCsN0g Zanger Rinus - My Jinglebells and Piek Are Gone (Mash</description>
+      <pubDate>Fri, 16 Dec 2011 15:29:57 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/147699994764394496</guid>
+      <link>http://twitter.com/carnavalradio/statuses/147699994764394496</link>
+      <twitter:source>&lt;a href="http://www.google.com/" rel="nofollow"&gt;Google&lt;/a&gt;</twitter:source>
       <twitter:place />
-      <author>l1nws</author>
+      <author>@carnavalradio</author>
     </item>
     <item>
-      <title>L1nws: Noodverordening Nieuwstraat tijdens Nederland-Duitsland http://t.co/reu6tJH6</title>
-      <description>L1nws: Noodverordening Nieuwstraat tijdens Nederland-Duitsland http://t.co/reu6tJH6</description>
-      <pubDate>Sun, 10 Jun 2012 20:16:39 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211914797720145921</guid>
-      <link>http://twitter.com/L1nws/statuses/211914797720145921</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
+      <title>carnavalradio: I liked a @YouTube video http://t.co/82CCsN0g Zanger Rinus - My Jinglebells and Piek Are Gone (Mash-up</title>
+      <description>carnavalradio: I liked a @YouTube video http://t.co/82CCsN0g Zanger Rinus - My Jinglebells and Piek Are Gone (Mash-up</description>
+      <pubDate>Fri, 16 Dec 2011 15:28:32 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/147699637938163712</guid>
+      <link>http://twitter.com/carnavalradio/statuses/147699637938163712</link>
+      <twitter:source>&lt;a href="http://www.google.com/" rel="nofollow"&gt;Google&lt;/a&gt;</twitter:source>
       <twitter:place />
-      <author>l1nws</author>
+      <author>@carnavalradio</author>
     </item>
     <item>
-      <title>L1nws: Uitspraak in kort geding over wietpas http://t.co/fZm9Is0P</title>
-      <description>L1nws: Uitspraak in kort geding over wietpas http://t.co/fZm9Is0P</description>
-      <pubDate>Sun, 10 Jun 2012 19:15:52 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211899498631409664</guid>
-      <link>http://twitter.com/L1nws/statuses/211899498631409664</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
+      <title>carnavalradio: Kom naar "Carnaval-Radio Limburgse Aovendj" Op zaterdag 11 februari 2012 van 21:00 tot 3:00. Zoals de meeste... http://t.co/mft49mBe</title>
+      <description>carnavalradio: Kom naar "Carnaval-Radio Limburgse Aovendj" Op zaterdag 11 februari 2012 van 21:00 tot 3:00. Zoals de meeste... http://t.co/mft49mBe</description>
+      <pubDate>Tue, 13 Dec 2011 22:23:03 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/146716792688091136</guid>
+      <link>http://twitter.com/carnavalradio/statuses/146716792688091136</link>
+      <twitter:source>&lt;a href="http://www.facebook.com/twitter" rel="nofollow"&gt;Facebook&lt;/a&gt;</twitter:source>
       <twitter:place />
-      <author>l1nws</author>
+      <author>@carnavalradio</author>
     </item>
     <item>
-      <title>L1nws: Zwaargewonde bij ongeval in Veulen http://t.co/YsVmmxld</title>
-      <description>L1nws: Zwaargewonde bij ongeval in Veulen http://t.co/YsVmmxld</description>
-      <pubDate>Sun, 10 Jun 2012 19:15:51 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211899497813512192</guid>
-      <link>http://twitter.com/L1nws/statuses/211899497813512192</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
+      <title>carnavalradio: Carnaval-Radio Benefietavond op zaterdag 11 februari 2012 met o.a. Kartoesj, W-Dreej en Demi-sec http://t.co/lzZaZMPt</title>
+      <description>carnavalradio: Carnaval-Radio Benefietavond op zaterdag 11 februari 2012 met o.a. Kartoesj, W-Dreej en Demi-sec http://t.co/lzZaZMPt</description>
+      <pubDate>Tue, 13 Dec 2011 22:17:08 +0000</pubDate>
+      <guid>http://twitter.com/carnavalradio/statuses/146715300597989377</guid>
+      <link>http://twitter.com/carnavalradio/statuses/146715300597989377</link>
+      <twitter:source>&lt;a href="http://www.facebook.com/twitter" rel="nofollow"&gt;Facebook&lt;/a&gt;</twitter:source>
       <twitter:place />
-      <author>l1nws</author>
-    </item>
-    <item>
-      <title>L1nws: Venraynaar mishandelt vrouw http://t.co/rp0k80Yz</title>
-      <description>L1nws: Venraynaar mishandelt vrouw http://t.co/rp0k80Yz</description>
-      <pubDate>Sun, 10 Jun 2012 15:11:06 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211837901640704000</guid>
-      <link>http://twitter.com/L1nws/statuses/211837901640704000</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
-    </item>
-    <item>
-      <title>L1nws: Venrayse dealers gepakt http://t.co/YTKKt9XB</title>
-      <description>L1nws: Venrayse dealers gepakt http://t.co/YTKKt9XB</description>
-      <pubDate>Sun, 10 Jun 2012 15:11:05 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211837898671128576</guid>
-      <link>http://twitter.com/L1nws/statuses/211837898671128576</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
-    </item>
-    <item>
-      <title>L1nws: Inbrekers in de kraag gevat http://t.co/3oF40xQU</title>
-      <description>L1nws: Inbrekers in de kraag gevat http://t.co/3oF40xQU</description>
-      <pubDate>Sun, 10 Jun 2012 14:09:51 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211822489976844290</guid>
-      <link>http://twitter.com/L1nws/statuses/211822489976844290</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
-    </item>
-    <item>
-      <title>L1nws: Uitsmijter krijgt klap in Sittard http://t.co/ueyKanH2</title>
-      <description>L1nws: Uitsmijter krijgt klap in Sittard http://t.co/ueyKanH2</description>
-      <pubDate>Sun, 10 Jun 2012 13:09:08 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211807207799537664</guid>
-      <link>http://twitter.com/L1nws/statuses/211807207799537664</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
-    </item>
-    <item>
-      <title>L1nws: Dronkaard ramt paaltje http://t.co/hMtzAJww</title>
-      <description>L1nws: Dronkaard ramt paaltje http://t.co/hMtzAJww</description>
-      <pubDate>Sun, 10 Jun 2012 13:09:07 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211807206901956608</guid>
-      <link>http://twitter.com/L1nws/statuses/211807206901956608</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
-    </item>
-    <item>
-      <title>L1nws: Auto in brand in Sittard http://t.co/R5kSDLTw</title>
-      <description>L1nws: Auto in brand in Sittard http://t.co/R5kSDLTw</description>
-      <pubDate>Sun, 10 Jun 2012 13:09:07 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211807206125998080</guid>
-      <link>http://twitter.com/L1nws/statuses/211807206125998080</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
-    </item>
-    <item>
-      <title>L1nws: LSO-dirigent Ed Spanjaard geridderd http://t.co/uP7w5YPJ</title>
-      <description>L1nws: LSO-dirigent Ed Spanjaard geridderd http://t.co/uP7w5YPJ</description>
-      <pubDate>Sun, 10 Jun 2012 08:03:52 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211730386185764864</guid>
-      <link>http://twitter.com/L1nws/statuses/211730386185764864</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
-    </item>
-    <item>
-      <title>L1nws: 'Van Rey moet senaatszetel opgeven' http://t.co/DPWPS9HL</title>
-      <description>L1nws: 'Van Rey moet senaatszetel opgeven' http://t.co/DPWPS9HL</description>
-      <pubDate>Sat, 09 Jun 2012 16:49:37 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211500305962123265</guid>
-      <link>http://twitter.com/L1nws/statuses/211500305962123265</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
-    </item>
-    <item>
-      <title>L1nws: Bond fluit Licom-gemeenten terug http://t.co/ajtYjFUO</title>
-      <description>L1nws: Bond fluit Licom-gemeenten terug http://t.co/ajtYjFUO</description>
-      <pubDate>Sat, 09 Jun 2012 14:48:15 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211469763195572224</guid>
-      <link>http://twitter.com/L1nws/statuses/211469763195572224</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
-    </item>
-    <item>
-      <title>L1nws: Ondernemers blij met EK http://t.co/unsVrfZA</title>
-      <description>L1nws: Ondernemers blij met EK http://t.co/unsVrfZA</description>
-      <pubDate>Sat, 09 Jun 2012 13:47:29 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211454470998065154</guid>
-      <link>http://twitter.com/L1nws/statuses/211454470998065154</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
-    </item>
-    <item>
-      <title>L1nws: Heerlen krijgt erfgoedhuis http://t.co/qSiyRTAG</title>
-      <description>L1nws: Heerlen krijgt erfgoedhuis http://t.co/qSiyRTAG</description>
-      <pubDate>Sat, 09 Jun 2012 13:47:28 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/211454470234701824</guid>
-      <link>http://twitter.com/L1nws/statuses/211454470234701824</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
-    </item>
-    <item>
-      <title>RT @jonyoxford: @AlcaldeCardona en HxH @SER_LasPalmas: Pronto anunciaremos novedades sobre los cambios en el #carnaval, preocupa + q las fiestas de san juan</title>
-      <link>http://twitter.com/SER_LasPalmas/statuses/212139317534003200</link>
-      <description>RT @&lt;a class=" " href="http://twitter.com/jonyoxford"&gt;jonyoxford&lt;/a&gt;: @&lt;a class=" " href="http://twitter.com/AlcaldeCardona"&gt;AlcaldeCardona&lt;/a&gt; en HxH @&lt;a class=" " href="http://twitter.com/SER_LasPalmas"&gt;SER_LasPalmas&lt;/a&gt;: Pronto anunciaremos novedades sobre los cambios en el &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt;, preocupa + q las fiestas de san juan</description>
-      <pubDate>Mon, 11 Jun 2012 11:08:49 +0000</pubDate>
-      <guid>http://twitter.com/SER_LasPalmas/statuses/212139317534003200</guid>
-      <author>SER_LasPalmas</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/1282666363/SER_Las_Palmas_Twitter_normal.png" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/1282666363/SER_Las_Palmas_Twitter_normal.png</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>Zapato Dorado “Tamba Taya” http://t.co/s9mjJqhz #carnaval vía @DonCarnaval</title>
-      <link>http://twitter.com/ElcheMagazine/statuses/212139207735513089</link>
-      <description>Zapato Dorado “Tamba Taya” &lt;a href="http://t.co/s9mjJqhz"&gt;http://t.co/s9mjJqhz&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt; vía @&lt;a class=" " href="http://twitter.com/DonCarnaval"&gt;DonCarnaval&lt;/a&gt;</description>
-      <pubDate>Mon, 11 Jun 2012 11:08:23 +0000</pubDate>
-      <guid>http://twitter.com/ElcheMagazine/statuses/212139207735513089</guid>
-      <author>ElcheMagazine</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/2190245047/logo_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/2190245047/logo_normal.jpg</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>@AlcaldeCardona en HxH @SER_LasPalmas: Pronto anunciaremos novedades sobre los cambios en el #carnaval, preocupa + q las fiestas de san juan</title>
-      <link>http://twitter.com/jonyoxford/statuses/212137452649984000</link>
-      <description>@&lt;a class=" " href="http://twitter.com/AlcaldeCardona"&gt;AlcaldeCardona&lt;/a&gt; en HxH @&lt;a class=" " href="http://twitter.com/SER_LasPalmas"&gt;SER_LasPalmas&lt;/a&gt;: Pronto anunciaremos novedades sobre los cambios en el &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt;, preocupa + q las fiestas de san juan</description>
-      <pubDate>Mon, 11 Jun 2012 11:01:24 +0000</pubDate>
-      <guid>http://twitter.com/jonyoxford/statuses/212137452649984000</guid>
-      <author>jonyoxford</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/2169550903/sko_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/2169550903/sko_normal.jpg</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>#feest of #evenement? Boek Rudi Rozenberg, prijs €895,- ex btw. #apreski, #feesten, #oktoberfest, #carnaval, etc http://t.co/DcpcRxIt</title>
-      <link>http://twitter.com/FoppersinConcer/statuses/212132766337343489</link>
-      <description>&lt;a href="http://search.twitter.com/search?q=%23feest" title="#feest" class=" "&gt;#feest&lt;/a&gt; of &lt;a href="http://search.twitter.com/search?q=%23evenement" title="#evenement" class=" "&gt;#evenement&lt;/a&gt;? Boek Rudi Rozenberg, prijs €895,- ex btw. &lt;a href="http://search.twitter.com/search?q=%23apreski" title="#apreski" class=" "&gt;#apreski&lt;/a&gt;, &lt;a href="http://search.twitter.com/search?q=%23feesten" title="#feesten" class=" "&gt;#feesten&lt;/a&gt;, &lt;a href="http://search.twitter.com/search?q=%23oktoberfest" title="#oktoberfest" class=" "&gt;#oktoberfest&lt;/a&gt;, &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt;, etc &lt;a href="http://t.co/DcpcRxIt"&gt;http://t.co/DcpcRxIt&lt;/a&gt;</description>
-      <pubDate>Mon, 11 Jun 2012 10:42:47 +0000</pubDate>
-      <guid>http://twitter.com/FoppersinConcer/statuses/212132766337343489</guid>
-      <author>FoppersinConcer</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/1612081869/bd_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/1612081869/bd_normal.jpg</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>Joder , estamos a Junio aun queda... todo el año con "mono" de #carnaval</title>
-      <link>http://twitter.com/RubencR1/statuses/212107692276318208</link>
-      <description>Joder , estamos a Junio aun queda... todo el año con "mono" de &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt;</description>
-      <pubDate>Mon, 11 Jun 2012 09:03:09 +0000</pubDate>
-      <guid>http://twitter.com/RubencR1/statuses/212107692276318208</guid>
-      <author>RubencR1</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/2298220127/image_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/2298220127/image_normal.jpg</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>RT @CarnavalHits: Hit promotie:: Laef! - Stedje van de leefde http://t.co/v2dqDro8 #carnaval</title>
-      <link>http://twitter.com/powersjoenkeler/statuses/212105174603415552</link>
-      <description>RT @&lt;a class=" " href="http://twitter.com/CarnavalHits"&gt;CarnavalHits&lt;/a&gt;: Hit promotie:: Laef! - Stedje van de leefde &lt;a href="http://t.co/v2dqDro8"&gt;http://t.co/v2dqDro8&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt;</description>
-      <pubDate>Mon, 11 Jun 2012 08:53:09 +0000</pubDate>
-      <guid>http://twitter.com/powersjoenkeler/statuses/212105174603415552</guid>
-      <author>powersjoenkeler</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/sticky/default_profile_images/default_profile_6_normal.png" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/sticky/default_profile_images/default_profile_6_normal.png</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>RT @LaetitiaBolle: #me #venizia #mask #carnaval #holiday #italy  http://t.co/YSG72Stt</title>
-      <link>http://twitter.com/FionaManachi/statuses/212104276019904512</link>
-      <description>RT @&lt;a class=" " href="http://twitter.com/LaetitiaBolle"&gt;LaetitiaBolle&lt;/a&gt;: &lt;a href="http://search.twitter.com/search?q=%23me" title="#me" class=" "&gt;#me&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23venizia" title="#venizia" class=" "&gt;#venizia&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23mask" title="#mask" class=" "&gt;#mask&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt; &lt;a href="http://search.twitter.com/search?q=%23holiday" title="#holiday" class=" "&gt;#holiday&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23italy" title="#italy" class=" "&gt;#italy&lt;/a&gt;  &lt;a href="http://t.co/YSG72Stt"&gt;http://t.co/YSG72Stt&lt;/a&gt;</description>
-      <pubDate>Mon, 11 Jun 2012 08:49:34 +0000</pubDate>
-      <guid>http://twitter.com/FionaManachi/statuses/212104276019904512</guid>
-      <author>FionaManachi</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/2160099391/image_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/2160099391/image_normal.jpg</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>#me #venizia #mask #carnaval #holiday #italy  http://t.co/YSG72Stt</title>
-      <link>http://twitter.com/LaetitiaBolle/statuses/212102980349079552</link>
-      <description>&lt;a href="http://search.twitter.com/search?q=%23me" title="#me" class=" "&gt;#me&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23venizia" title="#venizia" class=" "&gt;#venizia&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23mask" title="#mask" class=" "&gt;#mask&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt; &lt;a href="http://search.twitter.com/search?q=%23holiday" title="#holiday" class=" "&gt;#holiday&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23italy" title="#italy" class=" "&gt;#italy&lt;/a&gt;  &lt;a href="http://t.co/YSG72Stt"&gt;http://t.co/YSG72Stt&lt;/a&gt;</description>
-      <pubDate>Mon, 11 Jun 2012 08:44:25 +0000</pubDate>
-      <guid>http://twitter.com/LaetitiaBolle/statuses/212102980349079552</guid>
-      <author>LaetitiaBolle</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/2246984787/image_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/2246984787/image_normal.jpg</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>&amp;#191;No es adorable?    #Halloween #disfraz #infancia #carnaval http://t.co/EiBN8UHL</title>
-      <link>http://twitter.com/JessVilloslada/statuses/212100678137561088</link>
-      <description>&amp;#191;No es adorable?    &lt;a href="http://search.twitter.com/search?q=%23Halloween" title="#Halloween" class=" "&gt;#Halloween&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23disfraz" title="#disfraz" class=" "&gt;#disfraz&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23infancia" title="#infancia" class=" "&gt;#infancia&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt; &lt;a href="http://t.co/EiBN8UHL"&gt;http://t.co/EiBN8UHL&lt;/a&gt;</description>
-      <pubDate>Mon, 11 Jun 2012 08:35:16 +0000</pubDate>
-      <guid>http://twitter.com/JessVilloslada/statuses/212100678137561088</guid>
-      <author>JessVilloslada</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/1494955297/jessica_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/1494955297/jessica_normal.jpg</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>#Décorations et #bricolages à faire soi-même sur le thème du #Carnaval, avec les #enfants http://t.co/GCZjISj9</title>
-      <link>http://twitter.com/Hedonismie/statuses/212095515255521281</link>
-      <description>&lt;a href="http://search.twitter.com/search?q=%23Décorations" title="#Décorations" class=" "&gt;#Décorations&lt;/a&gt; et &lt;a href="http://search.twitter.com/search?q=%23bricolages" title="#bricolages" class=" "&gt;#bricolages&lt;/a&gt; à faire soi-même sur le thème du &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23Carnaval" title="#Carnaval" class=" "&gt;#Carnaval&lt;/a&gt;&lt;/em&gt;, avec les &lt;a href="http://search.twitter.com/search?q=%23enfants" title="#enfants" class=" "&gt;#enfants&lt;/a&gt; &lt;a href="http://t.co/GCZjISj9"&gt;http://t.co/GCZjISj9&lt;/a&gt;</description>
-      <pubDate>Mon, 11 Jun 2012 08:14:46 +0000</pubDate>
-      <guid>http://twitter.com/Hedonismie/statuses/212095515255521281</guid>
-      <author>Hedonismie</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/1300592360/twitter-bird-2_normal.png" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/1300592360/twitter-bird-2_normal.png</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>so por outro #carnaval sede com os amigos etc :D</title>
-      <link>http://twitter.com/lucasoliveir124/statuses/212074218114920449</link>
-      <description>so por outro &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt; sede com os amigos etc :D</description>
-      <pubDate>Mon, 11 Jun 2012 06:50:08 +0000</pubDate>
-      <guid>http://twitter.com/lucasoliveir124/statuses/212074218114920449</guid>
-      <author>lucasoliveir124</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/1940329722/Main_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/1940329722/Main_normal.jpg</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>que saudade do #carnaval sede do #bf tava tri :P</title>
-      <link>http://twitter.com/lucasoliveir124/statuses/212073340570058753</link>
-      <description>que saudade do &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt; sede do &lt;a href="http://search.twitter.com/search?q=%23bf" title="#bf" class=" "&gt;#bf&lt;/a&gt; tava tri :P</description>
-      <pubDate>Mon, 11 Jun 2012 06:46:39 +0000</pubDate>
-      <guid>http://twitter.com/lucasoliveir124/statuses/212073340570058753</guid>
-      <author>lucasoliveir124</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/1940329722/Main_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/1940329722/Main_normal.jpg</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>Hit promotie:: Laef! - Stedje van de leefde http://t.co/v2dqDro8 #carnaval</title>
-      <link>http://twitter.com/CarnavalHits/statuses/212067417713688576</link>
-      <description>Hit promotie:: Laef! - Stedje van de leefde &lt;a href="http://t.co/v2dqDro8"&gt;http://t.co/v2dqDro8&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt;</description>
-      <pubDate>Mon, 11 Jun 2012 06:23:07 +0000</pubDate>
-      <guid>http://twitter.com/CarnavalHits/statuses/212067417713688576</guid>
-      <author>CarnavalHits</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/1829695580/logo_normal.png" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/1829695580/logo_normal.png</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>@claudinhaleitte &lt;3 #ClaudiaLeitte #samba #carnival #carnaval #Brazil #Brasil #EUA #amor http://t.co/IJ59T5I0</title>
-      <link>http://twitter.com/Geral_CL/statuses/212061403845099520</link>
-      <description>@&lt;a class=" " href="http://twitter.com/claudinhaleitte"&gt;claudinhaleitte&lt;/a&gt; &lt;3 &lt;a href="http://search.twitter.com/search?q=%23ClaudiaLeitte" title="#ClaudiaLeitte" class=" "&gt;#ClaudiaLeitte&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23samba" title="#samba" class=" "&gt;#samba&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23carnival" title="#carnival" class=" "&gt;#carnival&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23Brazil" title="#Brazil" class=" "&gt;#Brazil&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23Brasil" title="#Brasil" class=" "&gt;#Brasil&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23EUA" title="#EUA" class=" "&gt;#EUA&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23amor" title="#amor" class=" "&gt;#amor&lt;/a&gt; &lt;a href="http://t.co/IJ59T5I0"&gt;http://t.co/IJ59T5I0&lt;/a&gt;</description>
-      <pubDate>Mon, 11 Jun 2012 05:59:13 +0000</pubDate>
-      <guid>http://twitter.com/Geral_CL/statuses/212061403845099520</guid>
-      <author>Geral_CL</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/2296979150/e4dbhypw1d5l3couak7f_normal.png" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/2296979150/e4dbhypw1d5l3couak7f_normal.png</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>#sexy #photography #boy #party #carnaval #brazil http://t.co/PDCNQf3I</title>
-      <link>http://twitter.com/JeanTodde/statuses/212035606363115521</link>
-      <description>&lt;a href="http://search.twitter.com/search?q=%23sexy" title="#sexy" class=" "&gt;#sexy&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23photography" title="#photography" class=" "&gt;#photography&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23boy" title="#boy" class=" "&gt;#boy&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23party" title="#party" class=" "&gt;#party&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt; &lt;a href="http://search.twitter.com/search?q=%23brazil" title="#brazil" class=" "&gt;#brazil&lt;/a&gt; &lt;a href="http://t.co/PDCNQf3I"&gt;http://t.co/PDCNQf3I&lt;/a&gt;</description>
-      <pubDate>Mon, 11 Jun 2012 04:16:42 +0000</pubDate>
-      <guid>http://twitter.com/JeanTodde/statuses/212035606363115521</guid>
-      <author>JeanTodde</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/2148204215/image_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/2148204215/image_normal.jpg</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
+      <author>@carnavalradio</author>
     </item>
   </channel>
 </rss>

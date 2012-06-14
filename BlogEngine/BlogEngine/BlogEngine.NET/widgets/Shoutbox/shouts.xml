@@ -1,63 +1,11 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <shouts>
-  <shout id="1">
-    <name>TestSubject1</name>
-    <message>TestMessage1</message>
+  <shout id="19">
+    <name>test</name>
+    <message>test</message>
   </shout>
-  <shout id="2">
-    <name>TestSubject2</name>
-    <message>TestMessage2</message>
-  </shout>
-  <shout id="3">
-    <name>test3</name>
-    <message>test3</message>
-  </shout>
-  <shout id="4">
-    <name>test4</name>
-    <message>test4</message>
-  </shout>
-  <shout id="5">
-    <name>test5</name>
-    <message>test5</message>
-  </shout>
-  <shout id="6">
-    <name>test6</name>
-    <message>test6</message>
-  </shout>
-  <shout id="7">
-    <name>test7</name>
-    <message>test7</message>
-  </shout>
-  <shout id="8">
-    <name>test8</name>
-    <message>test8</message>
-  </shout>
-  <shout id="9">
-    <name>test9</name>
-    <message>test9</message>
-  </shout>
-  <shout id="10">
-    <name>test10</name>
-    <message>test10</message>
-  </shout>
-  <shout id="11">
-    <name>test11</name>
-    <message>test11</message>
-  </shout>
-  <shout id="12">
-    <name>test12</name>
-    <message>test12</message>
-  </shout>
-  <shout id="13">
-    <name>test13</name>
-    <message>test13</message>
-  </shout>
-  <shout id="14">
-    <name>test14</name>
-    <message>test14</message>
-  </shout>
-  <shout id="15">
-    <name>test15</name>
-    <message>test15</message>
+  <shout id="20">
+    <name>test</name>
+    <message>test</message>
   </shout>
 </shouts>

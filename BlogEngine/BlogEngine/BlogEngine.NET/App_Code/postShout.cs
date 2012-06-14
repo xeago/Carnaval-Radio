@@ -16,7 +16,7 @@
     [ScriptService]
     public class postShout : WebService
     {
-        string xmlfile = @"C:\Users\Odie20XX\Carnaval-Radio\BlogEngine\BlogEngine\BlogEngine.NET\widgets\Shoutbox\shouts.xml";
+        private string xmlfile = HttpContext.Current.Server.MapPath("./shouts.xml");
         //string xmlfile =  /* Blog.CurrentInstance.RelativeWebRoot + */ @"../widgets/Shoutbox/shouts.xml";
 
         [WebMethod]
