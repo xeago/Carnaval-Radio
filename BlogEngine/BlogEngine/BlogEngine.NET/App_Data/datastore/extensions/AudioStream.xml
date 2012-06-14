@@ -31,7 +31,7 @@
       <ParamType>String</ParamType>
       <Required>true</Required>
       <SelectedValue />
-      <Values>50.7.241.10:8021</Values>
+      <Values>50.7.241.10:8013</Values>
     </Parameters>
     <ShowAdd>true</ShowAdd>
     <ShowDelete>true</ShowDelete>
