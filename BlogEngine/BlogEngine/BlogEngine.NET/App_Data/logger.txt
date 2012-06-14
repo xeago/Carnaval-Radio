@@ -1,0 +1,124 @@
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 12:56:34 PM
+Contents Below
+Error loading compiled extensions from assembly DotNetOpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 12:56:44 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 12:56:44 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 12:57:34 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 12:57:34 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 12:59:44 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 12:59:44 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 1:04:06 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 1:04:06 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 1:45:00 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 1:45:00 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 1:48:13 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 1:48:13 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 1:48:37 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 1:48:37 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 1:55:05 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 1:55:05 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 1:57:14 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 1:57:14 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 1:59:40 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 1:59:40 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 2:00:07 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 2:00:07 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 2:01:24 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 2:01:24 PM
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
