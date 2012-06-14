@@ -36,7 +36,7 @@ public partial class sponsoren : BlogBasePage
 
         StringBuilder sb = new StringBuilder();
 
-        var listSponsors = CRSponsor.GetList().Where(i => i.Active);
+        var listSponsors = CRSponsor.GetListOnlyActives();
         foreach (SponsorType sponsorType in Enum.GetValues(typeof(SponsorType)))
         {
             double width = 0;
