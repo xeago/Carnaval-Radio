@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <gbMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ID>37</ID>
-<<<<<<< HEAD
-  <SubmitDate>14-6-2012 11:13</SubmitDate>
-  <Name>test</Name>
-  <Email>test@test.com</Email>
-  <Message>test&amp;nbsp;test</Message>
-=======
+  <ID>38</ID>
   <SubmitDate>14-6-2012 13:57</SubmitDate>
   <Name>test</Name>
   <Email>test@test.com</Email>
   <Message>test</Message>
->>>>>>> master
   <ResponseToMessage>
     <ID>1</ID>
     <SubmitDate />

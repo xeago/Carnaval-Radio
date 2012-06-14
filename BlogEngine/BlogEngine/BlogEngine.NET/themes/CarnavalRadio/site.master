@@ -10,6 +10,10 @@
     <asp:Literal ID="StylesAndScripts" runat="server" />
     <script type="text/javascript">
         jQuery(function () { jQuery('ul.head-menu').superfish(); });
+
+        function OpenStreamPopup() { 
+        return window.open('widgets/AudioPlayer/audioplayer.aspx', 'Carnaval          Radio','resizable=no,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no,width=450,height=380');
+        }
     </script>
 </head>
 <body>
@@ -28,8 +32,13 @@
         </div>
     <div class="sponsor_content">
         <img src="<%=Utils.AbsoluteWebRoot %>kabeldirect.png" width="200" height="86" /></div>
-    <div class="nuopderadio_text"></div>
-    <div class="nuopderadio_box"></div>
+    <div class="nuopderadio_text" onclick="OpenStreamPopup();"></div>
+    <div class="nuopderadio_box" onclick="OpenStreamPopup();">
+        <div class="text"><marquee scrollamount="5" width="279" height="30"> 
+			    <a id="cc_stream_info_song">Huidig nummer laden...</a>
+            </marquee>
+        </div>
+    </div>
   </div>  
   <div id="menu">
     <div class="left-corner"></div>
@@ -81,6 +90,10 @@
   <img src="<%=Utils.ApplicationRelativeWebRoot %>pics/rssButton.png" alt="Feed" /><%=Resources.labels.subscribe %></a>
   </div>
   </form>
-  
+
+<script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/system/streaminfo.js"></script>
+<script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/js.php/carradio/streaminfo/rnd0"></script>
+<script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/system/recenttracks.js"></script>
+<script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/js.php/carradio/recenttracks/rnd0"></script>
 </body>
 </html>

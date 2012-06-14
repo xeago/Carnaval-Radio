@@ -13,9 +13,6 @@
   </div>
 
   <div class="footer">    
-    <div class="bookmarks">
-      <a rel="nofollow" title="Index <%=Index %>" target="_blank" href="http://www.dotnetkicks.com/submit?url=<%=Server.UrlEncode(Post.AbsoluteLink.ToString()) %>&amp;title=<%=Server.UrlEncode(Post.Title) %>">Submit to DotNetKicks...</a>
-    </div>
     
     <%=AdminLinks %>
     

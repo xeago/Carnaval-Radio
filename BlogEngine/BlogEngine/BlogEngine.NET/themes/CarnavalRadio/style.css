@@ -128,6 +128,18 @@ img {
     background-image:url('img/nuopderadio_text.png');
 }
 
+#header div.nuopderadio_box div.text
+{
+    color:#8f8e8c;
+    font-family:Arial;
+    font-size:12pt;
+    font-style:italic;
+    padding-top:13px;
+    margin-left:13px;
+}
+#header div.nuopderadio_box div.text a
+{    color:#8f8e8c;}
+
 
 #header p {
 	font-family: Arial;

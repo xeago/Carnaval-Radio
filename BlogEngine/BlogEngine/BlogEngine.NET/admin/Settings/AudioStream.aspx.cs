@@ -50,7 +50,7 @@ namespace admin.Settings
                 Settings.UpdateScalarValue("LowStream", TxbLowStream.Text);
 
                 ExtensionManager.SaveSettings("AudioStream", Settings);
-                string path = Server.MapPath("..\\AudioStreams\\");
+                string path = Server.MapPath(@"~/AudioStreams/");
                 writeOut(TxbHighStream.Text, TxbLowStream.Text, path);
             }
             Response.Redirect(Request.RawUrl);
@@ -59,18 +59,18 @@ namespace admin.Settings
         #region Twan & Pascal stream creator
         public static void writeOut(string high, string low, string path)
         {
-            if (!high.ToLower().StartsWith(@"http://")) high = @"http://" + high;
-            if (!low.ToLower().StartsWith(@"http://")) low = @"http://" + low;
+            if (!high.ToLower().StartsWith(@"http:")) high = "http://" + high;
+            if (!low.ToLower().StartsWith(@"http:")) low = "http://" + low;
 
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
-            writePls(high, path, "high");
-            writePls(low, path, "low");
+            writePls(high, path, "Carnaval-Radio");
+            writePls(low, path, "Carnaval-Radio.low");
 
-            writeAsx(high, path, "high");
-            writeAsx(low, path, "low");
+            writeAsx(high, path, "Carnaval-Radio");
+            writeAsx(low, path, "Carnaval-Radio.low");
 
-            writeJson(high, low, path, "json");
+            writeJson(high, low, path, "Carnaval-Radio");
         }
 
         private static void writeJson(string highserver, string lowserver, string path, string file)
@@ -88,12 +88,14 @@ namespace admin.Settings
             using (StreamWriter sw = new StreamWriter(path + file))
             {
                 sw.WriteLine("<asx version = \"3.0\">" +
-                                @"<Title>Carnaval-Radio.nl 2012</Title>" +
+                                @"<Title>Carnaval-Radio.nl</Title>" +
                                 @"<Author>http://www.carnaval-radio.nl</Author>" +
-                                "<MoreInfo href=\"http:////www.carnaval-radio.nl\" />" +
+                                "<PARAM name=\"HTMLView\" value=\"http://www.carnaval-radio.nl\" />"+
+                                "<MoreInfo href=\"http://www.carnaval-radio.nl\" />" +
+                                "<Copyright> </Copyright>" +
                                 "<entry>" +
-                                    "<ref href=\"http:////" + server + "\" />" +
-                                    "<Title>Carnaval-Radio.nl 2012</Title> " +
+                                    "<ref href=\"" + server + "\" />" +
+                                    "<Title>Carnaval-Radio.nl</Title> " +
                                     @"<Author>http://www.carnaval-radio.nl</Author>" +
                                 "</entry>" +
                                 "</asx>");
