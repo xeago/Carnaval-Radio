@@ -16,6 +16,13 @@ public partial class guestbook : BlogBasePage
     public string ciMsgPerPage = "10";
     public int ciPage;
     public string csPath = HttpContext.Current.Server.MapPath(".");
+    private int liStart;
+    private int liEnd;
+    private int i;
+    private ArrayList laFiles;
+    private string lsError;
+    private gbSerialize coSerialize;
+    private string lsPath;
 
     private readonly string _csConfigPath = HttpContext.Current.Server.MapPath(".") + "\\App_Data\\Guestbook\\config";
     private readonly string _csPath = HttpContext.Current.Server.MapPath(".") + "\\App_Data\\Guestbook";
@@ -24,13 +31,20 @@ public partial class guestbook : BlogBasePage
     {
         ciPage = GSDlib.Utils.NullableInt(Request.QueryString["page"]) ?? 1;
 
-        var laFiles = new ArrayList();
-        string lsError = String.Empty;
-        int i = 0;
-        int liStart = 0;
-        int liEnd = 0;
-        var coSerialize = new gbSerialize(csPath + "\\App_Data\\Guestbook");
-        string lsPath = Request.ApplicationPath;
+        LoadMessages();
+
+        lblNavigation.Text = GenerateNavigation(laFiles.Count, ciPage, "Gastenboek", Convert.ToInt16(ciMsgPerPage));
+    }
+
+    private void LoadMessages()
+    {
+        laFiles = new ArrayList();
+        lsError = String.Empty;
+        i = 0;
+        liStart = 0;
+        liEnd = 0;
+        coSerialize = new gbSerialize(csPath + "\\App_Data\\Guestbook");
+        lsPath = Request.ApplicationPath;
 
         laFiles = coSerialize.GetFileNames();
         Utility.GetStartAndEnd(ref liStart, ref liEnd, laFiles.Count, ciPage, Convert.ToInt16(ciMsgPerPage));
@@ -42,10 +56,8 @@ public partial class guestbook : BlogBasePage
             messages.Append(coSerialize.DisplayMessage(loMessage, lsPath, csPath));
         }
         MsgDisplay.Text = messages.ToString();
-
-        lblNavigation.Text = GenerateNavigation(laFiles.Count, ciPage, "Gastenboek", Convert.ToInt16(ciMsgPerPage));
     }
-    
+
     private string GetVisitorIP()
     {
         var lsIpAddress = string.Empty;
@@ -93,6 +105,11 @@ public partial class guestbook : BlogBasePage
         loMessage.ResponseToMessage = new gbMessage() { ID = 1 };
         
         lsSerialize.SerializeMessage(loMessage);
+        LoadMessages();
+
+        yourname.Text = "";
+        youremail.Text = "";
+        yourmessage.Text = "";
     }
 
     public string GenerateNavigation(int liTotalCount, int liPage, string psPageName,
