@@ -21,7 +21,7 @@
       <ParamType>String</ParamType>
       <Required>true</Required>
       <SelectedValue />
-      <Values>Http://192.168.30.1/GenerateDieSjit</Values>
+      <Values>50.7.241.10:8021</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -31,7 +31,7 @@
       <ParamType>String</ParamType>
       <Required>true</Required>
       <SelectedValue />
-      <Values>Http://192.168.30.1/Low</Values>
+      <Values>50.7.241.10:8021</Values>
     </Parameters>
     <ShowAdd>true</ShowAdd>
     <ShowDelete>true</ShowDelete>
