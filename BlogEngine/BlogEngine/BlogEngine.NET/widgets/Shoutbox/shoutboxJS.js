@@ -3,6 +3,7 @@
 function loadShouts() {
     $.ajax({
         type: "GET",
+        cached: false,
         url: "widgets/Shoutbox/shouts.xml",
         dataType: "xml",
         success: function showShouts(xml) {

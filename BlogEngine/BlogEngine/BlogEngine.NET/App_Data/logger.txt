@@ -207,3 +207,11 @@ Date: 6/7/2012 1:26:26 PM
 Contents Below
 Error requesting Twitter feed. Value cannot be null.
 Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 10:43:58 AM
+Contents Below
+Error loading compiled extensions from assembly DotNetOpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 6/14/2012 11:54:55 AM
+Contents Below
+Error loading compiled extensions from assembly DotNetOpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
