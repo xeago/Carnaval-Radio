@@ -88,12 +88,14 @@ namespace admin.Settings
             using (StreamWriter sw = new StreamWriter(path + file))
             {
                 sw.WriteLine("<asx version = \"3.0\">" +
-                                @"<Title>Carnaval-Radio.nl 2012</Title>" +
+                                @"<Title>Carnaval-Radio.nl</Title>" +
                                 @"<Author>http://www.carnaval-radio.nl</Author>" +
-                                "<MoreInfo href=\"http:////www.carnaval-radio.nl\" />" +
+                                "<PARAM name=\"HTMLView\" value=\"http://www.carnaval-radio.nl\" />"+
+                                "<MoreInfo href=\"http://www.carnaval-radio.nl\" />" +
+                                "<Copyright> </Copyright>" +
                                 "<entry>" +
-                                    "<ref href=\"http:////" + server + "\" />" +
-                                    "<Title>Carnaval-Radio.nl 2012</Title> " +
+                                    "<ref href=\"" + server + "\" />" +
+                                    "<Title>Carnaval-Radio.nl</Title> " +
                                     @"<Author>http://www.carnaval-radio.nl</Author>" +
                                 "</entry>" +
                                 "</asx>");
