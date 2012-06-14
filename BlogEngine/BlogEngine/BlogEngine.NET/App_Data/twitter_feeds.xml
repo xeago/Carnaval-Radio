@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:georss="http://www.georss.org/georss" xmlns:twitter="http://api.twitter.com" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss" xmlns:twitter="http://api.twitter.com" version="2.0">
   <channel>
     <title>Twitter / L1nws</title>
     <link>http://twitter.com/L1nws</link>
@@ -7,6 +7,46 @@
     <description>Twitter updates from L1 NWS / L1nws.</description>
     <language>en-us</language>
     <ttl>40</ttl>
+    <item>
+      <title>L1nws: Gewapende overval in Valkenburg http://t.co/y5iZgJFA</title>
+      <description>L1nws: Gewapende overval in Valkenburg http://t.co/y5iZgJFA</description>
+      <pubDate>Thu, 14 Jun 2012 09:59:45 +0000</pubDate>
+      <guid>http://twitter.com/L1nws/statuses/213209099855343617</guid>
+      <link>http://twitter.com/L1nws/statuses/213209099855343617</link>
+      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
+      <twitter:place />
+      <author>l1nws</author>
+    </item>
+    <item>
+      <title>L1nws: Parkstad steunt MCH 2018 met anderhalf miljoen http://t.co/tB4HIIys</title>
+      <description>L1nws: Parkstad steunt MCH 2018 met anderhalf miljoen http://t.co/tB4HIIys</description>
+      <pubDate>Thu, 14 Jun 2012 09:59:44 +0000</pubDate>
+      <guid>http://twitter.com/L1nws/statuses/213209098181812225</guid>
+      <link>http://twitter.com/L1nws/statuses/213209098181812225</link>
+      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
+      <twitter:place />
+      <author>l1nws</author>
+    </item>
+    <item>
+      <title>L1nws: Brunssum pakt leegstand winkelpanden aan http://t.co/VB1QMvz1</title>
+      <description>L1nws: Brunssum pakt leegstand winkelpanden aan http://t.co/VB1QMvz1</description>
+      <pubDate>Thu, 14 Jun 2012 09:59:44 +0000</pubDate>
+      <guid>http://twitter.com/L1nws/statuses/213209097464590336</guid>
+      <link>http://twitter.com/L1nws/statuses/213209097464590336</link>
+      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
+      <twitter:place />
+      <author>l1nws</author>
+    </item>
+    <item>
+      <title>L1nws: Proef met electronisch patiëntendossier bij Adelante http://t.co/JycBZydc</title>
+      <description>L1nws: Proef met electronisch patiëntendossier bij Adelante http://t.co/JycBZydc</description>
+      <pubDate>Thu, 14 Jun 2012 09:59:44 +0000</pubDate>
+      <guid>http://twitter.com/L1nws/statuses/213209096449568769</guid>
+      <link>http://twitter.com/L1nws/statuses/213209096449568769</link>
+      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
+      <twitter:place />
+      <author>l1nws</author>
+    </item>
     <item>
       <title>L1nws: Landgraaf ziet af van nieuwbouw Carré http://t.co/yZDncaz4</title>
       <description>L1nws: Landgraaf ziet af van nieuwbouw Carré http://t.co/yZDncaz4</description>
@@ -168,44 +208,43 @@
       <author>l1nws</author>
     </item>
     <item>
-      <title>L1nws: Duurzaamheidsconferentie in Maastricht http://t.co/EFQXMxst</title>
-      <description>L1nws: Duurzaamheidsconferentie in Maastricht http://t.co/EFQXMxst</description>
-      <pubDate>Wed, 13 Jun 2012 15:42:15 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/212932905222156289</guid>
-      <link>http://twitter.com/L1nws/statuses/212932905222156289</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
+      <title>Pour mon 100eme #Tweet je suis heureux d'annoncer que je suis #follow par @PatSebastien, le roi dla transformation. #GrandBluff #Carnaval</title>
+      <link>http://twitter.com/Fantomas_1964/statuses/213217329734094848</link>
+      <description>Pour mon 100eme &lt;a href="http://search.twitter.com/search?q=%23Tweet" title="#Tweet" class=" "&gt;#Tweet&lt;/a&gt; je suis heureux d'annoncer que je suis &lt;a href="http://search.twitter.com/search?q=%23follow" title="#follow" class=" "&gt;#follow&lt;/a&gt; par @&lt;a class=" " href="http://twitter.com/PatSebastien"&gt;PatSebastien&lt;/a&gt;, le roi dla transformation. &lt;a href="http://search.twitter.com/search?q=%23GrandBluff" title="#GrandBluff" class=" "&gt;#GrandBluff&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23Carnaval" title="#Carnaval" class=" "&gt;#Carnaval&lt;/a&gt;&lt;/em&gt;</description>
+      <pubDate>Thu, 14 Jun 2012 10:32:27 +0000</pubDate>
+      <guid>http://twitter.com/Fantomas_1964/statuses/213217329734094848</guid>
+      <author>Fantomas_1964</author>
+      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/2274295603/3nuvb56fc9gd48cumbfj_normal.jpeg" xmlns:media="http://search.yahoo.com/mrss/" />
+      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/2274295603/3nuvb56fc9gd48cumbfj_normal.jpeg</google:image_link>
+      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
+        <twitter:result_type>recent</twitter:result_type>
+      </twitter:metadata>
     </item>
     <item>
-      <title>L1nws: Herinrichting Vleesplein Venlo van start http://t.co/Sv2VHwTS</title>
-      <description>L1nws: Herinrichting Vleesplein Venlo van start http://t.co/Sv2VHwTS</description>
-      <pubDate>Wed, 13 Jun 2012 14:40:54 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/212917468199526400</guid>
-      <link>http://twitter.com/L1nws/statuses/212917468199526400</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
+      <title>#rozemarijn #smile #friedyy #loveyou #carnaval #hawai #rosehair #andme  http://t.co/kZLbF90U</title>
+      <link>http://twitter.com/jetbosma/statuses/213214756893491201</link>
+      <description>&lt;a href="http://search.twitter.com/search?q=%23rozemarijn" title="#rozemarijn" class=" "&gt;#rozemarijn&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23smile" title="#smile" class=" "&gt;#smile&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23friedyy" title="#friedyy" class=" "&gt;#friedyy&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23loveyou" title="#loveyou" class=" "&gt;#loveyou&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt; &lt;a href="http://search.twitter.com/search?q=%23hawai" title="#hawai" class=" "&gt;#hawai&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23rosehair" title="#rosehair" class=" "&gt;#rosehair&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23andme" title="#andme" class=" "&gt;#andme&lt;/a&gt;  &lt;a href="http://t.co/kZLbF90U"&gt;http://t.co/kZLbF90U&lt;/a&gt;</description>
+      <pubDate>Thu, 14 Jun 2012 10:22:14 +0000</pubDate>
+      <guid>http://twitter.com/jetbosma/statuses/213214756893491201</guid>
+      <author>jetbosma</author>
+      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/2304730425/image_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
+      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/2304730425/image_normal.jpg</google:image_link>
+      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
+        <twitter:result_type>recent</twitter:result_type>
+      </twitter:metadata>
     </item>
     <item>
-      <title>L1nws: Badboot kiest het sop in Maasbracht http://t.co/P1kxqlIQ</title>
-      <description>L1nws: Badboot kiest het sop in Maasbracht http://t.co/P1kxqlIQ</description>
-      <pubDate>Wed, 13 Jun 2012 14:40:49 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/212917446452051970</guid>
-      <link>http://twitter.com/L1nws/statuses/212917446452051970</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
-    </item>
-    <item>
-      <title>L1nws: Kwart miljoen moet expats lokken http://t.co/5BS1Xym1</title>
-      <description>L1nws: Kwart miljoen moet expats lokken http://t.co/5BS1Xym1</description>
-      <pubDate>Wed, 13 Jun 2012 13:37:26 +0000</pubDate>
-      <guid>http://twitter.com/L1nws/statuses/212901496147292162</guid>
-      <link>http://twitter.com/L1nws/statuses/212901496147292162</link>
-      <twitter:source>&lt;a href="http://twitterfeed.com" rel="nofollow"&gt;twitterfeed&lt;/a&gt;</twitter:source>
-      <twitter:place />
-      <author>l1nws</author>
+      <title>#Carnaval #Kostuum Panty met zilveren naad  http://t.co/Gyd5Ku14</title>
+      <link>http://twitter.com/NLcarnaval/statuses/213210784237486081</link>
+      <description>&lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23Carnaval" title="#Carnaval" class=" "&gt;#Carnaval&lt;/a&gt;&lt;/em&gt; &lt;a href="http://search.twitter.com/search?q=%23Kostuum" title="#Kostuum" class=" "&gt;#Kostuum&lt;/a&gt; Panty met zilveren naad  &lt;a href="http://t.co/Gyd5Ku14"&gt;http://t.co/Gyd5Ku14&lt;/a&gt;</description>
+      <pubDate>Thu, 14 Jun 2012 10:06:26 +0000</pubDate>
+      <guid>http://twitter.com/NLcarnaval/statuses/213210784237486081</guid>
+      <author>NLcarnaval</author>
+      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/sticky/default_profile_images/default_profile_4_normal.png" xmlns:media="http://search.yahoo.com/mrss/" />
+      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/sticky/default_profile_images/default_profile_4_normal.png</google:image_link>
+      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
+        <twitter:result_type>recent</twitter:result_type>
+      </twitter:metadata>
     </item>
     <item>
       <title>RT @CynthiiaSongz: Après l'#ILCV sa sera le #Carnaval , après sa sera le bled 15 juillet j'marache de la ! &amp; uei j'participe au carnavaal enkor</title>
@@ -359,45 +398,6 @@
       <author>KeniaKbrera</author>
       <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/2306669058/image_normal.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
       <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/2306669058/image_normal.jpg</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>Hit promotie:: LVK 2012: nr. 14 - Wim en Loe - Rastalaovend (Stein) http://t.co/iC3TIqVo #carnaval</title>
-      <link>http://twitter.com/CarnavalHits/statuses/213147869916577792</link>
-      <description>Hit promotie:: LVK 2012: nr. 14 - Wim en Loe - Rastalaovend (Stein) &lt;a href="http://t.co/iC3TIqVo"&gt;http://t.co/iC3TIqVo&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt;</description>
-      <pubDate>Thu, 14 Jun 2012 05:56:26 +0000</pubDate>
-      <guid>http://twitter.com/CarnavalHits/statuses/213147869916577792</guid>
-      <author>CarnavalHits</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/1829695580/logo_normal.png" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/1829695580/logo_normal.png</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>#Alaaf! RT @HashHashtag #ZZP #schlaager #arena #boches #bocholtz #erwin #deswijzen #alaaf #carnaval #jordie #kevin #TweetBot...</title>
-      <link>http://twitter.com/Alaaf_NL/statuses/213146255063384066</link>
-      <description>&lt;a href="http://search.twitter.com/search?q=%23Alaaf" title="#Alaaf" class=" "&gt;#Alaaf&lt;/a&gt;! RT @&lt;a class=" " href="http://twitter.com/HashHashtag"&gt;HashHashtag&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23ZZP" title="#ZZP" class=" "&gt;#ZZP&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23schlaager" title="#schlaager" class=" "&gt;#schlaager&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23arena" title="#arena" class=" "&gt;#arena&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23boches" title="#boches" class=" "&gt;#boches&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23bocholtz" title="#bocholtz" class=" "&gt;#bocholtz&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23erwin" title="#erwin" class=" "&gt;#erwin&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23deswijzen" title="#deswijzen" class=" "&gt;#deswijzen&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23alaaf" title="#alaaf" class=" "&gt;#alaaf&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt; &lt;a href="http://search.twitter.com/search?q=%23jordie" title="#jordie" class=" "&gt;#jordie&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23kevin" title="#kevin" class=" "&gt;#kevin&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23TweetBot" title="#TweetBot" class=" "&gt;#TweetBot&lt;/a&gt;...</description>
-      <pubDate>Thu, 14 Jun 2012 05:50:01 +0000</pubDate>
-      <guid>http://twitter.com/Alaaf_NL/statuses/213146255063384066</guid>
-      <author>Alaaf_NL</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/profile_images/768791045/alaaf_normal.png" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/profile_images/768791045/alaaf_normal.png</google:image_link>
-      <twitter:metadata xmlns:twitter="http://api.twitter.com/">
-        <twitter:result_type>recent</twitter:result_type>
-      </twitter:metadata>
-    </item>
-    <item>
-      <title>#hint #GoodMorning #Wirtschaft #tb #NEWS #fb #bocholtz #optocht #boches #alaaf #carnaval #limburg #TweetBot http://t.co/INuQ1Qhq</title>
-      <link>http://twitter.com/HashHashtag/statuses/213145238695460865</link>
-      <description>&lt;a href="http://search.twitter.com/search?q=%23hint" title="#hint" class=" "&gt;#hint&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23GoodMorning" title="#GoodMorning" class=" "&gt;#GoodMorning&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23Wirtschaft" title="#Wirtschaft" class=" "&gt;#Wirtschaft&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23tb" title="#tb" class=" "&gt;#tb&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23NEWS" title="#NEWS" class=" "&gt;#NEWS&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23fb" title="#fb" class=" "&gt;#fb&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23bocholtz" title="#bocholtz" class=" "&gt;#bocholtz&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23optocht" title="#optocht" class=" "&gt;#optocht&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23boches" title="#boches" class=" "&gt;#boches&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23alaaf" title="#alaaf" class=" "&gt;#alaaf&lt;/a&gt; &lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23carnaval" title="#carnaval" class=" "&gt;#carnaval&lt;/a&gt;&lt;/em&gt; &lt;a href="http://search.twitter.com/search?q=%23limburg" title="#limburg" class=" "&gt;#limburg&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23TweetBot" title="#TweetBot" class=" "&gt;#TweetBot&lt;/a&gt; &lt;a href="http://t.co/INuQ1Qhq"&gt;http://t.co/INuQ1Qhq&lt;/a&gt;</description>
-      <pubDate>Thu, 14 Jun 2012 05:45:59 +0000</pubDate>
-      <guid>http://twitter.com/HashHashtag/statuses/213145238695460865</guid>
-      <author>HashHashtag</author>
-      <media:content type="image/jpg" height="48" width="48" url="http://a0.twimg.com/sticky/default_profile_images/default_profile_4_normal.png" xmlns:media="http://search.yahoo.com/mrss/" />
-      <google:image_link xmlns:google="http://base.google.com/ns/1.0">http://a0.twimg.com/sticky/default_profile_images/default_profile_4_normal.png</google:image_link>
       <twitter:metadata xmlns:twitter="http://api.twitter.com/">
         <twitter:result_type>recent</twitter:result_type>
       </twitter:metadata>

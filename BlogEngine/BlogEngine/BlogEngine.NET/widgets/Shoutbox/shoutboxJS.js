@@ -1,5 +1,18 @@
 ﻿$(document).ready(loadShouts);
 
+(function poll() {
+   setTimeout(function() {
+       $.ajax({
+        url: "widgets/Shoutbox/shouts.xml",
+        dataType: "xml",
+        cache: false,
+        success: function(data) {
+            loadShouts();
+        },
+        complete: poll });
+    }, 60000);
+})();
+
 function loadShouts() {
     $.ajax({
         type: "GET",
