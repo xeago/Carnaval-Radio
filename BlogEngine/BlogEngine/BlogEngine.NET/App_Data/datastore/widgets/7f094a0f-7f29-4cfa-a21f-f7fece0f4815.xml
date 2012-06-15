@@ -5,7 +5,7 @@
     <DictionaryEntry Key="account" Value="@carnavalradio" />
     <DictionaryEntry Key="maxitems" Value="10" />
     <DictionaryEntry Key="pollinginterval" Value="" />
-    <DictionaryEntry Key="hashtags" Value="#carnaval" />
+    <DictionaryEntry Key="hashtags" Value="3fm carnaval" />
     <DictionaryEntry Key="followmetext" Value="Volg ons" />
   </SerializableStringDictionary>
 </SerializableStringDictionary>
