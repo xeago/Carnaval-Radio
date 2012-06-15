@@ -1,9 +1,13 @@
 ﻿$(document).ready(loadShouts);
 
+(function poll() {
+   setInterval(loadShouts, 60000);
+})();
+
 function loadShouts() {
     $.ajax({
         type: "GET",
-        cached: false,
+        cache: false,
         url: "widgets/Shoutbox/shouts.xml",
         dataType: "xml",
         success: function showShouts(xml) {
