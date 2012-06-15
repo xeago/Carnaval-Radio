@@ -4,15 +4,15 @@
 <html>
 <head runat="server">
     <title>Carnaval Radio Audio Player</title>
-    <script src="JScript.js" type="text/javascript"></script>
+    <script src="Scripts/AudioPlayer.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="player"></div>
     <script type="text/javascript">    $('player').ready(loadStream('<%=stream %>'));</script>
-    <img src="images/download.png" id="dlimg" alt="Download" onclick="toggleDownload();" />
+    <img src="pics/audioplayer/download.png" id="dlimg" alt="Download" onclick="toggleDownload();" />
     <div id="dltab" hidden="hidden">
-        <img src="images/winamp.png" alt="Winamp" onclick="download('<%=streamFiles[0] %>');" />
-        <img src="images/wmp.png" alt="Windows Media Player" onclick="download('<%=streamFiles[1] %>');" />
+        <img src="pics/audioplayer/winamp.png" alt="Winamp" onclick="download('<%=streamFiles[0] %>');" />
+        <img src="pics/audioplayer/wmp.png" alt="Windows Media Player" onclick="download('<%=streamFiles[1] %>');" />
     </div>
 </body>
 </html>
