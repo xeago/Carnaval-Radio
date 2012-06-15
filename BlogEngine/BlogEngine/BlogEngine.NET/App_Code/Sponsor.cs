@@ -41,6 +41,7 @@ public class CRSponsor
     public string Name { get; set; }
     public string Url { get; set; }
     public SponsorType SponsorType { get; set; }
+    public string SponsorTypeNaam { get { return CRSponsor.GetLabelBySponsorType(this.SponsorType); } }
     public bool PlayerSwitch { get; set; }
     public bool PlayerSolid { get; set; }
     public bool WidgetSwitch { get; set; }
@@ -185,7 +186,7 @@ public class CRSponsor
 
         //save the json
         CRSponsor.updateJSON(this);
-        
+
         return settings.IsKeyValueExists(ID.ToString());
     }
 
@@ -199,21 +200,65 @@ public class CRSponsor
     /// <param name="sponsor">CRSponsor item to base the decision on whether it should or shouldn't update.</param>
     private static void updateJSON(CRSponsor sponsor)
     {
-        bool shouldUpdateMobileSwitch = sponsor == null || sponsor.MobileSwitch;
-        bool shouldUpdatePlayerSwitch = sponsor == null || sponsor.PlayerSwitch;
-        bool shouldUpdateWidgetSwitch = sponsor == null || sponsor.WidgetSwitch;
-        bool shouldUpdateMobileSolid = sponsor == null || sponsor.MobileSolid;
-        bool shouldUpdatePlayerSolid = sponsor == null || sponsor.PlayerSolid;
-
-        if (shouldUpdateMobileSwitch || shouldUpdatePlayerSwitch || shouldUpdateWidgetSwitch || shouldUpdateMobileSolid || shouldUpdatePlayerSolid)
-        {
             var sponsors = GetList().Where(s => s.Active);
-            if (shouldUpdateMobileSwitch) updateMobileSwitchJSON(sponsors);
-            //if (shouldUpdatePlayerSwitch) updatePlayerSwitchJSON();
-            //if (shouldUpdateWidgetSwitch) updateWidgetSwitchJSON();
-        }
-    }
+            updateMobileSwitchJSON(sponsors);
+            updateMobileSolidJSON(sponsors);
+            updatePlayerSwitchJSON(sponsors);
+            //updatePlayerSwitchJSON(sponsors);
+            updateWidgetSwitchJSON(sponsors);
         
+    }
+
+    private static void updateWidgetSwitchJSON(IEnumerable<CRSponsor> sponsors)
+    {
+        var widgetRotatingSponsors = sponsors.Where(s => s.WidgetSwitch);
+        var widget = new List<dynamic>();
+        foreach (var item in widgetRotatingSponsors)
+        {
+            widget.Add(new
+            {
+                url = item.Url,
+                logoUrl = item.LogoURL
+            });
+        }
+        writeSponsorJSON(widget, HttpContext.Current.Server.MapPath("~/json/"), "rotatingWidgetSponsor.json");
+    }
+
+
+    /*{
+        [{
+            'type': 'BLa',
+            'order': 0,
+            'items' [{
+                'name': 'sponsorName',
+                'logoUrl': 'htpp://..',
+                'description': 'sponsorDescription dkslfds'
+            },{
+                'name': 'sponsorName',
+                'logoUrl': 'htpp://..',
+                'description': 'sponsorDescription dkslfds'
+            }]
+        }]
+    }*/
+    private static void updateMobileSolidJSON(IEnumerable<CRSponsor> sponsors)
+    {
+        var mobileSolidSponsors = sponsors.Where(s => s.MobileSolid);
+        var sponsorTypen = mobileSolidSponsors.Select(s => s.SponsorType).Distinct();
+
+        var solid = new List<dynamic>();
+        foreach (var typen in sponsorTypen)
+        {
+            var sponsorsPerType = mobileSolidSponsors.Where(s => s.SponsorType == typen);
+            var items = new List<dynamic>();
+            foreach (var sponsor in sponsorsPerType)
+            {
+                items.Add(new { name = sponsor.Name, logoUrl = Utils.AbsoluteWebRoot + sponsor.LogoURL, description = sponsor.Description });
+            }
+            solid.Add(new { order = (int)typen, type = CRSponsor.GetLabelBySponsorType(typen), items=items });
+        }
+        writeSponsorJSON(solid, HttpContext.Current.Server.MapPath("~/json/"), "solidMobileSponsor.json");
+    }
+
     private static void updateMobileSwitchJSON(IEnumerable<CRSponsor> sponsors)
     {
         var mobileRotatingSponsors = sponsors.Where(s => s.MobileSwitch);
@@ -226,7 +271,7 @@ public class CRSponsor
                 logoUrl = item.LogoURL
             });
         }
-        writeSponsorJSON(mobile, HttpContext.Current.Server.MapPath("~/json/"), "rotatingSponsor.json");
+        writeSponsorJSON(mobile, HttpContext.Current.Server.MapPath("~/json/"), "rotatingMobileSponsor.json");
     }
 
     /// <summary>
@@ -234,7 +279,7 @@ public class CRSponsor
     /// </summary>
     /// <param name="obj">Input objects to be written as json.</param>
     /// <param name="path">The output path.</param>
-    private static void writeSponsorJSON(List<dynamic> obj,string path, string file)
+    private static void writeSponsorJSON(dynamic obj, string path, string file)
     {
         var js = new System.Web.Script.Serialization.JavaScriptSerializer();
         var sb = new StringBuilder();
@@ -293,5 +338,21 @@ public class CRSponsor
         {
             return false;
         }
+    }
+
+    private static void updatePlayerSwitchJSON(IEnumerable<CRSponsor> sponsors)
+    {   
+        var playerRotatingSponsors = sponsors.Where(s => s.WidgetSwitch);
+        var player = new List<dynamic>();
+        foreach (var item in playerRotatingSponsors)
+        {
+            player.Add(new
+            {
+                url = item.Url,
+                logoUrl = item.LogoURL
+            });
+        }
+        writeSponsorJSON(player, HttpContext.Current.Server.MapPath("~/json/"), "rotatingPlayerSponsor.json");
+    
     }
 }
