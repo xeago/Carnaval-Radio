@@ -1,0 +1,361 @@
+/*
+	Skin Name: Corner Bottom Red
+	Class: corner-bottom-red
+	Description: Corner Bottom Red skin for Advanced Slider jQuery plugin
+	Author: David
+*/
+
+
+/* MAIN SLIDE */
+
+.corner-bottom-red .slide-wrapper {
+	background-color: #FFF;
+	border: 4px solid #FFF;
+	-moz-box-shadow: 0 0 10px #CCC;
+	-webkit-box-shadow: 0 0 10px #CCC;
+	box-shadow: 0 0 10px #CCC;
+}
+
+/* END OF MAIN SLIDE */
+
+
+/* SLIDE ARROWS */
+
+.corner-bottom-red .slide-arrows a {
+	background: url(images/arrows.png) no-repeat;
+	width: 76px;
+	height: 79px;
+	bottom: -9px;
+}
+
+
+.corner-bottom-red .slide-arrows a.previous {
+	left: -11px;
+}
+
+
+.corner-bottom-red .slide-arrows a.next {
+	right: -11px;
+	background-position: -76px 0;
+}
+
+/* SLIDE ARROWS */
+
+
+/* SLIDESHOW CONTROLS */
+
+.corner-bottom-red .slideshow-controls {
+	background: url(images/playpause.png) no-repeat;
+	width: 76px;
+	height: 76px;
+	top: 50%;
+	left: 50%;
+	margin-top: -38px;
+	margin-left: -38px;
+}
+
+
+.corner-bottom-red .slideshow-controls.pause {
+	background-position: 0 0;
+}
+
+
+.corner-bottom-red .slideshow-controls.play {
+	background-position: -76px 0;
+}
+
+/* END OF SLIDESHOW CONTROLS */
+
+
+/* TIMER ANIMATION */
+
+.corner-bottom-red .timer-animation {
+	top: 20px;
+	right: 20px;
+}
+
+/* END OF TIMER ANIMATION */
+
+
+/* SLIDE CAPTION */
+
+.corner-bottom-red .caption-container .background {
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+}
+
+
+.corner-bottom-red .caption-container .caption {
+	color: #FFF;
+	margin: 0;
+	padding: 8px;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+/* END OF SLIDE CAPTION */
+
+
+/* SLIDE BUTTONS/BULLETS */
+
+/* main container of the navigation buttons */
+.corner-bottom-red .slide-buttons {
+	margin-top: 40px;
+}
+
+
+/* 
+ left, right and middle of the main container 
+ for this skin, these elements are not styled by default
+ feel free to add your own styling
+*/
+.corner-bottom-red .slide-buttons .left, 
+.corner-bottom-red .slide-buttons .right {
+}
+
+
+.corner-bottom-red .slide-buttons .left {
+}
+
+
+.corner-bottom-red .slide-buttons .middle {
+}
+
+
+.corner-bottom-red .slide-buttons .right {
+}
+
+
+/* this contains the buttons */
+.corner-bottom-red .slide-buttons .buttons-inner {
+}
+
+
+/* this is a button */
+.corner-bottom-red .slide-buttons .buttons-inner a {
+	background: url(images/buttons.png) no-repeat;
+	background-position: 0 0;
+	width: 14px;
+	height: 15px;
+	margin: 0 2px;
+}
+
+
+.corner-bottom-red .slide-buttons .buttons-inner a.over {
+	background-position: -14px 0; 
+}
+
+
+.corner-bottom-red .slide-buttons .buttons-inner a.select {
+	background-position: -28px 0; 
+}
+
+
+/* this is used to style the numbers from within the buttons, when they are used */
+.corner-bottom-red .slide-buttons .buttons-inner a .number {
+	margin-top: 2px;
+	font-size: 8px;
+	line-height: 10px;
+	font-weight: bold;
+	color: #FFF;
+}
+
+
+.corner-bottom-red .slide-buttons .buttons-inner a.over .number {
+	color: #FFF;
+}
+
+
+.corner-bottom-red .slide-buttons .buttons-inner a.select .number {
+	color: #FFF;
+}
+
+
+/* 
+ applied to the thumbnail when the thumbnail is used only as a tooltip
+ sets the distance between the button and the thumbnail
+*/
+.corner-bottom-red .slide-buttons .buttons-inner .thumbnail-wrapper {
+	margin-bottom: 10px;
+}
+
+/* END OF SLIDE BUTTONS/BULLETS */
+
+
+/* THUMBNAIL IMAGE */
+
+.corner-bottom-red .thumbnail {
+	background-color: #FFF;
+	border: solid 3px #FFF;
+	-moz-box-shadow: 0 0 10px #AAA;
+	-webkit-box-shadow: 0 0 10px #AAA;
+	box-shadow: 0 0 10px #AAA;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#AAAAAA')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#AAAAAA');
+}
+
+/* END OF THUMBNAIL IMAGE */
+
+
+/* THUMBNAIL SCROLLER */
+
+.corner-bottom-red .thumbnail-scroller.horizontal {
+	bottom: 0;
+	padding: 0 50px;
+	margin-top: 30px;
+}
+
+
+.corner-bottom-red .thumbnail-scroller.vertical {
+	right: 0;
+	padding: 50px 0;
+	margin-left: 30px;
+}
+
+
+.corner-bottom-red .thumbnail-scroller .thumbnail-wrapper {
+	margin: 5px;
+	padding: 4px;
+}
+
+
+.corner-bottom-red .thumbnail-scroller .thumbnail.over {
+	border: solid 3px #FFF;
+	-moz-box-shadow: 0 0 10px #555;
+	-webkit-box-shadow: 0 0 10px #555;
+	box-shadow: 0 0 10px #555;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555');
+}
+
+
+.corner-bottom-red .thumbnail-scroller .thumbnail.select {
+	border: solid 3px #FFF;
+	-moz-box-shadow: 0 0 10px #555;
+	-webkit-box-shadow: 0 0 10px #555;
+	box-shadow: 0 0 10px #555;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555');
+}
+
+
+/* THUMBNAIL CAPTION */
+
+.corner-bottom-red .thumbnail .caption .background {
+	background-color: #000;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+
+.corner-bottom-red .thumbnail .caption .content {
+	color: #FFF;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	padding: 2px 0;
+	margin: 0;
+}
+
+/* END OF THUMBNAIL CAPTION */
+
+
+/* THUMBNAIL SCROLLER ARROWS */
+
+.corner-bottom-red .thumbnail-scroller .arrows a {
+	background: url(images/arrows_small.png) no-repeat;
+	width: 29px;
+	height: 34px;
+}
+
+
+.corner-bottom-red .thumbnail-scroller.vertical .arrows a {
+	background: url(images/arrows_v_small.png) no-repeat;
+	width: 35px;
+	height: 30px;
+}
+
+
+.corner-bottom-red .thumbnail-scroller.horizontal .arrows a.previous {
+	left: 0;
+}
+
+
+.corner-bottom-red .thumbnail-scroller.horizontal .arrows a.next {
+	background-position: -29px 0;
+	right: 0;
+}
+
+
+.corner-bottom-red .thumbnail-scroller.vertical .arrows a.previous {
+	top: 0;
+}
+
+
+.corner-bottom-red .thumbnail-scroller.vertical .arrows a.next {
+	background-position: 0 -30px;
+	bottom: 0;
+}
+
+/* END OF THUMBNAIL SCROLLER ARROWS */
+
+
+/* THUMBNAIL SCROLLER BUTTONS */
+
+.corner-bottom-red .thumbnail-scroller .buttons a {
+	background: url(images/buttons_small.png) no-repeat;
+	background-position: 0 0; 
+	width: 11px;
+	height: 12px;
+	margin: 2px;
+}
+
+
+.corner-bottom-red .thumbnail-scroller .buttons a.over {
+	background-position: -11px 0; 
+}
+
+
+.corner-bottom-red .thumbnail-scroller .buttons a.select {
+	background-position: -22px 0; 
+}
+
+/* END OF THUMBNAIL SCROLLER BUTTONS */
+
+
+/* THUMBNAIL SCROLLER SCROLLBAR */
+
+.corner-bottom-red .thumbnail-scroller.horizontal .scrollbar {
+	margin-top: 30px;
+}
+
+
+.corner-bottom-red .thumbnail-scroller.vertical .scrollbar {
+	margin-left: 30px;
+}
+
+/* END OF THUMBNAIL SCROLLER SCROLLBAR */
+
+/* END OF THUMBNAIL SCROLLER  */
+
+
+/* TOOLTIP */
+
+.corner-bottom-red .tooltip {
+	background-color: #DDD;
+	margin-bottom: 20px;
+	border: #EEE solid 4px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+
+.corner-bottom-red .tooltip .content {
+	color: #999;
+	padding: 10px;
+	margin: 0;
+}
+
+/* END OF TOOLTIP */

@@ -1,99 +1,99 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <settings>
-  <allowservertodownloadremotefiles>False</allowservertodownloadremotefiles>
-  <themecookiename>theme</themecookiename>
-  <administratorrole>Administrators</administratorrole>
-  <numberofreferrerdays>1</numberofreferrerdays>
-  <showdescriptioninpostlist>False</showdescriptioninpostlist>
-  <theme>Standard</theme>
-  <trackingscript />
-  <mobiletheme>Mobile</mobiletheme>
-  <dayscommentsareenabled>0</dayscommentsareenabled>
-  <descriptioncharacters>300</descriptioncharacters>
-  <searchbuttontext>Search</searchbuttontext>
-  <remotefiledownloadtimeout>30000</remotefiledownloadtimeout>
-  <enablecontactattachments>True</enablecontactattachments>
-  <enableselfregistration>False</enableselfregistration>
-  <endorsement>http://www.dotnetblogengine.net/syndication.axd</endorsement>
-  <enabletrackbacksend>True</enabletrackbacksend>
-  <emailsubjectprefix>Weblog</emailsubjectprefix>
-  <enablepasswordreset>True</enablepasswordreset>
-  <smtpusername>username</smtpusername>
-  <disqusdevmode>False</disqusdevmode>
-  <enablerating>True</enablerating>
-  <commentsperpage>10</commentsperpage>
-  <iscommentsenabled>True</iscommentsenabled>
-  <description>Short description of the blog</description>
-  <moderationtype>Auto</moderationtype>
-  <displaycommentsonrecentposts>True</displaycommentsonrecentposts>
-  <name>Name of the blog</name>
-  <email>name@example.com</email>
-  <anonymousrole>Anonymous</anonymousrole>
-  <descriptioncharactersforpostsbytagorcategory>0</descriptioncharactersforpostsbytagorcategory>
-  <sendmailoncomment>True</sendmailoncomment>
-  <showdescriptioninpostlistforpostsbytagorcategory>False</showdescriptioninpostlistforpostsbytagorcategory>
-  <commentwhitelistcount>1</commentwhitelistcount>
-  <enablewebsiteincomments>False</enablewebsiteincomments>
-  <htmlheader />
-  <postsperfeed>10</postsperfeed>
-  <useblognameinpagetitles>True</useblognameinpagetitles>
-  <enablepingbackreceive>True</enablepingbackreceive>
-  <enablehttpcompression>True</enablehttpcompression>
-  <authorname>My name</authorname>
-  <numberofrecentposts>10</numberofrecentposts>
-  <culture>Auto</culture>
-  <enablerecaptchaoncontactform>False</enablerecaptchaoncontactform>
-  <enablecommentsmoderation>True</enablecommentsmoderation>
-  <enablerelatedposts>True</enablerelatedposts>
-  <smtpserverport>25</smtpserverport>
-  <blogrollupdateminutes>60</blogrollupdateminutes>
-  <requiresslmetaweblogapi>False</requiresslmetaweblogapi>
-  <enablepingbacksend>True</enablepingbacksend>
-  <enabletrackbackreceive>True</enabletrackbackreceive>
-  <avatar>wavatar</avatar>
-  <blockauthoroncommentdelete>False</blockauthoroncommentdelete>
-  <addiptoblacklistfilteronrejection>False</addiptoblacklistfilteronrejection>
-  <smtpserver>mail.example.com</smtpserver>
-  <enableenclosures>False</enableenclosures>
-  <trustauthenticatedusers>True</trustauthenticatedusers>
-  <enableopensearch>True</enableopensearch>
   <displayratingsonrecentposts>True</displayratingsonrecentposts>
-  <disquswebsitename />
-  <searchdefaulttext>Enter search term or APML url</searchdefaulttext>
-  <enablecommentsearch>True</enablecommentsearch>
-  <commentreportmistakes>False</commentreportmistakes>
-  <geocodinglatitude>0</geocodinglatitude>
-  <syndicationformat>Rss</syndicationformat>
-  <geocodinglongitude>0</geocodinglongitude>
-  <timezone>0</timezone>
-  <contactformmessage>&lt;p&gt;I'll answer the mail as soon as I can.&lt;/p&gt;</contactformmessage>
-  <enablereferrertracking>False</enablereferrertracking>
-  <showpostnavigation>True</showpostnavigation>
-  <searchcommentlabeltext>Include comments in search</searchcommentlabeltext>
+  <authorname>Carnaval Radio</authorname>
+  <email>info@carnaval-radio.nl</email>
+  <mobiletheme>Mobile</mobiletheme>
+  <postsperfeed>10</postsperfeed>
   <postsperpage>10</postsperpage>
-  <showlivepreview>True</showlivepreview>
-  <enablecountryincomments>True</enablecountryincomments>
-  <timestamppostlinks>True</timestamppostlinks>
-  <remotemaxfilesize>524288</remotemaxfilesize>
-  <iscommentnestingenabled>True</iscommentnestingenabled>
-  <numberofrecentcomments>10</numberofrecentcomments>
-  <language>en-US</language>
-  <showpingbacks>False</showpingbacks>
-  <addiptowhitelistfilteronapproval>False</addiptowhitelistfilteronapproval>
-  <compresswebresource>True</compresswebresource>
-  <alternatefeedurl />
+  <htmlheader />
+  <contactthankmessage>&lt;h1&gt;Bedankt&lt;/h1&gt;&lt;p&gt;Je bericht is verzonden, er wordt z.s.m. op gereageerd.&lt;/p&gt;</contactthankmessage>
+  <emailsubjectprefix>[Support] </emailsubjectprefix>
+  <trackingscript />
+  <showdescriptioninpostlist>False</showdescriptioninpostlist>
+  <commentsperpage>10</commentsperpage>
+  <enablepingbacksend>True</enablepingbacksend>
+  <showdescriptioninpostlistforpostsbytagorcategory>False</showdescriptioninpostlistforpostsbytagorcategory>
   <commentblacklistcount>2</commentblacklistcount>
-  <blogrollvisibleposts>3</blogrollvisibleposts>
-  <editorsrole>Editors</editorsrole>
-  <removewhitespaceinstylesheets>True</removewhitespaceinstylesheets>
-  <selfregistrationinitialrole>Select</selfregistrationinitialrole>
-  <feedauthor />
-  <disqusaddcommentstopages>False</disqusaddcommentstopages>
-  <smtppassword>password</smtppassword>
-  <handlewwwsubdomain />
-  <contactthankmessage>&lt;h1&gt;Thank you&lt;/h1&gt;&lt;p&gt;The message was sent.&lt;/p&gt;</contactthankmessage>
   <iscocommentenabled>False</iscocommentenabled>
-  <enablessl>False</enablessl>
-  <enableerrorlogging>False</enableerrorlogging>
+  <compresswebresource>False</compresswebresource>
+  <addiptowhitelistfilteronapproval>False</addiptowhitelistfilteronapproval>
+  <themecookiename>theme</themecookiename>
+  <trustauthenticatedusers>True</trustauthenticatedusers>
+  <enablecountryincomments>True</enablecountryincomments>
+  <contactformmessage>&lt;p&gt;Voor vragen, informatie over sponsoring of overige opmerkingen kunt u onderstaand contactformulier gebruiken.&lt;/p&gt;</contactformmessage>
+  <searchbuttontext>Zoeken</searchbuttontext>
+  <showincludecommentsoption>False</showincludecommentsoption>
+  <israzortheme>False</israzortheme>
+  <enablewebsiteincomments>False</enablewebsiteincomments>
+  <enablecontactattachments>False</enablecontactattachments>
   <blogrollmaxlength>23</blogrollmaxlength>
+  <showpingbacks>False</showpingbacks>
+  <searchdefaulttext>Zoeken...</searchdefaulttext>
+  <language>nl-NL</language>
+  <smtpserver>smtp.carnaval-radio.nl</smtpserver>
+  <disqusdevmode>False</disqusdevmode>
+  <showpostnavigation>True</showpostnavigation>
+  <displaycommentsonrecentposts>True</displaycommentsonrecentposts>
+  <enabletrackbackreceive>True</enabletrackbackreceive>
+  <enableopensearch>True</enableopensearch>
+  <dayscommentsareenabled>0</dayscommentsareenabled>
+  <useblognameinpagetitles>True</useblognameinpagetitles>
+  <smtpusername>info</smtpusername>
+  <enableerrorlogging>False</enableerrorlogging>
+  <enablehttpcompression>False</enablehttpcompression>
+  <enablepasswordreset>True</enablepasswordreset>
+  <disqusaddcommentstopages>False</disqusaddcommentstopages>
+  <alternatefeedurl />
+  <enablecommentsmoderation>True</enablecommentsmoderation>
+  <enabletrackbacksend>True</enabletrackbacksend>
+  <timezone>0</timezone>
+  <feedauthor />
+  <allowservertodownloadremotefiles>False</allowservertodownloadremotefiles>
+  <culture>Auto</culture>
+  <disquswebsitename />
+  <handlewwwsubdomain />
+  <theme>CarnavalRadio</theme>
+  <sendmailoncomment>True</sendmailoncomment>
+  <description>De vastelaoves Radio!!</description>
+  <blogrollvisibleposts>5</blogrollvisibleposts>
+  <geocodinglatitude>0</geocodinglatitude>
+  <numberofreferrerdays>1</numberofreferrerdays>
+  <iscommentsenabled>True</iscommentsenabled>
+  <syndicationformat>Rss</syndicationformat>
+  <smtpserverport>25</smtpserverport>
+  <blockauthoroncommentdelete>False</blockauthoroncommentdelete>
+  <iscommentnestingenabled>True</iscommentnestingenabled>
+  <timestamppostlinks>True</timestamppostlinks>
+  <enablereferrertracking>False</enablereferrertracking>
+  <avatar>wavatar</avatar>
+  <smtppassword>radio1</smtppassword>
+  <numberofrecentcomments>10</numberofrecentcomments>
+  <enablerecaptchaoncontactform>False</enablerecaptchaoncontactform>
+  <enablessl>False</enablessl>
+  <name>Carnaval Radio</name>
+  <moderationtype>Auto</moderationtype>
+  <enablepingbackreceive>True</enablepingbackreceive>
+  <showlivepreview>True</showlivepreview>
+  <galleryfeedurl>http://dnbegallery.org/feed/FeedService.svc</galleryfeedurl>
+  <remotemaxfilesize>524288</remotemaxfilesize>
+  <enablerelatedposts>True</enablerelatedposts>
+  <remotefiledownloadtimeout>30000</remotefiledownloadtimeout>
+  <enableenclosures>False</enableenclosures>
+  <endorsement>http://www.dotnetblogengine.net/syndication.axd</endorsement>
+  <removewhitespaceinstylesheets>False</removewhitespaceinstylesheets>
+  <commentwhitelistcount>1</commentwhitelistcount>
+  <descriptioncharacters>300</descriptioncharacters>
+  <addiptoblacklistfilteronrejection>False</addiptoblacklistfilteronrejection>
+  <descriptioncharactersforpostsbytagorcategory>0</descriptioncharactersforpostsbytagorcategory>
+  <commentreportmistakes>False</commentreportmistakes>
+  <searchcommentlabeltext>Reacties?</searchcommentlabeltext>
+  <numberofrecentposts>10</numberofrecentposts>
+  <selfregistrationinitialrole>Select</selfregistrationinitialrole>
+  <enableselfregistration>False</enableselfregistration>
+  <blogrollupdateminutes>60</blogrollupdateminutes>
+  <geocodinglongitude>0</geocodinglongitude>
+  <requiresslmetaweblogapi>False</requiresslmetaweblogapi>
+  <enablerating>False</enablerating>
+  <enablecommentsearch>False</enablecommentsearch>
 </settings>

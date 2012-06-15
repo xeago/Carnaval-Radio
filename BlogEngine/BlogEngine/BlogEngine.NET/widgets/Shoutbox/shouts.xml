@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<shouts>
+  <shout id="15">
+    <name>test15</name>
+    <message>test15</message>
+  </shout>
+  <shout id="16">
+    <name>test</name>
+    <message>test</message>
+  </shout>
+  <shout id="17">
+    <name>Nick</name>
+    <message>waarom werkt dit maar half?</message>
+  </shout>
+  <shout id="18">
+    <name>Nick</name>
+    <message>het deed het eerst goed?</message>
+  </shout>
+</shouts>

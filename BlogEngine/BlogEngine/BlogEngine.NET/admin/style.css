@@ -202,6 +202,11 @@ label.lbl { display:block; margin:0 0 5px 0;}
 .topRightTools { position: absolute; right: 5em; z-index: 999; }
 .topRightTools li { white-space: nowrap; }
 
+.sponsorTools
+{
+    
+}
+
 
 /* Buttons with images */
 .addNew {float:right; font-weight:normal; padding:5px 10px 5px 18px; margin-left:20px; font-size:13px;

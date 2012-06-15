@@ -1,18 +1,18 @@
 ﻿{#if $T.d.length == 0}
 <br />
 <div class="info">
-    You haven't written any posts so far. To write a new post use the link in the right side menu.
+    Er zijn geen berichten. Klik rechtboven om er een toe te voegen.
 </div>
 {#else}
 <table id="Posts" class="beTable rounded" style="width:100%">
     <thead>
         <tr>
-            <th width="70" style="text-align:center;">Published</th>
-            <th width="auto">Title</th>
-            <th width="120">Author</th>
-            <th width="120">Categories</th>
+            <th width="70" style="text-align:center;">Gepubliceerd</th>
+            <th width="auto">Titel</th>
+            <th width="120">Auteur</th>
+            <th width="120">Categoriëen</th>
             <th width="120">Tags</th>
-	        <th width="100">Created on</th>
+	        <th width="100">Aangemaakt op</th>
             <th width="70"></th>
 	        <th width="70">&nbsp;</th>
         </tr>
@@ -32,8 +32,8 @@
                     <li>
                         <a class="toolsAction" href="#"><span class="">Tools</span></a>
                         <ul class="rowToolsMenu">
-                            {#if $T.p.CanUserEdit}<li><a class="editAction" href="Add_entry.aspx?id={$T.p.Id}">Edit</a></li>{#/if}
-                            {#if $T.p.CanUserDelete}<li><a class="deleteAction" href="#" onclick="return DeletePost(this);">Delete</a></li>{#/if}
+                            {#if $T.p.CanUserEdit}<li><a class="editAction" href="Add_entry.aspx?id={$T.p.Id}">Wijzigen</a></li>{#/if}
+                            {#if $T.p.CanUserDelete}<li><a class="deleteAction" href="#" onclick="return DeletePost(this);">Verwijderen</a></li>{#/if}
                        </ul>
                     </li>
                </ul>

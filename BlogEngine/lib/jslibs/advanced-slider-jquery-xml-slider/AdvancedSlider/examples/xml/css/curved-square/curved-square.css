@@ -1,0 +1,372 @@
+/*
+	Skin Name: Curved Square
+	Class: curved-square
+	Description: Curved Square skin for Advanced Slider jQuery plugin
+	Author: David
+*/
+
+
+/* MAIN SLIDE */
+
+.curved-square .slide-wrapper {
+	background-color: #FFF;
+	border: 4px solid #FFF;
+	-moz-box-shadow: 0 0 10px #CCC;
+	-webkit-box-shadow: 0 0 10px #CCC;
+	box-shadow: 0 0 10px #CCC;
+}
+
+/* END OF MAIN SLIDE */
+
+
+/* SLIDE ARROWS */
+
+.curved-square .slide-arrows a {
+	background: url(images/arrows.png) no-repeat;
+	width: 60px;
+	height: 66px;
+	top: 50%;
+	margin-top: -30px;
+}
+
+
+.curved-square .slide-arrows a.previous {
+	left: -25px;
+}
+
+
+.curved-square .slide-arrows a.next {
+	right: -25px;
+	background-position: -60px 0;
+}
+
+/* SLIDE ARROWS */
+
+
+/* SLIDESHOW CONTROLS */
+
+.curved-square .slideshow-controls {
+	background: url(images/playpause.png) no-repeat;
+	width: 50px;
+	height: 48px;
+	top: 50%;
+	left: 50%;
+	margin-top: -24px;
+	margin-left: -25px;
+}
+
+
+.curved-square .slideshow-controls.pause {
+	background-position: 0 0;
+}
+
+
+.curved-square .slideshow-controls.play {
+	background-position: -50px 0;
+}
+
+/* END OF SLIDESHOW CONTROLS */
+
+
+/* TIMER ANIMATION */
+
+.curved-square .timer-animation {
+	top: 20px;
+	right: 20px;
+}
+
+/* END OF TIMER ANIMATION */
+
+
+/* SLIDE CAPTION */
+
+.curved-square .caption-container .background {
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+}
+
+
+.curved-square .caption-container .caption {
+	color: #FFF;
+	margin: 0;
+	padding: 8px;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+/* END OF SLIDE CAPTION */
+
+
+/* SLIDE BUTTONS/BULLETS */
+
+/* main container of the navigation buttons */
+.curved-square .slide-buttons {
+	margin-top: -28px;
+}
+
+
+.curved-square .slide-buttons .left, 
+.curved-square .slide-buttons .right {
+	width: 28px;
+	height: 44px;
+}
+
+
+.curved-square .slide-buttons .left {
+	background: url(images/buttons_container_left.png);
+}
+
+
+.curved-square .slide-buttons .middle {
+	background: url(images/buttons_container_middle.png);
+	height: 44px;
+	padding: 0 10px;
+}
+
+
+.curved-square .slide-buttons .right {
+	background: url(images/buttons_container_right.png);
+}
+
+
+/* this contains the buttons */
+.curved-square .slide-buttons .buttons-inner {
+}
+
+
+/* this is a button */
+.curved-square .slide-buttons .buttons-inner a {
+	background: url(images/buttons.png) no-repeat;
+	background-position: 0 0;
+	width: 20px;
+	height: 20px;
+	margin: 12px 2px;
+}
+
+
+.curved-square .slide-buttons .buttons-inner a.over {
+	background-position: -20px 0; 
+}
+
+
+.curved-square .slide-buttons .buttons-inner a.select {
+	background-position: -40px 0; 
+}
+
+
+/* this is used to style the numbers from within the buttons, when they are used */
+.curved-square .slide-buttons .buttons-inner a .number {
+	margin-top: 3px;
+	font-size: 11px;
+	line-height: 13px;
+	font-weight: bold;
+	color: #FFF;
+}
+
+
+.curved-square .slide-buttons .buttons-inner a.over .number {
+	color: #FFF;
+}
+
+
+.curved-square .slide-buttons .buttons-inner a.select .number {
+	color: #333;
+}
+
+
+/* 
+ applied to the thumbnail when the thumbnail is used only as a tooltip
+ sets the distance between the button and the thumbnail
+*/
+.curved-square .slide-buttons .buttons-inner .thumbnail-wrapper {
+	margin-bottom: 10px;
+}
+
+/* END OF SLIDE BUTTONS/BULLETS */
+
+
+/* THUMBNAIL IMAGE */
+
+.curved-square .thumbnail {
+	background-color: #FFF;
+	border: solid 3px #FFF;
+	-moz-box-shadow: 0 0 10px #AAA;
+	-webkit-box-shadow: 0 0 10px #AAA;
+	box-shadow: 0 0 10px #AAA;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#AAAAAA')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#AAAAAA');
+}
+
+/* END OF THUMBNAIL IMAGE */
+
+
+/* THUMBNAIL SCROLLER */
+
+.curved-square .thumbnail-scroller.horizontal {
+	bottom: 0;
+	padding: 0 50px;
+	margin-top: 30px;
+}
+
+
+.curved-square .thumbnail-scroller.vertical {
+	right: 0;
+	padding: 50px 0;
+	margin-left: 30px;
+}
+
+
+.curved-square .thumbnail-scroller .thumbnail-wrapper {
+	margin: 5px;
+	padding: 4px;
+}
+
+
+.curved-square .thumbnail-scroller .thumbnail.over {
+	border: solid 3px #FFF;
+	-moz-box-shadow: 0 0 10px #555;
+	-webkit-box-shadow: 0 0 10px #555;
+	box-shadow: 0 0 10px #555;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555');
+}
+
+
+.curved-square .thumbnail-scroller .thumbnail.select {
+	border: solid 3px #FFF;
+	-moz-box-shadow: 0 0 10px #555;
+	-webkit-box-shadow: 0 0 10px #555;
+	box-shadow: 0 0 10px #555;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555');
+}
+
+
+/* THUMBNAIL CAPTION */
+
+.curved-square .thumbnail .caption .background {
+	background-color: #000;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+
+.curved-square .thumbnail .caption .content {
+	color: #FFF;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	padding: 2px 0;
+	margin: 0;
+}
+
+/* END OF THUMBNAIL CAPTION */
+
+
+/* THUMBNAIL SCROLLER ARROWS */
+
+.curved-square .thumbnail-scroller .arrows a {
+	background: url(images/arrows_small.png) no-repeat;
+	width: 28px;
+	height: 27px;
+}
+
+
+.curved-square .thumbnail-scroller.vertical .arrows a {
+	background: url(images/arrows_v_small.png) no-repeat;
+	width: 26px;
+	height: 27px;
+}
+
+
+.curved-square .thumbnail-scroller .arrows a.next {
+	background-position: -28px 0;
+}
+
+
+.curved-square .thumbnail-scroller.vertical .arrows a.next {
+	background-position: -26px 0;
+}
+
+
+.curved-square .thumbnail-scroller.horizontal .arrows a.previous {
+	left: 0;
+}
+
+
+.curved-square .thumbnail-scroller.horizontal .arrows a.next {
+	right: 0;
+}
+
+
+.curved-square .thumbnail-scroller.vertical .arrows a.previous {
+	top: 0;
+}
+
+
+.curved-square .thumbnail-scroller.vertical .arrows a.next {
+	bottom: 0;
+}
+
+/* END OF THUMBNAIL SCROLLER ARROWS */
+
+
+/* THUMBNAIL SCROLLER BUTTONS */
+
+.curved-square .thumbnail-scroller .buttons a {
+	background: url(images/buttons_small.png) no-repeat;
+	background-position: 0 0; 
+	width: 13px;
+	height: 13px;
+	margin: 2px;
+}
+
+
+.curved-square .thumbnail-scroller .buttons a.over {
+	background-position: -13px 0; 
+}
+
+
+.curved-square .thumbnail-scroller .buttons a.select {
+	background-position: -26px 0; 
+}
+
+/* END OF THUMBNAIL SCROLLER BUTTONS */
+
+
+/* THUMBNAIL SCROLLER SCROLLBAR */
+
+.curved-square .thumbnail-scroller.horizontal .scrollbar {
+	margin-top: 30px;
+}
+
+
+.curved-square .thumbnail-scroller.vertical .scrollbar {
+	margin-left: 30px;
+}
+
+/* END OF THUMBNAIL SCROLLER SCROLLBAR */
+
+/* END OF THUMBNAIL SCROLLER */
+
+
+/* TOOLTIP */
+
+.curved-square .tooltip {
+	background-color: #DDD;
+	margin-bottom: 20px;
+	border: #EEE solid 4px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+
+.curved-square .tooltip .content {
+	color: #999;
+	padding: 10px;
+	margin: 0;
+}
+
+/* END OF TOOLTIP */

@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mixed Slider</title>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/base/advanced-slider-base.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/light-round/light-round.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/lightbox/prettyPhoto.css">
+<link rel="stylesheet" type="text/css" href="css/video-js/video-js.min.css">
+<link rel="stylesheet" type="text/css" href="css/mixed-slider.css" media="screen"/>
+
+<link rel="stylesheet" type="text/css" href="../presentation-assets/presentation.css" media="screen"/>
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="../presentation-assets/presentation-ie7.css" media="screen"/><![endif]-->
+
+<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.custom.min.js"></script>
+<script type="text/javascript" src="js/froogaloop.min.js"></script>
+<script type="text/javascript" src="js/video.min.js"></script>
+<script type="text/javascript" src="js/jquery.videoController.min.js"></script>
+<script type="text/javascript" src="js/jquery.advancedSlider.min.js"></script>
+
+<script type="text/javascript">	
+	jQuery(document).ready(function($){
+		var slider = $('#mixed-slider').advancedSlider({width: 830,
+													    height: 463,
+													    scaleType: 'outsideFit',
+													    skin: 'light-round',
+													    effectType: 'slide',
+														slideLoop: true,
+													    overrideTransition: true,
+													    slideArrowsToggle: false,
+													    keyboardNavigation: true,
+													    timerToggle: true,
+													    timerStrokeColor1: '#ffffff', 
+													    timerStrokeColor2: '#000000', 
+													    timerStrokeOpacity1: 0.3, 
+													    timerStrokeOpacity2: 0.3, 
+													    timerStrokeWidth1: 6, 
+													    timerStrokeWidth2: 3, 
+													    slideshowDelay: 10000,
+														lightbox: true,
+														slideProperties: {
+															0: {effectType: 'fade'},
+															2: {effectType: 'fade'},
+															3: {effectType: 'fade'},
+															5: {effectType: 'fade'}
+														}
+													    });
+		
+		
+		// activate lightbox for image boxes
+		$("a.image-box").prettyPhoto({openLightbox: function() {
+										if (slider.getSlideshowState() == 'playing') {
+											slider.pauseSlideshow();
+										}
+									 },
+									 callback: function() {
+										if (slider.getSlideshowState() == 'paused') {
+											slider.resumeSlideshow();
+										}
+									 }});
+	});
+	
+	
+</script>
+
+</head>
+
+<body>
+
+	<div class="advanced-slider" id="mixed-slider">
+		<ul class="slides">
+			<li class="slide">
+				<div class="html">
+					<div class="images-box" style="float: left;">
+						<a class="image-box" href="../presentation-assets/images/slides/image7.jpg" title="Image description">
+							<img src="../presentation-assets/images/other/image7.jpg" width="230" height="140" alt="Image title"/>
+						</a> 
+						<a class="image-box" href="../presentation-assets/images/slides/image8.jpg" title="Image description">
+							<img src="../presentation-assets/images/other/image8.jpg" width="230" height="140" alt="Image title"/>
+						</a> 
+						<a class="image-box" href="../presentation-assets/images/slides/image9.jpg" title="Image description">
+							<img src="../presentation-assets/images/other/image9.jpg" width="230" height="140" alt="Image title"/>
+						</a> 
+						<a class="image-box" href="../presentation-assets/images/slides/image10.jpg" title="Image description">
+							<img src="../presentation-assets/images/other/image10.jpg" width="230" height="140" alt="Image title"/>
+						</a>
+					</div> 
+					
+					<div class="content-box" style="float: right;">
+						<p class="title">Inline HTML content</p> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<a  class="button" href="#">Read More</a>
+					</div>
+            	</div>
+			</li>
+			
+			<li class="slide">
+				<div class="html">
+					<div class="video-container">
+						<iframe class="video" src="http://www.youtube.com/embed/msIjWthwWwI?rel=0&enablejsapi=1&wmode=transparent" width="580" height="380" frameborder="0"></iframe>
+					</div>
+            		
+					<div class="video-description">
+						<div class="title"> 
+							<p>Cathedral</p>
+						</div>
+						
+						<div class="content"> 
+							<p>The film is based on a short story by Jacek Dukaj under the same title. In 2002 "Cathedral" was awarded the main prize at SIGGRAPH festival ("Best Animated Short"). A year later it received an Oscar nomination in the category "Best Animated Short Film".</p>
+							<p>SYNOPSIS: Story of a pilgrim who comes to the Cathedral on the border of the known world. He wants to find answers. He finds tranquility.</p>
+							<p>DIRECTOR: Tomasz Baginski</p>
+						</div>
+						
+						<div class="link">
+							<p>SOURCE: <a href="http://www.youtube.com/watch?v=msIjWthwWwI" target="_blank">youtube.com</a></p>
+						</div>
+					</div>
+            	</div>
+			</li>
+			
+			<li class="slide">
+				<a rel="slider-lightbox[]" href="http://www.youtube.com/watch?v=JVuUwvUUPro?width=700&amp;height=400" title="Nuit Blanche explores a fleeting moment between two strangers.">
+					<img class="image" src="../presentation-assets/images/slides/image1.jpg" alt="Nuit Blanche - Arev Manoukian"/>
+				</a>
+			</li>
+			
+			<li class="slide">
+				<div class="html">            		
+					<div class="video-description">
+						<div class="title"> 
+							<p>ARK</p>
+						</div>
+						
+						<div class="content"> 
+							<p>An unknown virus has destroyed almost the entire human population. Oblivious to the true nature of the disease, the only remaining survivors escape to the sea. In great ships, they set off in search of uninhabited land. So begins the exodus, led by one man.</p>
+							<p>DIRECTOR: Grzegorz Jonkajtys</p>
+							<p>PRODUCERS: Grzegorz Jonkajtys, Marcin Kobylecki</p>
+							<p>CO-PRODUCERS: Piotr Sikora, Jaroslaw Sawko (Platige Image)</p>
+						</div>
+						
+						<div class="link">
+							<p>SOURCE: <a href="http://vimeo.com/3116167" target="_blank">vimeo.com</a></p>						
+						</div>
+					</div>
+					
+					<div class="video-container">
+						<iframe class="video" src="http://player.vimeo.com/video/3116167?api=1" width="580" height="380" frameborder="0"></iframe>
+					</div>
+            	</div>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image2.jpg" alt=""/>
+				<div class="html">
+					<div class="content-box" style="float: left;">
+						<p class="title">Inline HTML content</p> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<a  class="button" href="#">Read More</a>
+					</div>
+            	</div>
+			</li>
+			
+			<li class="slide">
+				<div class="html">
+					<div class="video-container">
+						<video id="video-1" class="video video-js vjs-default-skin" controls="controls" preload="none" width="580" height="380"
+							   poster="http://bqworks.com/products/assets/videos/sintel/sintel-poster-580x380.jpg" data-video="{}">
+							<source src="http://bqworks.com/products/assets/videos/sintel/sintel-trailer.mp4" type='video/mp4'/>
+							<source src="http://bqworks.com/products/assets/videos/sintel/sintel-trailer.ogv" type='video/ogg'/>
+						</video>
+					</div>
+					
+					<div class="video-description">
+						<div class="title"> 
+							<p>Sintel</p>
+						</div>
+						
+						<div class="content"> 
+							<p>"Sintel" is an independently produced short film, initiated by the Blender Foundation as a means to further improve and validate the free/open source 3D creation suite Blender. With initial funding provided by 1000s of donations via the internet community, it has again proven to be a viable development model for both open 3D technology as for independent animation film.</p>
+						</div>
+						
+						<div class="link">
+							<p>SOURCE: <a href="http://www.sintel.org/" target="_blank">sintel.org</a></p>
+						</div>
+					</div>
+            	</div>
+			</li>
+			
+			<li class="slide" data-image="../presentation-assets/images/slides/image3.jpg">
+				<div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+			</li>
+			
+			<li class="slide">
+				<div class="html">
+					<div class="video-description">
+						<div class="title"> 
+							<p>Peach</p>
+						</div>
+						
+						<div class="content"> 
+							<p>As a follow-up to the successful project Orange's "Elephants Dream", the Blender Foundation initiated another open movie project. Again a small team (7) of the best 3D artists and developers in the Blender community have been invited to come together to work in Amsterdam from October 2007 until April 2008 on completing a short 3D animation movie.</p>
+							<p>The creative concept of "Peach" was completely different as for "Orange". This time it is "funny and furry"!</p>
+						</div>
+						
+						<div class="link">
+							<p>SOURCE: <a href="http://www.bigbuckbunny.org" target="_blank">bigbuckbunny.org</a></p>
+						</div>
+					</div>
+					
+					<div class="video-container">
+						<video class="video" controls="controls" preload="none" width="580" height="380"
+							   poster="http://bqworks.com/products/assets/videos/bbb/bbb-poster-580x380.jpg">
+							<source src="http://bqworks.com/products/assets/videos/bbb/bbb-trailer.mp4" type='video/mp4'/>
+							<source src="http://bqworks.com/products/assets/videos/bbb/bbb-trailer.ogg" type='video/ogg'/>
+						</video>
+					</div>
+            	</div>
+			</li>
+			
+		</ul>
+	</div>
+	
+	<div id="example-navigation-container">
+		<div id="example-navigation">
+			<ul id="list">
+				<li><a href="../responsive/responsive.html">Responsive</a></li>
+				<li><a href="../responsive-proportional/responsive-proportional.html">Responsive Proportional</a></li>
+				<li><a href="../basic/basic.html">Basic</a></li>
+				<li><a href="../minimal/minimal.html">Minimal</a></li>
+				<li><a href="../video/video.html">Video</a></li>
+				<li><a href="../lightbox/lightbox.html">Lightbox</a></li>
+				<li><a href="../lazy-loading/lazy-loading.html">Lazy Loading</a></li>
+				<li class="active"><a href="../mixed/mixed.html">Mixed</a></li>
+				<li><a href="../xml/xml.html">XML</a></li>
+			</ul>
+			
+			<div id="description">
+				<p id="features-header">Highlighted Features:</p>
+				<ul>
+					<li><strong>Mixed content.</strong> Each slide can have any type of content and you have the possibility to further enhance the content of the slides with your own custom CSS or JavaScript. </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

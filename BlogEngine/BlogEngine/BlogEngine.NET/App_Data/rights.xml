@@ -11,6 +11,9 @@
   <right name="AccessAdminSettingsPages">
     <role name="Administrators" />
   </right>
+  <right name="ManageWidgets">
+    <role name="Administrators" />
+  </right>
   <right name="ViewPublicComments">
     <role name="Administrators" />
     <role name="Anonymous" />

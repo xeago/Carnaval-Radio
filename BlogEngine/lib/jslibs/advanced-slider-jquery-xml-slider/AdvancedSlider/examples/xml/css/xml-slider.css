@@ -1,0 +1,20 @@
+#xml-slider .caption ul {
+	list-style: circle;
+	margin-left: 20px;
+}
+
+
+#xml-slider .scrollbar-7-light.vertical {
+	height: 280px;
+}
+
+
+#xml-slider .scrollbar-7-light.vertical .track .track-middle {
+	height: 268px;
+}
+
+
+#xml-slider .timer-animation {
+	top: auto;
+	bottom: 20px;
+}

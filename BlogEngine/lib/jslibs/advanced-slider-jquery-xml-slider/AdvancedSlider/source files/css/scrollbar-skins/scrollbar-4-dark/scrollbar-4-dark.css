@@ -1,0 +1,157 @@
+/*
+	Skin Name: Scrollbar 4 Dark
+	Class: scrollbar-4-dark
+	Description: Scrollbar 4 Dark skin for Slider PRO WordPress plugin
+	Author: David
+*/
+
+
+/* HORIZONTAL SCROLLBAR */
+
+/* MAIN CONTAINER */
+
+.scrollbar-4-dark.horizontal {
+	position: absolute;
+	width: 340px;
+	max-width: 340px;
+	min-width: 72px;
+	height: 24px;
+}
+
+/* END OF MAIN CONTAINER */
+
+
+/* TRACK */
+
+.scrollbar-4-dark.horizontal .track {
+	position: absolute;
+	background-image: url(images/track.png);
+	background-repeat: repeat-x;
+	width: 292px;
+	height: 8px;
+	left: 24px;
+	margin-top: 8px;
+}
+
+/* END OF TRACK */
+
+
+/* THUMB */
+
+.scrollbar-4-dark.horizontal .thumb {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/thumb.png);
+	background-repeat: repeat-x;
+	width: 20px;
+	height: 20px;
+	margin-top: -6px;
+}
+
+/* END OF THUMB */
+
+
+/* BACK BUTTON */
+
+.scrollbar-4-dark.horizontal .back {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/back.png);
+	width: 24px;
+	height: 24px;
+	left: 0;
+}
+
+/* END OF BACK BUTTON */
+
+
+/* FORWARD BUTTON */
+
+.scrollbar-4-dark.horizontal .forward {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/forward.png);
+	width: 24px;
+	height: 24px;
+	right: 0;
+}
+
+/* END OF FORWARD BUTTON */
+
+/* END OF HORIZONTAL SCROLLBAR */
+
+
+
+/* VERTICAL SCROLLBAR */
+
+/* MAIN CONTAINER */
+
+.scrollbar-4-dark.vertical {
+	position: absolute;
+	height: 340px;
+	max-height: 340px;
+	min-height: 72px;
+	width: 21px;
+}
+
+/* END OF MAIN CONTAINER */
+
+
+/* TRACK */
+
+.scrollbar-4-dark.vertical .track {
+	position: absolute;
+	background-image: url(images/track_v.png);
+	width: 8px;
+	height: 292px;
+	top: 24px;
+	margin-left: 8px;
+}
+
+/* END OF TRACK */
+
+
+/* THUMB */
+
+.scrollbar-4-dark.vertical .thumb {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/thumb_v.png);
+	background-repeat: repeat-y;
+	width: 20px;
+	height: 20px;
+	margin-left: -6px;
+}
+
+/* END OF THUMB */
+
+
+/* BACK BUTTON */
+
+.scrollbar-4-dark.vertical .back {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/back_v.png);
+	background-repeat: repeat-y;
+	width: 24px;
+	height: 24px;
+	top: 0;
+}
+
+/* END OF BACK BUTTON */
+
+
+/* FORWARD BUTTON */
+
+.scrollbar-4-dark.vertical .forward {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/forward_v.png);
+	width: 24px;
+	height: 24px;
+	bottom: 0;
+}
+
+/* END OF FORWARD BUTTON */
+
+/* END OF VERTICAL SCROLLBAR */

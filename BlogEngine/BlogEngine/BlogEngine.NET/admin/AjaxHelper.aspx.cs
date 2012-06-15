@@ -14,6 +14,7 @@ namespace Admin
     using BlogEngine.Core.Json;
     using BlogEngine.Core.Web.Extensions;
     using App_Code;
+    using System.Net;
 
     public partial class AjaxHelper : System.Web.UI.Page
     {
@@ -519,6 +520,5 @@ namespace Admin
 
             return PackageManager.UninstallPackage(pkgId);
         }
-
     }
 }

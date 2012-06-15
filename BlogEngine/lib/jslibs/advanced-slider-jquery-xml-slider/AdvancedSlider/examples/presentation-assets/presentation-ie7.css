@@ -1,0 +1,10 @@
+#example-navigation
+{
+	width: 788px;
+}
+
+
+#example-navigation #list li
+{
+	padding: 8px 0;
+}

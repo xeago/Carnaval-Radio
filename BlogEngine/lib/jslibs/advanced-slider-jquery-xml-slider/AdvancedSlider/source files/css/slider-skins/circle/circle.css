@@ -1,0 +1,364 @@
+/*
+	Skin Name: Circle
+	Class: circle
+	Description: Circle skin for Advanced Slider jQuery plugin
+	Author: David
+*/
+
+
+/* MAIN SLIDE */
+
+.circle .slide-wrapper {
+	background-color: #FFF;
+	border: 4px solid #FFF;
+	-moz-box-shadow: 0 0 10px #CCC;
+	-webkit-box-shadow: 0 0 10px #CCC;
+	box-shadow: 0 0 10px #CCC;
+}
+
+/* END OF MAIN SLIDE */
+
+
+/* SLIDE ARROWS */
+
+.circle .slide-arrows a {
+	background: url(images/arrows.png) no-repeat;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	margin-top: -20px;
+}
+
+
+.circle .slide-arrows a.previous {
+	left: 20px;
+}
+
+
+.circle .slide-arrows a.next {
+	right: 20px;
+	background-position: -40px 0;
+}
+
+/* SLIDE ARROWS */
+
+
+/* SLIDESHOW CONTROLS */
+
+.circle .slideshow-controls {
+	background: url(images/playpause.png) no-repeat;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	left: 50%;
+	margin-top: -20px;
+	margin-left: -20px;
+}
+
+
+.circle .slideshow-controls.pause {
+	background-position: 0 0;
+}
+
+
+.circle .slideshow-controls.play {
+	background-position: -40px 0;
+}
+
+/* END OF SLIDESHOW CONTROLS */
+
+
+/* TIMER ANIMATION */
+
+.circle .timer-animation {
+	top: 20px;
+	right: 20px;
+}
+
+/* END OF TIMER ANIMATION */
+
+
+/* SLIDE CAPTION */
+
+.circle .caption-container .background {
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+}
+
+
+.circle .caption-container .caption {
+	color: #FFF;
+	margin: 0;
+	padding: 8px;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+/* END OF SLIDE CAPTION */
+
+
+/* SLIDE BUTTONS/BULLETS */
+
+/* main container of the navigation buttons */
+.circle .slide-buttons {
+	margin-top: 40px;
+}
+
+
+/* 
+ left, right and middle of the main container 
+ for this skin, these elements are not styled by default
+ feel free to add your own styling
+*/
+.circle .slide-buttons .left, 
+.circle .slide-buttons .right {
+}
+
+
+.circle .slide-buttons .left {
+}
+
+
+.circle .slide-buttons .middle {
+}
+
+
+.circle .slide-buttons .right {
+}
+
+
+/* this contains the buttons */
+.circle .slide-buttons .buttons-inner {
+}
+
+
+/* this is a button */
+.circle .slide-buttons .buttons-inner a {
+	background: url(images/buttons.png) no-repeat;
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+	margin: 0 2px;
+}
+
+
+.circle .slide-buttons .buttons-inner a.over {
+	background-position: -16px 0; 
+}
+
+
+.circle .slide-buttons .buttons-inner a.select {
+	background-position: -32px 0; 
+}
+
+
+.circle .slide-buttons .buttons-inner a .number {
+	margin-top: 2px;
+	font-size: 10px;
+	line-height: 12px;
+	color: #666;
+}
+
+
+/* this is used to style the numbers from within the buttons, when they are used */
+.circle .slide-buttons .buttons-inner a.over .number {
+	font-size: 8px;
+	color: #FFF;
+}
+
+
+.circle .slide-buttons .buttons-inner a.select .number {
+	font-size: 8px;
+	color: #FFF;
+}
+
+
+/* 
+ applied to the thumbnail when the thumbnail is used only as a tooltip
+ sets the distance between the button and the thumbnail
+*/
+.circle .slide-buttons .buttons-inner .thumbnail-wrapper {
+	margin-bottom: 10px;
+}
+
+/* END OF SLIDE BUTTONS/BULLETS */
+
+
+/* THUMBNAIL IMAGE */
+
+.circle .thumbnail {
+	background-color: #FFF;
+	border: solid 3px #FFF;
+	-moz-box-shadow: 0 0 10px #AAA;
+	-webkit-box-shadow: 0 0 10px #AAA;
+	box-shadow: 0 0 10px #AAA;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#AAAAAA')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#AAAAAA');
+}
+
+/* END OF THUMBNAIL IMAGE */
+
+
+/* THUMBNAIL SCROLLER */
+
+.circle .thumbnail-scroller.horizontal {
+	bottom: 0;
+	padding: 0 50px;
+	margin-top: 30px;
+}
+
+
+.circle .thumbnail-scroller.vertical {
+	right: 0;
+	padding: 50px 0;
+	margin-left: 30px;
+}
+
+
+.circle .thumbnail-scroller .thumbnail-wrapper {
+	margin: 5px;
+	padding: 4px;
+}
+
+
+.circle .thumbnail-scroller .thumbnail.over {
+	border: solid 3px #FFF;
+	-moz-box-shadow: 0 0 10px #555;
+	-webkit-box-shadow: 0 0 10px #555;
+	box-shadow: 0 0 10px #555;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555');
+}
+
+
+.circle .thumbnail-scroller .thumbnail.select {
+	border: solid 3px #FFF;
+	-moz-box-shadow: 0 0 10px #555;
+	-webkit-box-shadow: 0 0 10px #555;
+	box-shadow: 0 0 10px #555;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555');
+}
+
+
+/* THUMBNAIL CAPTION */
+
+.circle .thumbnail .caption .background {
+	background-color: #000;	
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+
+.circle .thumbnail .caption .content {
+	color: #FFF;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	padding: 2px 0;
+	margin: 0;
+}
+
+/* END OF THUMBNAIL CAPTION */
+
+
+/* THUMBNAIL SCROLLER ARROWS */
+
+.circle .thumbnail-scroller .arrows a {
+	background: url(images/arrows.png) no-repeat;
+	width: 40px;
+	height: 40px;
+}
+
+
+.circle .thumbnail-scroller.vertical .arrows a {
+	background: url(images/arrows_v.png) no-repeat;
+}
+
+
+.circle .thumbnail-scroller .arrows a.next {
+	background-position: -40px 0;
+}
+
+
+.circle .thumbnail-scroller.horizontal .arrows a.previous {
+	left: 0;
+}
+
+
+.circle .thumbnail-scroller.horizontal .arrows a.next {
+	right: 0;
+}
+
+
+.circle .thumbnail-scroller.vertical .arrows a.previous {
+	top: 0;
+}
+
+
+.circle .thumbnail-scroller.vertical .arrows a.next {
+	bottom: 0;
+}
+
+/* END OF THUMBNAIL SCROLLER ARROWS */
+
+
+/* THUMBNAIL SCROLLER BUTTONS */
+
+.circle .thumbnail-scroller .buttons a {
+	background: url(images/buttons_small.png) no-repeat;
+	background-position: 0 0; 
+	width: 12px;
+	height: 12px;
+	margin: 2px;
+}
+
+
+.circle .thumbnail-scroller .buttons a.over {
+	background-position: -12px 0; 
+}
+
+
+.circle .thumbnail-scroller .buttons a.select {
+	background-position: -24px 0; 
+}
+
+/* END OF THUMBNAIL SCROLLER BUTTONS */
+
+
+/* THUMBNAIL SCROLLER SCROLLBAR */
+
+.circle .thumbnail-scroller.horizontal .scrollbar {
+	margin-top: 30px;
+}
+
+
+.circle .thumbnail-scroller.vertical .scrollbar {
+	margin-left: 30px;
+}
+
+/* END OF THUMBNAIL SCROLLER SCROLLBAR */
+
+/* END OF THUMBNAIL SCROLLER */
+
+
+/* TOOLTIP */
+
+.circle .tooltip {
+	background-color: #DDD;
+	margin-bottom: 20px;
+	border: #EEE solid 4px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+
+.circle .tooltip .content {
+	color: #999;
+	padding: 10px;
+	margin: 0;
+}
+
+/* END OF TOOLTIP */

@@ -1,0 +1,357 @@
+/*
+	Skin Name: Glossy Curved Rounded Bronze
+	Class: glossy-curved-rounded-bronze
+	Description: Glossy Curved Rounded Bronze skin for Advanced Slider jQuery plugin
+	Author: David
+*/
+
+
+/* MAIN SLIDE */
+
+.glossy-curved-rounded-bronze .slide-wrapper {
+	background-color: #FFF;
+	border: 4px solid #FFF;
+	-moz-box-shadow: 0 0 10px #CCC;
+	-webkit-box-shadow: 0 0 10px #CCC;
+	box-shadow: 0 0 10px #CCC;
+}
+
+/* END OF MAIN SLIDE */
+
+
+/* SLIDE ARROWS */
+
+.glossy-curved-rounded-bronze .slide-arrows a {
+	background: url(images/arrows.png) no-repeat;
+	width: 53px;
+	height: 79px;
+	top: 50%;
+	margin-top: -39px;
+}
+
+
+.glossy-curved-rounded-bronze .slide-arrows a.previous {
+	left: -29px;
+}
+
+
+.glossy-curved-rounded-bronze .slide-arrows a.next {
+	right: -29px;
+	background-position: -53px 0;
+}
+
+/* SLIDE ARROWS */
+
+
+/* SLIDESHOW CONTROLS */
+
+.glossy-curved-rounded-bronze .slideshow-controls {
+	background: url(images/playpause.png) no-repeat;
+	width: 81px;
+	height: 87px;
+	top: 50%;
+	left: 50%;
+	margin-top: -43px;
+	margin-left: -40px;
+}
+
+
+.glossy-curved-rounded-bronze .slideshow-controls.pause {
+	background-position: 0 0;
+}
+
+
+.glossy-curved-rounded-bronze .slideshow-controls.play {
+	background-position: -81px 0;
+}
+
+/* END OF SLIDESHOW CONTROLS */
+
+
+/* TIMER ANIMATION */
+
+.glossy-curved-rounded-bronze .timer-animation {
+	top: 20px;
+	right: 20px;
+}
+
+/* END OF TIMER ANIMATION */
+
+
+/* SLIDE CAPTION */
+
+.glossy-curved-rounded-bronze .caption-container .background {
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+}
+
+
+.glossy-curved-rounded-bronze .caption-container .caption {
+	color: #FFF;
+	margin: 0;
+	padding: 8px;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+/* END OF SLIDE CAPTION */
+
+
+/* SLIDE BUTTONS/BULLETS */
+
+/* main container of the navigation buttons */
+.glossy-curved-rounded-bronze .slide-buttons {
+	margin-top: 40px;
+}
+
+
+.glossy-curved-rounded-bronze .slide-buttons .left, 
+.glossy-curved-rounded-bronze .slide-buttons .right {
+}
+
+
+.glossy-curved-rounded-bronze .slide-buttons .left {
+}
+
+
+.glossy-curved-rounded-bronze .slide-buttons .middle {
+}
+
+
+.glossy-curved-rounded-bronze .slide-buttons .right {
+}
+
+
+/* this contains the buttons */
+.glossy-curved-rounded-bronze .slide-buttons .buttons-inner {
+}
+
+
+/* this contains the buttons */
+.glossy-curved-rounded-bronze .slide-buttons .buttons-inner a {
+	background: url(images/buttons.png) no-repeat;
+	background-position: 0 0;
+	width: 14px;
+	height: 15px;
+	margin: 0 2px;
+}
+
+
+.glossy-curved-rounded-bronze .slide-buttons .buttons-inner a.over {
+	background-position: -14px 0; 
+}
+
+
+.glossy-curved-rounded-bronze .slide-buttons .buttons-inner a.select {
+	background-position: -28px 0; 
+}
+
+
+/* this is used to style the numbers from within the buttons, when they are used */
+.glossy-curved-rounded-bronze .slide-buttons .buttons-inner a .number {
+	margin-top: 2px;
+	font-size: 8px;
+	line-height: 10px;
+	font-weight: bold;
+	color: #FFF;
+}
+
+
+.glossy-curved-rounded-bronze .slide-buttons .buttons-inner a.over .number {
+	color: #FFF;
+}
+
+
+.glossy-curved-rounded-bronze .slide-buttons .buttons-inner a.select .number {
+	color: #FFF;
+}
+
+
+/* 
+ applied to the thumbnail when the thumbnail is used only as a tooltip
+ sets the distance between the button and the thumbnail
+*/
+.glossy-curved-rounded-bronze .slide-buttons .buttons-inner .thumbnail-wrapper {
+	margin-bottom: 10px;
+}
+
+/* END OF SLIDE BUTTONS/BULLETS */
+
+
+/* THUMBNAIL IMAGE */
+
+.glossy-curved-rounded-bronze .thumbnail {
+	background-color: #FFF;
+	border: solid 3px #FFF;
+	-moz-box-shadow: 0 0 10px #AAA;
+	-webkit-box-shadow: 0 0 10px #AAA;
+	box-shadow: 0 0 10px #AAA;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#AAAAAA')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#AAAAAA');
+}
+
+/* END OF THUMBNAIL IMAGE */
+
+
+/* THUMBNAIL SCROLLER */
+
+.glossy-curved-rounded-bronze .thumbnail-scroller.horizontal {
+	bottom: 0;
+	padding: 0 50px;
+	margin-top: 30px;
+}
+
+
+.glossy-curved-rounded-bronze .thumbnail-scroller.vertical {
+	right: 0;
+	padding: 50px 0;
+	margin-left: 30px;
+}
+
+
+.glossy-curved-rounded-bronze .thumbnail-scroller .thumbnail-wrapper {
+	margin: 5px;
+	padding: 4px;
+}
+
+
+.glossy-curved-rounded-bronze .thumbnail-scroller .thumbnail.over {
+	border: solid 3px #FFF;
+	-moz-box-shadow: 0 0 10px #555;
+	-webkit-box-shadow: 0 0 10px #555;
+	box-shadow: 0 0 10px #555;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555');
+}
+
+
+.glossy-curved-rounded-bronze .thumbnail-scroller .thumbnail.select {
+	border: solid 3px #FFF;
+	-moz-box-shadow: 0 0 10px #555;
+	-webkit-box-shadow: 0 0 10px #555;
+	box-shadow: 0 0 10px #555;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#555555');
+}
+
+
+/* THUMBNAIL CAPTION */
+
+.glossy-curved-rounded-bronze .thumbnail .caption .background {
+	background-color: #000;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+
+.glossy-curved-rounded-bronze .thumbnail .caption .content {
+	color: #FFF;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	padding: 2px 0;
+	margin: 0;
+}
+
+/* END OF THUMBNAIL CAPTION */
+
+
+/* THUMBNAIL SCROLLER ARROWS */
+
+.glossy-curved-rounded-bronze .thumbnail-scroller .arrows a {
+	background: url(images/arrows_small.png) no-repeat;
+	width: 17px;
+	height: 26px;
+}
+
+
+.glossy-curved-rounded-bronze .thumbnail-scroller.vertical .arrows a {
+	background: url(images/arrows_v_small.png) no-repeat;
+	width: 26px;
+	height: 18px;
+}
+
+
+.glossy-curved-rounded-bronze .thumbnail-scroller.horizontal .arrows a.previous {
+	left: 0;
+}
+
+
+.glossy-curved-rounded-bronze .thumbnail-scroller.horizontal .arrows a.next {
+	right: 0;
+	background-position: -17px 0;
+}
+
+
+.glossy-curved-rounded-bronze .thumbnail-scroller.vertical .arrows a.previous {
+	top: 0;
+}
+
+
+.glossy-curved-rounded-bronze .thumbnail-scroller.vertical .arrows a.next {
+	bottom: 0;
+	background-position: 0 -18px;
+}
+
+/* END OF THUMBNAIL SCROLLER ARROWS */
+
+
+/* THUMBNAIL SCROLLER BUTTONS */
+
+.glossy-curved-rounded-bronze .thumbnail-scroller .buttons a {
+	background: url(images/buttons_small.png) no-repeat;
+	background-position: 0 0; 
+	width: 11px;
+	height: 12px;
+	margin: 2px;
+}
+
+
+.glossy-curved-rounded-bronze .thumbnail-scroller .buttons a.over {
+	background-position: -11px 0; 
+}
+
+
+.glossy-curved-rounded-bronze .thumbnail-scroller .buttons a.select {
+	background-position: -22px 0; 
+}
+
+/* END OF THUMBNAIL SCROLLER BUTTONS */
+
+
+/* THUMBNAIL SCROLLER SCROLLBAR */
+
+.glossy-curved-rounded-bronze .thumbnail-scroller.horizontal .scrollbar {
+	margin-top: 30px;
+}
+
+
+.glossy-curved-rounded-bronze .thumbnail-scroller.vertical .scrollbar {
+	margin-left: 30px;
+}
+
+/* END OF THUMBNAIL SCROLLER SCROLLBAR */
+
+/* END OF THUMBNAIL SCROLLER */
+
+
+/* TOOLTIP */
+
+.glossy-curved-rounded-bronze .tooltip {
+	background-color: #DDD;
+	margin-bottom: 20px;
+	border: #EEE solid 4px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+
+.glossy-curved-rounded-bronze .tooltip .content {
+	color: #999;
+	padding: 10px;
+	margin: 0;
+}
+
+/* END OF TOOLTIP */

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lightbox Slider</title>
+
+<link rel="stylesheet" type="text/css" href="css/base/advanced-slider-base.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/glossy-curved/black/glossy-curved-black.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/lightbox-slider.css" media="screen"/>
+
+<link rel="stylesheet" type="text/css" href="../presentation-assets/presentation.css" media="screen"/>
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="../presentation-assets/presentation-ie7.css" media="screen"/><![endif]-->
+
+<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.transition.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="js/jquery.advancedSlider.min.js"></script>
+
+
+<script type="text/javascript">
+	var slider;
+	
+	jQuery(document).ready(function($){
+		slider = $('#lightbox-slider').advancedSlider({width: 640,
+													   height: 480,
+													   skin: 'glossy-curved-black',
+													   effectType: 'swipe',
+													   lightbox: false,
+													   thumbnailLightboxIcon: true,
+													   thumbnailLightboxIconToggle: true,
+													   slideButtons: true,
+													   thumbnailType: 'scroller',
+													   maximumVisibleThumbnails: 4,
+													   thumbnailButtons: true,
+													   thumbnailOrientation: 'vertical',
+													   captionToggle: true, 
+													   captionSize: 35,
+													   captionHideEffect: 'slide',
+													   transitionComplete:onTransitionComplete
+		});
+	});
+	
+	
+	function previous() {
+		slider.previousSlide();
+	}	
+	
+	function next() {
+		slider.nextSlide();
+	}	
+	
+	function onTransitionComplete(obj) {
+		//console.log(obj.type, obj.index, obj.data);
+	}
+	
+</script>
+
+</head>
+
+<body>
+
+	<div class="advanced-slider" id="lightbox-slider">
+		<ul class="slides">
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image1.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image1.jpg" alt=""/>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image2.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image2.jpg" alt=""/>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image3.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image3.jpg" alt=""/>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image4.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image4.jpg" alt=""/>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image5.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image5.jpg" alt=""/>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image6.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image6.jpg" alt=""/>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image7.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image7.jpg" alt=""/>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image8.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image8.jpg" alt=""/>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image9.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image9.jpg" alt=""/>
+			</li>
+			
+			<li class="slide">
+				<img class="image" src="../presentation-assets/images/slides/image10.jpg" alt=""/>
+    			<img class="thumbnail" src="../presentation-assets/images/thumbnails/image10.jpg" alt=""/>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="custom-controls">
+        <input type="button" value="Previous Slide" onclick="previous();"/>
+        <input type="button" value="Next Slide" onclick="next();"/>
+    </div>
+	
+</body>
+</html>

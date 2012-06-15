@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="AudioStream">
+  <AdminPage>~/User controls/AudioStream/Admin.aspx</AdminPage>
+  <Author>Nick &amp; Lars</Author>
+  <Description>Extension used to give AudioStreams</Description>
+  <Enabled>true</Enabled>
+  <Priority>0</Priority>
+  <Settings>
+    <Delimiter>44</Delimiter>
+    <Help />
+    <Hidden>false</Hidden>
+    <Index>1</Index>
+    <IsScalar>true</IsScalar>
+    <KeyField>HighStream</KeyField>
+    <Name>AudioStream</Name>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>HighStream.</Label>
+      <MaxLength>500</MaxLength>
+      <Name>HighStream</Name>
+      <ParamType>String</ParamType>
+      <Required>true</Required>
+      <SelectedValue />
+      <Values>50.7.241.10:8021</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>LowStream.</Label>
+      <MaxLength>500</MaxLength>
+      <Name>LowStream</Name>
+      <ParamType>String</ParamType>
+      <Required>true</Required>
+      <SelectedValue />
+      <Values>50.7.241.10:8013</Values>
+    </Parameters>
+    <ShowAdd>true</ShowAdd>
+    <ShowDelete>true</ShowDelete>
+    <ShowEdit>true</ShowEdit>
+  </Settings>
+  <ShowSettings>true</ShowSettings>
+  <Version>1.1</Version>
+</ManagedExtension>

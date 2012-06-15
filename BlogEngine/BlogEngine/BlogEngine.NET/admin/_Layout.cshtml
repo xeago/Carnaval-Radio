@@ -14,8 +14,10 @@
         <link rel="stylesheet" href="@Href(Utils.RelativeWebRoot + "admin/tipsy.css")" type="text/css" />
 
         <link rel="shortcut icon" href="@Href(Utils.RelativeWebRoot + "pics/blogengine.ico")" type="image/x-icon" />
+        
         <script src="@Href(Utils.RelativeWebRoot + "Scripts/jquery.js")" type="text/javascript"></script>
         <script src="@Href(Utils.RelativeWebRoot + "Scripts/jquery.cookie.js")" type="text/javascript"></script>
+        <script src="@Href(Utils.RelativeWebRoot + "Scripts/jquery-ui-1.8.16.custom.min.js")" type="text/javascript"></script>
         <script src="@Href(Utils.RelativeWebRoot + "Scripts/jquery-jtemplates.js")" type="text/javascript"></script>
         <script src="@Href(Utils.RelativeWebRoot + "Scripts/json2.js")" type="text/javascript"></script>
         <script src="@Href(Utils.RelativeWebRoot + "admin/admin.js")" type="text/javascript"></script>
@@ -62,8 +64,8 @@
                 @RenderBody()
 
                 <div id="footer">
-                    <a href="http://dotnetblogengine.net">BlogEngine.NET @BlogEngine.Core.BlogSettings.Instance.Version()</a> | 
-                    <a id="donate" runat="server" href="@Href(Utils.RelativeWebRoot + "admin/Donate.aspx")" target="_new">@Resources.labels.makeDonation</a>          
+                    <a href="@Href(Utils.RelativeWebRoot + "admin/default.cshtml")">Carnaval Radio Admin Panel ( @BlogEngine.Core.BlogSettings.Instance.Version() )</a> | 
+                    <a id="Website" runat="server" href="@Href(Utils.RelativeWebRoot)" target="_blank">Bezoek website</a>          
                 </div>
 
             </form>

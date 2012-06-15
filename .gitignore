@@ -2,5 +2,9 @@
 bin
 obj
 *.suo
+_ReSharper.BlogEngine
+BlogEngine/BlogEngine/BlogEngine.5.1.ReSharper.user
+BlogEngine/BlogEngine/BlogEngine.NET/App_Data/PiczardTempFiles/
+
 # mstest test results
 TestResults
