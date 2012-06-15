@@ -185,28 +185,27 @@ public class CRSponsor
         ExtensionManager.SaveSettings("Sponsor", settings);
 
         //save the json
-        CRSponsor.updateJSON(this);
+        CRSponsor.updateJSON();
 
         return settings.IsKeyValueExists(ID.ToString());
     }
 
     /// <summary>
-    /// Updates the JSON files for sponsor. It is smart enough to decide if it should or shouldn't update.
+    /// Updates the JSON files for sponsor.
     /// </summary>
-    private static void updateJSON() { updateJSON(null); }
+    private static void updateJSON() { updateJSON(GetListOnlyActiveAndAlter()); }
     /// <summary>
-    /// Updates the JSON files for sponsor. It is smart enough to decide if it should or shouldn't update. Pass null or use the parameterless method for extended smartness.
+    /// Updates the JSON files for sponsor.
     /// </summary>
-    /// <param name="sponsor">CRSponsor item to base the decision on whether it should or shouldn't update.</param>
-    private static void updateJSON(CRSponsor sponsor)
+    private static void updateJSON(IEnumerable<CRSponsor> sponsors)
     {
-            var sponsors = GetList().Where(s => s.Active);
-            updateMobileSwitchJSON(sponsors);
-            updateMobileSolidJSON(sponsors);
-            updatePlayerSwitchJSON(sponsors);
-            //updatePlayerSwitchJSON(sponsors);
-            updateWidgetSwitchJSON(sponsors);
-        
+        sponsors = GetListOnlyActiveAndAlter();
+        updateMobileSwitchJSON(sponsors);
+        updateMobileSolidJSON(sponsors);
+        updatePlayerSwitchJSON(sponsors);
+        //updatePlayerSwitchJSON(sponsors);
+        updateWidgetSwitchJSON(sponsors);
+
     }
 
     private static void updateWidgetSwitchJSON(IEnumerable<CRSponsor> sponsors)
@@ -254,7 +253,7 @@ public class CRSponsor
             {
                 items.Add(new { name = sponsor.Name, logoUrl = Utils.AbsoluteWebRoot + sponsor.LogoURL, description = sponsor.Description });
             }
-            solid.Add(new { order = (int)typen, type = CRSponsor.GetLabelBySponsorType(typen), items=items });
+            solid.Add(new { order = (int)typen, type = CRSponsor.GetLabelBySponsorType(typen), items = items });
         }
         writeSponsorJSON(solid, HttpContext.Current.Server.MapPath("~/json/"), "solidMobileSponsor.json");
     }
@@ -321,9 +320,21 @@ public class CRSponsor
         return s.GetDataTable().Rows.Cast<DataRow>().Select(dr => new CRSponsor(Guid.Parse(dr["ID"].ToString()), false)).ToList();
     }
 
-    public static List<CRSponsor> GetListOnlyActives()
+    public static List<CRSponsor> GetListOnlyActiveAndAlter()
     {
-        return GetList().Where(i => i.Active && (!i.EndDate.HasValue || i.EndDate >= DateTime.Now)).ToList();
+        var l = GetList();
+        var expired = l.Where(i => i.EndDate.HasValue || i.EndDate <= DateTime.Now);
+        foreach (var item in expired) //fix them on disk aswell
+        {
+            item.Active = false;
+            item.Save();
+        }
+        var active = l.Where(i => i.Active && (!i.EndDate.HasValue || i.EndDate >= DateTime.Now));
+
+        if (expired.Any()) // update the json if there were any expired
+            updateJSON(active);
+
+        return active.ToList();
     }
 
     public static string GetLabelBySponsorType(SponsorType s)
@@ -346,7 +357,7 @@ public class CRSponsor
     }
 
     private static void updatePlayerSwitchJSON(IEnumerable<CRSponsor> sponsors)
-    {   
+    {
         var playerRotatingSponsors = sponsors.Where(s => s.WidgetSwitch);
         var player = new List<dynamic>();
         foreach (var item in playerRotatingSponsors)
@@ -358,6 +369,6 @@ public class CRSponsor
             });
         }
         writeSponsorJSON(player, HttpContext.Current.Server.MapPath("~/json/"), "rotatingPlayerSponsor.json");
-    
+
     }
 }
