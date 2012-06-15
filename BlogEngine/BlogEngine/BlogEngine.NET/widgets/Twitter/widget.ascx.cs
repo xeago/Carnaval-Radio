@@ -436,7 +436,7 @@ namespace Widgets.Twitter
             if (settings.ContainsKey("hashtags") && !string.IsNullOrEmpty(settings["hashtags"]))
             {
                 Uri hashtagUrl;
-                Uri.TryCreate(string.Format("https://search.twitter.com/search.rss?q=%23{0}", Uri.EscapeUriString(settings["hashtags"].Replace(" ", " OR #"))), UriKind.Absolute, out hashtagUrl);
+                Uri.TryCreate(string.Format("https://search.twitter.com/search.rss?q=%23{0}", Uri.EscapeUriString(settings["hashtags"].Replace(" ", "%20OR%20%23"))), UriKind.Absolute, out hashtagUrl);
                 twitterSettings.HashtagUrl = hashtagUrl;
             }
 
