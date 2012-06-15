@@ -9,11 +9,40 @@
     <asp:ContentPlaceHolder ID="cphHeader" runat="server" />
     <asp:Literal ID="StylesAndScripts" runat="server" />
     <script type="text/javascript">
-        jQuery(function () { jQuery('ul.head-menu').superfish(); });
+        jQuery(function () {           
+            jQuery('ul.head-menu').superfish();
+        });
 
         function OpenStreamPopup() { 
-        return window.open('audioplayer.aspx', 'Carnaval          Radio','resizable=no,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no,width=450,height=380');
+            return window.open('audioplayer.aspx', 'Carnaval Radio','resizable=no,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no,width=450,height=380');
         }
+        function onAfter() {
+            $('#sponsorlink').html(this.href);
+        }
+        function clickSponsor() {
+            //alert();
+            return window.open('' + $('#sponsorlink').html());
+        }
+
+    </script>
+    <script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slideshow').cycle({
+                fx: 'fade',
+                timeout: 4000,
+                random: 1,
+                after: onAfter
+            });
+            $('#header-slider').cycle({
+                fx: 'scrollHorz',
+                timeout: 6000,
+                pause: 1,
+                random: 1,
+                prev: '#prev-slide',
+                next: '#next-slide'
+            });
+        });
     </script>
 </head>
 <body>
@@ -28,18 +57,23 @@
     <div class="logo">
         <img alt="<%= BlogSettings.Instance.Name %>" src="<%=Utils.AbsoluteWebRoot %>themes/CarnavalRadio/img/logo.png" />
     </div>
-    <div class="sponsor_frame">
+    <div class="sponsor_frame" onclick="clickSponsor()">
         </div>
     <div class="sponsor_content">
-        <img src="<%=Utils.AbsoluteWebRoot %>kabeldirect.png" width="200" height="86" /></div>
+        <div id="sponsorlink" style="display:none;"></div>
+        <div class="slideshow">
+            <asp:Literal ID="litSponsorImages" runat="server" />
+        </div>
+    </div>
     <div class="nuopderadio_text" onclick="OpenStreamPopup();"></div>
     <div class="nuopderadio_box" onclick="OpenStreamPopup();">
-        <div class="text"><marquee scrollamount="5" width="279" height="30"> 
+        <div class="text">
+            <marquee scrollamount="5" width="279" height="30"> 
 			    <a id="cc_stream_info_song">Huidig nummer laden...</a>
             </marquee>
         </div>
     </div>
-  </div>  
+  </div>
   <div id="menu">
     <div class="left-corner"></div>
 
@@ -66,6 +100,15 @@
     </ul>
       <div class="right-corner">
       </div>
+  </div>
+  <div id="slider-and-buttons">
+      <a id="prev-slide"></a>
+      <a id="next-slide"></a>
+      <div id="header-slider">
+          <asp:Literal runat="server" id="litHeaderImages" />
+      </div>
+
+      <div></div>
   </div>
   
     <div id="content">

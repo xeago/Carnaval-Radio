@@ -276,6 +276,11 @@ public class CRSponsor
         return s.GetDataTable().Rows.Cast<DataRow>().Select(dr => new CRSponsor(Guid.Parse(dr["ID"].ToString()), false)).ToList();
     }
 
+    public static List<CRSponsor> GetListOnlyActives()
+    {
+        return GetList().Where(i => i.Active && (!i.EndDate.HasValue || i.EndDate >= DateTime.Now)).ToList();
+    }
+
     public static string GetLabelBySponsorType(SponsorType s)
     {
         var rm = new ResourceManager(typeof(Resources.labels));

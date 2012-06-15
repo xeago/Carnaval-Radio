@@ -160,6 +160,37 @@ img {
 	text-decoration: none;
 	color: white;
 }
+div#slider-and-buttons
+{	
+    position:relative;
+    width: 100%;    
+    height:289px;
+}
+
+div#header-slider
+{
+	width: 100%;
+    height:289px;
+}
+
+a#prev-slide, a#next-slide
+{
+    position:absolute;
+    width:49px;
+    height:73px;
+    cursor:pointer;
+    top:90px;
+}
+a#prev-slide
+{
+    background-image:url('img/arrow_left.png');
+    left:-82px;
+}
+a#next-slide
+{
+    background-image:url('img/arrow_right.png');
+    right:-82px;
+}
 
 /*----------------------------
 						Menu
