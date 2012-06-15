@@ -33,9 +33,9 @@ namespace Widgets.Twitter
         /// </summary>
         public override void Save()
         {
-            var settings = this.GetSettings();
-            settings["account"] = this.txtAccount.Text.Trim();
-            settings["hashtags"] = this.txtHashtags.Text.Trim();
+            var settings = this.GetSettings(); 
+            settings["account"] = this.txtAccount.Text.Trim().Replace("@", "");
+            settings["hashtags"] = this.txtHashtags.Text.Trim().Replace("#", "");
             settings["maxitems"] = this.txtTwits.Text.Trim();
             settings["pollinginterval"] = this.txtPolling.Text.Trim();
             settings["followmetext"] = this.txtFollowMe.Text.Trim();
