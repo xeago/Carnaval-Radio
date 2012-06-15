@@ -34,6 +34,14 @@
                 random: 1,
                 after: onAfter
             });
+            $('#header-slider').cycle({
+                fx: 'scrollHorz',
+                timeout: 6000,
+                pause: 1,
+                random: 1,
+                prev: '#prev-slide',
+                next: '#next-slide'
+            });
         });
     </script>
 </head>
@@ -59,12 +67,13 @@
     </div>
     <div class="nuopderadio_text" onclick="OpenStreamPopup();"></div>
     <div class="nuopderadio_box" onclick="OpenStreamPopup();">
-        <div class="text"><marquee scrollamount="5" width="279" height="30"> 
+        <div class="text">
+            <marquee scrollamount="5" width="279" height="30"> 
 			    <a id="cc_stream_info_song">Huidig nummer laden...</a>
             </marquee>
         </div>
     </div>
-  </div>  
+  </div>
   <div id="menu">
     <div class="left-corner"></div>
 
@@ -91,6 +100,16 @@
     </ul>
       <div class="right-corner">
       </div>
+  </div>
+  <div id="slider-and-buttons">
+      <a id="prev-slide"></a>
+      <a id="next-slide"></a>
+      <div id="header-slider">
+          <img src="<%=Utils.AbsoluteWebRoot %>Upload/Headers/1.jpg" />
+          <img src="<%=Utils.AbsoluteWebRoot %>Upload/Headers/2.jpg" />
+      </div>
+
+      <div></div>
   </div>
   
     <div id="content">
