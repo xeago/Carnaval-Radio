@@ -105,8 +105,7 @@
       <a id="prev-slide"></a>
       <a id="next-slide"></a>
       <div id="header-slider">
-          <img src="<%=Utils.AbsoluteWebRoot %>Upload/Headers/1.jpg" />
-          <img src="<%=Utils.AbsoluteWebRoot %>Upload/Headers/2.jpg" />
+          <asp:Literal runat="server" id="litHeaderImages" />
       </div>
 
       <div></div>
