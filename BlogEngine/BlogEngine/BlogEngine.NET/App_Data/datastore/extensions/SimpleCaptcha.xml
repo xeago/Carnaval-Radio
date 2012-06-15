@@ -4,7 +4,7 @@
   <Author>&lt;a href="http://www.aaronstannard.com"&gt;Aaron Stannard&lt;/a&gt;</Author>
   <Description>Settings for the SimpleCaptcha control</Description>
   <Enabled>true</Enabled>
-  <Priority>0</Priority>
+  <Priority>2</Priority>
   <Settings>
     <Delimiter>44</Delimiter>
     <Help>To get started with SimpleCaptcha, just provide some captcha instructions for your users in the &lt;b&gt;CaptchaLabel&lt;/b&gt;

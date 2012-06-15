@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>XML Slider</title>
+
+<link rel="stylesheet" type="text/css" href="css/base/advanced-slider-base.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/curved-square/curved-square.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/scrollbar-7-light/scrollbar-7-light.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/xml-slider.css" media="screen"/>
+
+<link rel="stylesheet" type="text/css" href="../presentation-assets/presentation.css" media="screen"/>
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="../presentation-assets/presentation-ie7.css" media="screen"/><![endif]-->
+
+<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.transition.min.js"></script>
+<script type="text/javascript" src="js/jquery.advancedSlider.min.js"></script>
+
+
+<script type="text/javascript">
+
+	jQuery(document).ready(function($){
+		$('#xml-slider').advancedSlider({xmlSource: 'slider.xml', 
+										 width: 936, 
+									 	 height: 397, 
+										 skin: 'curved-square',
+										 slideArrowsToggle: false,
+										 slideButtonsNumber: true,
+										 slideshowControls: true,
+										 timerAnimationControls: false,
+										 thumbnailType: 'scroller',
+										 thumbnailOrientation: 'vertical',
+										 thumbnailArrows: false,
+									 	 maximumVisibleThumbnails: 4,
+										 thumbnailScrollbar: true,
+										 scrollbarSkin: 'scrollbar-7-light',
+										 thumbnailMouseScroll: true,
+										 thumbnailSync: false
+										 
+		});
+	});
+	
+</script>
+
+</head>
+
+<body>
+
+	<div class="advanced-slider" id="xml-slider">
+		This page is best viewed with JavaScript enabled.
+	</div>
+	
+	<div id="example-navigation-container">
+		<div id="example-navigation">
+			<ul id="list">
+				<li><a href="../responsive/responsive.html">Responsive</a></li>
+				<li><a href="../responsive-proportional/responsive-proportional.html">Responsive Proportional</a></li>
+				<li><a href="../basic/basic.html">Basic</a></li>
+				<li><a href="../minimal/minimal.html">Minimal</a></li>
+				<li><a href="../video/video.html">Video</a></li>
+				<li><a href="../lightbox/lightbox.html">Lightbox</a></li>
+				<li><a href="../lazy-loading/lazy-loading.html">Lazy Loading</a></li>
+				<li><a href="../mixed/mixed.html">Mixed</a></li>
+				<li class="active"><a href="../xml/xml.html">XML</a></li>
+			</ul>
+			
+			<div id="description">
+				<p id="features-header">Highlighted Features:</p>
+				<ul>
+					<li><strong>XML support.</strong> The slider allows you to specify all the content (images, captions, inline HTML) and individual slide settings inside an XML file. </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+/*
+	Skin Name: Scrollbar 7 Dark
+	Class: scrollbar-7-dark
+	Description: Scrollbar 7 Dark skin for Slider PRO WordPress plugin
+	Author: David
+*/
+
+
+/* HORIZONTAL SCROLLBAR */
+
+/* MAIN CONTAINER */
+
+.scrollbar-7-dark.horizontal {
+	position: absolute;
+	width: 340px;
+	max-width: 340px;
+	min-width: 70px;
+	height: 14px;
+}
+
+/* END OF MAIN CONTAINER */
+
+
+/* TRACK */
+
+.scrollbar-7-dark.horizontal .track {
+	position: absolute;
+	width: 100%;
+	height: 14px;
+	left: 0;
+}
+
+
+.scrollbar-7-dark.horizontal .track .track-back {
+	position: absolute;
+	background-image: url(images/track_back.png);
+	width: 8px;
+	height: 14px;
+	left: 0;
+}
+
+
+.scrollbar-7-dark.horizontal .track .track-middle {
+	position: absolute;
+	background-image: url(images/track_middle.png);
+	background-repeat: repeat-x;
+	width: 324px;
+	height: 14px;
+	left: 8px;
+}
+
+
+.scrollbar-7-dark.horizontal .track .track-forward {
+	position: absolute;
+	background-image: url(images/track_forward.png);
+	width: 8px;
+	height: 14px;
+	right: 0;
+}
+
+/* END OF TRACK */
+
+
+/* THUMB */
+
+.scrollbar-7-dark.horizontal .thumb {
+	position: absolute;
+	cursor: pointer;
+	width: 70px;
+	height: 12px;
+	margin-top: 1px;
+}
+
+
+.scrollbar-7-dark.horizontal .thumb .thumb-back {
+	position: absolute;
+	background-image: url(images/thumb_back.png);
+	width: 6px;
+	height: 12px;
+	left: 0;
+}
+
+
+.scrollbar-7-dark.horizontal .thumb .thumb-middle {
+	position: absolute;
+	background-image: url(images/thumb_middle.png);
+	background-repeat: repeat-x;
+	width: 58px;
+	height: 12px;
+	left: 6px;
+}
+
+
+.scrollbar-7-dark.horizontal .thumb .thumb-forward {
+	position: absolute;
+	background-image: url(images/thumb_forward.png);
+	width: 6px;
+	height: 12px;
+	right: 0;
+}
+
+/* END OF THUMB */
+
+
+/* BACK BUTTON */
+
+.scrollbar-7-dark .back {
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+/* END OF BACK BUTTON */
+
+
+/* FORWARD BUTTON */
+
+.scrollbar-7-dark .forward {
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+/* END OF FORWARD BUTTON */
+
+/* END OF HORIZONTAL SCROLLBAR */
+
+
+
+/* VERTICAL SCROLLBAR */
+
+/* MAIN CONTAINER */
+
+.scrollbar-7-dark.vertical {
+	position: absolute;
+	height: 340px;
+	max-height: 340px;
+	min-height: 70px;
+	width: 14px;
+}
+
+/* END OF MAIN CONTAINER */
+
+
+/* TRACK */
+
+.scrollbar-7-dark.vertical .track {
+	position: absolute;
+	width: 14px;
+	height: 100%;
+	top: 0;
+}
+
+
+.scrollbar-7-dark.vertical .track .track-back {
+	position: absolute;
+	background-image: url(images/track_back_v.png);
+	width: 14px;
+	height: 8px;
+	top: 0;
+}
+
+
+.scrollbar-7-dark.vertical .track .track-middle {
+	position: absolute;
+	background-image: url(images/track_middle_v.png);
+	background-repeat: repeat-y;
+	height: 326px;
+	width: 14px;
+	top: 8px;
+}
+
+
+.scrollbar-7-dark.vertical .track .track-forward {
+	position: absolute;
+	background-image: url(images/track_forward_v.png);
+	width: 14px;
+	height: 8px;
+	bottom: 0;
+}
+
+/* END OF TRACK */
+
+
+/* THUMB */
+
+.scrollbar-7-dark.vertical .thumb {
+	position: absolute;
+	cursor: pointer;
+	width: 12px;
+	height: 70px;
+	margin-left: 1px;
+}
+
+
+.scrollbar-7-dark.vertical .thumb .thumb-back {
+	position: absolute;
+	background-image: url(images/thumb_back_v.png);
+	height: 6px;
+	width: 12px;
+	top: 0;
+}
+
+
+.scrollbar-7-dark.vertical .thumb .thumb-middle {
+	position: absolute;
+	background-image: url(images/thumb_middle_v.png);
+	background-repeat: repeat-y;
+	height: 58px;
+	width: 20px;
+	top: 6px;
+}
+
+
+.scrollbar-7-dark.vertical .thumb .thumb-forward {
+	position: absolute;
+	background-image: url(images/thumb_forward_v.png);
+	height: 6px;
+	width: 12px;
+	bottom: 0;
+}
+
+/* END OF THUMB */
+
+/* END OF VERTICAL SCROLLBAR */

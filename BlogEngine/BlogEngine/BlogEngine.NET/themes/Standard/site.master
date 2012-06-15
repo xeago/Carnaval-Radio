@@ -6,6 +6,7 @@
 <head runat="server" profile="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="shortcut icon" href="~/pics/blogengine.ico" type="image/x-icon"/>
+    <asp:ContentPlaceHolder ID="cphHeader" runat="server" />
 </head>
 <body>
 
@@ -42,8 +43,6 @@
       <asp:ContentPlaceHolder ID="cphBody" runat="server" />
       
       <p id="footer">
-        Powered by <a href="http://www.dotnetblogengine.net">BlogEngine.NET</a> <%=BlogSettings.Instance.Version() %><br />
-        Theme by <a href="http://madskristensen.net">Mads Kristensen</a>
       </p>
     </div>
 

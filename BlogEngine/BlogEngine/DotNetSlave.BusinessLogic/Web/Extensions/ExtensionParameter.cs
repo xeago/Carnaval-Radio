@@ -58,7 +58,12 @@
         /// <summary>
         /// The radio group.
         /// </summary>
-        RadioGroup
+        RadioGroup,
+
+        /// <summary>
+        /// Datetime.
+        /// </summary>
+        DateTime
     }
 
     /// <summary>

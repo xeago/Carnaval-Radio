@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <widgets>
-  <widget id="42fcbe7c-2c9c-440a-bad9-65a94472fccc" title="Administration" showTitle="True">Administration</widget>
-  <widget id="67ce837d-6a8c-4ff6-94a9-1786cc5c8e7d" title="Shoutbox" showTitle="True">Shoutbox</widget>
-  <widget id="48e6f7ca-f83f-4300-9c30-5860a6a138d5" title="Twitter" showTitle="True">Twitter</widget>
+  <widget id="fb38ecdd-5813-4d10-8c5f-8d901c7c731e" title="Zoeken" showTitle="True">Search</widget>
+  <widget id="1ef27b78-0218-420c-bfda-038163510def" title="Over Carnaval Radio" showTitle="True">TextBox</widget>
+  <widget id="42fcbe7c-2c9c-440a-bad9-65a94472fccc" title="Beheer" showTitle="True">Administration</widget>
+  <widget id="dc246169-0320-459f-a181-0f7f423dfbb5" title="Page List" showTitle="True">Page List</widget>
+  <widget id="f3f65f28-8110-4eff-89ea-5428bc86c823" title="Blogroll" showTitle="True">Blogroll</widget>
+  <widget id="f786b910-f09d-4948-9cbd-844214f678eb" title="Tag cloud" showTitle="True">Tag cloud</widget>
 </widgets>

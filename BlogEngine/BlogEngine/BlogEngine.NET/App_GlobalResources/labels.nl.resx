@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="add" xml:space="preserve">
     <value>Toevoegen</value>
@@ -159,9 +159,6 @@
   <data name="author" xml:space="preserve">
     <value>Auteur</value>
   </data>
-  <data name="avatars" xml:space="preserve">
-    <value>Avatars</value>
-  </data>
   <data name="basic" xml:space="preserve">
     <value>Standaard</value>
   </data>
@@ -170,9 +167,6 @@
   </data>
   <data name="blogMLDescription" xml:space="preserve">
     <value>BlogEngine.NET gebruikt BlogML als export formaat. Import ondersteund zowel BlogML als RSS.</value>
-  </data>
-  <data name="blogroll" xml:space="preserve">
-    <value>Blogroll</value>
   </data>
   <data name="buttonText" xml:space="preserve">
     <value>Knop tekst</value>
@@ -185,9 +179,6 @@
   </data>
   <data name="closeCommetsAfter" xml:space="preserve">
     <value>Sluit commentaar na</value>
-  </data>
-  <data name="combine" xml:space="preserve">
-    <value>Combinatie</value>
   </data>
   <data name="comment" xml:space="preserve">
     <value>Reactie</value>
@@ -244,7 +235,7 @@
     <value>Toon waardering</value>
   </data>
   <data name="edit" xml:space="preserve">
-    <value>Bewerken</value>
+    <value>Wijzigen</value>
   </data>
   <data name="email" xml:space="preserve">
     <value>E-mail</value>
@@ -320,7 +311,7 @@
   </data>
   <data name="home" xml:space="preserve">
     <value>Start</value>
-    <comment>Gebruikt voor het linken naar de startpagina</comment>
+    <comment>As used for linking to the front-page</comment>
   </data>
   <data name="htmlHeadSection" xml:space="preserve">
     <value>HTML head sectie</value>
@@ -357,9 +348,6 @@
   </data>
   <data name="message" xml:space="preserve">
     <value>Boodschap</value>
-  </data>
-  <data name="monster" xml:space="preserve">
-    <value>Monster</value>
   </data>
   <data name="more" xml:space="preserve">
     <value>Meer</value>
@@ -419,7 +407,7 @@
     <value>Items getoond in feed</value>
   </data>
   <data name="publish" xml:space="preserve">
-    <value>Publiseer</value>
+    <value>Publiceer</value>
   </data>
   <data name="raters" xml:space="preserve">
     <value>Waardeerders</value>
@@ -452,10 +440,10 @@
     <value>Reactie toevoegen</value>
   </data>
   <data name="savePage" xml:space="preserve">
-    <value>Bewaar pagina</value>
+    <value>Pagina opslaan</value>
   </data>
   <data name="savePost" xml:space="preserve">
-    <value>Bewaar bericht</value>
+    <value>Bericht opslaan</value>
   </data>
   <data name="saveSettings" xml:space="preserve">
     <value>Bewaar instellingen</value>
@@ -579,5 +567,1218 @@
   </data>
   <data name="notifiedPublished" xml:space="preserve">
     <value>Krijg een E-mail als een nieuwe post gepubliceerd wordt</value>
+  </data>
+  <data name="access" xml:space="preserve">
+    <value>Toegang</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="CopyTagMessage" xml:space="preserve">
+    <value>Kopieer de gegenereerde tags naar een &lt;strong&gt;Pagina&lt;/strong&gt; of &lt;strong&gt;Nieuwsbericht&lt;/strong&gt; om een fotoalbum of slideshow weer te geven.</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="PhotoAlbums" xml:space="preserve">
+    <value>Foto albums</value>
+  </data>
+  <data name="photos" xml:space="preserve">
+    <value>Foto's</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>afspelen</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>breedte</value>
+  </data>
+  <data name="Your" xml:space="preserve">
+    <value>Jouw</value>
+  </data>
+  <data name="forgotPassword" xml:space="preserve">
+    <value>Wachtwoord vergeten?</value>
+  </data>
+  <data name="passwordAndConfirmPasswordIsMatch" xml:space="preserve">
+    <value>Het nieuwe en het te bevestigen wachtwoord komen niet overeen</value>
+  </data>
+  <data name="passwordAndConfirmPasswordMismatch" xml:space="preserve">
+    <value>Het wachtwoord en het te bevestigen wachtwoord komen niet overeen</value>
+  </data>
+  <data name="passwordArgumentInvalid" xml:space="preserve">
+    <value>Wachtwoord of Sleutel is niet valide</value>
+  </data>
+  <data name="passwordChangeSuccess" xml:space="preserve">
+    <value>Je wachtwoord is succesvol gewijzigd</value>
+  </data>
+  <data name="passwordIsRequried" xml:space="preserve">
+    <value>Wachtwoord is verplicht</value>
+  </data>
+  <data name="passwordMinimumCharacters" xml:space="preserve">
+    <value>Het wachtwoord moet minimaal {0} karakters bevatten</value>
+  </data>
+  <data name="passwordRetrieval" xml:space="preserve">
+    <value>Wachtwoord opvragen</value>
+  </data>
+  <data name="passwordRetrievalInstructionMessage" xml:space="preserve">
+    <value>Typ hieronder je e-mail adres en je wachtwoord wordt binnen enkele minuten naar je verzonden.</value>
+  </data>
+  <data name="rememberMe" xml:space="preserve">
+    <value>Aangemeld blijven</value>
+  </data>
+  <data name="returnToBlog" xml:space="preserve">
+    <value>Terug naar website</value>
+  </data>
+  <data name="send" xml:space="preserve">
+    <value>Verzenden</value>
+  </data>
+  <data name="userNameIsRequired" xml:space="preserve">
+    <value>Gebruikersnaam is verplicht</value>
+  </data>
+  <data name="confirmNewPassword" xml:space="preserve">
+    <value>Bevestig nieuw wachtwoord</value>
+  </data>
+  <data name="confirmPassword" xml:space="preserve">
+    <value>Bevestig wachtwoord</value>
+  </data>
+  <data name="confirmPasswordIsRequired" xml:space="preserve">
+    <value>Het te bevestigen wachtwoord is verplicht</value>
+  </data>
+  <data name="changePassword" xml:space="preserve">
+    <value>Wachtwoord wijzigen</value>
+  </data>
+  <data name="chooseOtherName" xml:space="preserve">
+    <value>Deze naam is al gekozen</value>
+  </data>
+  <data name="emailSubjectPrefix" xml:space="preserve">
+    <value>Onderwerp prefix</value>
+  </data>
+  <data name="avatars" xml:space="preserve">
+    <value>Avatars</value>
+  </data>
+  <data name="blogroll" xml:space="preserve">
+    <value>Blogroll</value>
+  </data>
+  <data name="enablePingbacks" xml:space="preserve">
+    <value>Pingbacks aanzetten</value>
+  </data>
+  <data name="enableTrackbacks" xml:space="preserve">
+    <value>Trackbacks aanzetten</value>
+  </data>
+  <data name="enterValidEmail" xml:space="preserve">
+    <value>Vul een correct e-mail adres in</value>
+  </data>
+  <data name="enterValidUrl" xml:space="preserve">
+    <value>Vul een correcte URL in</value>
+  </data>
+  <data name="mobileTheme" xml:space="preserve">
+    <value>Mobiel thema</value>
+  </data>
+  <data name="themeCookieName" xml:space="preserve">
+    <value>Thema Cookie naam</value>
+  </data>
+  <data name="nextPost" xml:space="preserve">
+    <value>Volgend bericht</value>
+  </data>
+  <data name="nextPosts" xml:space="preserve">
+    <value>Volgende berichten</value>
+  </data>
+  <data name="previousPost" xml:space="preserve">
+    <value>Vorig bericht</value>
+  </data>
+  <data name="previousPosts" xml:space="preserve">
+    <value>Vorige berichten</value>
+  </data>
+  <data name="receive" xml:space="preserve">
+    <value>Ontvangen</value>
+  </data>
+  <data name="required" xml:space="preserve">
+    <value>Verplicht</value>
+  </data>
+  <data name="savingTheComment" xml:space="preserve">
+    <value>Commentaar opslaan...</value>
+  </data>
+  <data name="showDescriptionInPostListForPostsByTagOrCategory" xml:space="preserve">
+    <value>Alleen de beschrijving bij berichten weergeven wanneer er is geklikt op tags of categoriën</value>
+  </data>
+  <data name="showPostNavigation" xml:space="preserve">
+    <value>Bericht navigatie links weergeven</value>
+  </data>
+  <data name="userProfiles" xml:space="preserve">
+    <value>Gebruiker Profiel(en)</value>
+  </data>
+  <data name="view" xml:space="preserve">
+    <value>Bekijken</value>
+  </data>
+  <data name="firstName" xml:space="preserve">
+    <value>Voornaam</value>
+  </data>
+  <data name="aboutMe" xml:space="preserve">
+    <value>Over mij</value>
+  </data>
+  <data name="birthday" xml:space="preserve">
+    <value>Geboortedatum</value>
+  </data>
+  <data name="cityTown" xml:space="preserve">
+    <value>Stad/Plaats/Dorp</value>
+  </data>
+  <data name="displayName" xml:space="preserve">
+    <value>Weergave naam</value>
+  </data>
+  <data name="fullName" xml:space="preserve">
+    <value>Volledige naam</value>
+  </data>
+  <data name="gender" xml:space="preserve">
+    <value>Geslacht</value>
+  </data>
+  <data name="industry" xml:space="preserve">
+    <value>Bedrijf</value>
+  </data>
+  <data name="interests" xml:space="preserve">
+    <value>Hobby's</value>
+  </data>
+  <data name="isPrivate" xml:space="preserve">
+    <value>Privé?</value>
+  </data>
+  <data name="lastName" xml:space="preserve">
+    <value>Achternaam</value>
+  </data>
+  <data name="occupation" xml:space="preserve">
+    <value>Bezetting</value>
+  </data>
+  <data name="photoURL" xml:space="preserve">
+    <value>Foto URL</value>
+  </data>
+  <data name="regionState" xml:space="preserve">
+    <value>Provincie</value>
+  </data>
+  <data name="saveProfile" xml:space="preserve">
+    <value>Profiel opslaan</value>
+  </data>
+  <data name="switchUserProfile" xml:space="preserve">
+    <value>Wissel naar gebruikersprofiel</value>
+  </data>
+  <data name="company" xml:space="preserve">
+    <value>Bedrijf</value>
+  </data>
+  <data name="middleName" xml:space="preserve">
+    <value>tussenvoegsel/middelste naam</value>
+  </data>
+  <data name="phoneFax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="phoneMain" xml:space="preserve">
+    <value>Telefoonnummer</value>
+  </data>
+  <data name="phoneMobile" xml:space="preserve">
+    <value>Mobiel nummer</value>
+  </data>
+  <data name="profile" xml:space="preserve">
+    <value>Profiel</value>
+  </data>
+  <data name="calendar" xml:space="preserve">
+    <value>Kalender</value>
+  </data>
+  <data name="commentWaitingModeration" xml:space="preserve">
+    <value>Bedankt voor je reactie. Wanneer deze is goedgekeurd wordt deze geplaatst.</value>
+  </data>
+  <data name="requireSslForMetaWeblogApi" xml:space="preserve">
+    <value>SSL Verplicht voor MetaWeblog API</value>
+  </data>
+  <data name="requireSslForMetaWeblogApiDescription" xml:space="preserve">
+    <value>SSL Gebruik verplichten voor MetaWeblog API</value>
+  </data>
+  <data name="compressWebResource" xml:space="preserve">
+    <value>Compress WebResource.axd</value>
+  </data>
+  <data name="compressWebResourceDescription" xml:space="preserve">
+    <value>Dit kan extension functionaliteiten beschadingen</value>
+  </data>
+  <data name="useBlogNameInPageTitles" xml:space="preserve">
+    <value>Gebruik website naam in pagina titels</value>
+  </data>
+  <data name="useBlogNameInPageTitlesDescription" xml:space="preserve">
+    <value>Zet de pagina titel voor de naam van de blog</value>
+  </data>
+  <data name="uncategorized" xml:space="preserve">
+    <value>Ongecatoriseerd</value>
+  </data>
+  <data name="filter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="filterByApml" xml:space="preserve">
+    <value>Filter op APML</value>
+  </data>
+  <data name="filterByApmlDescription" xml:space="preserve">
+    <value>Voer de url naar je website of APML document in</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>Aanmelden</value>
+  </data>
+  <data name="logoff" xml:space="preserve">
+    <value>Afmelden</value>
+  </data>
+  <data name="useRawHtmlEditor" xml:space="preserve">
+    <value>Gebruik raw HTML editor</value>
+  </data>
+  <data name="enableCommentNesting" xml:space="preserve">
+    <value>Sta genest commentaar toe</value>
+  </data>
+  <data name="enableCommentNestingDescription" xml:space="preserve">
+    <value>Dit werkt alleen als het thema het ook ondersteunt</value>
+  </data>
+  <data name="replyTo" xml:space="preserve">
+    <value>Reactie op</value>
+  </data>
+  <data name="replyToBase" xml:space="preserve">
+    <value>Het originele bericht</value>
+  </data>
+  <data name="replyToThis" xml:space="preserve">
+    <value>Reageren</value>
+  </data>
+  <data name="deleteKeepReplies" xml:space="preserve">
+    <value>Verwijderen, reacties behouden</value>
+  </data>
+  <data name="deletePlusReplies" xml:space="preserve">
+    <value>Verwijderen, reacties ook verwijderen</value>
+  </data>
+  <data name="cancelReply" xml:space="preserve">
+    <value>Annuleer deze reactie</value>
+  </data>
+  <data name="numberOfCharacters" xml:space="preserve">
+    <value>Aantal karakters</value>
+  </data>
+  <data name="ratingHasBeenRegistered" xml:space="preserve">
+    <value>Je waardering is succesvol opgenomen! Bedankt!</value>
+  </data>
+  <data name="rateThisXStars" xml:space="preserve">
+    <value>Waardeer dit {0} met{1} tot 5 sterren</value>
+  </data>
+  <data name="move" xml:space="preserve">
+    <value>Verplaatsen</value>
+  </data>
+  <data name="moveWidgetTo" xml:space="preserve">
+    <value>Verplaats widget naar</value>
+  </data>
+  <data name="link" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="numberOfDaysToKeep" xml:space="preserve">
+    <value>Aantal dagen onthouden</value>
+  </data>
+  <data name="profiles" xml:space="preserve">
+    <value>Profielen</value>
+  </data>
+  <data name="enableErrorLogging" xml:space="preserve">
+    <value>Error logging aanzetten</value>
+  </data>
+  <data name="enableErrorLoggingDescription" xml:space="preserve">
+    <value>Unhandled errors will be logged to any extension/component subscribed to log notifications.</value>
+  </data>
+  <data name="commentNotificationUnsubscriptionHeader" xml:space="preserve">
+    <value>Reactie notificatie aanvraag</value>
+  </data>
+  <data name="commentNotificationUnsubscriptionText" xml:space="preserve">
+    <value>Je bent uitgeschreven voor e-mail gerelateerd aan dit bericht</value>
+  </data>
+  <data name="commentNotificationUnsubscribe" xml:space="preserve">
+    <value>Schrijf je uit voor e-mails over dit bericht</value>
+  </data>
+  <data name="accuracy" xml:space="preserve">
+    <value>Nauwkeurigheid</value>
+  </data>
+  <data name="addFilter" xml:space="preserve">
+    <value>Filter toevoegen</value>
+  </data>
+  <data name="addToWhiteList" xml:space="preserve">
+    <value>Aan white list toevoegen als op zijn minst</value>
+  </data>
+  <data name="allow" xml:space="preserve">
+    <value>Toestaan</value>
+  </data>
+  <data name="alwaysTrust" xml:space="preserve">
+    <value>Als de gebruiker geauthenticeerd is, altijd vertrouwen</value>
+  </data>
+  <data name="approved" xml:space="preserve">
+    <value>Goedgekeurd</value>
+  </data>
+  <data name="authorApproved" xml:space="preserve">
+    <value>Reacties van deze autheur zijn goedgekeurd</value>
+  </data>
+  <data name="authorBlocked" xml:space="preserve">
+    <value>Als een comment verwijderd is, deze gebruiker altijd blokkeren</value>
+  </data>
+  <data name="authorRejected" xml:space="preserve">
+    <value>Reacties van deze gebruiker zijn geweigerd</value>
+  </data>
+  <data name="block" xml:space="preserve">
+    <value>Blokkeren</value>
+  </data>
+  <data name="cheked" xml:space="preserve">
+    <value>Gecontroleerd</value>
+  </data>
+  <data name="commentsApprovedByAdmin" xml:space="preserve">
+    <value>Handmatig - (Alleen na goedkeuring door admin zichtbaar)</value>
+  </data>
+  <data name="commentsAuto" xml:space="preserve">
+    <value>Automatisch - (Regels en filters bepalen of de reactie spam is of niet)</value>
+  </data>
+  <data name="commentsBlacklist" xml:space="preserve">
+    <value>Aan black list toevoegen als op zijn minst</value>
+  </data>
+  <data name="commentsBlockOnDelete" xml:space="preserve">
+    <value>Blokkeer na verwijderen</value>
+  </data>
+  <data name="commentsPerPage" xml:space="preserve">
+    <value>Reacties per pagina</value>
+  </data>
+  <data name="commentsUnmodApproved" xml:space="preserve">
+    <value>Bij geen moderator, alles goedkeuren</value>
+  </data>
+  <data name="confirmResetCounters" xml:space="preserve">
+    <value>Weet je zeker dat je alle tellers op `0` wilt zetten?</value>
+  </data>
+  <data name="contains" xml:space="preserve">
+    <value>Bevat</value>
+  </data>
+  <data name="days" xml:space="preserve">
+    <value>dagen</value>
+  </data>
+  <data name="down" xml:space="preserve">
+    <value>Onder</value>
+  </data>
+  <data name="enabled" xml:space="preserve">
+    <value>Ingeschakeld</value>
+  </data>
+  <data name="eqls" xml:space="preserve">
+    <value>Gelijk aan</value>
+  </data>
+  <data name="filterName" xml:space="preserve">
+    <value>Filter naam</value>
+  </data>
+  <data name="filters" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="ip" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="mistakes" xml:space="preserve">
+    <value>Fouten</value>
+  </data>
+  <data name="moderation" xml:space="preserve">
+    <value>Moderation</value>
+  </data>
+  <data name="priority" xml:space="preserve">
+    <value>Prioriteit</value>
+  </data>
+  <data name="reportMistakesToService" xml:space="preserve">
+    <value>Fouten rapporteren naar de backend service</value>
+  </data>
+  <data name="resetCounters" xml:space="preserve">
+    <value>Tellers resetten</value>
+  </data>
+  <data name="rules" xml:space="preserve">
+    <value>Regels</value>
+  </data>
+  <data name="spam" xml:space="preserve">
+    <value>Spam</value>
+  </data>
+  <data name="trustAuthenticated" xml:space="preserve">
+    <value>Geauthenticeerde auteurs vertrouwen</value>
+  </data>
+  <data name="up" xml:space="preserve">
+    <value>Boven</value>
+  </data>
+  <data name="all" xml:space="preserve">
+    <value>Alle</value>
+  </data>
+  <data name="clear" xml:space="preserve">
+    <value>Leegmaken</value>
+  </data>
+  <data name="moderator" xml:space="preserve">
+    <value>Moderator</value>
+  </data>
+  <data name="select" xml:space="preserve">
+    <value>Selecteren</value>
+  </data>
+  <data name="reject" xml:space="preserve">
+    <value>Afwijzen</value>
+  </data>
+  <data name="restore" xml:space="preserve">
+    <value>Herstellen</value>
+  </data>
+  <data name="selectedComments" xml:space="preserve">
+    <value>Geselecteerd reacties</value>
+  </data>
+  <data name="editor" xml:space="preserve">
+    <value>Editor</value>
+  </data>
+  <data name="total" xml:space="preserve">
+    <value>Totaal</value>
+  </data>
+  <data name="update" xml:space="preserve">
+    <value>Bijwerken</value>
+  </data>
+  <data name="widget" xml:space="preserve">
+    <value>Widget</value>
+  </data>
+  <data name="configuration" xml:space="preserve">
+    <value>Configuratie</value>
+  </data>
+  <data name="inbox" xml:space="preserve">
+    <value>Inbox</value>
+  </data>
+  <data name="manual" xml:space="preserve">
+    <value>Handmatig</value>
+  </data>
+  <data name="unmoderated" xml:space="preserve">
+    <value>Niet gemoderate</value>
+  </data>
+  <data name="action" xml:space="preserve">
+    <value>Actie</value>
+  </data>
+  <data name="automoderation" xml:space="preserve">
+    <value>Authomatisch Moderaten</value>
+  </data>
+  <data name="custom" xml:space="preserve">
+    <value>Gebruikerlijk</value>
+  </data>
+  <data name="extensions" xml:space="preserve">
+    <value>Extensions</value>
+  </data>
+  <data name="showPingBacks" xml:space="preserve">
+    <value>pingbacks en trackbacks laten zien</value>
+  </data>
+  <data name="register" xml:space="preserve">
+    <value>Registreren</value>
+  </data>
+  <data name="addCommentsToPages" xml:space="preserve">
+    <value>Reacties toevoegen aan pagina's</value>
+  </data>
+  <data name="addToPages" xml:space="preserve">
+    <value>Voeg toe aan pagina's (naast de berichten)</value>
+  </data>
+  <data name="alreadyHaveAccount" xml:space="preserve">
+    <value>Heb je al een account?</value>
+  </data>
+  <data name="applyChanges" xml:space="preserve">
+    <value>Wijzigen toepassen</value>
+  </data>
+  <data name="clickToDisable" xml:space="preserve">
+    <value>Klik om uit te schakelen</value>
+  </data>
+  <data name="clickToEnable" xml:space="preserve">
+    <value>Klik om in te schakelen</value>
+  </data>
+  <data name="commentsWhere" xml:space="preserve">
+    <value>reacties waar</value>
+  </data>
+  <data name="ErrorConnectingPicasa" xml:space="preserve">
+    <value>Fout tijdens conecten naar Picasa: </value>
+  </data>
+  <data name="activeThemes" xml:space="preserve">
+    <value>Actieve thema's</value>
+  </data>
+  <data name="addNewBlog" xml:space="preserve">
+    <value>Nieuwe blog toevoegen</value>
+  </data>
+  <data name="addNewCategory" xml:space="preserve">
+    <value>Nieuwe categorie toevoegen</value>
+  </data>
+  <data name="addNewPage" xml:space="preserve">
+    <value>Nieuwe pagina toevoegen</value>
+  </data>
+  <data name="addNewRole" xml:space="preserve">
+    <value>Nieuwe rol toevoegen</value>
+  </data>
+  <data name="addNewUser" xml:space="preserve">
+    <value>Nieuwe gebruiker toevoegen</value>
+  </data>
+  <data name="appearance" xml:space="preserve">
+    <value>Uiterlijk</value>
+  </data>
+  <data name="chooseFromExistingTags" xml:space="preserve">
+    <value>Kies uit bestaande tags</value>
+  </data>
+  <data name="currentTheme" xml:space="preserve">
+    <value>Huidig thema</value>
+  </data>
+  <data name="draftPages" xml:space="preserve">
+    <value>Concept pagina's</value>
+  </data>
+  <data name="draftPosts" xml:space="preserve">
+    <value>Concept berichten</value>
+  </data>
+  <data name="drafts" xml:space="preserve">
+    <value>Concepten</value>
+  </data>
+  <data name="emptyTrash" xml:space="preserve">
+    <value>Prullenbak legen</value>
+  </data>
+  <data name="enablePasswordReset" xml:space="preserve">
+    <value>Wachtwoord wijzigen inschakelen</value>
+  </data>
+  <data name="enableSelfRegistration" xml:space="preserve">
+    <value>Zelf registreren inschakelen</value>
+  </data>
+  <data name="excerpt" xml:space="preserve">
+    <value>Uitreksel (Optioneel)</value>
+  </data>
+  <data name="extractFromTitle" xml:space="preserve">
+    <value>Genereer m.b.v. titel</value>
+  </data>
+  <data name="insertImage" xml:space="preserve">
+    <value>Afbeelding invoegen</value>
+  </data>
+  <data name="insertVideo" xml:space="preserve">
+    <value>Video invoegen</value>
+  </data>
+  <data name="myProfile" xml:space="preserve">
+    <value>Mijn profiel</value>
+  </data>
+  <data name="otherSettings" xml:space="preserve">
+    <value>Andere instellingen</value>
+  </data>
+  <data name="preview" xml:space="preserve">
+    <value>Voorbeeld</value>
+  </data>
+  <data name="quickAddNewCategory" xml:space="preserve">
+    <value>Snel nieuwe categorie toevoegen</value>
+  </data>
+  <data name="recentPendingComments" xml:space="preserve">
+    <value>Openstaande reacties</value>
+  </data>
+  <data name="selfRegistrationInitialRole" xml:space="preserve">
+    <value>Initiële rol bij registratie</value>
+  </data>
+  <data name="setAsCurrentTheme" xml:space="preserve">
+    <value>Instellen als huidig thema</value>
+  </data>
+  <data name="setAsMobileTheme" xml:space="preserve">
+    <value>Instellen als mobiel thema</value>
+  </data>
+  <data name="setPublishDate" xml:space="preserve">
+    <value>Publicatie datum</value>
+  </data>
+  <data name="show" xml:space="preserve">
+    <value>Tonen</value>
+  </data>
+  <data name="slug" xml:space="preserve">
+    <value>Verkorte url (optioneel)</value>
+  </data>
+  <data name="themes" xml:space="preserve">
+    <value>Thema's</value>
+  </data>
+  <data name="trash" xml:space="preserve">
+    <value>Prullenbak</value>
+  </data>
+  <data name="unapproved" xml:space="preserve">
+    <value>Niet-goedgekeurde</value>
+  </data>
+  <data name="viewAll" xml:space="preserve">
+    <value>Alles bekijken</value>
+  </data>
+  <data name="welcome" xml:space="preserve">
+    <value>Welkom</value>
+  </data>
+  <data name="writeNewPost" xml:space="preserve">
+    <value>Schrijf een nieuw bericht</value>
+  </data>
+  <data name="youDontHaveAnyDraftPages" xml:space="preserve">
+    <value>Er zijn geen concept pagina's</value>
+  </data>
+  <data name="youDontHaveAnyDraftPosts" xml:space="preserve">
+    <value>Er zijn geen concept berichten</value>
+  </data>
+  <data name="createAccount" xml:space="preserve">
+    <value>Account aanmaken</value>
+  </data>
+  <data name="Referrers_BindTable_Total" xml:space="preserve">
+    <value>Totaal</value>
+    <comment>
+			Footer row text of first cell
+		</comment>
+  </data>
+  <data name="Configuration_OnInit_Please_specify_a_number" xml:space="preserve">
+    <value>Geef u a.u.b. een nummer op</value>
+    <comment>
+			valDescChar Error Message
+		</comment>
+  </data>
+  <data name="Configuration_BtnTestSmtpClick_Test_successfull" xml:space="preserve">
+    <value>Test succesvol</value>
+    <comment>Smtp status text</comment>
+  </data>
+  <data name="Combine" xml:space="preserve">
+    <value>Combinatie</value>
+  </data>
+  <data name="createNow" xml:space="preserve">
+    <value>Nu aanmaken!</value>
+  </data>
+  <data name="createUser" xml:space="preserve">
+    <value>Gebruiker aanmaken</value>
+  </data>
+  <data name="deleteConfirm" xml:space="preserve">
+    <value>Weet je zeker dat je deze reactie wilt verwijderen?</value>
+  </data>
+  <data name="developmentMode" xml:space="preserve">
+    <value>Ontwikkelmodus</value>
+  </data>
+  <data name="developmentModeCheckboxMessage" xml:space="preserve">
+    <value>Controleer dit als je disqus gebruikt</value>
+  </data>
+  <data name="disabled" xml:space="preserve">
+    <value>Uitgeschakeld</value>
+  </data>
+  <data name="dontHaveAccount" xml:space="preserve">
+    <value>Heb je nog geen account?</value>
+  </data>
+  <data name="isAlreadyExists" xml:space="preserve">
+    <value>Bestaat al</value>
+  </data>
+  <data name="isRequiredField" xml:space="preserve">
+    <value>Is een verplicht veld</value>
+  </data>
+  <data name="loginNow" xml:space="preserve">
+    <value>Meld je nu aan!</value>
+  </data>
+  <data name="makeDonation" xml:space="preserve">
+    <value>Maak een donatie</value>
+  </data>
+  <data name="moderatedByDisqus" xml:space="preserve">
+    <value>Beheerd door disqus</value>
+  </data>
+  <data name="never" xml:space="preserve">
+    <value>Nooit</value>
+  </data>
+  <data name="newPassword" xml:space="preserve">
+    <value>Nieuw wachtwoord</value>
+  </data>
+  <data name="oldPassword" xml:space="preserve">
+    <value>Oud wachtwoord</value>
+  </data>
+  <data name="requiredPasswordLength" xml:space="preserve">
+    <value>Nieuwe wachtwoorden moeten minimaal {0} karakters lang zijn.</value>
+  </data>
+  <data name="siteUnavailableConfirm" xml:space="preserve">
+    <value>Deze site is een paar seconde onbereikbaar./n Weet u zeker dat u door wilt gaan.</value>
+  </data>
+  <data name="source" xml:space="preserve">
+    <value>Broncode</value>
+  </data>
+  <data name="sourceViewer" xml:space="preserve">
+    <value>Broncode bekijken</value>
+  </data>
+  <data name="theValuesSaved" xml:space="preserve">
+    <value>De waarden zijn opgeslagen</value>
+  </data>
+  <data name="version" xml:space="preserve">
+    <value>Versie</value>
+  </data>
+  <data name="areYouSureDeleteRow" xml:space="preserve">
+    <value>Weet u zeker dat u deze rij wilt verwijderen?</value>
+  </data>
+  <data name="categoryAlreadyExists" xml:space="preserve">
+    <value>Deze categorie bestaat al</value>
+  </data>
+  <data name="close" xml:space="preserve">
+    <value>Sluiten</value>
+  </data>
+  <data name="createRole" xml:space="preserve">
+    <value>Rol aanmaken</value>
+  </data>
+  <data name="enableEnclosures" xml:space="preserve">
+    <value>Bijlagen inschakelen</value>
+  </data>
+  <data name="enterDate" xml:space="preserve">
+    <value>Voer a.u.b. een datum in (jjjj-mm-dd uu:mm)</value>
+  </data>
+  <data name="enterTitle" xml:space="preserve">
+    <value>Voer a.u.b. een titel in</value>
+  </data>
+  <data name="enterValidDate" xml:space="preserve">
+    <value>Voer a.u.b. een geldige datum in (jjjj-mm-dd uu:mm)</value>
+  </data>
+  <data name="enterValidName" xml:space="preserve">
+    <value>Voer a.u.b. een geldige naam in</value>
+  </data>
+  <data name="enterValidNumber" xml:space="preserve">
+    <value>Voer a.u.b. een geldig nummer in</value>
+  </data>
+  <data name="enterValidNumberPositiveNegative" xml:space="preserve">
+    <value>Voer a.u.b. een geldig nummer in (Positief of Negatief)</value>
+  </data>
+  <data name="findPosition" xml:space="preserve">
+    <value>Vind positie</value>
+  </data>
+  <data name="importFromBlogML" xml:space="preserve">
+    <value>Importeren vanuit BlogML</value>
+  </data>
+  <data name="invalid" xml:space="preserve">
+    <value>Ongeldig</value>
+  </data>
+  <data name="noValidNumber" xml:space="preserve">
+    <value>Geen geldig nummer</value>
+  </data>
+  <data name="onlyLoggedInCanView" xml:space="preserve">
+    <value>Alleen ingelogde gebruiker kunnen berichten lezen (Private)</value>
+  </data>
+  <data name="roles" xml:space="preserve">
+    <value>Rollen</value>
+  </data>
+  <data name="showSelector" xml:space="preserve">
+    <value>Toon selector</value>
+  </data>
+  <data name="usernameAlreadyTaken" xml:space="preserve">
+    <value>Deze gebruikersnaam is al bezet</value>
+  </data>
+  <data name="admin" xml:space="preserve">
+    <value>Beheerder</value>
+  </data>
+  <data name="parent" xml:space="preserve">
+    <value>Ouder</value>
+  </data>
+  <data name="allowRemoteFileDownloads" xml:space="preserve">
+    <value>Externe downloads toestaan</value>
+  </data>
+  <data name="securitySettings" xml:space="preserve">
+    <value>Beveiligings instellingen</value>
+  </data>
+  <data name="maximumRemoteFileSize" xml:space="preserve">
+    <value>Max extern bestand grootte</value>
+  </data>
+  <data name="enableRecaptcha" xml:space="preserve">
+    <value>Recaptcha inschakelen</value>
+  </data>
+  <data name="newPasswordIsRequired" xml:space="preserve">
+    <value>Nieuw wachtwoord is vereist</value>
+  </data>
+  <data name="emailIsInvalid" xml:space="preserve">
+    <value>E-mail adres is ongeldig</value>
+  </data>
+  <data name="oldPasswordIsRequired" xml:space="preserve">
+    <value>Oud wachtwoord is vereist</value>
+  </data>
+  <data name="emailIsRequired" xml:space="preserve">
+    <value>E-mail adres is vereist</value>
+  </data>
+  <data name="groupByYear" xml:space="preserve">
+    <value>Groepeer op jaar</value>
+  </data>
+  <data name="recentDatesAtTop" xml:space="preserve">
+    <value>Recente datums bovenaan</value>
+  </data>
+  <data name="minPassLengthInChars" xml:space="preserve">
+    <value>De minimale lengte voor een wachtwoord is {0} karakters</value>
+  </data>
+  <data name="newAndConfirmPasswordMismatch" xml:space="preserve">
+    <value>Het nieuwe en het te bevestigen wachtwoord komen niet overeen.</value>
+  </data>
+  <data name="notAuthorized" xml:space="preserve">
+    <value>Niet geautoriseerd</value>
+  </data>
+  <data name="userAlreadyExists" xml:space="preserve">
+    <value>Gebruiker "{0}" bestaat al</value>
+  </data>
+  <data name="commentsDeleted" xml:space="preserve">
+    <value>Reacties verwijderd</value>
+  </data>
+  <data name="couldNotCreateRole" xml:space="preserve">
+    <value>De rol "{0}" kan niet aangemaakt worden</value>
+  </data>
+  <data name="couldNotCreateUser" xml:space="preserve">
+    <value>De gebruiker "{0}" kan niet aangemaakt worden</value>
+  </data>
+  <data name="couldNotDeleteComment" xml:space="preserve">
+    <value>De reactie "{0}" kon niet verwijderd worden</value>
+  </data>
+  <data name="couldNotDeleteComments" xml:space="preserve">
+    <value>Niet alle reacties konden verwijderd worden: {0}</value>
+  </data>
+  <data name="couldNotDeletePage" xml:space="preserve">
+    <value>De pagina "{0}" kon niet verwijderd worden</value>
+  </data>
+  <data name="couldNotDeletePost" xml:space="preserve">
+    <value>Het bericht "{0}" kon niet verwijderd worden</value>
+  </data>
+  <data name="couldNotDeleteRole" xml:space="preserve">
+    <value>De rol "{0}" kon niet verwijderd worden</value>
+  </data>
+  <data name="couldNotDeleteTag" xml:space="preserve">
+    <value>De tag "{0}" kon niet verwijderd worden</value>
+  </data>
+  <data name="couldNotDeleteUser" xml:space="preserve">
+    <value>De gebruiker "{0}" kon niet verwijderd worden</value>
+  </data>
+  <data name="couldNotUpdateProfile" xml:space="preserve">
+    <value>Het profiel "{0}" kon niet gewijzigd worden</value>
+  </data>
+  <data name="couldNotUpdateRole" xml:space="preserve">
+    <value>De rol "{0}" kon niet gewijzigd worden</value>
+  </data>
+  <data name="couldNotUpdateTag" xml:space="preserve">
+    <value>De tag "{0}" kon niet gewijzigd worden</value>
+  </data>
+  <data name="couldNotUpdateUser" xml:space="preserve">
+    <value>De gebruiker "{0}" kon niet gewijzigd worden</value>
+  </data>
+  <data name="displayNameIsRequired" xml:space="preserve">
+    <value>Weergavenaam is een verplicht veld</value>
+  </data>
+  <data name="emailArgumentInvalid" xml:space="preserve">
+    <value>E-mail argument is ongeldig</value>
+  </data>
+  <data name="errorApprovingComment" xml:space="preserve">
+    <value>Fout bij het toestaan van de reactie: {0}</value>
+  </data>
+  <data name="errorRejectingComment" xml:space="preserve">
+    <value>Fout bij het afwijzen van de reactie</value>
+  </data>
+  <data name="idArgumentNull" xml:space="preserve">
+    <value>ID argument is leeg (null)</value>
+  </data>
+  <data name="invalidPageId" xml:space="preserve">
+    <value>Ongeldig pagina id</value>
+  </data>
+  <data name="invalidPostId" xml:space="preserve">
+    <value>Ongeldig post id</value>
+  </data>
+  <data name="invalidRoleName" xml:space="preserve">
+    <value>Ongeldige rol naam</value>
+  </data>
+  <data name="noRightExists" xml:space="preserve">
+    <value>Er bestaat niet zo'n recht: {0}</value>
+  </data>
+  <data name="pageDeleted" xml:space="preserve">
+    <value>Pagina verwijderd</value>
+  </data>
+  <data name="pageIdRequired" xml:space="preserve">
+    <value>Pagina id is verplciht</value>
+  </data>
+  <data name="postDeleted" xml:space="preserve">
+    <value>Bericht verwijderd</value>
+  </data>
+  <data name="profileUpdated" xml:space="preserve">
+    <value>Profiel {0} is gewijzigd</value>
+  </data>
+  <data name="rightsUpdatedForRole" xml:space="preserve">
+    <value>Rechten gewijzigd voor de rol "{0}"</value>
+  </data>
+  <data name="roleAlreadyExists" xml:space="preserve">
+    <value>Rol "{0}" bestaat al</value>
+  </data>
+  <data name="roleHasBeenCreated" xml:space="preserve">
+    <value>Rol "{0}" is aangemaakt</value>
+  </data>
+  <data name="roleHasBeenDeleted" xml:space="preserve">
+    <value>Rol "{0}" is verwijderd</value>
+  </data>
+  <data name="roleNameArgumentNull" xml:space="preserve">
+    <value>Rol naam argument is leeg (null)</value>
+  </data>
+  <data name="roleNameIsRequired" xml:space="preserve">
+    <value>Rol naam is een verplicht veld.</value>
+  </data>
+  <data name="roleUpdatedFromTo" xml:space="preserve">
+    <value>Rol gewijzigd van "{0}" naar "{1}"</value>
+  </data>
+  <data name="selectedCommentDeleted" xml:space="preserve">
+    <value>Geselecteerde reacties verwijderd</value>
+  </data>
+  <data name="selectedCommentRejected" xml:space="preserve">
+    <value>Geselecteerde reacties afgekeurd</value>
+  </data>
+  <data name="selectedCommentRestored" xml:space="preserve">
+    <value>Geselecteerde reacties hersteld</value>
+  </data>
+  <data name="goToPage" xml:space="preserve">
+    <value>Ga naar pagina</value>
+  </data>
+  <data name="goToPost" xml:space="preserve">
+    <value>Ga naar bericht</value>
+  </data>
+  <data name="manually" xml:space="preserve">
+    <value>Handmatig</value>
+  </data>
+  <data name="options" xml:space="preserve">
+    <value>Opties</value>
+  </data>
+  <data name="uploadVideo" xml:space="preserve">
+    <value>Kies video (MP4, WMV, FLV, OGG, WebM) of audio (MP3) bestand dat je wilt uploade</value>
+  </data>
+  <data name="approvedComments" xml:space="preserve">
+    <value>Goedgekeurde reacties</value>
+  </data>
+  <data name="commonControls" xml:space="preserve">
+    <value>Eigen controls</value>
+  </data>
+  <data name="disable" xml:space="preserve">
+    <value>Uitschakelen</value>
+  </data>
+  <data name="remoteTimeout" xml:space="preserve">
+    <value>Maximale download tijd voor externe files</value>
+  </data>
+  <data name="recaptchaConfigureReminder" xml:space="preserve">
+    <value>Zorg dat Recaptcha extension is inschakeld en goed is geconfigureerd</value>
+  </data>
+  <data name="whitelistIpOnCommentApproval" xml:space="preserve">
+    <value>Automatisch IP adressen aan de white list toevoegen van reacties die goedgekeurd zijn</value>
+  </data>
+  <data name="blacklistIpOnCommentRejection" xml:space="preserve">
+    <value>Automatisch IP adressen aan de blacklist toevoegen van reacties die afgekeurd zijn</value>
+  </data>
+  <data name="doNotPassRightsWithFalseValue" xml:space="preserve">
+    <value>Geef geen rechten terug met valse waarden</value>
+  </data>
+  <data name="rightsCanNotBeNull" xml:space="preserve">
+    <value>Rechten collectie argument mag niet leeg zijn (null)</value>
+  </data>
+  <data name="tagChangedFromTo" xml:space="preserve">
+    <value>Tag gewijzigd van "{0} naar "{1}"</value>
+  </data>
+  <data name="tagHasBeenDeleted" xml:space="preserve">
+    <value>Tag "{0}" is verwijderd</value>
+  </data>
+  <data name="tagIsRequired" xml:space="preserve">
+    <value>Tag is een verplicht veld</value>
+  </data>
+  <data name="userArgumentInvalid" xml:space="preserve">
+    <value>Gebruiker argument is ongeldig</value>
+  </data>
+  <data name="userHasBeenCreated" xml:space="preserve">
+    <value>Gebruiker "{0}" is aangemaakt</value>
+  </data>
+  <data name="userHasBeenDeleted" xml:space="preserve">
+    <value>Gebruiker "{0}" is verwijderd</value>
+  </data>
+  <data name="userUpdated" xml:space="preserve">
+    <value>Gebruiker "{0}" is gewijzigd</value>
+  </data>
+  <data name="userWithEmailExists" xml:space="preserve">
+    <value>Gebruiker met dit e-mail adres bestaat al</value>
+  </data>
+  <data name="valsArgumentNull" xml:space="preserve">
+    <value>Vals argument is leef</value>
+  </data>
+  <data name="addEditPost" xml:space="preserve">
+    <value>Wijzigen bericht</value>
+  </data>
+  <data name="published" xml:space="preserve">
+    <value>Gepubliceerd</value>
+  </data>
+  <data name="automatically" xml:space="preserve">
+    <value>Automatisch</value>
+  </data>
+  <data name="clickTag" xml:space="preserve">
+    <value>Klik op een tag: </value>
+  </data>
+  <data name="editPage" xml:space="preserve">
+    <value>Pagina bewerken</value>
+  </data>
+  <data name="enable" xml:space="preserve">
+    <value>Inschakelen</value>
+  </data>
+  <data name="pending" xml:space="preserve">
+    <value>in afwachting van</value>
+  </data>
+  <data name="pingbacksAndTrackbacks" xml:space="preserve">
+    <value>Pingbacks &amp;amp; Trackbacks</value>
+  </data>
+  <data name="viewSource" xml:space="preserve">
+    <value>Bron bekijken</value>
+  </data>
+  <data name="commentSettings" xml:space="preserve">
+    <value>Reactie instellingen</value>
+  </data>
+  <data name="copyRightsFrom" xml:space="preserve">
+    <value>Kopiëer rechten van</value>
+  </data>
+  <data name="customCode" xml:space="preserve">
+    <value>Eigen code</value>
+  </data>
+  <data name="defaultAnonymousRole" xml:space="preserve">
+    <value>standaard Anonieme rol</value>
+  </data>
+  <data name="defaultEditorsRole" xml:space="preserve">
+    <value>standaard Editor rol</value>
+  </data>
+  <data name="editingRightsForRole" xml:space="preserve">
+    <value>Wijzig rechten voor rol</value>
+  </data>
+  <data name="newUserRoles" xml:space="preserve">
+    <value>Nieuwe gebruikers rollen</value>
+  </data>
+  <data name="turnDisqusOnOff" xml:space="preserve">
+    <value>Disqus aan of uit zetten</value>
+  </data>
+  <data name="useDisqusAsCommentProvider" xml:space="preserve">
+    <value>Gebruik disqus als comment systeem</value>
+  </data>
+  <data name="exportIntoBlogML" xml:space="preserve">
+    <value>Exporteer de blog naar XML (BlogML)</value>
+  </data>
+  <data name="importFromFile" xml:space="preserve">
+    <value>Importeer uit bestand</value>
+  </data>
+  <data name="importWithClickOnce" xml:space="preserve">
+    <value>Importeer met click-once</value>
+  </data>
+  <data name="selectSavedBlogMlFle" xml:space="preserve">
+    <value>Selecteer opgeslagen BlogML file en importeer naar blog</value>
+  </data>
+  <data name="toDisableSetTo0" xml:space="preserve">
+    <value>Zet op "0" om uit te schakelen</value>
+  </data>
+  <data name="cannotDeleteLastAdmin" xml:space="preserve">
+    <value>Je kan niet de laatste gebruiker, die de rechten heeft om andere gebruikers aan te maken, verwijderen.\n Geef eerst een andere gebruiker deze rechten.</value>
+  </data>
+  <data name="forceMainTheme" xml:space="preserve">
+    <value>Reguliere site</value>
+  </data>
+  <data name="allowMobileTheme" xml:space="preserve">
+    <value>Mobiele site</value>
+  </data>
+  <data name="itemsPerPage" xml:space="preserve">
+    <value>Items/Pagina</value>
+  </data>
+  <data name="couldNotDeleteBlog" xml:space="preserve">
+    <value>Kan deze blog niet verwijderen: {0}</value>
+  </data>
+  <data name="blogDeleted" xml:space="preserve">
+    <value>Blog "{0}" is verwijderd</value>
+  </data>
+  <data name="blogAdded" xml:space="preserve">
+    <value>Blog "{0}" is toegevoegd</value>
+  </data>
+  <data name="invalidBlogId" xml:space="preserve">
+    <value>Ongeldig blog id</value>
+  </data>
+  <data name="editExistingBlog" xml:space="preserve">
+    <value>Blog bewerken</value>
+  </data>
+  <data name="storageContainerName" xml:space="preserve">
+    <value>Storage container naam</value>
+  </data>
+  <data name="virtualPath" xml:space="preserve">
+    <value>Virtueel pad</value>
+  </data>
+  <data name="active" xml:space="preserve">
+    <value>Actief</value>
+  </data>
+  <data name="existingBlogToCreateNewBlogFrom" xml:space="preserve">
+    <value>Bestaand blog om in een nieuwe om te zetten</value>
+  </data>
+  <data name="hostName" xml:space="preserve">
+    <value>Host Name (Optioneel)</value>
+  </data>
+  <data name="acceptAnyTextBeforeHostname" xml:space="preserve">
+    <value>Accepteer tekst voor de host name</value>
+  </data>
+  <data name="latestFromTheGallery" xml:space="preserve">
+    <value>Laatst uit gallerij</value>
+  </data>
+  <data name="savedByAtTime" xml:space="preserve">
+    <value>Opgeslagen door {0} om {1}</value>
+  </data>
+  <data name="available" xml:space="preserve">
+    <value>Beschikbaar</value>
+  </data>
+  <data name="gallery" xml:space="preserve">
+    <value>Gallerij</value>
+  </data>
+  <data name="installed" xml:space="preserve">
+    <value>Geïnstalleerd</value>
+  </data>
+  <data name="alphaNumeric" xml:space="preserve">
+    <value>Alphanumeriek</value>
+  </data>
+  <data name="newest" xml:space="preserve">
+    <value>Nieuwste</value>
+  </data>
+  <data name="orderBy" xml:space="preserve">
+    <value>Sorteer op</value>
+  </data>
+  <data name="addNewSponsor" xml:space="preserve">
+    <value>Nieuwe sponsor toevoegen</value>
+  </data>
+  <data name="postOnFacebook" xml:space="preserve">
+    <value>Plaats op facebook</value>
+  </data>
+  <data name="postOnTwitter" xml:space="preserve">
+    <value>Plaats op twitter</value>
+  </data>
+  <data name="sponsoren" xml:space="preserve">
+    <value>Sponsoren</value>
+  </data>
+  <data name="ClubVan50" xml:space="preserve">
+    <value>Club van 50</value>
+  </data>
+  <data name="endDate" xml:space="preserve">
+    <value>Verloop datum</value>
+  </data>
+  <data name="Hoofdsponsor" xml:space="preserve">
+    <value>Hoofdsponsor</value>
+  </data>
+  <data name="Solid" xml:space="preserve">
+    <value>Vast</value>
+  </data>
+  <data name="Sponsor" xml:space="preserve">
+    <value>Sponsor</value>
+  </data>
+  <data name="sponsorlogo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
+  <data name="Subsponsor" xml:space="preserve">
+    <value>Subsponsor</value>
+  </data>
+  <data name="Switch" xml:space="preserve">
+    <value>Wisselend</value>
+  </data>
+  <data name="VriendenVanCr" xml:space="preserve">
+    <value>Vrienden van Carnaval Radio</value>
+  </data>
+  <data name="shortCuts" xml:space="preserve">
+    <value>Snelkoppelingen</value>
+  </data>
+  <data name="AudioStream" xml:space="preserve">
+    <value>Radio Stream</value>
+  </data>
+  <data name="AudioStreamSettingsDescription" xml:space="preserve">
+    <value>Radio Stream Instellingen</value>
+  </data>
+  <data name="HighAudioStreamServer" xml:space="preserve">
+    <value>Hoge Kwaliteit Server</value>
+  </data>
+  <data name="LowAudioStreamServer" xml:space="preserve">
+    <value>Lage Kwaliteit Server</value>
+  </data>
+  <data name="SocialMedia" xml:space="preserve">
+    <value>Social Media</value>
+  </data>
+  <data name="editSponsor" xml:space="preserve">
+    <value>Sponsor bewerken</value>
+  </data>
+  <data name="enterName" xml:space="preserve">
+    <value>Vul een naam in</value>
+  </data>
+  <data name="enterUrl" xml:space="preserve">
+    <value>Vul een website in</value>
+  </data>
+  <data name="Frequency" xml:space="preserve">
+    <value>Frequentie</value>
+  </data>
+  <data name="MobileApp" xml:space="preserve">
+    <value>Mobiele applicatie</value>
+  </data>
+  <data name="saveSponsor" xml:space="preserve">
+    <value>Sponsor opslaan</value>
+  </data>
+  <data name="VisibilityOptions" xml:space="preserve">
+    <value>Zichtbaarheid instellingen</value>
+  </data>
+  <data name="confirmDelete" xml:space="preserve">
+    <value>Weet je zeker dat je deze record wilt verwijderen?</value>
+  </data>
+  <data name="fotos" xml:space="preserve">
+    <value>Foto's</value>
   </data>
 </root>

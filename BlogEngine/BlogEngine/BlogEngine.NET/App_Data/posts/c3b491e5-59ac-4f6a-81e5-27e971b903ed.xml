@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <post>
-  <author>Admin</author>
+  <author>admin</author>
   <title>Welcome to BlogEngine.NET 2.5</title>
   <description>The description is used as the meta description as well as shown in the related posts. It is recommended that you write a description, but not mandatory</description>
   <content>&lt;p&gt;If you see this post it means that BlogEngine.NET 2.5 is running and the hard part of creating your own blog is done. There is only a few things left to do.&lt;/p&gt;
@@ -19,16 +19,13 @@
 &lt;p&gt;The BlogEngine.NET team&lt;/p&gt;</content>
   <ispublished>True</ispublished>
   <isdeleted>False</isdeleted>
-  <iscommentsenabled>True</iscommentsenabled>
+  <iscommentsenabled>False</iscommentsenabled>
   <pubDate>2011-06-11 10:00:00</pubDate>
-  <lastModified>2011-06-11 10:49:25</lastModified>
+  <lastModified>2012-06-06 10:36:59</lastModified>
   <raters>5</raters>
   <rating>4.24</rating>
   <slug>Welcome-to-BlogEngineNET-25</slug>
-  <tags>
-    <tag>blog</tag>
-    <tag>welcome</tag>
-  </tags>
+  <tags />
   <comments>
     <comment id="82c3783e-5ea4-4a6e-b5b2-55d53da0a6c6" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="False">
       <date>2010-01-03 17:58:00</date>
@@ -38,7 +35,7 @@
       <ip>127.0.0.1</ip>
       <content>comment 1</content>
     </comment>
-    <comment id="20574909-b777-4246-9b15-d70a3a795fcc" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="False">
+    <comment id="20574909-b777-4246-9b15-d70a3a795fcc" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="True">
       <date>2010-01-15 17:01:59</date>
       <author>Visitor 2</author>
       <email>post@example.com</email>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Sponsor">
+  <AdminPage />
+  <Author>Nick</Author>
+  <Description>Extension used to set sponsors</Description>
+  <Enabled>true</Enabled>
+  <Priority>0</Priority>
+  <Settings>
+    <Delimiter>44</Delimiter>
+    <Help />
+    <Hidden>false</Hidden>
+    <Index>0</Index>
+    <IsScalar>false</IsScalar>
+    <KeyField>ID</KeyField>
+    <Name>Sponsor</Name>
+    <Parameters>
+      <KeyField>true</KeyField>
+      <Label>ID</Label>
+      <MaxLength>150</MaxLength>
+      <Name>ID</Name>
+      <ParamType>String</ParamType>
+      <Required>true</Required>
+      <SelectedValue />
+      <Values>fbf33027-535d-41b3-a3b2-780979ee5652</Values>
+      <Values>22033e07-f4f2-432c-818d-c39ebe4c419c</Values>
+      <Values>7b7cdaeb-8ad1-431a-9ac1-ae4490aaad0b</Values>
+      <Values>2646b840-e004-4f3a-81fd-361163c0dce6</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Naam</Label>
+      <MaxLength>150</MaxLength>
+      <Name>Name</Name>
+      <ParamType>String</ParamType>
+      <Required>true</Required>
+      <SelectedValue />
+      <Values>Van Ravenstein123</Values>
+      <Values>TSW</Values>
+      <Values>Andy Cobben</Values>
+      <Values>Roy Heijnens</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Website</Label>
+      <MaxLength>255</MaxLength>
+      <Name>URL</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values>test</Values>
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Sponsor type</Label>
+      <MaxLength>100</MaxLength>
+      <Name>SponsorPage_SponsorType</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>3</Values>
+      <Values>3</Values>
+      <Values>4</Values>
+      <Values>4</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Wisselend</Label>
+      <MaxLength>100</MaxLength>
+      <Name>Player_Switch</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Vast</Label>
+      <MaxLength>100</MaxLength>
+      <Name>Player_Solid</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Widget</Label>
+      <MaxLength>100</MaxLength>
+      <Name>Widget_Switch</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Wisselend</Label>
+      <MaxLength>100</MaxLength>
+      <Name>Mobile_Switch</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Vast</Label>
+      <MaxLength>100</MaxLength>
+      <Name>Mobile_Solid</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>False</Values>
+      <Values>True</Values>
+      <Values>False</Values>
+      <Values>False</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Frequentie</Label>
+      <MaxLength>100</MaxLength>
+      <Name>Mobile_Frequency</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>0</Values>
+      <Values>0</Values>
+      <Values>0</Values>
+      <Values>0</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Logo</Label>
+      <MaxLength>255</MaxLength>
+      <Name>Logo</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>Upload/sponsoren/fbf33027-535d-41b3-a3b2-780979ee5652.png</Values>
+      <Values>Upload/sponsoren/22033e07-f4f2-432c-818d-c39ebe4c419c.png</Values>
+      <Values>Upload/sponsoren/7b7cdaeb-8ad1-431a-9ac1-ae4490aaad0b.png</Values>
+      <Values>Upload/sponsoren/2646b840-e004-4f3a-81fd-361163c0dce6.png</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Omschrijving</Label>
+      <MaxLength>2147483647</MaxLength>
+      <Name>Description</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Publicatie datum</Label>
+      <MaxLength>100</MaxLength>
+      <Name>CreationDate</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>11-6-2012 11:56:07</Values>
+      <Values>11-6-2012 11:56:28</Values>
+      <Values>11-6-2012 11:57:06</Values>
+      <Values>11-6-2012 11:57:32</Values>
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Verloop datum</Label>
+      <MaxLength>100</MaxLength>
+      <Name>EndDate</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values />
+      <Values />
+      <Values />
+      <Values />
+    </Parameters>
+    <Parameters>
+      <KeyField>false</KeyField>
+      <Label>Actief</Label>
+      <MaxLength>100</MaxLength>
+      <Name>Active</Name>
+      <ParamType>String</ParamType>
+      <Required>false</Required>
+      <SelectedValue />
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
+    </Parameters>
+    <ShowAdd>true</ShowAdd>
+    <ShowDelete>true</ShowDelete>
+    <ShowEdit>true</ShowEdit>
+  </Settings>
+  <ShowSettings>true</ShowSettings>
+  <Version>1.0</Version>
+</ManagedExtension>

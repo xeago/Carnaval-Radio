@@ -1,0 +1,363 @@
+/*
+	Skin Name: Minimal Dark
+	Class: minimal-dark
+	Description: Minimal Dark skin for Advanced Slider jQuery plugin
+	Author: David
+*/
+
+
+/* MAIN SLIDE */
+
+.minimal-dark .slide-wrapper {
+	background-color: #000;
+	border: 8px solid #000;
+	-moz-box-shadow: 0 0 10px #000;
+	-webkit-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+}
+
+/* END OF MAIN SLIDE */
+
+
+/* SLIDE ARROWS */
+
+.minimal-dark .slide-arrows a {
+	background: url(images/arrows.png) no-repeat;
+	width: 64px;
+	height: 64px;
+	top: 50%;
+	margin-top: -32px;
+}
+
+
+.minimal-dark .slide-arrows a.previous {
+	left: 0;
+}
+
+
+.minimal-dark .slide-arrows a.next {
+	right: 0;
+	background-position: -64px 0;
+}
+
+/* SLIDE ARROWS */
+
+
+/* SLIDESHOW CONTROLS */
+
+.minimal-dark .slideshow-controls {
+	background: url(images/playpause.png) no-repeat;
+	width: 64px;
+	height: 64px;
+	top: 50%;
+	left: 50%;
+	margin-top: -32px;
+	margin-left: -32px;
+}
+
+
+.minimal-dark .slideshow-controls.pause {
+	background-position: 0 0;
+}
+
+
+.minimal-dark .slideshow-controls.play {
+	background-position: -64px 0;
+}
+
+/* END OF SLIDESHOW CONTROLS */
+
+
+/* TIMER ANIMATION */
+
+.minimal-dark .timer-animation {
+	top: 20px;
+	right: 20px;
+}
+
+/* END OF TIMER ANIMATION */
+
+
+/* SLIDE CAPTION */
+
+.minimal-dark .caption-container .background {
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+}
+
+
+.minimal-dark .caption-container .caption {
+	color: #FFF;
+	margin: 0;
+	padding: 8px;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+/* END OF SLIDE CAPTION */
+
+
+/* SLIDE BUTTONS/BULLETS */
+
+/* main container of the navigation buttons */
+.minimal-dark .slide-buttons {
+	margin-top: 40px;
+}
+
+
+/* 
+ left, right and middle of the main container 
+ for this skin, these elements are not styled by default
+ feel free to add your own styling
+*/
+.minimal-dark .slide-buttons .left, 
+.minimal-dark .slide-buttons .right {
+}
+
+
+.minimal-dark .slide-buttons .left {
+}
+
+
+.minimal-dark .slide-buttons .middle {
+}
+
+
+.minimal-dark .slide-buttons .right {
+}
+
+
+/* this contains the buttons */
+.minimal-dark .slide-buttons .buttons-inner {
+}
+
+
+/* this is a button */
+.minimal-dark .slide-buttons .buttons-inner a {
+	background: url(images/buttons.png) no-repeat;
+	background-position: 0 0;
+	width: 14px;
+	height: 14px;
+	margin: 0 2px;
+}
+
+
+.minimal-dark .slide-buttons .buttons-inner a.over {
+	background-position: -14px 0; 
+}
+
+
+.minimal-dark .slide-buttons .buttons-inner a.select {
+	background-position: -28px 0; 
+}
+
+
+/* this is used to style the numbers from within the buttons, when they are used */
+.minimal-dark .slide-buttons .buttons-inner a .number {
+	margin-top: 2px;
+	font-size: 8px;
+	line-height: 10px;
+	font-weight: bold;
+	color: #666;
+}
+
+
+.minimal-dark .slide-buttons .buttons-inner a.over .number {
+	color: #EEE;
+}
+
+
+.minimal-dark .slide-buttons .buttons-inner a.select .number {
+	color: #EEE;
+}
+
+
+/* 
+ applied to the thumbnail when the thumbnail is used only as a tooltip
+ sets the distance between the button and the thumbnail
+*/
+.minimal-dark .slide-buttons .buttons-inner .thumbnail-wrapper {
+	margin-bottom: 10px;
+}
+
+/* END OF SLIDE BUTTONS/BULLETS */
+
+
+/* THUMBNAIL IMAGE */
+
+.minimal-dark .thumbnail {
+	background-color: #000;
+	border: solid 3px #000;
+	-moz-box-shadow: 0 0 10px #333;
+	-webkit-box-shadow: 0 0 10px #333;
+	box-shadow: 0 0 10px #333;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#333333')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#333333');
+}
+
+/* END OF THUMBNAIL IMAGE */
+
+
+/* THUMBNAIL SCROLLER */
+
+.minimal-dark .thumbnail-scroller.horizontal {
+	bottom: 0;
+	padding: 0 50px;
+	margin-top: 30px;
+}
+
+
+.minimal-dark .thumbnail-scroller.vertical {
+	right: 0;
+	padding: 50px 0;
+	margin-left: 30px;
+}
+
+
+.minimal-dark .thumbnail-scroller .thumbnail-wrapper {
+	margin: 5px;
+	padding: 4px;
+}
+
+
+.minimal-dark .thumbnail-scroller .thumbnail.over {
+	border: solid 3px #000;
+	-moz-box-shadow: 0 0 10px #000;
+	-webkit-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#000000')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#000000');
+}
+
+
+.minimal-dark .thumbnail-scroller .thumbnail.select {
+	border: solid 3px #000;
+	-moz-box-shadow: 0 0 10px #000;
+	-webkit-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#000000')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=130, Color='#000000');
+}
+
+
+/* THUMBNAIL CAPTION */
+
+.minimal-dark .thumbnail .caption .background {
+	background-color: #000;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+
+.minimal-dark .thumbnail .caption .content {
+	color: #FFF;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	padding: 2px 0;
+	margin: 0;
+}
+
+/* END OF THUMBNAIL CAPTION */
+
+
+/* THUMBNAIL SCROLLER ARROWS */
+
+.minimal-dark .thumbnail-scroller .arrows a {
+	background: url(images/arrows_small.png) no-repeat;
+	width: 32px;
+	height: 32px;
+}
+
+
+.minimal-dark .thumbnail-scroller.vertical .arrows a {
+	background: url(images/arrows_v_small.png) no-repeat;
+}
+
+
+.minimal-dark .thumbnail-scroller .arrows a.next {
+	background-position: -32px 0;
+}
+
+
+.minimal-dark .thumbnail-scroller.horizontal .arrows a.previous {
+	left: 0;
+}
+
+
+.minimal-dark .thumbnail-scroller.horizontal .arrows a.next {
+	right: 0;
+}
+
+
+.minimal-dark .thumbnail-scroller.vertical .arrows a.previous {
+	top: 0;
+}
+
+
+.minimal-dark .thumbnail-scroller.vertical .arrows a.next {
+	bottom: 0;
+}
+
+/* END OF THUMBNAIL SCROLLER ARROWS */
+
+
+/* THUMBNAIL SCROLLER BUTTONS */
+
+.minimal-dark .thumbnail-scroller .buttons a {
+	background: url(images/buttons_small.png) no-repeat;
+	background-position: 0 0; 
+	width: 8px;
+	height: 8px;
+	margin: 2px;
+}
+
+
+.minimal-dark .thumbnail-scroller .buttons a.over {
+	background-position: -8px 0; 
+}
+
+
+.minimal-dark .thumbnail-scroller .buttons a.select {
+	background-position: -16px 0; 
+}
+
+/* END OF THUMBNAIL SCROLLER BUTTONS */
+
+
+/* THUMBNAIL SCROLLER SCROLLBAR */
+
+.minimal-dark .thumbnail-scroller.horizontal .scrollbar {
+	margin-top: 30px;
+}
+
+
+.minimal-dark .thumbnail-scroller.vertical .scrollbar {
+	margin-left: 30px;
+}
+
+/* END OF THUMBNAIL SCROLLER SCROLLBAR */
+
+/* END OF THUMBNAIL SCROLLER */
+
+
+/* TOOLTIP */
+
+.minimal-dark .tooltip {
+	background-color: #DDD;
+	margin-bottom: 20px;
+	border: #EEE solid 4px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+
+.minimal-dark .tooltip .content {
+	color: #999;
+	padding: 10px;
+	margin: 0;
+}
+
+/* END OF TOOLTIP */

@@ -94,7 +94,7 @@ namespace BlogEngine.Core
             foreach (var flag in rightFlagValues)
             {
                 Rights curFlag = (Rights)flag;
-                var flagName = Enum.GetName(flagType, curFlag);
+                var flagName = Enum.GetName(flagType, curFlag); // TODO: use Enum.GetName as key for as labels for multilingual stuff, if not available fall back on Enum.GetName
                 var curRight = new Right(curFlag, flagName);
 
                 allRights.Add(curRight);

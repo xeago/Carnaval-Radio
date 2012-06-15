@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="PrettyPhoto2">
+  <AdminPage />
+  <Author>&lt;a href="http://rtur.net"&gt;Rtur.net&lt;/a&gt;</Author>
+  <Description>PrettyPhoto2 - jQuery lightbox clone</Description>
+  <Enabled>true</Enabled>
+  <Priority>0</Priority>
+  <ShowSettings>true</ShowSettings>
+  <Version>1.0</Version>
+</ManagedExtension>

@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lightbox Slider</title>
+
+<link rel="stylesheet" type="text/css" href="css/base/advanced-slider-base.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/glossy-curved/black/glossy-curved-black.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/lightbox/prettyPhoto.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/lightbox-slider.css" media="screen"/>
+
+<link rel="stylesheet" type="text/css" href="../presentation-assets/presentation.css" media="screen"/>
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="../presentation-assets/presentation-ie7.css" media="screen"/><![endif]-->
+
+<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.transition.min.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="js/jquery.advancedSlider.min.js"></script>
+
+
+<script type="text/javascript">
+	var slider;
+	
+	jQuery(document).ready(function($){
+		slider = $('#lightbox-slider').advancedSlider({width: 980,
+													   height: 450,
+													   skin: 'glossy-curved-black',
+													   effectType: 'swipe',
+													   lightbox: true,
+													   thumbnailLightboxIcon: true,
+													   thumbnailLightboxIconToggle: true,
+													   slideButtons: false,
+													   thumbnailType: 'scroller',
+													   maximumVisibleThumbnails: 4,
+													   thumbnailButtons: true,
+													   thumbnailOrientation: 'vertical',
+													   captionToggle: true, 
+													   captionSize: 35,
+													   captionHideEffect: 'slide',
+													   transitionComplete:onTransitionComplete
+		});
+	});
+	
+	
+	function previous() {
+		slider.previousSlide();
+	}	
+	
+	function next() {
+		slider.nextSlide();
+	}	
+	
+	function onTransitionComplete(obj) {
+		//console.log(obj.type, obj.index, obj.data);
+	}
+	
+</script>
+
+</head>
+
+<body>
+
+	<div class="advanced-slider" id="lightbox-slider">
+		<ul class="slides">
+			<li class="slide">
+				<a rel="slider-lightbox[]" href="http://www.youtube.com/watch?v=JVuUwvUUPro?width=700&amp;height=400" title="Nuit Blanche explores a fleeting moment between two strangers.">
+					<img class="image" src="../presentation-assets/images/slides/image1.jpg" alt="Nuit Blanche - Arev Manoukian"/>
+				</a>
+				<img class="thumbnail" src="../presentation-assets/images/thumbnails/image1.jpg" alt="" title="YouTube"/>
+				<div class="caption">Click on the slide to open the lightbox which will contain a Youtube video.</div>
+			</li>
+			
+			<li class="slide">
+				<a rel="slider-lightbox[]" href="http://vimeo.com/10829255?width=700&amp;height=400" 
+										   title="New York invasion by 8-bits creatures ! PIXELS is Patrick Jean' latest short film, shot on location in New York.">
+					<img class="image" src="../presentation-assets/images/slides/image2.jpg" alt="Pixels"/>
+				</a>
+				<img class="thumbnail" src="../presentation-assets/images/thumbnails/image2.jpg" alt="" title="Vimeo"/>
+				<div class="caption">Click on the slide to open the lightbox which will contain a Vimeo video.</div>
+			</li>
+			
+			<li class="slide">
+				<a rel="slider-lightbox[]" href="http://www.adobe.com/jp/events/cs3_web_edition_tour/swfs/perform.swf?width=792&amp;height=294" title="This is a sample of flash content.">
+					<img class="image" src="../presentation-assets/images/slides/image3.jpg" alt="Flash"/>
+				</a>
+				<img class="thumbnail" src="../presentation-assets/images/thumbnails/image3.jpg" alt="" title="Flash"/>
+				<div class="caption">Click on the slide to open the lightbox which will contain a flash movie.</div>
+			</li>
+			
+			<li class="slide">
+				<a rel="slider-lightbox[]" href="http://www.youtube.com/watch?v=JVuUwvUUPro?width=700&amp;height=400" title="Nuit Blanche explores a fleeting moment between two strangers.">
+					<img class="image" src="../presentation-assets/images/slides/image4.jpg" alt="Nuit Blanche - Arev Manoukian"/>
+				</a>
+				<img class="thumbnail" src="../presentation-assets/images/thumbnails/image4.jpg" alt="" title="YouTube"/>
+				<div class="caption">Click on the slide to open the lightbox which will contain a Youtube video.</div>
+			</li>
+			
+			<li class="slide">
+				<a rel="slider-lightbox[]" href="http://vimeo.com/10829255?width=700&amp;height=400"
+										   title="New York invasion by 8-bits creatures ! PIXELS is Patrick Jean' latest short film, shot on location in New York.">
+					<img class="image" src="../presentation-assets/images/slides/image5.jpg" alt="Pixels"/>
+				</a>
+				<img class="thumbnail" src="../presentation-assets/images/thumbnails/image5.jpg" alt="" title="Vimeo"/>
+				<div class="caption">Click on the slide to open the lightbox which will contain a Vimeo video.</div>
+			</li>
+			
+			<li class="slide">
+				<a rel="slider-lightbox[]" href="../presentation-assets/images/slides/image6.jpg" title="Some description of the image.">
+					<img class="image" src="../presentation-assets/images/slides/image6.jpg" alt="Image title"/>
+				</a>
+				<img class="thumbnail" src="../presentation-assets/images/thumbnails/image6.jpg" alt="" title="Image"/>
+				<div class="caption">Click on the slide to open the lightbox which will contain an image.</div>
+			</li>
+			
+			<li class="slide">
+				<a rel="slider-lightbox[]" href="http://www.adobe.com/jp/events/cs3_web_edition_tour/swfs/perform.swf?width=792&amp;height=294" title="This is a sample of flash content.">
+					<img class="image" src="../presentation-assets/images/slides/image7.jpg" alt="Flash content"/>
+				</a>
+				<img class="thumbnail" src="../presentation-assets/images/thumbnails/image7.jpg" alt="" title="Flash"/>
+				<div class="caption">Click on the slide to open the lightbox which will contain a flash movie.</div>
+			</li>
+			
+			<li class="slide">
+				<a rel="slider-lightbox[]" href="../presentation-assets/images/slides/image8.jpg" title="Some description of the image.">
+					<img class="image" src="../presentation-assets/images/slides/image8.jpg" alt="Image title"/>
+				</a>
+				<img class="thumbnail" src="../presentation-assets/images/thumbnails/image8.jpg" alt="" title="Image"/>
+				<div class="caption">Click on the slide to open the lightbox which will contain an image.</div>
+			</li>
+			
+			<li class="slide">
+				<a rel="slider-lightbox[]" href="../presentation-assets/images/slides/image9.jpg" title="Some description of the image.">
+					<img class="image" src="../presentation-assets/images/slides/image9.jpg" alt="Image title"/>
+				</a>
+				<img class="thumbnail" src="../presentation-assets/images/thumbnails/image9.jpg" alt="" title="Image"/>
+				<div class="caption">Click on the slide to open the lightbox which will contain an image.</div>
+			</li>
+			
+			<li class="slide">
+				<a rel="slider-lightbox[]" href="../presentation-assets/images/slides/image10.jpg" title="Some description of the image.">
+					<img class="image" src="../presentation-assets/images/slides/image10.jpg" alt="Image title"/>
+				</a>
+				<img class="thumbnail" src="../presentation-assets/images/thumbnails/image10.jpg" alt="" title="Image"/>
+				<div class="caption">Click on the slide to open the lightbox which will contain an image.</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="custom-controls">
+        <input type="button" value="Previous Slide" onclick="previous();"/>
+        <input type="button" value="Next Slide" onclick="next();"/>
+    </div>
+	
+	<div id="example-navigation-container">
+		<div id="example-navigation">
+			<ul id="list">
+				<li><a href="../responsive/responsive.html">Responsive</a></li>
+				<li><a href="../responsive-proportional/responsive-proportional.html">Responsive Proportional</a></li>
+				<li><a href="../basic/basic.html">Basic</a></li>
+				<li><a href="../minimal/minimal.html">Minimal</a></li>
+				<li><a href="../video/video.html">Video</a></li>
+				<li class="active"><a href="../lightbox/lightbox.html">Lightbox</a></li>
+				<li><a href="../lazy-loading/lazy-loading.html">Lazy Loading</a></li>
+				<li><a href="../mixed/mixed.html">Mixed</a></li>
+				<li><a href="../xml/xml.html">XML</a></li>
+			</ul>
+			
+			<div id="description">
+				<p id="features-header">Highlighted Features:</p>
+				<ul>
+					<li><strong>Lightbox.</strong> The slider offers built-in lightbox support. Lightbox content can be set both for the slide and thumbnail image.</li>
+					<li><strong>Lightbox icons.</strong> The content of the lightbox will be automatically detected and a corresponding icon will be displayed.</li>
+					<li><strong>External control.</strong> Advanced Slider provides a robust API which will allow you to integrate the slider with other applications.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

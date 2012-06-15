@@ -45,8 +45,10 @@ namespace admin.Settings
             cbComments.Checked = BlogSettings.Instance.SendMailOnComment;
             cbEnableSsl.Checked = BlogSettings.Instance.EnableSsl;
             txtEmailSubjectPrefix.Text = BlogSettings.Instance.EmailSubjectPrefix;
+            txtThankMessage.Text = BlogSettings.Instance.ContactThankMessage;
+            txtDescription.Text = BlogSettings.Instance.ContactFormMessage;
         }
-		
+
         /// <summary>
         /// Save settings
         /// </summary>
@@ -58,6 +60,8 @@ namespace admin.Settings
         /// <param name="sendMailOnComment"></param>
         /// <param name="enableSsl"></param>
         /// <param name="emailSubjectPrefix"></param>
+        /// <param name="contactThankMessage"></param>
+        /// <param name="contactDescription"></param>
         /// <returns></returns>
         [WebMethod]
         public static JsonResponse Save(
@@ -68,7 +72,9 @@ namespace admin.Settings
 			string smtpPassword,
 			string sendMailOnComment,
 			string enableSsl,
-			string emailSubjectPrefix)
+			string emailSubjectPrefix,
+            string contactThankMessage,
+            string contactDescription)
         {
             var response = new JsonResponse {Success = false};
 
@@ -88,18 +94,20 @@ namespace admin.Settings
 				BlogSettings.Instance.SendMailOnComment = bool.Parse(sendMailOnComment);
 				BlogSettings.Instance.EnableSsl = bool.Parse(enableSsl);
 				BlogSettings.Instance.EmailSubjectPrefix = emailSubjectPrefix;
-			
+                BlogSettings.Instance.ContactThankMessage = contactThankMessage;
+                BlogSettings.Instance.ContactFormMessage = contactDescription;
+	
                 BlogSettings.Instance.Save();
             }
             catch (Exception ex)
             {
                 Utils.Log(string.Format("admin.Settings.Email.Save(): {0}", ex.Message));
-                response.Message = string.Format("Could not save settings: {0}", ex.Message);
+                response.Message = string.Format("Kon de instellingen niet opslaan: {0}", ex.Message);
                 return response;
             }
 
             response.Success = true;
-            response.Message = "Settings saved";
+            response.Message = "Instellingen opgeslagen";
             return response;
         }
 

@@ -1,0 +1,57 @@
+#video-slider .slide {
+	background-color: #EEEEEE;	
+}
+
+
+#video-slider .timer-animation {
+	top: 10px;
+	right: 10px;	
+}
+
+
+#video-slider .video-container {
+	float: left;
+	padding: 10px;
+}
+
+
+#video-slider .description {
+	float: right;
+	margin: 10px;
+	width: 330px;
+	height: 400px;
+}
+
+
+#video-slider .description p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+#video-slider .description .title p {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+
+#video-slider .description .content p {
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+
+#video-slider .description .link {
+	position: absolute;
+	bottom: 10px;
+}
+
+
+#video-slider .description .link p {
+	font-size: 14px;
+}
+
+
+#video-slider .description .link a {
+	font-size: 12px;
+	color: #666666;
+}

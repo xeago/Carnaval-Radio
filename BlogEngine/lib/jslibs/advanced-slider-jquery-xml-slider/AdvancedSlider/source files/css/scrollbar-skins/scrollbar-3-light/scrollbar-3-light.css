@@ -1,0 +1,257 @@
+/*
+	Skin Name: Scrollbar 3 Light
+	Class: scrollbar-3-light
+	Description: Scrollbar 3 Light skin for Slider PRO WordPress plugin
+	Author: David
+*/
+
+
+/* HORIZONTAL SCROLLBAR */
+
+/* MAIN CONTAINER */
+
+.scrollbar-3-light.horizontal {
+	position: absolute;
+	width: 340px;
+	max-width: 340px;
+	min-width: 118px;
+	height: 21px;
+}
+
+/* END OF MAIN CONTAINER */
+
+
+/* TRACK */
+
+.scrollbar-3-light.horizontal .track {
+	position: absolute;
+	width: 292px;
+	height: 21px;
+	left: 24px;
+}
+
+
+.scrollbar-3-light.horizontal .track .track-back {
+	position: absolute;
+	background-image: url(images/track_back.png);
+	width: 7px;
+	height: 21px;
+	left: 0;
+}
+
+
+.scrollbar-3-light.horizontal .track .track-middle {
+	position: absolute;
+	background-image: url(images/track_middle.png);
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 21px;
+}
+
+
+.scrollbar-3-light.horizontal .track .track-forward {
+	position: absolute;
+	background-image: url(images/track_forward.png);
+	width: 7px;
+	height: 21px;
+	right: 0;
+}
+
+/* END OF TRACK */
+
+
+/* THUMB */
+
+.scrollbar-3-light.horizontal .thumb {
+	position: absolute;
+	cursor: pointer;
+	width: 70px;
+	height: 18px;
+	margin-top: 1px;
+}
+
+
+.scrollbar-3-light.horizontal .thumb .thumb-back {
+	position: absolute;
+	background-image: url(images/thumb_back.png);
+	width: 8px;
+	height: 18px;
+	left: 0;
+}
+
+
+.scrollbar-3-light.horizontal .thumb .thumb-middle {
+	position: absolute;
+	background-image: url(images/thumb_middle.png);
+	background-repeat: repeat-x;
+	width: 54px;
+	height: 18px;
+	left: 8px;
+}
+
+
+.scrollbar-3-light.horizontal .thumb .thumb-forward {
+	position: absolute;
+	background-image: url(images/thumb_forward.png);
+	width: 8px;
+	height: 18px;
+	right: 0;
+}
+
+/* END OF THUMB */
+
+
+/* BACK BUTTON */
+
+.scrollbar-3-light.horizontal .back {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/back.png);
+	width: 24px;
+	height: 21px;
+	left: 0;
+}
+
+/* END OF BACK BUTTON */
+
+
+/* FORWARD BUTTON */
+
+.scrollbar-3-light.horizontal .forward {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/forward.png);
+	width: 24px;
+	height: 21px;
+	right: 0;
+}
+
+/* END OF FORWARD BUTTON */
+
+/* END OF HORIZONTAL SCROLLBAR */
+
+
+
+/* VERTICAL SCROLLBAR */
+
+/* MAIN CONTAINER */
+
+.scrollbar-3-light.vertical {
+	position: absolute;
+	height: 340px;
+	max-height: 340px;
+	min-height: 118px;
+	width: 21px;
+}
+
+/* END OF MAIN CONTAINER */
+
+
+/* TRACK */
+
+.scrollbar-3-light.vertical .track {
+	position: absolute;
+	width: 21px;
+	height: 292px;
+	top: 24px;
+}
+
+
+.scrollbar-3-light.vertical .track .track-back {
+	position: absolute;
+	background-image: url(images/track_back_v.png);
+	width: 21px;
+	height: 7px;
+	top: 0;
+}
+
+
+.scrollbar-3-light.vertical .track .track-middle {
+	position: absolute;
+	background-image: url(images/track_middle_v.png);
+	background-repeat: repeat-y;
+	height: 100%;
+	width: 21px;
+}
+
+
+.scrollbar-3-light.vertical .track .track-forward {
+	position: absolute;
+	background-image: url(images/track_forward_v.png);
+	width: 21px;
+	height: 7px;
+	bottom: 0;
+}
+
+/* END OF TRACK */
+
+
+/* THUMB */
+
+.scrollbar-3-light.vertical .thumb {
+	position: absolute;
+	cursor: pointer;
+	width: 18px;
+	height: 70px;
+	margin-left: 1px;
+}
+
+
+.scrollbar-3-light.vertical .thumb .thumb-back {
+	position: absolute;
+	background-image: url(images/thumb_back_v.png);
+	height: 8px;
+	width: 18px;
+	top: 0;
+}
+
+
+.scrollbar-3-light.vertical .thumb .thumb-middle {
+	position: absolute;
+	background-image: url(images/thumb_middle_v.png);
+	background-repeat: repeat-y;
+	height: 54px;
+	width: 18px;
+	top: 8px;
+}
+
+
+.scrollbar-3-light.vertical .thumb .thumb-forward {
+	position: absolute;
+	background-image: url(images/thumb_forward_v.png);
+	height: 8px;
+	width: 18px;
+	bottom: 0;
+}
+
+/* END OF THUMB */
+
+
+/* BACK BUTTON */
+
+.scrollbar-3-light.vertical .back {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/back_v.png);
+	width: 21px;
+	height: 24px;
+	top: 0;
+}
+
+/* END OF BACK BUTTON */
+
+
+/* FORWARD BUTTON */
+
+.scrollbar-3-light.vertical .forward {
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/forward_v.png);
+	width: 21px;
+	height: 24px;
+	bottom: 0;
+}
+
+/* END OF FORWARD BUTTON */
+
+/* END OF VERTICAL SCROLLBAR */
