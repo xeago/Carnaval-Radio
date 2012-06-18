@@ -147,6 +147,7 @@ img {
 }
 #header div.nuopderadio_box
 {
+    cursor:pointer;
     position:absolute;
     bottom:0;
     right:20px;
@@ -156,6 +157,7 @@ img {
 }
 #header div.nuopderadio_text
 {
+    cursor:pointer;
     position:absolute;
     bottom:8px;
     right:240px;
