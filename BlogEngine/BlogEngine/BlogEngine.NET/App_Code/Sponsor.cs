@@ -193,13 +193,12 @@ public class CRSponsor
     /// <summary>
     /// Updates the JSON files for sponsor.
     /// </summary>
-    private static void updateJSON() { updateJSON(GetListOnlyActiveAndAlter()); }
+    private static void updateJSON() { updateJSON(GetList().Where(s => s.Active)); }
     /// <summary>
     /// Updates the JSON files for sponsor.
     /// </summary>
     private static void updateJSON(IEnumerable<CRSponsor> sponsors)
     {
-        sponsors = GetListOnlyActiveAndAlter();
         updateMobileSwitchJSON(sponsors);
         updateMobileSolidJSON(sponsors);
         updatePlayerSwitchJSON(sponsors);
@@ -340,7 +339,7 @@ public class CRSponsor
     public static string GetLabelBySponsorType(SponsorType s)
     {
         var rm = new ResourceManager(typeof(Resources.labels));
-        var text = rm.GetString(s.ToString());
+        var text = rm.GetString(s.ToString(),System.Globalization.CultureInfo.CreateSpecificCulture("nl"));
         return string.IsNullOrEmpty(text) ? s.ToString() : text;
     }
 
