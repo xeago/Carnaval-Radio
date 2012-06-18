@@ -82,7 +82,7 @@ public partial class sponsoren : BlogBasePage
                 logoWidth = 120;
                 break;
             default:
-                logoWidth = 300;
+                logoWidth = 80;
                 break;
         }
         logoHeight = logoWidth / 1.54545454545;
