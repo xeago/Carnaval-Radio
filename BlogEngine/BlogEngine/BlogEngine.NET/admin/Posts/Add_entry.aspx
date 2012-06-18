@@ -301,12 +301,6 @@
                                     <div class="clear"></div>
                                 </div>
                             </li>
-                            <li>
-                                <asp:CheckBox runat="Server" ID="cbPostFB" Text="<%$ Resources:labels, postOnFacebook %>" Checked="true" />
-                            </li>
-                            <li>
-                                <asp:CheckBox runat="Server" ID="cbPostTwitter" Text="<%$ Resources:labels, postOnTwitter %>" Checked="true" />
-                            </li>
                         </ul>
                     </td>
                 </tr>

@@ -3,4 +3,6 @@
   <widget id="96fec4cb-1487-4fdf-b289-d698cb98e09c" title="BlogRoll" showTitle="True">Blogroll</widget>
   <widget id="d121140d-a6b3-431e-9bb0-ae31aa611f57" title="Twitter" showTitle="True">Twitter</widget>
   <widget id="1a82c2ae-b775-425c-9ed8-f8727dcc8409" title="Shoutbox" showTitle="True">Shoutbox</widget>
+  <widget id="46986c95-6e26-4865-8209-ac6e7b24219c" title="Category list" showTitle="True">Category list</widget>
+  <widget id="0ca3ac1b-0244-465e-abcd-ebaff6824f43" title="Calendar" showTitle="True">Calendar</widget>
 </widgets>

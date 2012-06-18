@@ -34,7 +34,14 @@
                 random: 1,
                 after: onAfter
             });
-            $('#header-slider').cycle({
+
+            $('div#shadow').css('height', ($('body').height() - 185) + 'px');
+        });
+    </script>
+    <asp:Literal runat="server" ID="JScriptSliderAndButtons">
+        <script type="text/javascript">
+        $(document).ready(function () {
+                $('#header-slider').cycle({
                 fx: 'scrollHorz',
                 timeout: 6000,
                 pause: 1,
@@ -42,9 +49,9 @@
                 prev: '#prev-slide',
                 next: '#next-slide'
             });
-            $('div#shadow').css('height', ($('body').height() - 185) + 'px');
         });
-    </script>
+ </script>
+    </asp:Literal>
 </head>
 <body>
 
@@ -104,7 +111,15 @@
               <div class="right-corner">
               </div>
           </div>
-          <asp:ContentPlaceHolder ID="cphBody" runat="server" />          
+          <div id="SliderAndButtons" runat="server" class="slider-and-buttons">
+              <a id="prev-slide"></a><a id="next-slide"></a>
+              <div id="header-slider">
+                  <asp:Literal runat="server" ID="litHeaderImages" />
+              </div>
+          </div>
+          <div id="main">
+          <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+          </div>          
   </div>
   </form>
 

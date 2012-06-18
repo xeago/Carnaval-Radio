@@ -6,14 +6,6 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBody" runat="Server">
-    <div id="slider-and-buttons">
-        <a id="prev-slide"></a><a id="next-slide"></a>
-        <div id="header-slider">
-            <asp:Literal runat="server" ID="litHeaderImages" />
-        </div>
-        <div>
-        </div>
-    </div>
     <div id="content">
         <blog:SearchOnSearch ID="SearchOnSearch1" runat="server" MaxResults="3" Headline="You searched for" Text="Here are some results for the search term on this website" />
         <asp:ContentPlaceHolder runat="server" ID="cphBody" />

@@ -12,25 +12,51 @@ using ExtensionMethods;
 
 public partial class CrSite : System.Web.UI.MasterPage
 {
-  protected void Page_Load(object sender, EventArgs e)
-  {
-      if (Security.IsAuthenticated)
-      {
-          aUser.InnerText = "Welcome " + Page.User.Identity.Name + "!";
-          aLogin.InnerText = Resources.labels.logoff;
-          aLogin.HRef = Utils.RelativeWebRoot + "Account/login.aspx?logoff";
-      }
-      else
-      {
-          aLogin.HRef = Utils.RelativeWebRoot + "Account/login.aspx";
-          aLogin.InnerText = Resources.labels.login;
-      }
-      RegisterStyleSheetInclude(string.Format("{0}{1}", Utils.AbsoluteWebRoot,
-                                              "themes/CarnavalRadio/styles/superfish.css"));
-      RegisterClientScriptInclude(string.Format("{0}{1}", Utils.AbsoluteWebRoot, "themes/CarnavalRadio/js/superfish.js"));
-      litMenu.Text = buildMenu("");
-      litSponsorImages.Text = getSponsorImages();
-  }
+    public bool HideSliderAndButtons { get; set; }
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (Security.IsAuthenticated)
+        {
+            aUser.InnerText = "Welcome " + Page.User.Identity.Name + "!";
+            aLogin.InnerText = Resources.labels.logoff;
+            aLogin.HRef = Utils.RelativeWebRoot + "Account/login.aspx?logoff";
+        }
+        else
+        {
+            aLogin.HRef = Utils.RelativeWebRoot + "Account/login.aspx";
+            aLogin.InnerText = Resources.labels.login;
+        }
+        RegisterStyleSheetInclude(string.Format("{0}{1}", Utils.AbsoluteWebRoot,
+                                                "themes/CarnavalRadio/styles/superfish.css"));
+        RegisterClientScriptInclude(string.Format("{0}{1}", Utils.AbsoluteWebRoot, "themes/CarnavalRadio/js/superfish.js"));
+        litMenu.Text = buildMenu("");
+        litSponsorImages.Text = getSponsorImages();
+        litHeaderImages.Text = getHeaderImages();
+
+        SliderAndButtons.Visible = JScriptSliderAndButtons.Visible = !HideSliderAndButtons;
+    }
+
+    private int i = 1;
+    private string getHeaderImages()
+    {
+        //       <img src="<%=Utils.AbsoluteWebRoot %>Upload/Headers/1.jpg" />
+        //<img src="<%=Utils.AbsoluteWebRoot %>Upload/Headers/2.jpg" />
+        var sb = new StringBuilder();
+        foreach (string s in Directory.GetFiles(Server.MapPath("./Upload/Headers/")))
+        {
+            var f = new FileInfo(s);
+            if (f.Extension.Contains("jpg") || f.Extension.Contains("jpeg") || f.Extension.Contains("png"))
+            {
+                sb.AppendFormat(
+                    "<img src=\"{0}{1}{2}\" alt=\"slide {3}\" width=\"940\" height=\"289\" />",
+                    Utils.AbsoluteWebRoot, "Upload/Headers/", f.Name, i);
+                i++;
+            }
+        }
+
+        return sb.ToString();
+    }
 
     private string getSponsorImages()
     {

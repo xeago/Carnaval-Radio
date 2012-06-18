@@ -33,7 +33,7 @@
   <language>nl-NL</language>
   <smtpserver>smtp.carnaval-radio.nl</smtpserver>
   <disqusdevmode>False</disqusdevmode>
-  <showpostnavigation>True</showpostnavigation>
+  <showpostnavigation>False</showpostnavigation>
   <displaycommentsonrecentposts>True</displaycommentsonrecentposts>
   <enabletrackbackreceive>True</enabletrackbackreceive>
   <enableopensearch>True</enableopensearch>

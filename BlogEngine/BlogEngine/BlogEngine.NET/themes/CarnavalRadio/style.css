@@ -101,6 +101,16 @@ img {
 	text-align:center
 }
 
+/*---------------------------
+                     Main
+-----------------------------*/
+
+#main
+{
+    background-color:White;
+}
+
+
 /*----------------------------
 					 Header
 ----------------------------*/
@@ -186,7 +196,7 @@ img {
 	text-decoration: none;
 	color: white;
 }
-div#slider-and-buttons
+div.slider-and-buttons
 {	
     position:relative;
     width: 100%;    

@@ -66,7 +66,7 @@ public partial class sponsoren : BlogBasePage
 
     private static void getTypeSpecificSettings(SponsorType type, out double logoWidth, out double logoHeight)
     {
-        logoWidth = 300;
+        logoWidth = 80;
         switch (type)
         {
             case SponsorType.Hoofdsponsor:
