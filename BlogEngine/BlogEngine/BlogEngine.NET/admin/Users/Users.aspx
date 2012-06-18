@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/admin/admin.master" AutoEventWireup="true" CodeFile="Users.aspx.cs" Inherits="Admin.Users.Users" Title="Create new user" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/admin/admin.master" AutoEventWireup="true" CodeFile="Users.aspx.cs" Inherits="Admin.Users.Users" Title="Gebruikers" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphAdmin" runat="Server">
     <script type="text/javascript">
         function AddUser(obj) {

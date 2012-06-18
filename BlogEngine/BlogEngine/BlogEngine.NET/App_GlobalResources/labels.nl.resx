@@ -202,7 +202,7 @@
     <value>Contact formulier</value>
   </data>
   <data name="controls" xml:space="preserve">
-    <value>Gereedschappen</value>
+    <value>Overig</value>
   </data>
   <data name="country" xml:space="preserve">
     <value>Land</value>
@@ -656,7 +656,7 @@
     <value>Avatars</value>
   </data>
   <data name="blogroll" xml:space="preserve">
-    <value>Blogroll</value>
+    <value>Nieuws van derden</value>
   </data>
   <data name="enablePingbacks" xml:space="preserve">
     <value>Pingbacks aanzetten</value>

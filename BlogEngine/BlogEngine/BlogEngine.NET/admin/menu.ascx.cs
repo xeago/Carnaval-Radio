@@ -154,8 +154,7 @@ namespace Admin
                 }
             }
 
-            AddItem(
-                labels.sponsoren, string.Format("{0}Admin/Sponsoren/Sponsoren.aspx", Utils.RelativeWebRoot));
+            //AddItem(labels.sponsoren, string.Format("{0}Admin/Sponsoren/Sponsoren.aspx", Utils.RelativeWebRoot));
 
             if (!Request.RawUrl.ToUpperInvariant().Contains("/ADMIN/"))
             {

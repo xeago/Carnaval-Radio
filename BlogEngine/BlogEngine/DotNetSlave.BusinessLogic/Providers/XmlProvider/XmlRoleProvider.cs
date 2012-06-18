@@ -73,7 +73,7 @@
         {
             get
             {
-                return "BlogEngine.NET";
+                return "Carnaval Radio";
             }
 
             set
