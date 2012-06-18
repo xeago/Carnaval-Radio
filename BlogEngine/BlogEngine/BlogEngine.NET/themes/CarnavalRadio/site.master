@@ -55,7 +55,14 @@
       %>
 
     </ul>
+    <ul>
+          <li><a href="http://www.youtube.com"><img src="themes/CarnavalRadio/img/social/yt.png" alt="Carnaval Radio op YouTube!" /></a></li>
+          <li><a href="http://www.hyves.nl"><img src="themes/CarnavalRadio/img/social/hy.png" alt="Carnaval Radio op Hyves!" /></a></li>
+          <li><a href="http://www.facebook.com"><img src="themes/CarnavalRadio/img/social/fb.png" alt="Carnaval Radio op Facebook!" /></a></li>
+          <li><a href="http://www.twitter.com"><img src="themes/CarnavalRadio/img/social/tw.png" alt="Carnaval Radio op Twitter!" /></a></li>
+        </ul>
       <div class="right-corner">
+        
       </div>
   </div>
   

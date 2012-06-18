@@ -202,6 +202,14 @@ img {
 	margin-right: 3px;
 	margin-bottom: -2px;
 }
+#menu ul li img {
+	height: 32px;
+	width: 32px;
+	margin-right: 10px;
+	margin-top: 10px;
+	float: right;
+	list-style-position: 
+}
 
 /*----------------------------
 					 Widgets
