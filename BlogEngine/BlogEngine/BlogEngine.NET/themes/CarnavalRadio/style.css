@@ -497,10 +497,13 @@ div.post .text a[href^="http:"] {
 .postForList .image
 {
     border:2px solid #fe9f10;
+    border-radius: 5px;
     width:275px;
     margin-left:10px;
     margin-bottom:20px;
 }
+.postForList .image img
+{    border-radius: 4px;}
 .postForList .text 
 {
     height:200px;
