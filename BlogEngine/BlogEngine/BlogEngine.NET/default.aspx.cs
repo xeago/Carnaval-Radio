@@ -3,6 +3,7 @@
 using System;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Xml;
@@ -61,9 +62,9 @@ public partial class _default : BlogEngine.Core.Web.Controls.BlogBasePage
 		else
 		{
             PostList1.ContentBy = ServingContentBy.AllContent;
-			PostList1.Posts = Post.Posts.ConvertAll(delegate(Post p) { return p as IPublishable; });
+		    PostList1.Posts = Post.Posts.ConvertAll(p => p as IPublishable).Take(4).ToList();
 			if (!BlogSettings.Instance.UseBlogNameInPageTitles)
-				Page.Title = BlogSettings.Instance.Name + " | ";
+				Page.Title = BlogSettings.Instance.Name + @" | ";
 
 			if (!string.IsNullOrEmpty(BlogSettings.Instance.Description))
 				Page.Title += Server.HtmlEncode(BlogSettings.Instance.Description);
