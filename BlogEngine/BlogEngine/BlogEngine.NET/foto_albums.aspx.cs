@@ -33,15 +33,15 @@ public partial class fotoalbums : BlogBasePage
         float version = (float)(browser.MajorVersion + browser.MinorVersion);
         IE7 = (name == "IE" && version == 7);
         
-        RegisterStyleSheetInclude(Utils.AbsoluteWebRoot + "Styles/base/advanced-slider-base.css");
-        RegisterStyleSheetInclude(Utils.AbsoluteWebRoot + "Styles/glossy-curved-rounded/orange/glossy-curved-rounded-orange.css");
-        RegisterStyleSheetInclude(Utils.AbsoluteWebRoot + "Styles/lightbox-slider.css");
+        //RegisterStyleSheetInclude(Utils.AbsoluteWebRoot + "Styles/base/advanced-slider-base.css");
+       // RegisterStyleSheetInclude(Utils.AbsoluteWebRoot + "Styles/glossy-curved-rounded/orange/glossy-curved-rounded-orange.css");
+        //RegisterStyleSheetInclude(Utils.AbsoluteWebRoot + "Styles/lightbox-slider.css");
 
-        if (IE7) RegisterClientScriptInclude(Utils.AbsoluteWebRoot + "Scripts/fotoalbum/excanvas.compiled.js");
-        RegisterClientScriptInclude(Utils.AbsoluteWebRoot + "Scripts/fotoalbum/jquery.advancedSlider.min.js");
-        RegisterClientScriptInclude(Utils.AbsoluteWebRoot + "Scripts/fotoalbum/jquery.touchSwipe.min.js");
-        RegisterClientScriptInclude(Utils.AbsoluteWebRoot + "Scripts/fotoalbum/jquery.transition.min.js");
-        RegisterClientScriptInclude(Utils.AbsoluteWebRoot + "Scripts/fotoalbum/OnLoad.js");
+        //if (IE7) RegisterClientScriptInclude(Utils.AbsoluteWebRoot + "Scripts/fotoalbum/excanvas.compiled.js");
+        //RegisterClientScriptInclude(Utils.AbsoluteWebRoot + "Scripts/fotoalbum/jquery.advancedSlider.min.js");
+        //RegisterClientScriptInclude(Utils.AbsoluteWebRoot + "Scripts/fotoalbum/jquery.touchSwipe.min.js");
+        //RegisterClientScriptInclude(Utils.AbsoluteWebRoot + "Scripts/fotoalbum/jquery.transition.min.js");
+        //RegisterClientScriptInclude(Utils.AbsoluteWebRoot + "Scripts/fotoalbum/OnLoad.js");
 
         List<PicasaAlbum> albums = Picasa2.GetAlbums();
 
@@ -54,7 +54,7 @@ public partial class fotoalbums : BlogBasePage
                 picasaAlbum.ThumbNailURl, picasaAlbum.Accessor.Name, string.Format("foto_album.aspx?AlbumID={0}", picasaAlbum.Accessor.Id));
         }
         sb.Append("</ul>");
-        sb.Append("</div");
+        sb.Append("</div>");
         litAlbums.Text = sb.ToString();
 
 

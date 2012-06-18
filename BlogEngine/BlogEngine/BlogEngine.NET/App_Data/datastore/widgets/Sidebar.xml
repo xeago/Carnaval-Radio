@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widgets>
+  <widget id="96fec4cb-1487-4fdf-b289-d698cb98e09c" title="BlogRoll" showTitle="True">Blogroll</widget>
+  <widget id="d121140d-a6b3-431e-9bb0-ae31aa611f57" title="Twitter" showTitle="True">Twitter</widget>
+  <widget id="1a82c2ae-b775-425c-9ed8-f8727dcc8409" title="Shoutbox" showTitle="True">Shoutbox</widget>
+</widgets>

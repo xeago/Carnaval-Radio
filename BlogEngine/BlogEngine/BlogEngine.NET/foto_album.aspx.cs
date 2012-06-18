@@ -72,7 +72,7 @@ public partial class fotoalbum : BlogBasePage
         }
 
         sb.Append("</ul>");
-        sb.Append("</div");
+        sb.Append("</div>");
 
         litAlbums.Text = sb.ToString();
     }

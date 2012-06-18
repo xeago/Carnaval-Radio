@@ -10,9 +10,35 @@ body, #menu .right-corner, #menu .left-corner
 body 
 {
 	color: #444444;
-	margin: 0 auto;
-	width: 940px;
+    margin: 0 auto;
+    width:1006px;
+    position: relative;
+    height:100%;
+}
+
+div#container
+{
+    margin: 0 auto;
+    width: 940px;
 	position: relative;
+}
+div#shadow_top
+{
+    position:absolute;
+    top:125px;
+    width:1006px;
+    margin: 0 auto;
+    height:60px;
+    background: url(img/shadow_top.png) no-repeat center center;
+}
+div#shadow
+{
+    position:absolute;
+    top:185px;
+    width:1006px;
+    margin: 0 auto;
+    background: url(img/shadow.png) repeat-y center center;
+    /*height: zie themes/carnaval-radio/site.master jQuery script*/
 }
 
 h1 {
@@ -671,7 +697,8 @@ ul.recentComments li a.postTitle{
 }
 
 #page h1 {
-	margin: 3px 0 10px 0;
+	margin: 0;
+	padding:0;
 }
 
 #page #admin {
@@ -1073,11 +1100,14 @@ div.ClubVan50 ul li{margin-right:3.75px;}
 ----------------------------*/
 div.albums
 {
-    
+    margin:0;
+    padding:0;
 }
 div.albums ul 
 {
     list-style-type:none;
+    margin:0;
+    padding:0;
 }
 div.albums ul li
 {
