@@ -44,13 +44,10 @@
                         <span>@BlogEngine.Core.BlogSettings.Instance.Name @Resources.labels.admin</span>
                     </div>                                  
                     <div class="toolbox">
-                        @Resources.labels.welcome&nbsp;
-                        @if (AuthorProfile.GetProfile(Security.CurrentUser.Identity.Name) == null)
-                        { @Security.CurrentUser.Identity.Name }
-                        else
-                        { @AuthorProfile.GetProfile(Security.CurrentUser.Identity.Name).DisplayName }
-                        | <a href="@Href(Utils.RelativeWebRoot + "admin/Users/Profile.aspx?id=")@Security.CurrentUser.Identity.Name">@Resources.labels.myProfile</a>
-                        | <a href="@BlogEngine.Core.Utils.RelativeWebRoot">@Resources.labels.goToFrontPage</a>
+                        <a style="text-transform:capitalize;" href="@Href(Utils.RelativeWebRoot + "admin/Users/Profile.aspx?id=")@Security.CurrentUser.Identity.Name">
+                            @if (AuthorProfile.GetProfile(Security.CurrentUser.Identity.Name) == null)                                                                                            { @Security.CurrentUser.Identity.Name}else                                                                                                                            { @AuthorProfile.GetProfile(Security.CurrentUser.Identity.Name).DisplayName }</a>
+                        | <a href="@BlogEngine.Core.Utils.RelativeWebRoot">@Resources.labels.goToFrontPage</a>                        
+                        | <a href="@Href(Utils.RelativeWebRoot + "Account/change-password.aspx")">@Resources.labels.changePassword</a>
                         | <span><a href="@Href(Utils.RelativeWebRoot + "Account/Logout.cshtml")">@Resources.labels.logoff</a></span>
                     </div>                                 
                 </div>

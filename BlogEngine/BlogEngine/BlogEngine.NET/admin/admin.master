@@ -32,8 +32,9 @@
                     <span><%=BlogSettings.Instance.Name %> <%=Resources.labels.admin %></span>
                 </div>
                 <div class="toolbox">
-                    <%= Resources.labels.welcome %> <%= UserProfile() == null ? Page.User.Identity.Name : UserProfile().DisplayName %>
-                    | <a href="<%=Utils.RelativeWebRoot %>admin/Users/Profile.aspx?id=<%=Page.User.Identity.Name %>"><%=Resources.labels.myProfile %></a>
+                    <a style="text-transform: capitalize;" href="<%=Utils.RelativeWebRoot %>admin/Users/Profile.aspx?id=<%=Page.User.Identity.Name %>">
+                        <%= (UserProfile() == null ? Page.User.Identity.Name : UserProfile().DisplayName) %></a>
+                    | <a href="<%=Utils.RelativeWebRoot %> Account/change-password.aspx"><%= Resources.labels.changePassword %></a>
                     | <a href="<%=Utils.RelativeWebRoot %>"><%=Resources.labels.goToFrontPage %></a>
                     | <a runat="server" id="aLogin" />
                 </div>                                 

@@ -156,14 +156,7 @@ namespace Admin
 
             //AddItem(labels.sponsoren, string.Format("{0}Admin/Sponsoren/Sponsoren.aspx", Utils.RelativeWebRoot));
 
-            if (!Request.RawUrl.ToUpperInvariant().Contains("/ADMIN/"))
-            {
-                AddItem(
-                    labels.myProfile, string.Format("{0}admin/Users/Profile.aspx?id={1}", Utils.RelativeWebRoot, HttpUtility.UrlPathEncode(Security.CurrentUser.Identity.Name)));
-
-                AddItem(
-                    labels.changePassword, string.Format("{0}Account/change-password.aspx", Utils.RelativeWebRoot));
-            }
+            
         }
 
         #endregion
