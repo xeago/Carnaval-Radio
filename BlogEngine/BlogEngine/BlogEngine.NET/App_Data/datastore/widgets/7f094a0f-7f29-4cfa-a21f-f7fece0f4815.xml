@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerializableStringDictionary>
+  <SerializableStringDictionary>
+    <DictionaryEntry Key="imgurl" Value="http://api.twitter.com/1/users/profile_image/@carnavalradio" />
+    <DictionaryEntry Key="account" Value="@carnavalradio" />
+    <DictionaryEntry Key="maxitems" Value="10" />
+    <DictionaryEntry Key="pollinginterval" Value="" />
+    <DictionaryEntry Key="hashtags" Value="3fm carnaval" />
+    <DictionaryEntry Key="followmetext" Value="Volg ons" />
+  </SerializableStringDictionary>
+</SerializableStringDictionary>
