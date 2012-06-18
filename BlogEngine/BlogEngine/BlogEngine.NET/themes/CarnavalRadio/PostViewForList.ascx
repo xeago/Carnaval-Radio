@@ -1,33 +1,35 @@
 <%@ Control Language="C#" AutoEventWireup="true" EnableViewState="false" Inherits="BlogEngine.Core.Web.Controls.PostViewBase" %>
+<%@ Import Namespace="BlogEngine.Core" %>
+<%@ Import Namespace="Resources" %>
 <title>{#advanced_dlg.about_title}</title>
 <script runat="server">
+
     public string GetShortenedContent(string content, int pos, string link)
     {
-        if (Post.Description != null && Post.Description.Length > 0) return Post.Description + "... <a href=\"" + link + "\">[More]</a>";
-        string sStripped = BlogEngine.Core.Utils.StripHtml(content);
+        if (!string.IsNullOrEmpty(Post.Description))
+            return Post.Description + "... <a href=\"" + link + "\">Lees meer..</a>";
+        string sStripped = Utils.StripHtml(content);
         if (sStripped.Length <= pos) return sStripped;
         else
-            return sStripped.Substring(0, pos) + "... <a href=\"" + link + "\">[More]</a>";
+            return sStripped.Substring(0, pos) + "... <a href=\"" + link + "\">Lees meer..</a>";
     }
 
-    
+
     public string getImage(bool ShowExcerpt, string input)
     {
-
         if (!ShowExcerpt || input == null)
             return "";
 
         string pain = input;
         string pattern = @"<img(.|\n)+?>";
 
-        System.Text.RegularExpressions.Match m = System.Text.RegularExpressions.Regex.Match(input, pattern,
-
-        System.Text.RegularExpressions.RegexOptions.IgnoreCase | System.Text.RegularExpressions.RegexOptions.Multiline);
+        Match m = Regex.Match(input, pattern,
+                              RegexOptions.IgnoreCase | RegexOptions.Multiline);
 
         if (m.Success)
         {
             string src = getSrc(m.Value);
-            string img = string.Format("<img class='left' width=\"150\" {0}  />", src);
+            string img = string.Format("<img class=\"left\" width=\"275\" height=\"155\" {0}  />", src);
             return img;
         }
         else
@@ -37,15 +39,14 @@
     }
 
 
-
-    string getSrc(string input)
+    private string getSrc(string input)
     {
         string pattern = "src=[\'|\"](.+?)[\'|\"]";
 
-        System.Text.RegularExpressions.Regex reImg = new System.Text.RegularExpressions.Regex(pattern,
-        System.Text.RegularExpressions.RegexOptions.IgnoreCase | System.Text.RegularExpressions.RegexOptions.Multiline);
+        var reImg = new Regex(pattern,
+                              RegexOptions.IgnoreCase | RegexOptions.Multiline);
 
-        System.Text.RegularExpressions.Match mImg = reImg.Match(input);
+        Match mImg = reImg.Match(input);
 
         if (mImg.Success)
         {
@@ -55,36 +56,81 @@
         return "";
     }
     
+    protected override void OnLoad(EventArgs e)
+    {
+        var bodyContent = (PlaceHolder) this.FindControl("BodyContent");
+        var post = this.Post;
+        var body = this.Body;
+        if (this.ShowExcerpt)
+        {
+            string path = string.Format("{0}themes/{1}/img/leesverder.png", Utils.AbsoluteWebRoot, BlogSettings.Instance.GetThemeWithAdjustments(null));
+            
+            var link = string.Format(" <a class=\"read-more\" href=\"{0}\"><img src=\"{2}\" alt=\"{1}\" title=\"{1}\" /></a>", post.RelativeLink, Utils.Translate("more"), path);
+
+            if (!string.IsNullOrEmpty(post.Description))
+            {
+                body = "<p>" + post.Description.Replace(Environment.NewLine, "<br />") + "</p>" + link;
+            }
+            else
+            {
+                body = Utils.StripHtml(body);
+                if (body.Length > 40)
+                {
+                    body = string.Format("<p>{0}...</p>{1}", body.Trim().Substring(0, 350), link);
+                }
+            }
+        }
+
+        if (bodyContent != null)
+        {
+            Utils.InjectUserControls(bodyContent, body);
+        }
+    }
+
 </script>
-<div class="post xfolkentry" id="post<%=Index %>">
-  <h1><a href="<%=Post.RelativeLink %>" class="taggedlink"><%=Server.HtmlEncode(Post.Title) %></a></h1>
-  <span class="author">by <a href="<%=VirtualPathUtility.ToAbsolute("~/") + "author/" + BlogEngine.Core.Utils.RemoveIllegalCharacters(Post.Author) %>.aspx"><%=Post.AuthorProfile != null ? Post.AuthorProfile.DisplayName : Post.Author %></a></span>
-  <span class="pubDate"><%=Post.DateCreated.ToString("d. MMMM yyyy HH:mm") %></span>
-  
-  <div class="textList"><%= getImage(true, Post.Content)%><asp:PlaceHolder ID="BodyContent" runat="server" /></div>
-  <div class="bottom">
-    <%=Rating %>
-    <p class="tags">Tags: <%=TagLinks(", ") %></p>
-    <p class="categories"><%=CategoryLinks(" | ") %></p>
+<div class="xfolkentry postForList" id="post<%=Index%>">
+  <div class="title"><h1><a href="<%=Post.RelativeLink%>" class="taggedlink"><%=Server.HtmlEncode(Post.Title)%></a></h1>
+  </div>
+    
+  <div class="image"><%=getImage(true, Post.Content)%></div>
+  <div class="text">
+      <asp:PlaceHolder ID="BodyContent" runat="server" />
   </div>
 
-  <div class="footer">    
+<asp:Panel ID="DontShowForNow" runat="server" Visible="false">
+  <div class="footer">
+      <span class="pubDate">
+          <%=Post.DateCreated.ToString("d. MMMM yyyy HH:mm")%></span>    
     <div class="bookmarks">
         <!-- Share on Twitter and Facebook !-->
     </div>
     
-    <%=AdminLinks %>
+    <%=AdminLinks%>
     
-    <asp:Panel ID="DontShowForNow" runat="server" Visible="false">
-    <% if (BlogEngine.Core.BlogSettings.Instance.ModerationType == BlogEngine.Core.BlogSettings.Moderation.Disqus)
-        { %>
-    <a rel="nofollow" href="<%=Post.PermaLink %>#disqus_thread"><%=Resources.labels.comments %></a>
-    <%}
+
+    <%
+        if (BlogSettings.Instance.ModerationType == BlogSettings.Moderation.Disqus)
+        {%>
+    <a rel="nofollow" href="<%=Post.PermaLink%>#disqus_thread"><%=labels.comments%></a>
+    <%
+        }
         else
-        { %>
-    <a rel="bookmark" href="<%=Post.PermaLink %>" title="<%=Server.HtmlEncode(Post.Title) %>">Permalink</a>
-    <a rel="nofollow" href="<%=Post.RelativeLink %>#comment"><%=Resources.labels.comments %> (<%=Post.ApprovedComments.Count %>)</a>   
-    <%} %>
+        {%>
+    <a rel="bookmark" href="<%=Post.PermaLink%>" title="<%=Server.HtmlEncode(Post.Title)%>">Permalink</a>
+    <a rel="nofollow" href="<%=Post.RelativeLink%>#comment"><%=labels.comments%> (<%=Post.ApprovedComments.Count%>)</a>   
+    <%
+        }%>
+        <span class="author">by <a href="<%=VirtualPathUtility.ToAbsolute("~/") + "author/" +
+                              Utils.RemoveIllegalCharacters(Post.Author)%>.aspx">
+            <%=Post.AuthorProfile != null ? Post.AuthorProfile.DisplayName : Post.Author%></a></span>
+        <div class="bottom">
+            <%=Rating%>
+            <p class="tags">Tags:
+                <%=TagLinks(", ")%></p>
+            <p class="categories">
+                <%=CategoryLinks(" | ")%></p>
+        </div>
+
+ </div>
     </asp:Panel>
-    </div>
 </div>

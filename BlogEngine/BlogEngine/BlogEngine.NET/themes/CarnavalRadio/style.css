@@ -451,6 +451,74 @@ div.post .text a[href^="http:"] {
 }
 
 /*----------------------------
+                Front Posts
+-----------------------------*/
+
+.postForList
+{
+    padding:5px;
+    width:300px;
+    height:405px;
+    float:left;
+    margin-bottom:35px;
+}
+.postForList div.text
+{
+
+}
+.postForList div.title h1, .postForList div.title a, .postForList .image, .postForList .image img, .postForList div.text a.read-more, .postForList div.text p
+{
+    margin:0; padding:0;
+}
+
+.postForList div.title
+{
+    width:290px;
+    height:55px;
+    background-image:url('img/title.png');
+    margin-bottom:20px;
+
+}
+.postForList div.title a
+{
+    color:#7c551c;
+
+}
+.postForList div.title h1
+{
+    margin-left:50px;
+    padding-top:15px;
+    width:230px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.postForList .image
+{
+    border:2px solid #fe9f10;
+    width:275px;
+    margin-left:10px;
+    margin-bottom:20px;
+}
+.postForList .text 
+{
+    height:200px;
+    margin-left:10px;
+    position:relative;
+}
+.postForList div.text a.read-more
+{
+    position:absolute;
+    bottom:10px;
+    right:0;
+}
+
+
+
+
+
+/*----------------------------
 			Related Posts
 ----------------------------*/
 
