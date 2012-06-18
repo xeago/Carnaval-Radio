@@ -278,7 +278,7 @@ namespace App_Code.Controls
                     var subLi = new HtmlGenericControl("li");
                     using (var a = new HtmlAnchor
                         {
-                            HRef = item.ItemLinks[i], Title = HttpUtility.HtmlEncode(item.ItemTitles[i]), InnerHtml = EnsureLength(item.ItemTitles[i])
+                            HRef = item.ItemLinks[i], Target = "_blank", Title = HttpUtility.HtmlEncode(item.ItemTitles[i]), InnerHtml = EnsureLength(item.ItemTitles[i])
                         })
                     {
                         subLi.Controls.Add(a);
