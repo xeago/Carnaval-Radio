@@ -6,13 +6,15 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBody" runat="Server">
+<div id="ContentContainer">
     <div id="content">
-        <blog:SearchOnSearch ID="SearchOnSearch1" runat="server" MaxResults="3" Headline="You searched for" Text="Here are some results for the search term on this website" />
+        <blog:SearchOnSearch ID="SearchOnSearch1" runat="server" MaxResults="3" Headline="Je hebt gezocht op" Text="Hier zijn enkele resultaten" />
         <asp:ContentPlaceHolder runat="server" ID="cphBody" />
         <p id="footer"></p>
     </div>
     <div id="sidepanel">
         <blog:WidgetZone ID="WidgetZone1" runat="server" ZoneName="Sidebar" />
     </div>
+</div>
 </asp:Content>
 

@@ -120,6 +120,8 @@
               </ul>
               <div class="right-corner">
               </div>
+              <div class="menu-shadow">
+              </div>
           </div>
           <div id="SliderAndButtons" runat="server" class="slider-and-buttons">
               <a id="prev-slide"></a><a id="next-slide"></a>
@@ -129,8 +131,11 @@
           </div>
       <!--[if lt IE 8]> <div style=' clear: both; height: 42px; padding:0 0 0 0;'> <a target="_blank" href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0005_dutch.jpg" border="0" height="42" width="940" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div> <![endif]-->
           <div id="main">              
-          <asp:ContentPlaceHolder ID="cphBody" runat="server" />
-          </div>          
+            <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+          </div>
+          <div id="page-footer">
+            <p>test</p>
+          </div>       
   </div>
   </form>
 

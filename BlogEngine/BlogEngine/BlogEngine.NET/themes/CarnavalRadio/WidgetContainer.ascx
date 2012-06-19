@@ -4,10 +4,14 @@
     <%= AdminLinks %>
     <% if (this.Widget.ShowTitle)
        { %>
-    <h4>
+    <div class="title"><h4>
         <%= Widget.Title%></h4>
     <% } %>
+    </div>
     <div class="content">
         <asp:PlaceHolder ID="phWidgetBody" runat="server"></asp:PlaceHolder>
     </div>
+    <div class="footer">
+    </div>
+    <div class="bol"></div>
 </div>

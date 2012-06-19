@@ -13,7 +13,6 @@ body
     margin: 0 auto;
     width:1006px;
     position: relative;
-    height:100%;
 }
 
 div#container
@@ -68,15 +67,37 @@ a:hover {
 img {
 	border: none;
 }
-
-#content {
-	float: left;
-	width: 70%;
+#ContentContainer
+{
+    position: relative;
+    width:940px;
+    clear:both;
+}
+#content 
+{
+    padding-left:20px;
+    width:640px;
+    float:left;
 }
 
-#sidepanel {
-	float: right;
-	width: 28%;
+#sidepanel 
+{
+    width:280px;
+    float:right;
+}
+
+#page-footer
+{
+    clear:both;
+    height:100px;
+    width:940px;
+    /*todo*/
+    background-color:black;
+    margin-top:10px;
+}
+#page-footer p
+{
+    margin:0; padding:0;
 }
 
 .loginbox{
@@ -109,6 +130,8 @@ img {
 {
     background-color:White;
     padding-top:20px;
+    height:100%;
+    width:940px;
 }
 
 
@@ -289,8 +312,19 @@ a#next-slide
 	width: 32px;
 	margin-right: 10px;
 	margin-top: 10px;
-	float: right;
-	list-style-position: 
+	float: right;	
+}
+div.menu-shadow
+{
+    background-color:transparent;
+    display:block;
+    position:absolute;
+    bottom:-5px;
+    left:0;
+    z-index:5;
+    background-image:url('img/menu-shadow.png');
+    width:940px;
+    height:5px;
 }
 
 /*----------------------------
@@ -306,29 +340,70 @@ div.widgetzone .clear{
 	clear: left;
 }
 
-div.widget{
-	background: white;
-	border: 1px solid silver;
-	padding: 10px 15px;
-	margin-bottom: 10px;
-	z-index: 1;
-	min-width: 1px;
+div.widget
+{
+    position:relative;
+    width:260px;
+    margin-bottom:20px;
+}
+
+div.widget div.bol
+{
+    background-image:url('img/widget-bol.png');
+    position:absolute;
+    top:-10px;
+    left:-15px;
+    width: 41px;
+    height:57px;
 }
 
 div.widget .content{
 	line-height: 16px;
 	color: #666666;
+	border-left:2px dashed #30e637;
+	border-right:2px dashed #30e637;
+	padding:10px;
+}
+div.widget div.title
+{
+    background-image:url('img/widget-top.png');
+    height:40px;
+    width:100%;
+    background-repeat:repeat-x;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+	behavior: url(extra/border-radius.htc);
+}
+div.widget div.title h4
+{    
+    margin:0;
+    padding:0;
+    font-weight:normal;
+    padding-top:8px;
+    padding-left:35px;
+    font-size:18pt;
+    line-height:18pt;
+    color:White;
+
 }
 
-div.widget h4{
-	font-size: 120%;
-	border-bottom: 1px solid silver;
-	padding-bottom: 5px;
-	margin: 0;
-	margin-bottom: 5px;
-	z-index: 0;
-	color: #999999;
-	letter-spacing: 1px;
+div.widget div.footer
+{
+    background-image:url('img/widget-bottom.png');
+    height:36px;
+    width:100%;
+    background-repeat:repeat-x;
+-webkit-border-bottom-right-radius: 8px;
+-webkit-border-bottom-left-radius: 8px;
+-moz-border-radius-bottomright: 8px;
+-moz-border-radius-bottomleft: 8px;
+border-bottom-right-radius: 8px;
+border-bottom-left-radius: 8px;
+	behavior: url(extra/border-radius.htc);
 }
 
 div.widget a.edit, div.widget a.move, div.widget a.delete{
@@ -546,7 +621,7 @@ div.shadow-post
 {
     position:relative;
     clear:both;
-    margin:20px 5px;
+    margin:20px 5px 0 5px;
     padding-top:30px;
     background-image:url('img/shadow-posts.png');
     background-repeat:no-repeat;
@@ -864,11 +939,8 @@ ul.recentComments li a.postTitle{
 ----------------------------*/
 
 #page {
-	border: 1px solid silver;
-	padding: 3px 10px;
-	margin-bottom: 20px;
-	background-color: white;
-	line-height: 17px;
+    clear:both;
+    padding:0;
 }
 
 #page h1 {
@@ -982,8 +1054,7 @@ ul.recentComments li a.postTitle{
 
 #contact{
 	background : white;
-	padding: 10px;
-	border: 1px solid silver;
+	padding:0 20px 0 0;
 }
 
 #contact h1{
@@ -1282,15 +1353,18 @@ div.albums ul
 {
     list-style-type:none;
     margin:0;
+    margin-top:15px;
+    font-weight:bold;
     padding:0;
 }
 div.albums ul li
 {
-    width:200px;
+    width:180px;
     height:200px;
     background-color:#eee;
-
-    border:1px solid #ddd;
+    float:left;
+    margin-left:20px;
+    border:1px solid #ccc;
 }
 div.albums ul li:hover
 {
@@ -1298,8 +1372,7 @@ div.albums ul li:hover
 }
 div.albums ul li p
 {    
-    color:#000;
-    
+    color:#000;    
     text-align:center;
     margin:0;
     padding:5px 0;
@@ -1312,6 +1385,6 @@ div.albums ul li img
 { 
     border:1px solid #ccc;
     margin:0;
-    margin-left:20px;
+    margin-left:10px;
     width:160px;
 }
