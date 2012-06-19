@@ -1,4 +1,6 @@
-﻿namespace UserControls
+﻿using System.Web.UI.HtmlControls;
+
+namespace UserControls
 {
     using System;
     using System.Collections.Generic;
@@ -133,6 +135,14 @@
                 postView.ID = post.Id.ToString().Replace("-", string.Empty);
                 postView.Location = ServingLocation.PostList;
                 postView.Index = counter;
+
+                if(counter >= 3)
+                {
+                    var hgc = new HtmlGenericControl("div");
+                    hgc.Attributes.Add("class","shadow-post");
+                    this.posts.Controls.Add(hgc);
+                }
+
                 this.posts.Controls.Add(postView);
                 counter++;
             }

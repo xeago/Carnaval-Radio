@@ -108,6 +108,7 @@ img {
 #main
 {
     background-color:White;
+    padding-top:20px;
 }
 
 
@@ -466,17 +467,13 @@ div.post .text a[href^="http:"] {
 
 .postForList
 {
-    padding:5px;
+    padding-left:10px;
     width:300px;
     height:405px;
     float:left;
-    margin-bottom:35px;
 }
-.postForList div.text
-{
-
-}
-.postForList div.title h1, .postForList div.title a, .postForList .image, .postForList .image img, .postForList div.text a.read-more, .postForList div.text p
+.postForList div.title h1, .postForList div.title a, .postForList .image, .postForList .image img, .postForList div.text a.read-more, .postForList div.text p,
+.postForListLast div.title h1, .postForListLast div.title a, .postForListLast .image, .postForListLast .image img, .postForListLast div.text a.read-more, .postForListLast div.text p
 {
     margin:0; padding:0;
 }
@@ -492,7 +489,6 @@ div.post .text a[href^="http:"] {
 .postForList div.title a
 {
     color:#7c551c;
-
 }
 .postForList div.title h1
 {
@@ -507,27 +503,105 @@ div.post .text a[href^="http:"] {
 .postForList .image
 {
     border:2px solid #fe9f10;
-    border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(extra/border-radius.htc);
     width:275px;
     margin-left:10px;
     margin-bottom:20px;
 }
-.postForList .image img
-{    border-radius: 4px;}
+.postForList .image img, .postForListLast .image img
+{    	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	behavior: url(extra/border-radius.htc);}
 .postForList .text 
 {
     height:200px;
+    width:273px;
+    padding-left:2px;
     margin-left:10px;
     position:relative;
 }
 .postForList div.text a.read-more
 {
     position:absolute;
-    bottom:10px;
+    bottom:40px;
     right:0;
 }
 
+/*shadow seperator */
+div.shadow-post
+{
+    position:relative;
+    clear:both;
+    margin:20px 5px;
+    padding-top:30px;
+    background-image:url('img/shadow-posts.png');
+    background-repeat:no-repeat;
+    background-position:center bottom;
+    width:930px;
+    height:26px;
+}
 
+.postForListLast
+{
+    width:900px;
+    height:250px;
+    padding:0 0 0 20px;
+}
+
+.postForListLast div.title
+{
+    width:590px;
+}
+.postForListLast div.title a
+{
+    font-family:Arial;
+    font-size:24pt;
+    color:#7c551c;
+}
+.postForListLast div.title h1
+{
+    margin-left:0;
+    width:550px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.postForListLast .title-text
+{float:left; width:590px; height:250px;
+ }
+.postForListLast .image
+{
+    float:right;
+    border:2px solid #fe9f10;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(extra/border-radius.htc);
+    width:275px;
+    margin-left:15px;
+    margin-bottom:20px;
+}
+.postForListLast .image img
+{  width:275px; height:250px;}
+.postForListLast .text 
+{
+    font-family:Arial;
+    font-sizes:12pt;
+    height:200px;
+    position:relative;
+    margin-left:5px;
+    margin-top:20px;
+}
+.postForListLast div.text a.read-more
+{
+    position:absolute;
+    bottom:0;
+    right:0;
+}
 
 
 

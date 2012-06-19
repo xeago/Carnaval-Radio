@@ -110,13 +110,13 @@
             </ul>
               <ul>
                   <li><a href="http://www.youtube.com">
-                      <img src="themes/CarnavalRadio/img/social/yt.png" alt="Carnaval Radio op YouTube!" /></a></li>
+                      <img src="<%=Utils.AbsoluteWebRoot %>themes/CarnavalRadio/img/social/yt.png" alt="Carnaval Radio op YouTube!" /></a></li>
                   <li><a href="http://www.hyves.nl">
-                      <img src="themes/CarnavalRadio/img/social/hy.png" alt="Carnaval Radio op Hyves!" /></a></li>
+                      <img src="<%=Utils.AbsoluteWebRoot %>themes/CarnavalRadio/img/social/hy.png" alt="Carnaval Radio op Hyves!" /></a></li>
                   <li><a href="http://www.facebook.com">
-                      <img src="themes/CarnavalRadio/img/social/fb.png" alt="Carnaval Radio op Facebook!" /></a></li>
+                      <img src="<%=Utils.AbsoluteWebRoot %>themes/CarnavalRadio/img/social/fb.png" alt="Carnaval Radio op Facebook!" /></a></li>
                   <li><a href="http://www.twitter.com">
-                      <img src="themes/CarnavalRadio/img/social/tw.png" alt="Carnaval Radio op Twitter!" /></a></li>
+                      <img src="<%=Utils.AbsoluteWebRoot %>themes/CarnavalRadio/img/social/tw.png" alt="Carnaval Radio op Twitter!" /></a></li>
               </ul>
               <div class="right-corner">
               </div>
@@ -128,6 +128,7 @@
               </div>
           </div>
           <div id="main">
+              <!--[if lt IE 8]> <div style=' clear: both; height: 59px; padding:0 0 0 0;'> <a target="_blank" href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0005_dutch.jpg" border="0" height="42" width="940" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div> <![endif]-->
           <asp:ContentPlaceHolder ID="cphBody" runat="server" />
           </div>          
   </div>

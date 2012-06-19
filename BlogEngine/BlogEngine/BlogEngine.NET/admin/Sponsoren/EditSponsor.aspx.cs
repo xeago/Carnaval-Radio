@@ -161,11 +161,7 @@ namespace Admin.Sponsoren
                 if(imgLogo.ImageEdited)
                     imgLogo.SaveProcessedImageToFileSystem(crSponsor.LogoPhysicalPath);
             }
-            if(dtEndDate.Date.HasValue)
-            {
-                crSponsor.EndDate = dtEndDate.Date;
-            }
-
+            crSponsor.EndDate = dtEndDate.Date;
             crSponsor.Description = txtDescription.Text;
             crSponsor.Active = cbActive.Checked;
             

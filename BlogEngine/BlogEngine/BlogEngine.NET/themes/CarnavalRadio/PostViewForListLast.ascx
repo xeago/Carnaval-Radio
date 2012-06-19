@@ -29,10 +29,10 @@
         if (m.Success)
         {
             string src = getSrc(m.Value);
-            return string.Format("<img class=\"left\" width=\"275\" height=\"155\" {0}  />", src);
+            return string.Format("<img class=\"left\" width=\"275\" height=\"250\" {0}  />", src);
         } 
         string path = string.Format("{0}themes/{1}/img/logo.png", Utils.AbsoluteWebRoot, BlogSettings.Instance.GetThemeWithAdjustments(null));
-        return string.Format("<img class=\"left\" width=\"275\" height=\"155\" src=\"{0}\"  />", path);
+        return string.Format("<img class=\"left\" width=\"275\" height=\"250\" src=\"{0}\"  />", path);
     }
 
 
@@ -66,14 +66,14 @@
 
             if (!string.IsNullOrEmpty(post.Description))
             {
-                body = "<p>" + post.Description.Replace(Environment.NewLine, "<br />") + "</p>" + link;
+                body = "<p>" + post.Description.Replace("\n", "<br />") + "</p>" + link;
             }
             else
             {
                 body = Utils.StripHtml(body);
                 if (body.Length > 40)
                 {
-                    body = string.Format("<p>{0}...</p>{1}", body.Trim().Substring(0, 250), link);
+                    body = string.Format("<p>{0}...</p>{1}", body.Trim().Substring(0, 750), link);
                 }
             }
         }
@@ -85,14 +85,19 @@
     }
 
 </script>
-<div class="xfolkentry postForList" id="post<%=Index%>">
+<div class="xfolkentry postForListLast" id="post<%=Index%>">
+  <div class="title-text">
   <div class="title"><h1><a href="<%=Post.RelativeLink%>" class="taggedlink"><%=Server.HtmlEncode(Post.Title)%></a></h1>
   </div>
-    
-  <div class="image"><%=getImage(true, Post.Content)%></div>
   <div class="text">
-      <asp:PlaceHolder ID="BodyContent" runat="server" />
+    <asp:PlaceHolder ID="BodyContent" runat="server" />
   </div>
+  </div>
+  <div class="image"><%=getImage(true, Post.Content)%></div>
+
+
+
+
 
 <asp:Panel ID="DontShowForNow" runat="server" Visible="false">
   <div class="footer">

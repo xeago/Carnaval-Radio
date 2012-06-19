@@ -15,9 +15,11 @@ public partial class themes_CarnavalRadio_PostView : BlogEngine.Core.Web.Control
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (this.Location == BlogEngine.Core.ServingLocation.PostList)
+        if (Location == ServingLocation.PostList)
         {
-            frontpage.Controls.Add(LoadPostView("PostViewForList.ascx", true, ServingLocation.PostList));
+            frontpage.Controls.Add(this.Index < 3
+                                       ? LoadPostView("PostViewForList.ascx", true, ServingLocation.PostList)
+                                       : LoadPostView("PostViewForListLast.ascx", true, ServingLocation.PostList));
         }
         else
             frontpage.Controls.Add(LoadPostView("PostViewFull.ascx", false, ServingLocation.SinglePost));
@@ -37,6 +39,7 @@ public partial class themes_CarnavalRadio_PostView : BlogEngine.Core.Web.Control
         postView.Post = Post;
         postView.ID = Post.Id.ToString().Replace("-", string.Empty);
         postView.Location = serving;
+        postView.Index = this.Index;
 
         return postView;
     }
