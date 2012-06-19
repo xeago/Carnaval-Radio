@@ -1,6 +1,7 @@
 <%@ Control Language="C#" AutoEventWireup="true" EnableViewState="false" Inherits="BlogEngine.Core.Web.Controls.PostViewBase" %>
 <%@ Import Namespace="BlogEngine.Core" %>
 <%@ Import Namespace="Resources" %>
+<%@ Import Namespace="System.Globalization" %>
 <title>{#advanced_dlg.about_title}</title>
 <script runat="server">
 
@@ -84,13 +85,56 @@
         }
     }
 
+    public override string AdminLinks
+    {
+        get
+        {
+            if (Security.IsAuthenticated)
+            {
+                
+                var postRelativeLink = this.Post.RelativeLink;
+                var sb = new StringBuilder();
+                sb.Append("<div class=\"adminLinks\">");
+                if (this.Post.CanUserEdit)
+                {
+                    sb.AppendFormat(
+                        CultureInfo.InvariantCulture,
+                        "<a href=\"{0}\">{1}</a> | ",
+                        Utils.AbsoluteWebRoot + "admin/Posts/Add_entry.aspx?id=" + this.Post.Id,
+                        Utils.Translate("edit"));
+                }
+
+                if (this.Post.CanUserDelete)
+                {
+                    var confirmDelete = string.Format(
+                        CultureInfo.InvariantCulture,
+                        Utils.Translate("areYouSure"),
+                        Utils.Translate("delete").ToLowerInvariant(),
+                        Utils.Translate("thePost"));
+
+                    sb.AppendFormat(
+                        CultureInfo.InvariantCulture,
+                        "<a href=\"#\" onclick=\"if (confirm('{2}')) location.href='{0}?deletepost={1}'\">{3}</a>",
+                        postRelativeLink,
+                        this.Post.Id,
+                        confirmDelete,
+                        Utils.Translate("delete"));
+                }
+                sb.Append("</div>");
+                return sb.ToString();
+            }
+            return string.Empty;
+        }
+    }
+
 </script>
 <div class="xfolkentry postForListLast" id="post<%=Index%>">
   <div class="title-text">
   <div class="title"><h1><a href="<%=Post.RelativeLink%>" class="taggedlink"><%=Server.HtmlEncode(Post.Title)%></a></h1>
   </div>
-  <div class="text">
+  <div class="text">  
     <asp:PlaceHolder ID="BodyContent" runat="server" />
+      <%=AdminLinks%>
   </div>
   </div>
   <div class="image"><%=getImage(true, Post.Content)%></div>

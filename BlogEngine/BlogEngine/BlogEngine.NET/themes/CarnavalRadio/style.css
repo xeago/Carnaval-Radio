@@ -524,6 +524,16 @@ div.post .text a[href^="http:"] {
     margin-left:10px;
     position:relative;
 }
+
+.postForList div.adminLinks, .postForListLast div.adminLinks
+{
+    position:absolute;
+    bottom:45px;
+    left:0;
+}
+.postForListLast div.adminLinks
+{bottom:0;}
+
 .postForList div.text a.read-more
 {
     position:absolute;
