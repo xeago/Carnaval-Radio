@@ -30,6 +30,8 @@ public partial class fotoalbum : BlogBasePage
      */
     protected void Page_Load(object sender, EventArgs e)
     {
+        this.Title = Resources.labels.fotos;
+
         System.Web.HttpBrowserCapabilities browser = Request.Browser;
         albumID = Request.QueryString["AlbumID"];
         if(string.IsNullOrEmpty(albumID)){Response.Redirect("foto_albums.aspx");}

@@ -28,6 +28,8 @@ public partial class fotoalbums : BlogBasePage
      */
     protected void Page_Load(object sender, EventArgs e)
     {
+        this.Title = Resources.labels.fotos;
+
         System.Web.HttpBrowserCapabilities browser = Request.Browser;
         string name = browser.Browser;
         float version = (float)(browser.MajorVersion + browser.MinorVersion);

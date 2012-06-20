@@ -27,7 +27,7 @@ public partial class sponsoren : BlogBasePage
      */
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Title = Resources.labels.sponsoren.ToLowerInvariant();
+        this.Title = Resources.labels.sponsoren;
 
         System.Web.HttpBrowserCapabilities browser = Request.Browser;
         string name = browser.Browser;

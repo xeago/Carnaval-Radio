@@ -29,6 +29,8 @@ public partial class guestbook : BlogBasePage
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        this.Title = Resources.labels.guestbook;
+
         ciPage = GSDlib.Utils.NullableInt(Request.QueryString["page"]) ?? 1;
 
         LoadMessages();
