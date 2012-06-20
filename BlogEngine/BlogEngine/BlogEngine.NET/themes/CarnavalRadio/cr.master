@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head runat="server" profile="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="shortcut icon" href="~/pics/blogengine.ico" type="image/x-icon"/>
+    <link rel="icon" href="img/fav32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="img/fav64.png" sizes="64x64" type="image/png">
     <asp:ContentPlaceHolder ID="cphHeader" runat="server" />
     <asp:Literal ID="StylesAndScripts" runat="server" />
     <script type="text/javascript">
@@ -40,16 +41,23 @@
     </script>
     <asp:Literal runat="server" ID="JScriptSliderAndButtons">
         <script type="text/javascript">
-        $(document).ready(function () {
+            $(document).ready(function () {
                 $('#header-slider').cycle({
-                fx: 'scrollHorz',
-                timeout: 6000,
-                pause: 1,
-                random: 1,
-                prev: '#prev-slide',
-                next: '#next-slide'
+                    fx: 'scrollHorz',
+                    timeout: 6000,
+                    pause: 1,
+                    random: 1,
+                    prev: '#prev-slide',
+                    next: '#next-slide'
+                });
+
+                $('div.text marquee').marquee('pointer').mouseover(function () {
+                    $(this).trigger('stop');
+                }).mouseout(function () {
+                    $(this).trigger('start');
+                });
             });
-        });
+
  </script>
     </asp:Literal>
 </head>
@@ -78,7 +86,7 @@
             <div class="nuopderadio_text" onclick="OpenStreamPopup();"></div>
             <div class="nuopderadio_box" onclick="OpenStreamPopup();">
                 <div class="text">
-                    <marquee scrollamount="5" width="279" height="30"> 
+                    <marquee scrollamount="2" width="279" height="30"> 
 			            <a id="cc_stream_info_song">Huidig nummer laden...</a>
                     </marquee>
                 </div>
@@ -128,10 +136,13 @@
               <div id="header-slider">
                   <asp:Literal runat="server" ID="litHeaderImages" />
               </div>
+              <div class="menu-shadow">
+              </div>
           </div>
       <!--[if lt IE 8]> <div style=' clear: both; height: 42px; padding:0 0 0 0;'> <a target="_blank" href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0005_dutch.jpg" border="0" height="42" width="940" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div> <![endif]-->
           <div id="main">              
             <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+              <div style="clear: both; display: block"></div>
           </div>
           <div id="page-footer">
             <p>test</p>

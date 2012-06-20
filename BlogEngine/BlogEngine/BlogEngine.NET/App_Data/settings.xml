@@ -16,7 +16,7 @@
   <showdescriptioninpostlistforpostsbytagorcategory>False</showdescriptioninpostlistforpostsbytagorcategory>
   <commentblacklistcount>2</commentblacklistcount>
   <iscocommentenabled>False</iscocommentenabled>
-  <compresswebresource>False</compresswebresource>
+  <compresswebresource>True</compresswebresource>
   <addiptowhitelistfilteronapproval>False</addiptowhitelistfilteronapproval>
   <themecookiename>theme</themecookiename>
   <trustauthenticatedusers>True</trustauthenticatedusers>
@@ -41,7 +41,7 @@
   <useblognameinpagetitles>True</useblognameinpagetitles>
   <smtpusername>info</smtpusername>
   <enableerrorlogging>False</enableerrorlogging>
-  <enablehttpcompression>False</enablehttpcompression>
+  <enablehttpcompression>True</enablehttpcompression>
   <enablepasswordreset>True</enablepasswordreset>
   <disqusaddcommentstopages>False</disqusaddcommentstopages>
   <alternatefeedurl />
@@ -81,7 +81,7 @@
   <remotefiledownloadtimeout>30000</remotefiledownloadtimeout>
   <enableenclosures>False</enableenclosures>
   <endorsement>http://www.dotnetblogengine.net/syndication.axd</endorsement>
-  <removewhitespaceinstylesheets>False</removewhitespaceinstylesheets>
+  <removewhitespaceinstylesheets>True</removewhitespaceinstylesheets>
   <commentwhitelistcount>1</commentwhitelistcount>
   <descriptioncharacters>300</descriptioncharacters>
   <addiptoblacklistfilteronrejection>False</addiptoblacklistfilteronrejection>

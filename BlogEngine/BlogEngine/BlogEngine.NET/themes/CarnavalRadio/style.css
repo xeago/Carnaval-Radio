@@ -12,6 +12,7 @@ body
 	color: #444444;
     margin: 0 auto;
     width:1006px;
+    height:100%;
     position: relative;
 }
 
@@ -93,7 +94,6 @@ img {
     width:940px;
     /*todo*/
     background-color:black;
-    margin-top:10px;
 }
 #page-footer p
 {
@@ -130,6 +130,7 @@ img {
 {
     background-color:White;
     padding-top:20px;
+    padding-bottom:20px;
     height:100%;
     width:940px;
 }

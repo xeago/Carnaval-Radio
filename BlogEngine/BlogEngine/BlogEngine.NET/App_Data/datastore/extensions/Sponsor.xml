@@ -25,6 +25,7 @@
       <Values>960bcdf0-37b3-4b15-ada8-14b9b85481ba</Values>
       <Values>eda58fa6-737f-44bc-853a-a8b3ffdd04ca</Values>
       <Values>7b254960-914d-4c01-9694-fee4ba68345e</Values>
+      <Values>a2248b77-5271-45cd-ae99-09822c6d51bc</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -38,6 +39,7 @@
       <Values>Autoplaza Brunssum</Values>
       <Values>Kabeldirect</Values>
       <Values>Woetsjtok</Values>
+      <Values>Wil Smits</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -51,6 +53,7 @@
       <Values />
       <Values>www.kabeldirect.nl</Values>
       <Values>www.woetsjtok.nl</Values>
+      <Values>www.wilsmits.nl</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -62,6 +65,7 @@
       <SelectedValue />
       <Values>1</Values>
       <Values>1</Values>
+      <Values>2</Values>
       <Values>2</Values>
       <Values>2</Values>
     </Parameters>
@@ -77,6 +81,7 @@
       <Values>False</Values>
       <Values>False</Values>
       <Values>False</Values>
+      <Values>false</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -86,6 +91,7 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>False</Values>
       <Values>False</Values>
       <Values>False</Values>
       <Values>False</Values>
@@ -103,6 +109,7 @@
       <Values>False</Values>
       <Values>True</Values>
       <Values>True</Values>
+      <Values>True</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -112,6 +119,7 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>False</Values>
       <Values>False</Values>
       <Values>False</Values>
       <Values>False</Values>
@@ -129,6 +137,7 @@
       <Values>False</Values>
       <Values>False</Values>
       <Values>False</Values>
+      <Values>False</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -138,6 +147,7 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>0</Values>
       <Values>0</Values>
       <Values>0</Values>
       <Values>0</Values>
@@ -155,6 +165,7 @@
       <Values>Upload/sponsoren/960bcdf0-37b3-4b15-ada8-14b9b85481ba.png</Values>
       <Values>Upload/sponsoren/eda58fa6-737f-44bc-853a-a8b3ffdd04ca.png</Values>
       <Values>Upload/sponsoren/7b254960-914d-4c01-9694-fee4ba68345e.png</Values>
+      <Values>Upload/sponsoren/a2248b77-5271-45cd-ae99-09822c6d51bc.png</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -164,6 +175,7 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values />
       <Values />
       <Values />
       <Values />
@@ -181,6 +193,7 @@
       <Values>14-6-2012 21:35:17</Values>
       <Values>14-6-2012 21:35:45</Values>
       <Values>14-6-2012 21:46:39</Values>
+      <Values>20-6-2012 18:50:24</Values>
     </Parameters>
     <Parameters>
       <KeyField>false</KeyField>
@@ -193,6 +206,7 @@
       <Values />
       <Values />
       <Values />
+      <Values>19-6-2013 0:00:00</Values>
       <Values />
     </Parameters>
     <Parameters>
@@ -203,6 +217,7 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
+      <Values>True</Values>
       <Values>True</Values>
       <Values>True</Values>
       <Values>True</Values>

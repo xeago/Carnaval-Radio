@@ -191,6 +191,108 @@ public class CRSponsor
     }
 
     /// <summary>
+    /// Writes the supplied list of dynamics to the specified path as json.
+    /// </summary>
+    /// <param name="obj">Input objects to be written as json.</param>
+    /// <param name="path">The output path.</param>
+    private static void writeSponsorJSON(dynamic obj, string path, string file)
+    {
+        var js = new System.Web.Script.Serialization.JavaScriptSerializer();
+        var sb = new StringBuilder();
+        js.Serialize(obj, sb);
+        if (!Directory.Exists(path))
+            Directory.CreateDirectory(path);
+        using (var w = new System.IO.StreamWriter(path + file))
+        {
+            try
+            {
+                w.Write(sb);
+            }
+            catch (IOException e)
+            {
+                BlogEngine.Core.Utils.Log("writeSponsorJSON()>w.Write", e);
+            }
+        }
+    }
+
+    public bool Delete()
+    {
+        ExtensionSettings settings = ExtensionManager.GetSettings("Sponsor");
+        int i = this.index;
+        foreach (var parameter in settings.Parameters)
+        {
+            parameter.DeleteValue(i);
+        }
+
+        ExtensionManager.SaveSettings("Sponsor", settings);
+
+        updateJSON();
+
+        //return if row is deleted
+        return dt.Rows.Cast<DataRow>().SingleOrDefault(dr => Guid.Parse(dr["ID"].ToString()) == ID) == null;
+    }
+
+    public static List<CRSponsor> GetList()
+    {
+        return s.GetDataTable().Rows.Cast<DataRow>().Select(dr => new CRSponsor(Guid.Parse(dr["ID"].ToString()), false)).ToList();
+    }
+
+    public static List<CRSponsor> GetListOnlyActiveAndAlter()
+    {
+        var l = GetList();
+        var expired = l.Where(i => i.EndDate.HasValue || i.EndDate <= DateTime.Now);
+        //if (Security.IsAuthenticated)
+        //{
+        //    foreach (var item in expired) //fix them on disk aswell
+        //    {
+        //        item.Active = false;
+        //        item.Save();
+        //    }
+        //}
+        var active = l.Where(i => i.Active && (!i.EndDate.HasValue || i.EndDate >= DateTime.Now));
+
+        if (expired.Any()) // update the json if there were any expired
+            updateJSON(active);
+
+        return active.ToList();
+    }
+
+    public static string GetLabelBySponsorType(SponsorType s)
+    {
+        var rm = new ResourceManager(typeof(Resources.labels));
+        var text = rm.GetString(s.ToString(),System.Globalization.CultureInfo.CreateSpecificCulture("nl"));
+        return string.IsNullOrEmpty(text) ? s.ToString() : text;
+    }
+
+    private static bool ConvertBoolElseFalse(object a)
+    {
+        try
+        {
+            return Convert.ToBoolean(a.ToString());
+        }
+        catch
+        {
+            return false;
+        }
+    }
+
+    private static void updatePlayerSwitchJSON(IEnumerable<CRSponsor> sponsors)
+    {
+        var playerRotatingSponsors = sponsors.Where(s => s.WidgetSwitch);
+        var player = new List<dynamic>();
+        foreach (var item in playerRotatingSponsors)
+        {
+            player.Add(new
+            {
+                url = item.Url,
+                logoUrl = item.LogoURL
+            });
+        }
+        writeSponsorJSON(player, HttpContext.Current.Server.MapPath("~/json/"), "rotatingPlayerSponsor.json");
+
+    }
+
+    /// <summary>
     /// Updates the JSON files for sponsor.
     /// </summary>
     private static void updateJSON() { updateJSON(GetList().Where(s => s.Active)); }
@@ -270,104 +372,5 @@ public class CRSponsor
             });
         }
         writeSponsorJSON(mobile, HttpContext.Current.Server.MapPath("~/json/"), "rotatingMobileSponsor.json");
-    }
-
-    /// <summary>
-    /// Writes the supplied list of dynamics to the specified path as json.
-    /// </summary>
-    /// <param name="obj">Input objects to be written as json.</param>
-    /// <param name="path">The output path.</param>
-    private static void writeSponsorJSON(dynamic obj, string path, string file)
-    {
-        var js = new System.Web.Script.Serialization.JavaScriptSerializer();
-        var sb = new StringBuilder();
-        js.Serialize(obj, sb);
-        if (!Directory.Exists(path))
-            Directory.CreateDirectory(path);
-        using (var w = new System.IO.StreamWriter(path + file))
-        {
-            try
-            {
-                w.Write(sb);
-            }
-            catch (IOException e)
-            {
-                BlogEngine.Core.Utils.Log("writeSponsorJSON()>w.Write", e);
-            }
-        }
-    }
-
-    public bool Delete()
-    {
-        ExtensionSettings settings = ExtensionManager.GetSettings("Sponsor");
-        int i = this.index;
-        foreach (var parameter in settings.Parameters)
-        {
-            parameter.DeleteValue(i);
-        }
-
-        ExtensionManager.SaveSettings("Sponsor", settings);
-
-        updateJSON();
-
-        //return if row is deleted
-        return dt.Rows.Cast<DataRow>().SingleOrDefault(dr => Guid.Parse(dr["ID"].ToString()) == ID) == null;
-    }
-
-    public static List<CRSponsor> GetList()
-    {
-        return s.GetDataTable().Rows.Cast<DataRow>().Select(dr => new CRSponsor(Guid.Parse(dr["ID"].ToString()), false)).ToList();
-    }
-
-    public static List<CRSponsor> GetListOnlyActiveAndAlter()
-    {
-        var l = GetList();
-        var expired = l.Where(i => i.EndDate.HasValue || i.EndDate <= DateTime.Now);
-        foreach (var item in expired) //fix them on disk aswell
-        {
-            item.Active = false;
-            item.Save();
-        }
-        var active = l.Where(i => i.Active && (!i.EndDate.HasValue || i.EndDate >= DateTime.Now));
-
-        if (expired.Any()) // update the json if there were any expired
-            updateJSON(active);
-
-        return active.ToList();
-    }
-
-    public static string GetLabelBySponsorType(SponsorType s)
-    {
-        var rm = new ResourceManager(typeof(Resources.labels));
-        var text = rm.GetString(s.ToString(),System.Globalization.CultureInfo.CreateSpecificCulture("nl"));
-        return string.IsNullOrEmpty(text) ? s.ToString() : text;
-    }
-
-    private static bool ConvertBoolElseFalse(object a)
-    {
-        try
-        {
-            return Convert.ToBoolean(a.ToString());
-        }
-        catch
-        {
-            return false;
-        }
-    }
-
-    private static void updatePlayerSwitchJSON(IEnumerable<CRSponsor> sponsors)
-    {
-        var playerRotatingSponsors = sponsors.Where(s => s.WidgetSwitch);
-        var player = new List<dynamic>();
-        foreach (var item in playerRotatingSponsors)
-        {
-            player.Add(new
-            {
-                url = item.Url,
-                logoUrl = item.LogoURL
-            });
-        }
-        writeSponsorJSON(player, HttpContext.Current.Server.MapPath("~/json/"), "rotatingPlayerSponsor.json");
-
     }
 }
