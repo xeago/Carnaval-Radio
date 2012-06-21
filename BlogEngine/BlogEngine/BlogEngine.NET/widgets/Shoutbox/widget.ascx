@@ -1,10 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="widget.ascx.cs" Inherits="Widgets.Shoutbox.Widget" %>
-<script src="widgets/Shoutbox/shoutboxJS.js" type="text/javascript"></script>
-<asp:ScriptManager ID="ScriptManager" runat="server">
-        <Services>
-            <asp:ServiceReference Path="postShout.asmx" InlineScript="true"/>
-        </Services>
- </asp:ScriptManager>
+<%@ Import Namespace="BlogEngine.Core" %>
+<script src="<%=Utils.AbsoluteWebRoot %>widgets/Shoutbox/shoutboxJS.js" type="text/javascript"></script>
 <div id="shouts" style="max-height:300px; overflow-y: scroll; overflow-x: hidden;">
 </div>
 <table>
@@ -14,7 +10,6 @@
         </td>
         <td>
             <input type="text" id="tbName" />
-            <%--<asp:TextBox ID="tbName" runat="server" />--%>
         </td>
     </tr>
     <tr>
@@ -23,7 +18,6 @@
         </td>
         <td>
             <input type="text" id="tbMessage" />
-            <%--<asp:TextBox ID="tbMessage" runat="server" />--%>
         </td>
     </tr>
 </table>
