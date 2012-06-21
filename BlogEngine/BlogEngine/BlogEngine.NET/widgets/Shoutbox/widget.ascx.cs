@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.IO;
     using System.Linq;
     using System.Xml;
     using System.Xml.Linq;
@@ -29,6 +30,13 @@
 
         public override void LoadWidget()
         {
+            string file = HttpContext.Current.Server.MapPath(@"~/widgets/Shoutbox/shouts.xml");
+            if (!File.Exists(file))
+            {
+                StreamWriter sw = new StreamWriter(file, true);
+                sw.Write(@"<?xml version='1.0' encoding='iso-8859-1'?><shouts></shouts>");
+                sw.Flush();
+            }
         }
     }
 }
