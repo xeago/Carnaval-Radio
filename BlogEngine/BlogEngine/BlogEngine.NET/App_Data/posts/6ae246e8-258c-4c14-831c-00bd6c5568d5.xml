@@ -66,6 +66,16 @@
       <avatar />
       <content>Hallo TWN werkt de notify me?</content>
     </comment>
+    <comment id="6ad93ce6-6430-431d-9a83-41174a99e5b0" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="False">
+      <date>2012-06-21 19:04:24</date>
+      <author>admin</author>
+      <email>carnavalradio@gmail.com</email>
+      <country />
+      <ip>::1</ip>
+      <moderatedby>Rule:authenticated</moderatedby>
+      <avatar />
+      <content>test</content>
+    </comment>
   </comments>
   <categories />
   <notifications>

@@ -9174,3 +9174,69 @@ Error retrieving Twitter feed. The underlying connection was closed: An unexpect
 Date: 21-6-2012 18:14:39
 Contents Below
 Error retrieving Twitter feed. The underlying connection was closed: An unexpected error occurred on a send.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:26:57
+Contents Below
+Error retrieving Twitter feed. Unable to connect to the remote server
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:26:57
+Contents Below
+Error retrieving Twitter feed. The underlying connection was closed: An unexpected error occurred on a send.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:29:28
+Contents Below
+Error retrieving last twitter feed load from data store.  Error: The 'link' start tag on line 32 position 8 does not match the end tag of 'head'. Line 44, position 5.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:29:51
+Contents Below
+Error retrieving Twitter feed. The underlying connection was closed: An unexpected error occurred on a receive.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:29:51
+Contents Below
+Error retrieving Twitter feed. The underlying connection was closed: An unexpected error occurred on a send.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:34:04
+Contents Below
+Error retrieving Twitter feed. Unable to connect to the remote server
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:34:04
+Contents Below
+Error retrieving Twitter feed. Unable to connect to the remote server
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:34:56
+Contents Below
+Error retrieving Twitter feed. Unable to connect to the remote server
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:34:56
+Contents Below
+Error retrieving Twitter feed. Unable to connect to the remote server
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:35:18
+Contents Below
+Error retrieving Twitter feed. Unable to connect to the remote server
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:35:18
+Contents Below
+Error retrieving Twitter feed. The underlying connection was closed: An unexpected error occurred on a send.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:38:03
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:38:03
+Contents Below
+Error requesting Twitter feed. Value cannot be null.
+Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:39:46
+Contents Below
+Error retrieving Twitter feed. Unable to connect to the remote server
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:39:46
+Contents Below
+Error retrieving Twitter feed. Unable to connect to the remote server
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 19:04:25
+Contents Below
+Error sending email in SendMailMessage:  Mailbox unavailable. The server response was: authentication required

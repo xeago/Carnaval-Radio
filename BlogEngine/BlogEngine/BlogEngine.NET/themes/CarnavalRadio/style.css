@@ -1294,13 +1294,14 @@ input[type="text"], input[type="select"] {
     padding: 3px;
 }
 
-input[type="submit"], input[type="button"], input[type="file"] {
+input[type="submit"], input[type="button"], input[type="file"], a.aButton {
     background-image: url('img/button.png');
+
     background-position:bottom;
 	display:block;
 	background-color:transparent;
 	border:none;
-	background-repeat:repeat-x;
+    background-repeat:no-repeat;
 	font-family:arial, sans-serif;
     line-height:38px;
     padding-right:20px;
@@ -1313,9 +1314,10 @@ input[type="submit"], input[type="button"], input[type="file"] {
 	height:38px;
 }
 
-input[type="submit"]:hover, input[type="button"]:hover 
+input[type="submit"]:hover, input[type="button"]:hover, a.aButton:hover
 {
-    color:#5C80B1;
+    color:#009e1e;
+    text-decoration:none;
 }
 
 #searchcomments {
@@ -1423,6 +1425,17 @@ div.albums ul li img
 
 div#GuestbookView
 {
+    position:relative;
     width:600px;
     padding:10px;
+}
+
+a.aButton
+{
+    position:absolute;
+    top:-85px;
+    right:0;
+    font-size:10pt;
+    padding-right:40px;
+    display:block;
 }

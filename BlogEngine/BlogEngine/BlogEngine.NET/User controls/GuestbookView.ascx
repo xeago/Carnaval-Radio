@@ -1,5 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="GuestbookView.ascx.cs" Inherits="UserControls.GuestbookView" %>
 <%@ Import Namespace="BlogEngine.Core" %>
+<a href="#addcomment" class="aButton">Plaats bericht</a>
 
 <% if (CommentCounter > 0)
    { %>
@@ -18,7 +19,6 @@
 <asp:PlaceHolder runat="Server" ID="phAddComment">
 
 <div id="comment-form">
-    <a name="bericht-plaatsen" style="display:none;"></a>
 	<img src="<%=Utils.RelativeWebRoot %>pics/ajax-loader.gif" alt="Het bericht opslaan" style="display:none" id="ajaxLoader" />  
 	<span id="status"></span>
 

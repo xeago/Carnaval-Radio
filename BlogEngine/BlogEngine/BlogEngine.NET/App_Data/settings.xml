@@ -54,7 +54,7 @@
   <disquswebsitename />
   <handlewwwsubdomain />
   <theme>CarnavalRadio</theme>
-  <sendmailoncomment>True</sendmailoncomment>
+  <sendmailoncomment>False</sendmailoncomment>
   <description>De vastelaoves Radio!!</description>
   <blogrollvisibleposts>5</blogrollvisibleposts>
   <geocodinglatitude>0</geocodinglatitude>

@@ -79,7 +79,7 @@
 		<img src="<%=Utils.RelativeWebRoot %>pics/ajax-loader.gif" style="display:none" alt="Loading" />  
 	  </div>
 	  
-	  <p>
+	  <p style="display:none;">
 	      <input type="checkbox" id="cbNotify" class="cmnt-frm-notify" style="width: auto" tabindex="8" />
 	      <label for="cbNotify" style="width:auto;float:none;display:inline;padding-left:5px"><%=Resources.labels.notifyOnNewComments %></label>
       </p>

@@ -155,19 +155,18 @@
   </div>
   </form>
 
-        <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/system/streaminfo.js"></script>
-        <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/js.php/carradio/streaminfo/rnd0"></script>
-        <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/system/recenttracks.js"></script>
-        <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/js.php/carradio/recenttracks/rnd0"></script>
     
-    
+    <!--
     <div style="display:none;">
         <div class="login">
             <span runat="server" id="aUser"></span><a runat="server" id="aLogin" />
         </div>
         <a href="<%=Utils.FeedUrl %>" class="feed">
             <img src="<%=Utils.ApplicationRelativeWebRoot %>pics/rssButton.png" alt="Feed" /><%=Resources.labels.subscribe %></a>
-    </div>
-
+    </div>-->
+    <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/system/streaminfo.js"></script>
+    <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/js.php/carradio/streaminfo/rnd0"></script>
+    <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/system/recenttracks.js"></script>
+    <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/js.php/carradio/recenttracks/rnd0"></script>
 </body>
 </html>
