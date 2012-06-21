@@ -98,7 +98,11 @@
 
    
             <ul class="head-menu">
-              <li><a href="<%=Utils.AbsoluteWebRoot %>" rel="home"><%=Resources.labels.home %></a></li>
+              <li><a href="<%=Utils.AbsoluteWebRoot %>" rel="home"><%=Resources.labels.home %></a>
+                <ul>
+                    <li><a href="<%=Utils.AbsoluteWebRoot %>nieuws.aspx" rel="home">Nieuws</a></li>
+                </ul>
+              </li>
               <asp:Literal runat="server" ID="litMenu" />
                 <li><a href="<%=Utils.AbsoluteWebRoot %>sponsoren.aspx">
                     <%=Resources.labels.sponsoren %></a></li>
