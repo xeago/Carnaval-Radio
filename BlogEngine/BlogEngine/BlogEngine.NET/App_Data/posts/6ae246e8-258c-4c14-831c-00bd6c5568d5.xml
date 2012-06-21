@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<post>
+  <author>admin</author>
+  <title>Gastenboek</title>
+  <description />
+  <content>&lt;p&gt;Teken ons gastenboek&lt;/p&gt;</content>
+  <ispublished>True</ispublished>
+  <isdeleted>False</isdeleted>
+  <iscommentsenabled>True</iscommentsenabled>
+  <pubDate>1900-01-01 00:00:00</pubDate>
+  <lastModified>2012-06-21 17:41:40</lastModified>
+  <raters>0</raters>
+  <rating>0</rating>
+  <slug>Gastenboek</slug>
+  <tags>
+    <tag>GB-af693f9aea7dae36fb3bef4c9b6e56fb</tag>
+  </tags>
+  <comments>
+    <comment id="1bca2307-f93d-42cb-8388-c777f9bad2bd" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="False">
+      <date>2012-06-21 17:36:19</date>
+      <author>admin</author>
+      <email>carnavalradio@gmail.com</email>
+      <country />
+      <ip>10.0.0.208</ip>
+      <moderatedby>Rule:authenticated</moderatedby>
+      <avatar />
+      <content>test</content>
+    </comment>
+    <comment id="8f16ef7d-032a-4e67-bde9-e55df95895b0" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="False">
+      <date>2012-06-21 17:39:47</date>
+      <author>derp</author>
+      <email>derp@derp.derp</email>
+      <country />
+      <ip>10.0.0.107</ip>
+      <moderatedby>admin</moderatedby>
+      <avatar />
+      <content>:D</content>
+    </comment>
+    <comment id="7f146fa6-2299-4d47-9afc-831667d76312" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="False">
+      <date>2012-06-21 17:41:38</date>
+      <author>admin</author>
+      <email>carnavalradio@gmail.com</email>
+      <country />
+      <ip>::1</ip>
+      <moderatedby>Rule:authenticated</moderatedby>
+      <avatar />
+      <content>test test</content>
+    </comment>
+    <comment id="c8f71d46-56fa-460a-a918-4180ae36a5ea" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="False">
+      <date>2012-06-21 17:41:40</date>
+      <author>derp</author>
+      <email>derp@xeago.nl</email>
+      <country />
+      <ip>10.0.0.107</ip>
+      <moderatedby>admin</moderatedby>
+      <avatar />
+      <content>dfghjk</content>
+    </comment>
+    <comment id="d33c0882-d652-4993-9b78-3eb9dd4dd87e" parentid="c8f71d46-56fa-460a-a918-4180ae36a5ea" approved="True" spam="False" deleted="False">
+      <date>2012-06-21 17:42:53</date>
+      <author>admin</author>
+      <email>carnavalradio@gmail.com</email>
+      <country />
+      <ip>::1</ip>
+      <moderatedby>Rule:authenticated</moderatedby>
+      <avatar />
+      <content>Hallo TWN werkt de notify me?</content>
+    </comment>
+  </comments>
+  <categories />
+  <notifications>
+    <email>derp@xeago.nl</email>
+  </notifications>
+</post>

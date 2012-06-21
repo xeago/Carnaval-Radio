@@ -30,7 +30,7 @@ public partial class CrSite : System.Web.UI.MasterPage
         RegisterStyleSheetInclude(string.Format("{0}{1}", Utils.AbsoluteWebRoot, "themes/CarnavalRadio/styles/superfish.css"));
         RegisterClientScriptInclude(string.Format("{0}{1}", Utils.AbsoluteWebRoot, "themes/CarnavalRadio/js/superfish.js"));
         RegisterClientScriptInclude(string.Format("{0}{1}", Utils.AbsoluteWebRoot, "themes/CarnavalRadio/js/jquerymarquee.js"));
-        RegisterClientScriptInclude("http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js");
+        RegisterClientScriptInclude("http://malsup.github.com/jquery.cycle.all.js");
         litMenu.Text = buildMenu("");
         litSponsorImages.Text = getSponsorImages();
         litHeaderImages.Text = getHeaderImages();

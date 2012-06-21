@@ -3,6 +3,7 @@
 using System;
 using System.Collections;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Web;
 using BlogEngine.Core;
@@ -21,7 +22,7 @@ public partial class guestbook : BlogBasePage
         string path = string.Concat(Utils.RelativeWebRoot, "themes/", theme, "/", "Guestbook.ascx");
 
         PostViewBase postView = (BlogEngine.Core.Web.Controls.PostViewBase)LoadControl(path);
-        postView.Post = Post.GetPost(Guid.Parse("ab232085-71fe-47ee-866b-7a710f8f9b75"));
+        postView.Post = Post.GetPostsByTag("GB-af693f9aea7dae36fb3bef4c9b6e56fb").First();
         postView.ID = "gastenboek";
         postView.Location = ServingLocation.SinglePost;
 

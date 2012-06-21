@@ -9158,3 +9158,11 @@ Date: 21-6-2012 16:25:39
 Contents Below
 Error requesting Twitter feed. Value cannot be null.
 Parameter name: requestUri
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 17:42:28
+Contents Below
+Error sending email in SendMailMessage:  Mailbox unavailable. The server response was: authentication required
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 17:42:53
+Contents Below
+Error sending email in SendMailMessage:  Mailbox unavailable. The server response was: authentication required

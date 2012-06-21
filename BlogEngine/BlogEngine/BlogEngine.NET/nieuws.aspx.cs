@@ -9,7 +9,6 @@ using System.Linq;
 using System.Web.UI.HtmlControls;
 using BlogEngine.Core;
 using BlogEngine.Core.Web.Controls;
-using Guestbook;
 
 #endregion
 
