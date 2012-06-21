@@ -149,4 +149,4 @@ function registerCommentBox(){
     }
 </script>
 
-<asp:label runat="server" id="lbCommentsDisabled" visible="false"><%=Resources.labels.commentsAreClosed %></asp:label>
+<!--<asp:label runat="server" id="lbCommentsDisabled" visible="false"><%=Resources.labels.commentsAreClosed %></asp:label>-->

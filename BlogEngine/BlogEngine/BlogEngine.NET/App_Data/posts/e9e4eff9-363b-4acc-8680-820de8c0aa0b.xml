@@ -36,7 +36,7 @@ Aenean a turpis id quam vehicula pellentesque. Duis dignissim est non elit feugi
   <isdeleted>False</isdeleted>
   <iscommentsenabled>False</iscommentsenabled>
   <pubDate>2012-06-04 15:06:00</pubDate>
-  <lastModified>2012-06-21 10:56:19</lastModified>
+  <lastModified>2012-06-21 16:36:02</lastModified>
   <raters>0</raters>
   <rating>0</rating>
   <slug>Test-social-media-bericht</slug>
@@ -47,6 +47,7 @@ Aenean a turpis id quam vehicula pellentesque. Duis dignissim est non elit feugi
     <tag>Social Media</tag>
     <tag>Mobiele app</tag>
     <tag>Website</tag>
+    <tag>CR</tag>
   </tags>
   <comments />
   <categories>

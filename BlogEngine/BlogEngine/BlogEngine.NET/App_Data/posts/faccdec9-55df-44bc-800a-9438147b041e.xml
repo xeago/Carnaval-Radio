@@ -16,11 +16,13 @@
   <isdeleted>False</isdeleted>
   <iscommentsenabled>False</iscommentsenabled>
   <pubDate>2012-06-18 14:25:00</pubDate>
-  <lastModified>2012-06-21 13:29:49</lastModified>
+  <lastModified>2012-06-21 16:35:23</lastModified>
   <raters>0</raters>
   <rating>0</rating>
   <slug>Limburgse-Aovendj-groot-succes!</slug>
-  <tags />
+  <tags>
+    <tag>CR</tag>
+  </tags>
   <comments />
   <categories>
     <category>19770e74-9ec9-4cde-b2ab-e5051aaaf348</category>

@@ -52,7 +52,8 @@ h2 {
 
 a {
 	text-decoration: none;
-	color: #5C80B1;
+	color: #009e1e;
+	
 }
 
 a[href^="\/file.axd"] {
@@ -473,7 +474,6 @@ div.widget a.edit, div.widget a.move, div.widget a.delete{
 div.post, .mceContentBody 
 {
 	padding: 3px 10px;
-	margin-bottom: 20px;
 	background-color: white;
 	line-height: 125%;
 }
@@ -501,6 +501,8 @@ div.post .pubDate {
 	color: #666666;
 	font-size: 95%;
 	float: right;
+	font-weight:bold;
+	margin-top:5px;
 }
 
 div.post .text 
@@ -1178,6 +1180,10 @@ ul.recentComments li a.postTitle{
 .comment {
     padding: 5px;
 }
+#commentCompose
+{
+    margin-top:5px;
+}
 
 /* nested comments */
 
@@ -1296,7 +1302,9 @@ input[type="submit"], input[type="button"], input[type="file"] {
 	border:none;
 	background-repeat:repeat-x;
 	font-family:arial, sans-serif;
-	text-align:center;
+    line-height:38px;
+    padding-right:20px;
+	text-align:right;
 	letter-spacing:0.5pt;
 	cursor:pointer;
 	color:white;
@@ -1305,7 +1313,9 @@ input[type="submit"], input[type="button"], input[type="file"] {
 	height:38px;
 }
 
-input[type="submit"]:hover, input[type="button"]:hover {
+input[type="submit"]:hover, input[type="button"]:hover 
+{
+    color:#5C80B1;
 }
 
 #searchcomments {

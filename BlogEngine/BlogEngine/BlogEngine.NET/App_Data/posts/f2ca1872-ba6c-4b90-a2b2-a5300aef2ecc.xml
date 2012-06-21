@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<post>
+  <author>admin</author>
+  <title>Test</title>
+  <description />
+  <content>&lt;p&gt;test&lt;/p&gt;</content>
+  <ispublished>True</ispublished>
+  <isdeleted>True</isdeleted>
+  <iscommentsenabled>False</iscommentsenabled>
+  <pubDate>2012-06-21 16:36:00</pubDate>
+  <lastModified>2012-06-21 16:36:55</lastModified>
+  <raters>0</raters>
+  <rating>0</rating>
+  <slug>Test</slug>
+  <tags>
+    <tag>CR</tag>
+  </tags>
+  <comments />
+  <categories />
+  <notifications />
+</post>

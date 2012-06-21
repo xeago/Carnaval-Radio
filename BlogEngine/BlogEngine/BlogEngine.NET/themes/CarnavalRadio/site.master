@@ -4,7 +4,6 @@
 <asp:ContentPlaceHolder runat="server" ID="cphHeader" />
 </asp:Content>
 
-
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBody" runat="Server">
 <div id="ContentContainer">
     <div id="content">
