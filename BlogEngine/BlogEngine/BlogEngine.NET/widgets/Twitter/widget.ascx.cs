@@ -31,7 +31,7 @@ namespace Widgets.Twitter
         /// <summary>
         /// The link format.
         /// </summary>
-        private const string LinkFormat = "<a href=\"{0}{1}\" rel=\"nofollow\">{1}</a>";
+        private const string LinkFormat = "<a href=\"{0}{1}\" rel=\"nofollow\" target=\"_blank\">{1}</a>";
 
         /// <summary>
         /// The twitter feeds cache key.
