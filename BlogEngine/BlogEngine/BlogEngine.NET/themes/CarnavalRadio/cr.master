@@ -70,7 +70,7 @@
   <div id="container">
           <div id="header">
             <div style="display:none;">
-                <p><a href="<%=Utils.AbsoluteWebRoot %>"><%=BlogSettings.Instance.Name %></a></p>
+                <p><a id="CRwebroot" href="<%=Utils.AbsoluteWebRoot %>"><%=BlogSettings.Instance.Name %></a></p>
                 <span><%=BlogSettings.Instance.Description %></span>
             </div>
             <div class="logo">
@@ -98,11 +98,7 @@
 
    
             <ul class="head-menu">
-              <li><a href="<%=Utils.AbsoluteWebRoot %>" rel="home"><%=Resources.labels.home %></a>
-                <ul>
-                    <li><a href="<%=Utils.AbsoluteWebRoot %>nieuws.aspx" rel="home">Nieuws</a></li>
-                </ul>
-              </li>
+              <li><a href="<%=Utils.AbsoluteWebRoot %>" rel="home"><%=Resources.labels.home %></a></li>
               <asp:Literal runat="server" ID="litMenu" />
                 <li><a href="<%=Utils.AbsoluteWebRoot %>sponsoren.aspx">
                     <%=Resources.labels.sponsoren %></a></li>
@@ -150,23 +146,24 @@
               <div style="clear: both; display: block"></div>
           </div>
           <div id="page-footer">
-            <p>test</p>
+            <blog:WidgetZone runat="server" ID="Footer" ZoneName="Footer"></blog:WidgetZone>
           </div>       
   </div>
   </form>
 
+        <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/system/streaminfo.js"></script>
+        <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/js.php/carradio/streaminfo/rnd0"></script>
+        <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/system/recenttracks.js"></script>
+        <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/js.php/carradio/recenttracks/rnd0"></script>
     
-    <!--
+    
     <div style="display:none;">
         <div class="login">
             <span runat="server" id="aUser"></span><a runat="server" id="aLogin" />
         </div>
         <a href="<%=Utils.FeedUrl %>" class="feed">
             <img src="<%=Utils.ApplicationRelativeWebRoot %>pics/rssButton.png" alt="Feed" /><%=Resources.labels.subscribe %></a>
-    </div>-->
-    <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/system/streaminfo.js"></script>
-    <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/js.php/carradio/streaminfo/rnd0"></script>
-    <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/system/recenttracks.js"></script>
-    <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/js.php/carradio/recenttracks/rnd0"></script>
+    </div>
+
 </body>
 </html>

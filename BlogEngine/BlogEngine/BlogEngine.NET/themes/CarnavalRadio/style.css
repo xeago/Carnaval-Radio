@@ -91,7 +91,7 @@ img {
 #page-footer
 {
     clear:both;
-    height:100px;
+    height:300px;
     width:940px;
     /*todo*/
     background-color:black;
@@ -444,6 +444,17 @@ div.widget a.edit, div.widget a.move, div.widget a.delete{
 
 #moveWidgetTo {
     margin-bottom: 5px;
+}
+
+
+#page-footer div.widgetzone
+{
+    width:940px;
+}
+
+#page-footer div.widget
+{
+    float:left;
 }
 
 /*----------------------------

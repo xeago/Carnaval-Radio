@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.IO;
     using System.Linq;
     using System.Xml.Linq;
     using System.Web;
@@ -17,7 +18,6 @@
     public class postShout : WebService
     {
         string xmlfile = HttpContext.Current.Server.MapPath(@"./shouts.xml");
-        //string xmlfile =  /* Blog.CurrentInstance.RelativeWebRoot + */ @"../widgets/Shoutbox/shouts.xml";
 
         [WebMethod]
         public JsonResponse SubmitMessage(string name, string message)
@@ -26,7 +26,7 @@
             {
                 XDocument xDoc = XDocument.Load(xmlfile);
 
-                int count = int.Parse(xDoc.Root.Elements().Last().Attribute("id").Value) + 1;
+                int count = xDoc.Root.Elements().Count() + 1;
                 xDoc.Element("shouts").Add(new XElement("shout",
                                                 new XAttribute("id", count),
                                                 new XElement("name", name),

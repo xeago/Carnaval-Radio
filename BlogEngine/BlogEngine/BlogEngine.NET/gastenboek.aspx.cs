@@ -22,7 +22,7 @@ public partial class guestbook : BlogBasePage
         string path = string.Concat(Utils.RelativeWebRoot, "themes/", theme, "/", "Guestbook.ascx");
 
         PostViewBase postView = (BlogEngine.Core.Web.Controls.PostViewBase)LoadControl(path);
-        postView.Post = Post.GetPostsByTag("GB-af693f9aea7dae36fb3bef4c9b6e56fb").First();
+        postView.Post = Post.GetPostsByTag("<Gastenboek>").First();
         postView.ID = "gastenboek";
         postView.Location = ServingLocation.SinglePost;
 
