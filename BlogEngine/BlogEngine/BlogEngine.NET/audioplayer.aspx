@@ -4,6 +4,7 @@
 <html>
 <head runat="server">
     <title>Carnaval Radio Audio Player</title>
+    <script src="Scripts/jquery.js" type="text/javascript"></script>
     <script src="Scripts/AudioPlayer.js" type="text/javascript"></script>
 </head>
 <body>

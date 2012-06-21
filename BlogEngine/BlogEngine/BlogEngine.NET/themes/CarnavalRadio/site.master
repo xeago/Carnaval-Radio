@@ -1,93 +1,17 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="site.master.cs" Inherits="StandardSite" %>
-<%@ Import Namespace="BlogEngine.Core" %>
+﻿<%@ Master Language="C#" MasterPageFile="~/themes/CarnavalRadio/cr.master" AutoEventWireup="true" CodeFile="site.master.cs" Inherits="StandardSite" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head runat="server" profile="http://gmpg.org/xfn/11">
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="shortcut icon" href="~/pics/blogengine.ico" type="image/x-icon"/>
-    <asp:ContentPlaceHolder ID="cphHeader" runat="server" />
-    <asp:Literal ID="StylesAndScripts" runat="server" />
-    <script type="text/javascript">
-        jQuery(function () { jQuery('ul.head-menu').superfish(); });
-    </script>
-</head>
-<body>
+<asp:Content ID="Content1" ContentPlaceHolderID="cphHeader" Runat="Server">
+<asp:ContentPlaceHolder runat="server" ID="cphHeader" />
+</asp:Content>
 
-  <form runat="Server" class="body">
-    
-  <div id="header">
-    <div style="display:none;">
-        <p><a id="CRwebroot" href="<%=Utils.AbsoluteWebRoot %>"><%=BlogSettings.Instance.Name %></a></p>
-        <span><%=BlogSettings.Instance.Description %></span>
-    </div>
-    <div class="logo">
-        <img alt="<%= BlogSettings.Instance.Name %>" src="<%=Utils.AbsoluteWebRoot %>themes/CarnavalRadio/img/logo.png" />
-    </div>
-    <div class="sponsor_frame">
-        </div>
-    <div class="sponsor_content">
-        <img src="<%=Utils.AbsoluteWebRoot %>kabeldirect.png" width="200" height="86" /></div>
-    <div class="nuopderadio_text"></div>
-    <div class="nuopderadio_box"></div>
-  </div>  
-  <div id="menu">
-    <div class="left-corner"></div>
-
-   
-    <ul class="head-menu">
-      <li><a href="<%=Utils.AbsoluteWebRoot %>" rel="home"><%=Resources.labels.home %></a></li>
-      <asp:Literal runat="server" ID="litMenu" />
-        <li><a href="<%=Utils.AbsoluteWebRoot %>sponsoren.aspx">
-            <%=Resources.labels.sponsoren %></a></li>
-        <li><a href="<%=Utils.AbsoluteWebRoot %>gastenboek.aspx">
-            <%=Resources.labels.guestbook %></a></li>
-        <li><a href="<%=Utils.AbsoluteWebRoot %>foto_albums.aspx">
-            <%=Resources.labels.fotos %></a></li>
-        <li><a href="<%=Utils.AbsoluteWebRoot %>contact.aspx">
-            <%=Resources.labels.contact %></a></li>
-      <!--<li><a href="javascript:void(BlogEngine.filterByAPML())" class="apmlfilter"><%=Resources.labels.filterByApml %></a></li>!-->
-      <% if (Utils.IsMobile)
-         { %>
-      <li><blog:MobileThemeSwitch runat="server" /></li>
-      <%
-         }
-      %>
-
-    </ul>
-    <ul>
-          <li><a href="http://www.youtube.com/user/Carnavalsradio"><img src="<%=Utils.AbsoluteWebRoot %>themes/CarnavalRadio/img/social/yt.png" alt="Carnaval Radio op YouTube!" /></a></li>
-          <li><a href="http://carnavalradio.hyves.nl"><img src="<%=Utils.AbsoluteWebRoot %>themes/CarnavalRadio/img/social/hy.png" alt="Carnaval Radio op Hyves!" /></a></li>
-          <li><a href="http://www.facebook.com/pages/Carnavalradio"><img src="<%=Utils.AbsoluteWebRoot %>themes/CarnavalRadio/img/social/fb.png" alt="Carnaval Radio op Facebook!" /></a></li>
-          <li><a href="http://www.twitter.com/carnavalradio"><img src="<%=Utils.AbsoluteWebRoot %>themes/CarnavalRadio/img/social/tw.png" alt="Carnaval Radio op Twitter!" /></a></li>
-        </ul>
-      <div class="right-corner">
-        
-      </div>
-  </div>
-  
+<asp:Content ID="Content2" ContentPlaceHolderID="cphBody" runat="Server">
     <div id="content">
-      <blog:SearchOnSearch runat="server" MaxResults="3" Headline="You searched for" Text="Here are some results for the search term on this website" />
-      <asp:ContentPlaceHolder ID="cphBody" runat="server" />
-      
-      <p id="footer">
-      </p>
+        <blog:SearchOnSearch ID="SearchOnSearch1" runat="server" MaxResults="3" Headline="You searched for" Text="Here are some results for the search term on this website" />
+        <asp:ContentPlaceHolder runat="server" ID="cphBody" />
+        <p id="footer"></p>
     </div>
-
     <div id="sidepanel">
-      <blog:WidgetZone runat="server" ZoneName="Sidebar" />
+        <blog:WidgetZone ID="WidgetZone1" runat="server" ZoneName="Sidebar" />
     </div>
-  
-  
-  <div style="clear:both;">
-  <div class="login">
-      <span runat="server" id="aUser"></span><a runat="server" id="aLogin" />
-  </div>
-  
-  <a href="<%=Utils.FeedUrl %>" class="feed">
-  <img src="<%=Utils.ApplicationRelativeWebRoot %>pics/rssButton.png" alt="Feed" /><%=Resources.labels.subscribe %></a>
-  </div>
-  </form>
-  
-</body>
-</html>
+</asp:Content>
+

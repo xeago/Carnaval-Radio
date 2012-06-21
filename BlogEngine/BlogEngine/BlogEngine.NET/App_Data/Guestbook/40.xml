@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gbMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>40</ID>
+  <SubmitDate>14-6-2012 13:58</SubmitDate>
+  <Name>nick</Name>
+  <Email>nicknijenhuis@gmail.com</Email>
+  <Message>test&amp;nbsp;nick</Message>
+  <ResponseToMessage>
+    <ID>1</ID>
+    <SubmitDate />
+    <Name />
+    <Email />
+    <Message />
+  </ResponseToMessage>
+</gbMessage>

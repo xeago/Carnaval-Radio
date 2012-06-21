@@ -10,9 +10,35 @@ body, #menu .right-corner, #menu .left-corner
 body 
 {
 	color: #444444;
-	margin: 0 auto;
-	width: 940px;
+    margin: 0 auto;
+    width:1006px;
+    position: relative;
+    height:100%;
+}
+
+div#container
+{
+    margin: 0 auto;
+    width: 940px;
 	position: relative;
+}
+div#shadow_top
+{
+    position:absolute;
+    top:125px;
+    width:1006px;
+    margin: 0 auto;
+    height:60px;
+    background: url(img/shadow_top.png) no-repeat center center;
+}
+div#shadow
+{
+    position:absolute;
+    top:185px;
+    width:1006px;
+    margin: 0 auto;
+    background: url(img/shadow.png) repeat-y center center;
+    /*height: zie themes/carnaval-radio/site.master jQuery script*/
 }
 
 h1 {
@@ -75,6 +101,16 @@ img {
 	text-align:center
 }
 
+/*---------------------------
+                     Main
+-----------------------------*/
+
+#main
+{
+    background-color:White;
+}
+
+
 /*----------------------------
 					 Header
 ----------------------------*/
@@ -111,6 +147,7 @@ img {
 }
 #header div.nuopderadio_box
 {
+    cursor:pointer;
     position:absolute;
     bottom:0;
     right:20px;
@@ -120,6 +157,7 @@ img {
 }
 #header div.nuopderadio_text
 {
+    cursor:pointer;
     position:absolute;
     bottom:8px;
     right:240px;
@@ -127,6 +165,18 @@ img {
     height:89px;
     background-image:url('img/nuopderadio_text.png');
 }
+
+#header div.nuopderadio_box div.text
+{
+    color:#8f8e8c;
+    font-family:Arial;
+    font-size:12pt;
+    font-style:italic;
+    padding-top:13px;
+    margin-left:13px;
+}
+#header div.nuopderadio_box div.text a
+{    color:#8f8e8c;}
 
 
 #header p {
@@ -147,6 +197,37 @@ img {
 #header a {
 	text-decoration: none;
 	color: white;
+}
+div.slider-and-buttons
+{	
+    position:relative;
+    width: 100%;    
+    height:289px;
+}
+
+div#header-slider
+{
+	width: 100%;
+    height:289px;
+}
+
+a#prev-slide, a#next-slide
+{
+    position:absolute;
+    width:49px;
+    height:73px;
+    cursor:pointer;
+    top:90px;
+}
+a#prev-slide
+{
+    background-image:url('img/arrow_left.png');
+    left:-82px;
+}
+a#next-slide
+{
+    background-image:url('img/arrow_right.png');
+    right:-82px;
 }
 
 /*----------------------------
@@ -377,6 +458,77 @@ div.post .text a[href^="http:"] {
 	padding-right: 10px;
   white-space: nowrap;
 }
+
+/*----------------------------
+                Front Posts
+-----------------------------*/
+
+.postForList
+{
+    padding:5px;
+    width:300px;
+    height:405px;
+    float:left;
+    margin-bottom:35px;
+}
+.postForList div.text
+{
+
+}
+.postForList div.title h1, .postForList div.title a, .postForList .image, .postForList .image img, .postForList div.text a.read-more, .postForList div.text p
+{
+    margin:0; padding:0;
+}
+
+.postForList div.title
+{
+    width:290px;
+    height:55px;
+    background-image:url('img/title.png');
+    margin-bottom:20px;
+
+}
+.postForList div.title a
+{
+    color:#7c551c;
+
+}
+.postForList div.title h1
+{
+    margin-left:50px;
+    padding-top:15px;
+    width:230px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.postForList .image
+{
+    border:2px solid #fe9f10;
+    border-radius: 5px;
+    width:275px;
+    margin-left:10px;
+    margin-bottom:20px;
+}
+.postForList .image img
+{    border-radius: 4px;}
+.postForList .text 
+{
+    height:200px;
+    margin-left:10px;
+    position:relative;
+}
+.postForList div.text a.read-more
+{
+    position:absolute;
+    bottom:10px;
+    right:0;
+}
+
+
+
+
 
 /*----------------------------
 			Related Posts
@@ -635,7 +787,8 @@ ul.recentComments li a.postTitle{
 }
 
 #page h1 {
-	margin: 3px 0 10px 0;
+	margin: 0;
+	padding:0;
 }
 
 #page #admin {
@@ -1037,11 +1190,14 @@ div.ClubVan50 ul li{margin-right:3.75px;}
 ----------------------------*/
 div.albums
 {
-    
+    margin:0;
+    padding:0;
 }
 div.albums ul 
 {
     list-style-type:none;
+    margin:0;
+    padding:0;
 }
 div.albums ul li
 {

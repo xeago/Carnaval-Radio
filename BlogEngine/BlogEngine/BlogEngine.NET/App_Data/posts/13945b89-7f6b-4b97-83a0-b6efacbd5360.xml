@@ -5,7 +5,7 @@
   <description />
   <content>&lt;p&gt;test categorie bericht&lt;/p&gt;</content>
   <ispublished>True</ispublished>
-  <isdeleted>False</isdeleted>
+  <isdeleted>True</isdeleted>
   <iscommentsenabled>False</iscommentsenabled>
   <pubDate>2012-06-04 15:02:00</pubDate>
   <lastModified>2012-06-04 15:02:18</lastModified>
@@ -14,8 +14,6 @@
   <slug>test-categorie-bericht</slug>
   <tags />
   <comments />
-  <categories>
-    <category>030e9937-7932-4cfd-9b1b-2aae6fb79a3e</category>
-  </categories>
+  <categories />
   <notifications />
 </post>

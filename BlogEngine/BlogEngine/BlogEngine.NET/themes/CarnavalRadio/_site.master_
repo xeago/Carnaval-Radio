@@ -1,0 +1,146 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="site.master.cs" Inherits="StandardSite" %>
+<%@ Import Namespace="BlogEngine.Core" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head runat="server" profile="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="shortcut icon" href="~/pics/blogengine.ico" type="image/x-icon"/>
+    <asp:ContentPlaceHolder ID="cphHeader" runat="server" />
+    <asp:Literal ID="StylesAndScripts" runat="server" />
+    <script type="text/javascript">
+        jQuery(function () {           
+            jQuery('ul.head-menu').superfish();
+        });
+
+        function OpenStreamPopup() { 
+            return window.open('audioplayer.aspx', 'Carnaval Radio','resizable=no,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no,width=450,height=380');
+        }
+        function onAfter() {
+            $('#sponsorlink').html(this.href);
+        }
+        function clickSponsor() {
+            //alert();
+            return window.open('' + $('#sponsorlink').html());
+        }
+
+    </script>
+    <script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slideshow').cycle({
+                fx: 'fade',
+                timeout: 4000,
+                random: 1,
+                after: onAfter
+            });
+            $('#header-slider').cycle({
+                fx: 'scrollHorz',
+                timeout: 6000,
+                pause: 1,
+                random: 1,
+                prev: '#prev-slide',
+                next: '#next-slide'
+            });
+            $('div#shadow').css('height', ($('body').height() - 185) + 'px');
+        });
+    </script>
+</head>
+<body>
+
+  <form runat="Server" class="body">
+  <div id="shadow_top"></div>
+  <div id="shadow"></div>
+  <div id="container">
+          <div id="header">
+            <div style="display:none;">
+                <p><a href="<%=Utils.AbsoluteWebRoot %>"><%=BlogSettings.Instance.Name %></a></p>
+                <span><%=BlogSettings.Instance.Description %></span>
+            </div>
+            <div class="logo">
+                <img alt="<%= BlogSettings.Instance.Name %>" src="<%=Utils.AbsoluteWebRoot %>themes/CarnavalRadio/img/logo.png" />
+            </div>
+            <div class="sponsor_frame" onclick="clickSponsor()">
+                </div>
+            <div class="sponsor_content">
+                <div id="sponsorlink" style="display:none;"></div>
+                <div class="slideshow">
+                    <asp:Literal ID="litSponsorImages" runat="server" />
+                </div>
+            </div>
+            <div class="nuopderadio_text" onclick="OpenStreamPopup();"></div>
+            <div class="nuopderadio_box" onclick="OpenStreamPopup();">
+                <div class="text">
+                    <marquee scrollamount="5" width="279" height="30"> 
+			            <a id="cc_stream_info_song">Huidig nummer laden...</a>
+                    </marquee>
+                </div>
+            </div>
+          </div>
+          <div id="menu">
+            <div class="left-corner"></div>
+
+   
+            <ul class="head-menu">
+              <li><a href="<%=Utils.AbsoluteWebRoot %>" rel="home"><%=Resources.labels.home %></a></li>
+              <asp:Literal runat="server" ID="litMenu" />
+                <li><a href="<%=Utils.AbsoluteWebRoot %>sponsoren.aspx">
+                    <%=Resources.labels.sponsoren %></a></li>
+                <li><a href="<%=Utils.AbsoluteWebRoot %>gastenboek.aspx">
+                    <%=Resources.labels.guestbook %></a></li>
+                <li><a href="<%=Utils.AbsoluteWebRoot %>foto_albums.aspx">
+                    <%=Resources.labels.fotos %></a></li>
+                <li><a href="<%=Utils.AbsoluteWebRoot %>contact.aspx">
+                    <%=Resources.labels.contact %></a></li>
+              <!--<li><a href="javascript:void(BlogEngine.filterByAPML())" class="apmlfilter"><%=Resources.labels.filterByApml %></a></li>!-->
+              <% if (Utils.IsMobile)
+                 { %>
+              <li><blog:MobileThemeSwitch runat="server" /></li>
+              <%
+                 }
+              %>
+
+            </ul>
+              <div class="right-corner">
+              </div>
+          </div>
+          <div id="slider-and-buttons">
+              <a id="prev-slide"></a>
+              <a id="next-slide"></a>
+              <div id="header-slider">
+                  <asp:Literal runat="server" id="litHeaderImages" />
+              </div>
+
+              <div></div>
+          </div>
+  
+            <div id="content">
+              <blog:SearchOnSearch runat="server" MaxResults="3" Headline="You searched for" Text="Here are some results for the search term on this website" />
+              <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+      
+              <p id="footer">
+              </p>
+            </div>
+
+            <div id="sidepanel">
+              <blog:WidgetZone runat="server" ZoneName="Sidebar" />
+            </div>
+ 
+          <div style="clear:both;">
+          <div class="login">
+              <span runat="server" id="aUser"></span><a runat="server" id="aLogin" />
+          </div>
+  
+          <a href="<%=Utils.FeedUrl %>" class="feed">
+          <img src="<%=Utils.ApplicationRelativeWebRoot %>pics/rssButton.png" alt="Feed" /><%=Resources.labels.subscribe %></a>
+          </div>
+  </div>
+  </form>
+
+        <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/system/streaminfo.js"></script>
+        <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/js.php/carradio/streaminfo/rnd0"></script>
+        <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/system/recenttracks.js"></script>
+        <script language="javascript" type="text/javascript" src="http://euro1.reliastream.com/js.php/carradio/recenttracks/rnd0"></script>
+
+</body>
+</html>

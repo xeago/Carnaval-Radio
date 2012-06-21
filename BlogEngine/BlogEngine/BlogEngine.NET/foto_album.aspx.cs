@@ -47,7 +47,7 @@ public partial class fotoalbum : BlogBasePage
         RegisterClientScriptInclude(Utils.AbsoluteWebRoot + "Scripts/fotoalbum/jquery.advancedSlider.min.js");
         RegisterClientScriptInclude(Utils.AbsoluteWebRoot + "Scripts/fotoalbum/jquery.touchSwipe.min.js");
         RegisterClientScriptInclude(Utils.AbsoluteWebRoot + "Scripts/fotoalbum/jquery.transition.min.js");
-        RegisterClientScriptInclude(Utils.AbsoluteWebRoot + "Scripts/fotoalbum/OnLoad.js");
+        RegisterClientScriptInclude(Utils.AbsoluteWebRoot + "Scripts/fotoalbum/OnLoadFoto.js");
 
         PicasaAlbum picasaAlbum = Picasa2.GetAlbums().SingleOrDefault(i => i.Accessor.Id == albumID);
         if (picasaAlbum == null){Response.Redirect("foto_albums.aspx");}
@@ -72,7 +72,7 @@ public partial class fotoalbum : BlogBasePage
         }
 
         sb.Append("</ul>");
-        sb.Append("</div");
+        sb.Append("</div>");
 
         litAlbums.Text = sb.ToString();
     }

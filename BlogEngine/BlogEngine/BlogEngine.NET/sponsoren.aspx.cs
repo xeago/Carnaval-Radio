@@ -36,7 +36,7 @@ public partial class sponsoren : BlogBasePage
 
         StringBuilder sb = new StringBuilder();
 
-        var listSponsors = CRSponsor.GetList().Where(i => i.Active);
+        var listSponsors = CRSponsor.GetListOnlyActiveAndAlter();
         foreach (SponsorType sponsorType in Enum.GetValues(typeof(SponsorType)))
         {
             double width = 0;
@@ -66,7 +66,7 @@ public partial class sponsoren : BlogBasePage
 
     private static void getTypeSpecificSettings(SponsorType type, out double logoWidth, out double logoHeight)
     {
-        logoWidth = 300;
+        logoWidth = 80;
         switch (type)
         {
             case SponsorType.Hoofdsponsor:
