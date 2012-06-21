@@ -8,7 +8,7 @@ function loadShouts() {
     $.ajax({
         type: "GET",
         cache: false,
-        url: "widgets/Shoutbox/shouts.xml",
+        url: $('#CRwebroot').attr('href') + "widgets/Shoutbox/shouts.xml",
         dataType: "xml",
         success: function showShouts(xml) {
             $('#shouts').html("");
@@ -28,7 +28,7 @@ function submitMsg() {
             type: 'POST',
             contentType: 'application/json',
             dataType: 'json',
-            url: 'widgets/Shoutbox/postShout.asmx/SubmitMessage',
+            url: $('#CRwebroot').attr('href') + 'widgets/Shoutbox/postShout.asmx/SubmitMessage',
             data: "{ name: '" + $('#tbName').val() + "', message: '" + $('#tbMessage').val() + "' }",
             success: function (msg) {
                 if (msg.d.Success) {

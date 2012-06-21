@@ -18,7 +18,7 @@
     
   <div id="header">
     <div style="display:none;">
-        <p><a href="<%=Utils.AbsoluteWebRoot %>"><%=BlogSettings.Instance.Name %></a></p>
+        <p><a id="CRwebroot" href="<%=Utils.AbsoluteWebRoot %>"><%=BlogSettings.Instance.Name %></a></p>
         <span><%=BlogSettings.Instance.Description %></span>
     </div>
     <div class="logo">
