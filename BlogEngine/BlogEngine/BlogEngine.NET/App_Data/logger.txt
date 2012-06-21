@@ -9166,3 +9166,11 @@ Error sending email in SendMailMessage:  Mailbox unavailable. The server respons
 Date: 21-6-2012 17:42:53
 Contents Below
 Error sending email in SendMailMessage:  Mailbox unavailable. The server response was: authentication required
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:14:39
+Contents Below
+Error retrieving Twitter feed. The underlying connection was closed: An unexpected error occurred on a receive.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 21-6-2012 18:14:39
+Contents Below
+Error retrieving Twitter feed. The underlying connection was closed: An unexpected error occurred on a send.
