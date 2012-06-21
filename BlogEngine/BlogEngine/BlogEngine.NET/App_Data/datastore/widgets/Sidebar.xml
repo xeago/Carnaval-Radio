@@ -4,4 +4,5 @@
   <widget id="50fdefa2-93b1-4563-aa9e-fbd068cb6a98" title="Twitter" showTitle="True">Twitter</widget>
   <widget id="db193655-0ee8-4613-8df2-b1f0927ce1c1" title="Nieuws" showTitle="True">RecentPosts</widget>
   <widget id="96fec4cb-1487-4fdf-b289-d698cb98e09c" title="ViL Nieuws" showTitle="True">Blogroll</widget>
+  <widget id="8168d5ba-fd58-45e0-a0a0-9c8a0098c1be" title="Tag cloud" showTitle="True">Tag cloud</widget>
 </widgets>

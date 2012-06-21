@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <shouts>
-  <shout id="31">
-    <name>safari</name>
-    <message>zuigt</message>
-  </shout>
-  <shout id="2">
-    <name>toch</name>
-    <message>ja</message>
+  <shout id="1">
+    <name>test</name>
+    <message>test</message>
   </shout>
 </shouts>
