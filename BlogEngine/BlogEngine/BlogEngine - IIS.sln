@@ -7,6 +7,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "cr", "http://localhost/cr",
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "false"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{9ED9914A-FB6E-4D21-8C71-9122E8C3076B}|BlogEngine.Core.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/cr"
 		Debug.AspNetCompiler.PhysicalPath = "BlogEngine.NET\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\cr\"

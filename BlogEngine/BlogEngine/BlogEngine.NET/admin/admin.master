@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" style="height: 100%;">
 <head id="Head1" runat="server">
     <title>Carnaval Radio Admin</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="colorbox.css" type="text/css" />
     <link rel="stylesheet" href="tipsy.css" type="text/css" />
@@ -34,7 +35,7 @@
                 <div class="toolbox">
                     <a style="text-transform: capitalize;" href="<%=Utils.RelativeWebRoot %>admin/Users/Profile.aspx?id=<%=Page.User.Identity.Name %>">
                         <%= (UserProfile() == null ? Page.User.Identity.Name : UserProfile().DisplayName) %></a>
-                    | <a href="<%=Utils.RelativeWebRoot %> Account/change-password.aspx"><%= Resources.labels.changePassword %></a>
+                    | <a href="<%=Utils.RelativeWebRoot %>Account/change-password.aspx"><%= Resources.labels.changePassword %></a>
                     | <a href="<%=Utils.RelativeWebRoot %>"><%=Resources.labels.goToFrontPage %></a>
                     | <a runat="server" id="aLogin" />
                 </div>                                 

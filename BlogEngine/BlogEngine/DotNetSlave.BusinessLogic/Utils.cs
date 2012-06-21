@@ -497,7 +497,6 @@
             // Files that are already minified shouldn't be re-minified as it could cause problems.
             List<ExternalContentItem> knownItems = new List<ExternalContentItem>()
             {
-                new ExternalContentItem() { ItemName = "jquery.js", Priority = 0, Defer = false, Minify=false },
                 new ExternalContentItem() { ItemName = "blog.js", Priority = 1, Defer = false, IsFrontEndOnly = true, AddAtBottom = true, Minify = true },
             };
 
@@ -538,7 +537,7 @@
                 bool defer = false;
                 bool addItem = true;
                 bool addAtBottom = false;
-                bool minify = false;
+                bool minify = true;
 
                 if (externalContentItem != null)
                 {
@@ -1466,6 +1465,32 @@
             }
 
             return true;
+        }
+
+        /// <summary>
+        /// Registers the client script include.
+        /// </summary>
+        /// <param name="src">The file name.</param>
+        public static void RegisterClientScriptInclude(System.Web.UI.Page page, string src)
+        {
+            var si = new System.Web.UI.HtmlControls.HtmlGenericControl();
+            si.TagName = "script";
+            si.Attributes.Add("type", "text/javascript");
+            si.Attributes.Add("src", src);
+
+            string itemsKey = "next-script-insert-position";
+            HttpContext context = HttpContext.Current;
+
+            // Inserting scripts in the beginning of the HEAD tag so any user
+            // scripts that may rely on our scripts (jQuery, etc) have these
+            // scripts available to them.  Also maintaining order so subsequent
+            // scripts are added after scripts we already added.
+
+            int? nextInsertPosition = context == null ? null : context.Items[itemsKey] as int?;
+            if (!nextInsertPosition.HasValue) { nextInsertPosition = 0; }
+
+            page.Header.Controls.AddAt(nextInsertPosition.Value, si);
+            if (context != null) { context.Items[itemsKey] = ++nextInsertPosition; }
         }
 
         #endregion

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <settings>
-  <displayratingsonrecentposts>True</displayratingsonrecentposts>
+  <displayratingsonrecentposts>False</displayratingsonrecentposts>
   <authorname>Carnaval Radio</authorname>
   <email>info@carnaval-radio.nl</email>
   <mobiletheme>Mobile</mobiletheme>
@@ -12,15 +12,15 @@
   <trackingscript />
   <showdescriptioninpostlist>False</showdescriptioninpostlist>
   <commentsperpage>10</commentsperpage>
-  <enablepingbacksend>True</enablepingbacksend>
+  <enablepingbacksend>False</enablepingbacksend>
   <showdescriptioninpostlistforpostsbytagorcategory>False</showdescriptioninpostlistforpostsbytagorcategory>
   <commentblacklistcount>2</commentblacklistcount>
-  <iscocommentenabled>False</iscocommentenabled>
-  <compresswebresource>True</compresswebresource>
+  <iscocommentenabled>True</iscocommentenabled>
+  <compresswebresource>False</compresswebresource>
   <addiptowhitelistfilteronapproval>False</addiptowhitelistfilteronapproval>
   <themecookiename>theme</themecookiename>
   <trustauthenticatedusers>True</trustauthenticatedusers>
-  <enablecountryincomments>True</enablecountryincomments>
+  <enablecountryincomments>False</enablecountryincomments>
   <contactformmessage>&lt;p&gt;Voor vragen, informatie over sponsoring of overige opmerkingen kunt u onderstaand contactformulier gebruiken.&lt;/p&gt;</contactformmessage>
   <searchbuttontext>Zoeken</searchbuttontext>
   <showincludecommentsoption>False</showincludecommentsoption>
@@ -34,19 +34,19 @@
   <smtpserver>smtp.carnaval-radio.nl</smtpserver>
   <disqusdevmode>False</disqusdevmode>
   <showpostnavigation>False</showpostnavigation>
-  <displaycommentsonrecentposts>True</displaycommentsonrecentposts>
-  <enabletrackbackreceive>True</enabletrackbackreceive>
+  <displaycommentsonrecentposts>False</displaycommentsonrecentposts>
+  <enabletrackbackreceive>False</enabletrackbackreceive>
   <enableopensearch>True</enableopensearch>
   <dayscommentsareenabled>0</dayscommentsareenabled>
   <useblognameinpagetitles>True</useblognameinpagetitles>
   <smtpusername>info</smtpusername>
   <enableerrorlogging>False</enableerrorlogging>
-  <enablehttpcompression>True</enablehttpcompression>
+  <enablehttpcompression>False</enablehttpcompression>
   <enablepasswordreset>True</enablepasswordreset>
   <disqusaddcommentstopages>False</disqusaddcommentstopages>
   <alternatefeedurl />
   <enablecommentsmoderation>True</enablecommentsmoderation>
-  <enabletrackbacksend>True</enabletrackbacksend>
+  <enabletrackbacksend>False</enabletrackbacksend>
   <timezone>0</timezone>
   <feedauthor />
   <allowservertodownloadremotefiles>False</allowservertodownloadremotefiles>
@@ -73,22 +73,22 @@
   <enablessl>False</enablessl>
   <name>Carnaval Radio</name>
   <moderationtype>Auto</moderationtype>
-  <enablepingbackreceive>True</enablepingbackreceive>
-  <showlivepreview>True</showlivepreview>
+  <enablepingbackreceive>False</enablepingbackreceive>
+  <showlivepreview>False</showlivepreview>
   <galleryfeedurl>http://dnbegallery.org/feed/FeedService.svc</galleryfeedurl>
   <remotemaxfilesize>524288</remotemaxfilesize>
   <enablerelatedposts>True</enablerelatedposts>
   <remotefiledownloadtimeout>30000</remotefiledownloadtimeout>
   <enableenclosures>False</enableenclosures>
   <endorsement>http://www.dotnetblogengine.net/syndication.axd</endorsement>
-  <removewhitespaceinstylesheets>True</removewhitespaceinstylesheets>
+  <removewhitespaceinstylesheets>False</removewhitespaceinstylesheets>
   <commentwhitelistcount>1</commentwhitelistcount>
   <descriptioncharacters>300</descriptioncharacters>
   <addiptoblacklistfilteronrejection>False</addiptoblacklistfilteronrejection>
   <descriptioncharactersforpostsbytagorcategory>0</descriptioncharactersforpostsbytagorcategory>
   <commentreportmistakes>False</commentreportmistakes>
   <searchcommentlabeltext>Reacties?</searchcommentlabeltext>
-  <numberofrecentposts>10</numberofrecentposts>
+  <numberofrecentposts>5</numberofrecentposts>
   <selfregistrationinitialrole>Select</selfregistrationinitialrole>
   <enableselfregistration>False</enableselfregistration>
   <blogrollupdateminutes>60</blogrollupdateminutes>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="icon" href="img/fav32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="img/fav64.png" sizes="64x64" type="image/png">
+
     <asp:ContentPlaceHolder ID="cphHeader" runat="server" />
     <asp:Literal ID="StylesAndScripts" runat="server" />
     <script type="text/javascript">
@@ -27,6 +28,7 @@
 
     </script>
     <script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+    <script src="<%# Utils.AbsoluteWebRoot %>themes/CarnavalRadio/js/jquerymarquee.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('.slideshow').cycle({
@@ -34,6 +36,12 @@
                 timeout: 4000,
                 random: 1,
                 after: onAfter
+            });
+            
+            $('div.text marquee').marquee('pointer').mouseover(function () {
+                $(this).trigger('stop');
+            }).mouseout(function () {
+                $(this).trigger('start');
             });
 
             $('div#shadow').css('height', ($('body').height() - 185) + 'px');
@@ -49,12 +57,6 @@
                     random: 1,
                     prev: '#prev-slide',
                     next: '#next-slide'
-                });
-
-                $('div.text marquee').marquee('pointer').mouseover(function () {
-                    $(this).trigger('stop');
-                }).mouseout(function () {
-                    $(this).trigger('start');
                 });
             });
 

@@ -1,5 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="widget.ascx.cs" Inherits="Widgets.Shoutbox.Widget" %>
-<script src="widgets/Shoutbox/shoutboxJS.js" type="text/javascript"></script>
+<%@ Import Namespace="BlogEngine.Core" %>
+<script src="<%=Utils.AbsoluteWebRoot %>widgets/Shoutbox/shoutboxJS.js" type="text/javascript"></script>
 <asp:ScriptManager ID="ScriptManager" runat="server">
         <Services>
             <asp:ServiceReference Path="postShout.asmx" InlineScript="true"/>

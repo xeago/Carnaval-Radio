@@ -1877,4 +1877,13 @@
   <data name="guestbook" xml:space="preserve">
     <value>Gastenboek</value>
   </data>
+  <data name="addGuestbookMessage" xml:space="preserve">
+    <value>Post message</value>
+  </data>
+  <data name="messages" xml:space="preserve">
+    <value>Berichten</value>
+  </data>
+  <data name="saveMessage" xml:space="preserve">
+    <value>Post message</value>
+  </data>
 </root>

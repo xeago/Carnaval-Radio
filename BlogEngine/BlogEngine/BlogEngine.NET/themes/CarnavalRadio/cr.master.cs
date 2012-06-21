@@ -63,7 +63,7 @@ public partial class CrSite : System.Web.UI.MasterPage
         var sb = new StringBuilder();
         foreach (CRSponsor crs in CRSponsor.GetListOnlyActiveAndAlter().Where(i => i.WidgetSwitch))
         {
-            sb.AppendFormat("<a href=\"{0}\" title=\"{1}\"><img src=\"{2}\" alt=\"{1}\" title=\"{1}\" width=\"222\" height=\"86\" /></a>", crs.Url.ToUrlString(), crs.Name, crs.LogoURL);
+            sb.AppendFormat("<a href=\"{0}\" title=\"{1}\"><img src=\"{2}\" alt=\"{1}\" title=\"{1}\" width=\"222\" height=\"86\" /></a>", crs.Url.ToUrlString(), crs.Name, Utils.AbsoluteWebRoot + crs.LogoURL);
         }
         return sb.ToString();
     }

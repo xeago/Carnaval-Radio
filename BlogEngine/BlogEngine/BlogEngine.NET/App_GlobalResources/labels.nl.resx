@@ -151,7 +151,7 @@
     <value>Archief</value>
   </data>
   <data name="areYouSure" xml:space="preserve">
-    <value>Weet u zeker dat u {0} {1}?</value>
+    <value>Weet u zeker dat u {1} wilt {0}?</value>
   </data>
   <data name="attachFile" xml:space="preserve">
     <value>Bestand toevoegen</value>
@@ -1780,5 +1780,14 @@
   </data>
   <data name="fotos" xml:space="preserve">
     <value>Foto's</value>
+  </data>
+  <data name="addGuestbookMessage" xml:space="preserve">
+    <value>Bericht plaatsen</value>
+  </data>
+  <data name="messages" xml:space="preserve">
+    <value>Berichten</value>
+  </data>
+  <data name="saveMessage" xml:space="preserve">
+    <value>Plaats bericht</value>
   </data>
 </root>

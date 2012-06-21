@@ -356,7 +356,8 @@
              //   this.AddLocalizationKeys();
 
                 this.AddGlobalStyles();
-
+                
+                Utils.RegisterClientScriptInclude(this, string.Format("//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"));
                 Utils.AddFolderJavaScripts(this, "Scripts", true);
                 Utils.AddJavaScriptResourcesToPage(this);
                 Utils.AddFolderJavaScripts(this, string.Format("themes/{0}", this.theme), true);
@@ -467,6 +468,22 @@
             base.Render(new RewriteFormHtmlTextWriter(writer));
         }
 
+
+        /// <summary>
+        /// Registers the client script include.
+        /// </summary>
+        /// <param name="src">The file name.</param>
+        private void RegisterStyleSheetInclude(string src)
+        {
+            var si = new System.Web.UI.HtmlControls.HtmlGenericControl();
+            si.TagName = "link";
+            si.Attributes.Add("type", "text/css");
+            si.Attributes.Add("rel", "stylesheet");
+            si.Attributes.Add("media", "screen");
+            si.Attributes.Add("href", src);
+            this.Page.Header.Controls.Add(si);
+            this.Page.Header.Controls.Add(new LiteralControl("\n"));
+        }
         #endregion
     }
 }

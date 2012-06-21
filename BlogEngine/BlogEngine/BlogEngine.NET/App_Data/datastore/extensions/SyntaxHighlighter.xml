@@ -3,7 +3,7 @@
   <AdminPage />
   <Author>&lt;a target="_new" href="http://dotnetblogengine.net/"&gt;BlogEngine.NET&lt;/a&gt;</Author>
   <Description>Adds &lt;a target="_new" href="http://alexgorbatchev.com/wiki/SyntaxHighlighter"&gt;Alex Gorbatchev's&lt;/a&gt; source code formatter</Description>
-  <Enabled>true</Enabled>
+  <Enabled>false</Enabled>
   <Priority>0</Priority>
   <Settings>
     <Delimiter>44</Delimiter>

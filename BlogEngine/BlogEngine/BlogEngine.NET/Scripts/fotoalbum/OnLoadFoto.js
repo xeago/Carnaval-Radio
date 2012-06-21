@@ -1,6 +1,6 @@
 ﻿var slider;
 
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function (jQuery) {
         slider = $('#lightbox-slider').advancedSlider({ width: 640,
         height: 437,
         skin: 'glossy-curved-rounded-orange',

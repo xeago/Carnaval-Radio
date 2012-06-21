@@ -3,9 +3,7 @@
   <title>Example page</title>
   <description>The description is used as meta description</description>
   <content>&lt;p&gt;This is an example page.&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;For more information about pages and how to use them,&amp;nbsp;visit the &lt;a href="http://www.dotnetblogengine.net/wiki/"&gt;BlogEngine.NET wiki&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;span style="color: #555555; font-family: 'Helvetica Neue', 'Lucida Grande', 'Segoe UI', Arial, Helvetica, Verdana, sans-serif; font-size: 13px; line-height: 19px;"&gt;[PicasaAlbum:Fotos_Studio]&lt;/span&gt;&lt;/p&gt;</content>
+&lt;p&gt;&amp;nbsp;For more information about pages and how to use them,&amp;nbsp;visit the &lt;a href="http://www.dotnetblogengine.net/wiki/"&gt;BlogEngine.NET wiki&lt;/a&gt;.&lt;/p&gt;</content>
   <keywords>Is, added, to, meta, keywords</keywords>
   <slug>Example-page</slug>
   <parent>bb87690b-7b73-410f-9113-e35239da8051</parent>
@@ -14,5 +12,5 @@
   <ispublished>True</ispublished>
   <isdeleted>False</isdeleted>
   <datecreated>2007-07-14 08:06:59</datecreated>
-  <datemodified>2012-06-08 12:36:24</datemodified>
+  <datemodified>2012-06-21 09:22:39</datemodified>
 </page>

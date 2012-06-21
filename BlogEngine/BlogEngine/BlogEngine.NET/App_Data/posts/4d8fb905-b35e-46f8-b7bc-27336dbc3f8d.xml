@@ -20,14 +20,25 @@
 &lt;p style="margin: 0px 0px 1.5em; color: #39444d; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Verdana, Arial, Tahoma, sans-serif; font-size: 14px;"&gt;Stichting Carnaval-Radio&lt;/p&gt;</content>
   <ispublished>True</ispublished>
   <isdeleted>False</isdeleted>
-  <iscommentsenabled>False</iscommentsenabled>
+  <iscommentsenabled>True</iscommentsenabled>
   <pubDate>2012-06-18 14:27:00</pubDate>
-  <lastModified>2012-06-18 14:51:11</lastModified>
+  <lastModified>2012-06-21 10:29:09</lastModified>
   <raters>0</raters>
   <rating>0</rating>
   <slug>Feestavond</slug>
   <tags />
-  <comments />
+  <comments>
+    <comment id="c40c309d-2d5d-4fd5-a8fe-cc488ef4c78f" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="False">
+      <date>2012-06-21 10:30:04</date>
+      <author>admin</author>
+      <email>carnavalradio@gmail.com</email>
+      <country>nl</country>
+      <ip>::1</ip>
+      <moderatedby>Rule:authenticated</moderatedby>
+      <avatar />
+      <content>test</content>
+    </comment>
+  </comments>
   <categories>
     <category>19770e74-9ec9-4cde-b2ab-e5051aaaf348</category>
   </categories>
