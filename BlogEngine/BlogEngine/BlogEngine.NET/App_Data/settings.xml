@@ -64,7 +64,7 @@
   <smtpserverport>25</smtpserverport>
   <blockauthoroncommentdelete>False</blockauthoroncommentdelete>
   <iscommentnestingenabled>True</iscommentnestingenabled>
-  <timestamppostlinks>True</timestamppostlinks>
+  <timestamppostlinks>False</timestamppostlinks>
   <enablereferrertracking>False</enablereferrertracking>
   <avatar>wavatar</avatar>
   <smtppassword>radio1</smtppassword>

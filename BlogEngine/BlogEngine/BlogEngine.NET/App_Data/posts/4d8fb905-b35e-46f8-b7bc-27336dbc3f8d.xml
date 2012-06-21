@@ -27,18 +27,7 @@
   <rating>0</rating>
   <slug>Feestavond</slug>
   <tags />
-  <comments>
-    <comment id="c40c309d-2d5d-4fd5-a8fe-cc488ef4c78f" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="False">
-      <date>2012-06-21 10:30:04</date>
-      <author>admin</author>
-      <email>carnavalradio@gmail.com</email>
-      <country>nl</country>
-      <ip>::1</ip>
-      <moderatedby>Rule:authenticated</moderatedby>
-      <avatar />
-      <content>test</content>
-    </comment>
-  </comments>
+  <comments />
   <categories>
     <category>19770e74-9ec9-4cde-b2ab-e5051aaaf348</category>
   </categories>

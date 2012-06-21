@@ -122,7 +122,7 @@ namespace Admin
 
             phRecycleBin.Visible = Security.IsAuthorizedTo(Rights.AccessAdminPages);
 
-            Utils.RegisterClientScriptInclude(this.Page, string.Format("//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"));
+            Utils.RegisterClientScriptInclude(this.Page, string.Format("{0}admin/jquery.js", Utils.AbsoluteWebRoot));
             Utils.AddFolderJavaScripts(this.Page, "Scripts", false);
             Utils.AddJavaScriptInclude(this.Page, string.Format("{0}admin/admin.js", Utils.ApplicationRelativeWebRoot), false, false);
 

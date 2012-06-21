@@ -42,12 +42,12 @@ div#shadow
 }
 
 h1 {
-	font-size: 130%;
+	font-size: 100%;
 	letter-spacing: 1px;
 }
 
 h2 {
-	font-size: 110%;
+	font-size: 100%;
 }
 
 a {
@@ -77,7 +77,7 @@ img {
 #content 
 {
     padding-left:20px;
-    width:615px;
+    width:620px;
     float:left;
 }
 
@@ -470,8 +470,8 @@ div.widget a.edit, div.widget a.move, div.widget a.delete{
 					 Posts
 ----------------------------*/
 
-div.post, .mceContentBody {
-	border: 1px solid silver;
+div.post, .mceContentBody 
+{
 	padding: 3px 10px;
 	margin-bottom: 20px;
 	background-color: white;
@@ -480,6 +480,13 @@ div.post, .mceContentBody {
 
 div.post h1, .mceContentBody h1 {
 	margin: 5px 0 0 0;
+
+}
+div.post h1 a
+{
+    font-size:28pt;
+    text-decoration:none;
+	color:#7c551c;
 }
 
 div.post .author {
@@ -495,7 +502,9 @@ div.post .pubDate {
 	float: right;
 }
 
-div.post .text {
+div.post .text 
+{
+    font-family:Ärial;
 	margin-top: 30px;
 }
 
@@ -568,6 +577,7 @@ div.post .text a[href^="http:"] {
 }
 .postForList div.title h1
 {
+    font-size: 15pt;
     margin-left:50px;
     padding-top:15px;
     width:230px;

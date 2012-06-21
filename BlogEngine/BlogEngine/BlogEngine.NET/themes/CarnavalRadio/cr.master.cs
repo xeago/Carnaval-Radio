@@ -27,9 +27,10 @@ public partial class CrSite : System.Web.UI.MasterPage
             aLogin.HRef = Utils.RelativeWebRoot + "Account/login.aspx";
             aLogin.InnerText = Resources.labels.login;
         }
-        RegisterStyleSheetInclude(string.Format("{0}{1}", Utils.AbsoluteWebRoot,
-                                                "themes/CarnavalRadio/styles/superfish.css"));
+        RegisterStyleSheetInclude(string.Format("{0}{1}", Utils.AbsoluteWebRoot, "themes/CarnavalRadio/styles/superfish.css"));
         RegisterClientScriptInclude(string.Format("{0}{1}", Utils.AbsoluteWebRoot, "themes/CarnavalRadio/js/superfish.js"));
+        RegisterClientScriptInclude(string.Format("{0}{1}", Utils.AbsoluteWebRoot, "themes/CarnavalRadio/js/jquerymarquee.js"));
+        RegisterClientScriptInclude("http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js");
         litMenu.Text = buildMenu("");
         litSponsorImages.Text = getSponsorImages();
         litHeaderImages.Text = getHeaderImages();

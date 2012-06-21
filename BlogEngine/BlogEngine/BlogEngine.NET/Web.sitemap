@@ -4,7 +4,7 @@
     <siteMapNode url="~/admin/default.cshtml" title="dashboard" description="" rights="AccessAdminPages" />
     <!--<siteMapNode url="~/admin/Blogs.aspx" title="blogs" description="" rights="AccessAdminPages" primaryBlogInstanceOnly="true" />-->
     <siteMapNode url="~/admin/Posts/Posts.aspx" title="posts" description="" rightsAuthorizationCheck="HasAny" rights="CreateNewPosts, EditOwnPosts, EditOtherUsersPosts, PublishOwnPosts, PublishOtherUsersPosts" />
-	<!--<siteMapNode url="~/admin/Comments/Approved.aspx" title="comments" description="" rightsAuthorizationCheck="HasAny" rights="ModerateComments" />-->
+	<siteMapNode url="~/admin/Comments/Approved.aspx" title="comments" description="" rightsAuthorizationCheck="HasAny" rights="ModerateComments" />
     <siteMapNode url="~/admin/Pages/Pages.aspx" title="pages" description="" rightsAuthorizationCheck="HasAny" rights="CreateNewPages, EditOwnPages, EditOtherUsersPages, PublishOwnPages, PublishOtherUsersPages" />
     <!--<siteMapNode url="~/admin/Tracking/Pingbacks.aspx" title="tracking" description="" rights="AccessAdminPages" />-->
     <siteMapNode url="~/admin/Sponsoren/Sponsoren.aspx" title="sponsoren" description="" rights="AccessAdminPages" />
