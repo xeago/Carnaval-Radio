@@ -3,7 +3,7 @@
   <AdminPage />
   <Author>&lt;a href="http://dotnetblogengine.net"&gt;BlogEngine.NET&lt;/a&gt;</Author>
   <Description>Converts BBCode to XHTML in the comments</Description>
-  <Enabled>true</Enabled>
+  <Enabled>false</Enabled>
   <Priority>0</Priority>
   <Settings>
     <Delimiter>44</Delimiter>

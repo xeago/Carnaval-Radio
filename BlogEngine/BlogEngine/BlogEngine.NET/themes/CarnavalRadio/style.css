@@ -482,9 +482,10 @@ div.post h1, .mceContentBody h1 {
 	margin: 5px 0 0 0;
 
 }
-div.post h1 a
+div.post h1 a.taggedlink
 {
     font-size:28pt;
+    line-height:28pt;
     text-decoration:none;
 	color:#7c551c;
 }
@@ -504,8 +505,8 @@ div.post .pubDate {
 
 div.post .text 
 {
-    font-family:Ärial;
-	margin-top: 30px;
+    font-family:Arial;
+	margin-top: 10px;
 }
 
 div.post .text h2 {
@@ -1288,16 +1289,23 @@ input[type="text"], input[type="select"] {
 }
 
 input[type="submit"], input[type="button"], input[type="file"] {
-	color: #000000;
-	background: #FFFFFF;
-	border: 1px solid #B8C1CA;
-	padding: 3px 5px;
+    background-image: url('img/button.png');
+    background-position:bottom;
+	display:block;
+	background-color:transparent;
+	border:none;
+	background-repeat:repeat-x;
+	font-family:arial, sans-serif;
+	text-align:center;
+	letter-spacing:0.5pt;
+	cursor:pointer;
+	color:white;
+	font-weight:bold;
+	width:164px;
+	height:38px;
 }
 
 input[type="submit"]:hover, input[type="button"]:hover {
-	color: #FFFFFF;
-	background: #B8C1CA;
-	cursor: pointer;
 }
 
 #searchcomments {
@@ -1398,4 +1406,13 @@ div.albums ul li img
     margin:0;
     margin-left:10px;
     width:160px;
+}
+/*----------------------------
+					 Gastenboek
+----------------------------*/
+
+div#GuestbookView
+{
+    width:600px;
+    padding:10px;
 }

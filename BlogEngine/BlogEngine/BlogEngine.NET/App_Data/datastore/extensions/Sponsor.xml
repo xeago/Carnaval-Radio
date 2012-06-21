@@ -119,9 +119,9 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>False</Values>
-      <Values>False</Values>
-      <Values>False</Values>
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
       <Values>False</Values>
       <Values>False</Values>
     </Parameters>
@@ -133,10 +133,10 @@
       <ParamType>String</ParamType>
       <Required>false</Required>
       <SelectedValue />
-      <Values>False</Values>
-      <Values>False</Values>
-      <Values>False</Values>
-      <Values>False</Values>
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
+      <Values>True</Values>
       <Values>False</Values>
     </Parameters>
     <Parameters>
@@ -206,7 +206,7 @@
       <Values />
       <Values />
       <Values />
-      <Values>19-6-2013 0:00:00</Values>
+      <Values />
       <Values />
     </Parameters>
     <Parameters>

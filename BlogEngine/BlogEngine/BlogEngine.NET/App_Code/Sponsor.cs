@@ -234,26 +234,31 @@ public class CRSponsor
 
     public static List<CRSponsor> GetList()
     {
-        return s.GetDataTable().Rows.Cast<DataRow>().Select(dr => new CRSponsor(Guid.Parse(dr["ID"].ToString()), false)).ToList();
+        var l =
+            s.GetDataTable().Rows.Cast<DataRow>().Select(dr => new CRSponsor(Guid.Parse(dr["ID"].ToString()), false));
+
+        CheckForExpired(l);
+        return l.ToList();
     }
 
-    public static List<CRSponsor> GetListOnlyActiveAndAlter()
+    private static void CheckForExpired(IEnumerable<CRSponsor> l)
     {
-        var l = GetList();
-        var expired = l.Where(i => i.EndDate.HasValue || i.EndDate <= DateTime.Now);
-        //if (Security.IsAuthenticated)
-        //{
-        //    foreach (var item in expired) //fix them on disk aswell
-        //    {
-        //        item.Active = false;
-        //        item.Save();
-        //    }
-        //}
-        var active = l.Where(i => i.Active && (!i.EndDate.HasValue || i.EndDate >= DateTime.Now));
+        var expired = l.Where(i => i.Active && (i.EndDate.HasValue && i.EndDate <= DateTime.Now));
 
+        foreach (var item in expired) //fix them on disk aswell
+        {
+            item.Active = false;
+            item.Save();
+        }
+        var active = l.Where(i => (!i.EndDate.HasValue || i.EndDate >= DateTime.Now));
         if (expired.Any()) // update the json if there were any expired
             updateJSON(active);
+    }
 
+    public static List<CRSponsor> GetListOnlyActive()
+    {
+        var l = GetList().Where(i=>i.Active);
+        var active = l.Where(i => (!i.EndDate.HasValue || i.EndDate >= DateTime.Now));
         return active.ToList();
     }
 

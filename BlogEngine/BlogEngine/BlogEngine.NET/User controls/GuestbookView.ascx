@@ -18,7 +18,7 @@
 <asp:PlaceHolder runat="Server" ID="phAddComment">
 
 <div id="comment-form">
-
+    <a name="bericht-plaatsen" style="display:none;"></a>
 	<img src="<%=Utils.RelativeWebRoot %>pics/ajax-loader.gif" alt="Het bericht opslaan" style="display:none" id="ajaxLoader" />  
 	<span id="status"></span>
 

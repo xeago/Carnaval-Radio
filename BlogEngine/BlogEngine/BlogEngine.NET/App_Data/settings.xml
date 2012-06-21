@@ -15,7 +15,7 @@
   <enablepingbacksend>False</enablepingbacksend>
   <showdescriptioninpostlistforpostsbytagorcategory>False</showdescriptioninpostlistforpostsbytagorcategory>
   <commentblacklistcount>2</commentblacklistcount>
-  <iscocommentenabled>True</iscocommentenabled>
+  <iscocommentenabled>False</iscocommentenabled>
   <compresswebresource>False</compresswebresource>
   <addiptowhitelistfilteronapproval>False</addiptowhitelistfilteronapproval>
   <themecookiename>theme</themecookiename>
