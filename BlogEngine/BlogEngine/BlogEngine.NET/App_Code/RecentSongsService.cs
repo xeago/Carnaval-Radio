@@ -6,6 +6,7 @@ using System.Web.Services;
 using System.Net;
 using System.Text;
 using BlogEngine.Core.Json;
+using BlogEngine.Core.Web.Extensions;
 
 /// <summary>
 /// Summary description for WebService
@@ -41,7 +42,13 @@ public class RecentSongsService : System.Web.Services.WebService {
     {
         WebClient c = new WebClient();
         c.Headers.Add(@"User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)");
-        var a = c.DownloadData("http://50.7.241.10:8021/played.html");
+        var Settings = ExtensionManager.GetSettings("AudioStream");
+        
+        var stream = Settings.GetSingleValue("HighStream");
+        if (!stream.ToLower().StartsWith("http")) stream = @"http://"+stream;
+        if (!stream.EndsWith("/")) stream += "/";
+        var a = c.DownloadData(stream+"played.html");
+        
         var s = Encoding.UTF8.GetString(a);
         var stringa = new string[] { @"<br><table border=0 cellpadding=2 cellspacing=2><tr><td>Played @</td><td><b>Song Title</b></td></tr><tr>" };
 
