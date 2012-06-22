@@ -257,7 +257,7 @@ public class CRSponsor
 
     public static List<CRSponsor> GetListOnlyActive()
     {
-        var l = GetList().Where(i=>i.Active);
+        var l = GetList().Where(i => i.Active);
         var active = l.Where(i => (!i.EndDate.HasValue || i.EndDate >= DateTime.Now));
         return active.ToList();
     }
@@ -265,7 +265,7 @@ public class CRSponsor
     public static string GetLabelBySponsorType(SponsorType s)
     {
         var rm = new ResourceManager(typeof(Resources.labels));
-        var text = rm.GetString(s.ToString(),System.Globalization.CultureInfo.CreateSpecificCulture("nl"));
+        var text = rm.GetString(s.ToString(), System.Globalization.CultureInfo.CreateSpecificCulture("nl"));
         return string.IsNullOrEmpty(text) ? s.ToString() : text;
     }
 
@@ -290,7 +290,7 @@ public class CRSponsor
             player.Add(new
             {
                 url = item.Url,
-                logoUrl = Utils.AbsoluteWebRoot+item.LogoURL
+                logoUrl = Utils.AbsoluteWebRoot + item.LogoURL
             });
         }
         writeSponsorJSON(player, HttpContext.Current.Server.MapPath("~/json/"), "rotatingPlayerSponsor.json");
@@ -323,7 +323,7 @@ public class CRSponsor
             widget.Add(new
             {
                 url = item.Url,
-                logoUrl = Utils.AbsoluteWebRoot+item.LogoURL
+                logoUrl = Utils.AbsoluteWebRoot + item.LogoURL
             });
         }
         writeSponsorJSON(widget, HttpContext.Current.Server.MapPath("~/json/"), "rotatingWidgetSponsor.json");
@@ -373,7 +373,7 @@ public class CRSponsor
             mobile.Add(new
             {
                 url = item.Url,
-                logoUrl = Utils.AbsoluteWebRoot+item.LogoURL
+                logoUrl = Utils.AbsoluteWebRoot + item.LogoURL
             });
         }
         writeSponsorJSON(mobile, HttpContext.Current.Server.MapPath("~/json/"), "rotatingMobileSponsor.json");
