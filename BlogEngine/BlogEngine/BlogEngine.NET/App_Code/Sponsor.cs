@@ -290,7 +290,7 @@ public class CRSponsor
             player.Add(new
             {
                 url = item.Url,
-                logoUrl = item.LogoURL
+                logoUrl = Utils.AbsoluteWebRoot+item.LogoURL
             });
         }
         writeSponsorJSON(player, HttpContext.Current.Server.MapPath("~/json/"), "rotatingPlayerSponsor.json");
@@ -323,7 +323,7 @@ public class CRSponsor
             widget.Add(new
             {
                 url = item.Url,
-                logoUrl = item.LogoURL
+                logoUrl = Utils.AbsoluteWebRoot+item.LogoURL
             });
         }
         writeSponsorJSON(widget, HttpContext.Current.Server.MapPath("~/json/"), "rotatingWidgetSponsor.json");
@@ -373,7 +373,7 @@ public class CRSponsor
             mobile.Add(new
             {
                 url = item.Url,
-                logoUrl = item.LogoURL
+                logoUrl = Utils.AbsoluteWebRoot+item.LogoURL
             });
         }
         writeSponsorJSON(mobile, HttpContext.Current.Server.MapPath("~/json/"), "rotatingMobileSponsor.json");

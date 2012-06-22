@@ -78,7 +78,7 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>False</Values>
-      <Values>False</Values>
+      <Values>True</Values>
       <Values>False</Values>
       <Values>False</Values>
       <Values>false</Values>
@@ -92,7 +92,7 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>False</Values>
-      <Values>False</Values>
+      <Values>True</Values>
       <Values>False</Values>
       <Values>False</Values>
       <Values>False</Values>
@@ -106,7 +106,7 @@
       <Required>false</Required>
       <SelectedValue />
       <Values>True</Values>
-      <Values>False</Values>
+      <Values>True</Values>
       <Values>True</Values>
       <Values>True</Values>
       <Values>True</Values>
